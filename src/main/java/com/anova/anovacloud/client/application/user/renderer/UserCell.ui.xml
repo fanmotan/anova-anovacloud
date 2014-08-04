@@ -1,0 +1,75 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'>
+   <ui:with field='displayName' type='java.lang.String'/>
+   <ui:with field='firstName' type='java.lang.String'/>
+   <ui:with field='lastName' type='java.lang.String'/>
+   <ui:with field='username' type='java.lang.String'/>
+   <ui:with field='hashPassword' type='java.lang.String'/>
+   <ui:with field='role' type='java.lang.String'/>
+   <ui:with field='email' type='java.lang.String'/>
+   <ui:with field='mailAddress' type='java.lang.String'/>
+   <ui:with field='phone' type='java.lang.String'/>
+   <ui:with field='fax' type='java.lang.String'/>
+  
+
+    <ui:style>
+        .listItemWrapper {
+            padding: 15px 10px;
+        }
+
+        .floatLeft {
+            float: left;
+            font-size: 1em;
+        }
+
+        .floatRight {
+            float: right;
+            color: #ababab;
+            font-size: 1.1em;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </ui:style>
+
+    <div class="{style.listItemWrapper}">
+        <div class="{style.floatLeft}">
+            <ui:text from="{displayName}"/>
+        </div>
+        <div class="{style.floatLeft}">
+            <ui:text from="{firstName}"/>
+        </div>
+        <div class="{style.floatLeft}">
+            <ui:text from="{firstName}"/>
+        </div>
+        <div class="{style.floatLeft}">
+            <ui:text from="{lastName}"/>
+        </div>
+        <div class="{style.floatLeft}">
+            <ui:text from="{username}"/>
+        </div>
+        <div class="{style.floatLeft}">
+            <ui:text from="{hashPassword}"/>
+        </div>
+        <div class="{style.floatLeft}">
+            <ui:text from="{email}"/>
+        </div>
+        <div class="{style.floatLeft}">
+            <ui:text from="{mailAddress}"/>
+        </div>
+        <div class="{style.floatLeft}">
+            <ui:text from="{phone}"/>
+        </div>
+        
+        <div class="{style.floatLeft}">
+            <ui:text from="{fax}"/>
+        </div>
+        
+
+        <div class="{style.floatRight}">
+            &gt;
+        </div>
+
+        <div class="{style.clear}"/>
+    </div>
+</ui:UiBinder>

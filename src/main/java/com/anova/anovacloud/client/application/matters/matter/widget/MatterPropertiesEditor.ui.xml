@@ -1,0 +1,83 @@
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:d="urn:import:com.google.gwt.user.datepicker.client">
+    <ui:with field="resource" type="com.anova.anovacloud.client.resources.AppResources"/>
+
+    <ui:style>
+        .formRow {
+            margin-bottom: 10px;
+        }
+    </ui:style>
+
+    <g:HTMLPanel>
+        <div class="{style.formRow}">
+            <g:InlineLabel>Title:</g:InlineLabel>
+            <g:TextBox ui:field="matterTitle" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div class="{style.formRow}">
+            <g:InlineLabel>Application No.:</g:InlineLabel>
+            <g:TextBox ui:field="applicationNum" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div class="{style.formRow}">
+            <g:InlineLabel>Patent No.:</g:InlineLabel>
+            <g:TextBox ui:field="patentNum" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div class="{style.formRow}">
+            <g:InlineLabel>Status:</g:InlineLabel>
+            <g:TextBox ui:field="status" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div class="{style.formRow}">
+            <g:InlineLabel>Pub. No.:</g:InlineLabel>
+            <g:TextBox ui:field="pubNum" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div class="{style.formRow}">
+            <g:InlineLabel>Assignee:</g:InlineLabel>
+            <g:TextBox ui:field="assignee" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div class="{style.formRow}">
+            <g:InlineLabel>Assignment Record:</g:InlineLabel>
+            <g:TextBox ui:field="assignmentRecord" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div class="{style.formRow}">
+            <g:InlineLabel>Remarks:</g:InlineLabel>
+            <g:TextBox ui:field="remarks" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div class="{style.formRow}">
+            <g:InlineLabel>Priority:</g:InlineLabel>
+            <g:TextBox ui:field="priority" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div class="{style.formRow}">
+            <g:InlineLabel>Patent Term Adj.:</g:InlineLabel>
+            <g:TextBox ui:field="patentTermAdj" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div class="{style.formRow}">
+            <g:InlineLabel>Country:</g:InlineLabel>
+            <g:TextBox ui:field="country" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div>
+            <g:InlineLabel>File Date:</g:InlineLabel>
+            <d:DateBox ui:field="fileDate" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div>
+            <g:InlineLabel>Issue Date:</g:InlineLabel>
+            <d:DateBox ui:field="issueDate" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div>
+            <g:InlineLabel>Expiration Date:</g:InlineLabel>
+            <d:DateBox ui:field="expriationDate" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div>
+            <g:InlineLabel>Pub Date:</g:InlineLabel>
+            <d:DateBox ui:field="pubDate" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div class="{style.formRow}">
+            <g:InlineLabel>Parent/PCT No.:</g:InlineLabel>
+            <g:TextBox ui:field="parentPCTNum" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div>
+            <g:InlineLabel>PCT Date:</g:InlineLabel>
+            <d:DateBox ui:field="pctDate" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+       
+        
+    </g:HTMLPanel>
+</ui:UiBinder>

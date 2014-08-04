@@ -1,0 +1,51 @@
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+    <g:PopupPanel glassEnabled="true" autoHideEnabled="true" animationEnabled="true">
+        <g:HTMLPanel debugId="user-editor">
+            <div>
+                <g:InlineLabel>Display Name:</g:InlineLabel>
+                <g:TextBox ui:field="displayName" debugId="user-input"/>
+            </div>
+            <div>
+                <g:InlineLabel>First Name:</g:InlineLabel>
+                <g:TextBox ui:field="firstName" debugId="user-input"/>
+            </div>
+            <div>
+                <g:InlineLabel>Last Name:</g:InlineLabel>
+                <g:TextBox ui:field="lastName" debugId="user-input"/>
+           </div>
+           <div>
+                <g:InlineLabel>Username:</g:InlineLabel>
+                <g:TextBox ui:field="username" debugId="user-input"/>
+           </div>
+           <div>
+                <g:InlineLabel>Password:</g:InlineLabel>
+                <g:TextBox ui:field="hashPassword" debugId="user-input"/>
+           </div>
+           <div>
+                <g:InlineLabel>Role:</g:InlineLabel>
+                <g:TextBox ui:field="role" debugId="user-input"/>
+           </div>
+            <div>
+                <g:InlineLabel>Email:</g:InlineLabel>
+                <g:TextBox ui:field="email" debugId="user-input"/>
+            </div>
+             <div>
+                <g:InlineLabel>Mailing Address:</g:InlineLabel>
+                <g:TextBox ui:field="mailAddress" debugId="user-input"/>
+            </div>
+            <div>
+                <g:InlineLabel>Phone:</g:InlineLabel>
+                <g:TextBox ui:field="phone" debugId="user-input"/>
+            </div>
+            <div>
+                <g:InlineLabel>Fax:</g:InlineLabel>
+                <g:TextBox ui:field="fax" debugId="user-input"/>
+            </div>
+
+            <div>
+                <g:Button ui:field="save" debugId="user-save">Save</g:Button>
+                <g:Button ui:field="close" debugId="user-close">Close</g:Button>
+            </div>
+        </g:HTMLPanel>
+    </g:PopupPanel>
+</ui:UiBinder>
