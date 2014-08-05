@@ -65,6 +65,12 @@
     font-size: 1.1em;
 }
 
+.inputTextField {
+    width: 75%;
+    border: 1px solid #aeaeae;
+    font-size: 1.1em;
+}
+
 .gwt-PopupPanel {
     background-color: #fff;
     padding: 10px;

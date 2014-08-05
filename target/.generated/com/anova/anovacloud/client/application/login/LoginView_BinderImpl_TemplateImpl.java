@@ -20,9 +20,9 @@ return new com.google.gwt.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBless
 
 public com.google.gwt.safehtml.shared.SafeHtml html2(java.lang.String arg0,java.lang.String arg1) {
 StringBuilder sb = new java.lang.StringBuilder();
-sb.append("<div class='{style.formRowCenter'> <span id='");
+sb.append("<div> <span id='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg0));
-sb.append("'></span> <h1> Anova Cloud </h1> </div> <span id='");
+sb.append("'></span>  </div>   <span id='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg1));
 sb.append("'></span>");
 return new com.google.gwt.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.toString());

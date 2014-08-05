@@ -5,6 +5,9 @@
 
     <ui:style>
         .loginWrapper {
+			width: 60%;
+			margin-right: auto;
+            margin-left: auto;
             margin-top: 100px;
             font-family: 'Droid Sans', sans-serif;
         }
@@ -44,13 +47,18 @@
             margin-bottom: 10px;
         }
         
+     
+        
     </ui:style>
-
+    
     <g:HTMLPanel styleName="{style.loginWrapper}">
-     		<div class="{style.formRowCenter">
+    
+     <div>
                 <g:Image resource="{resource.bigLogo}"/>
-               <h1> Anova Cloud </h1>
-            </div>
+    
+      </div>
+              
+    
         <g:HTMLPanel styleName="{style.loginPanel}" debugId="loginPanel">
             <div class="{style.formRow}">
                 <g:TextBox ui:field="username" debugId="username"

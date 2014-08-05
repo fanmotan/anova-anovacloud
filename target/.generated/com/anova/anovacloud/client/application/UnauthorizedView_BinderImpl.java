@@ -129,36 +129,6 @@ public class UnauthorizedView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for RATING called 0 times. Type: DEFAULT. Build precedence: 1.
-     */
-    private java.lang.String get_RATING() {
-      return build_RATING();
-    }
-    private java.lang.String build_RATING() {
-      // Creation section.
-      final java.lang.String RATING = com.anova.anovacloud.client.place.NameTokens.RATING;
-      // Setup section.
-
-
-      return RATING;
-    }
-
-    /**
-     * Getter for DETAIL_RATING called 0 times. Type: DEFAULT. Build precedence: 1.
-     */
-    private java.lang.String get_DETAIL_RATING() {
-      return build_DETAIL_RATING();
-    }
-    private java.lang.String build_DETAIL_RATING() {
-      // Creation section.
-      final java.lang.String DETAIL_RATING = com.anova.anovacloud.client.place.NameTokens.DETAIL_RATING;
-      // Setup section.
-
-
-      return DETAIL_RATING;
-    }
-
-    /**
      * Getter for MATTERS called 0 times. Type: DEFAULT. Build precedence: 1.
      */
     private java.lang.String get_MATTERS() {

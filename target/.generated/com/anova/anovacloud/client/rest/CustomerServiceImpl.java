@@ -8,7 +8,6 @@ import com.gwtplatform.dispatch.rest.shared.RestAction;
 import com.anova.anovacloud.client.rest.CustomerService;
 import com.anova.anovacloud.client.rest.CustomerService_3_deleteImpl;
 import com.anova.anovacloud.client.rest.CustomerService_1_getImpl;
-import com.anova.anovacloud.client.rest.CustomerService_4_getAverageRatingsImpl;
 import com.anova.anovacloud.client.rest.CustomerService_0_getCustomersImpl;
 import com.anova.anovacloud.client.rest.CustomerService_2_saveOrCreateImpl;
 
@@ -35,12 +34,6 @@ public class CustomerServiceImpl implements CustomerService {
         return new CustomerService_1_getImpl(
                 defaultDateFormat,
                 id);
-    }
-
-    @Override
-    public RestAction<java.util.List<com.anova.anovacloud.shared.dto.CustomerRatingDto>> getAverageRatings() {
-        return new CustomerService_4_getAverageRatingsImpl(
-                defaultDateFormat);
     }
 
     @Override

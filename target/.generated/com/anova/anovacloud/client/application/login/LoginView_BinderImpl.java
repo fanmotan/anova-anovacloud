@@ -19,7 +19,7 @@ public class LoginView_BinderImpl implements UiBinder<com.google.gwt.user.client
     @Template("<div class='{0}'> <span id='{1}'></span> </div> <div class='{2}'> <span id='{3}'></span> </div> <span id='{4}'></span>")
     SafeHtml html1(String arg0, String arg1, String arg2, String arg3, String arg4);
      
-    @Template("<div class='{style.formRowCenter'> <span id='{0}'></span> <h1> Anova Cloud </h1> </div> <span id='{1}'></span>")
+    @Template("<div> <span id='{0}'></span>  </div>   <span id='{1}'></span>")
     SafeHtml html2(String arg0, String arg1);
      
   }

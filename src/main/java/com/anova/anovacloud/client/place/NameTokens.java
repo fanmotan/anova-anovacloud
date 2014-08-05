@@ -7,8 +7,6 @@ public class NameTokens {
     public static final String LOGIN = "login";
     public static final String CUSTOMER = "customer";
     public static final String DETAIL_CUSTOMER = "detailCustomer";
-    public static final String RATING = "rating";
-    public static final String DETAIL_RATING = "detailRating";
     public static final String MATTERS = "matters";
     public static final String REPORT = "report";
     public static final String NEW_MATTER = "newMatter";
@@ -27,14 +25,6 @@ public class NameTokens {
 
     public static String getDetailCustomer() {
         return DETAIL_CUSTOMER;
-    }
-
-    public static String getRating() {
-        return RATING;
-    }
-
-    public static String getDetailRating() {
-        return DETAIL_RATING;
     }
     
     public static String getMatterAction() {

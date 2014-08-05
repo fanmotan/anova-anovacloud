@@ -39,10 +39,6 @@ public interface ClientGinjector extends Ginjector, MyGinjector {
   
   AsyncProvider<com.anova.anovacloud.client.application.matters.MattersPresenter> getcomanovaanovacloudclientapplicationmattersMattersPresenter();
   
-  AsyncProvider<com.anova.anovacloud.client.application.rating.RatingDetailPresenter> getcomanovaanovacloudclientapplicationratingRatingDetailPresenter();
-  
-  AsyncProvider<com.anova.anovacloud.client.application.rating.RatingPresenter> getcomanovaanovacloudclientapplicationratingRatingPresenter();
-  
   AsyncProvider<com.anova.anovacloud.client.application.report.ReportPresenter> getcomanovaanovacloudclientapplicationreportReportPresenter();
   
   AsyncProvider<com.anova.anovacloud.client.application.user.UserDetailPresenter> getcomanovaanovacloudclientapplicationuserUserDetailPresenter();

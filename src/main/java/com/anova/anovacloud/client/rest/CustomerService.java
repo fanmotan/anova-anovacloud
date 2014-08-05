@@ -10,7 +10,6 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
 import com.anova.anovacloud.shared.dto.CustomerDto;
-import com.anova.anovacloud.shared.dto.CustomerRatingDto;
 import com.anova.anovacloud.shared.rest.ResourcesPath;
 import com.gwtplatform.dispatch.rest.shared.RestAction;
 
@@ -34,7 +33,4 @@ public interface CustomerService {
     @Path(PATH_ID)
     RestAction<Void> delete(@PathParam(ID) Long id);
 
-    @GET
-    @Path(ResourcesPath.RATING)
-    RestAction<List<CustomerRatingDto>> getAverageRatings();
 }

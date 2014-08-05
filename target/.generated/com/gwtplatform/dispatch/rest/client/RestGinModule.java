@@ -14,8 +14,6 @@ import com.anova.anovacloud.client.rest.MatterActionService;
 import com.anova.anovacloud.client.rest.MatterActionServiceImpl;
 import com.anova.anovacloud.client.rest.MattersService;
 import com.anova.anovacloud.client.rest.MattersServiceImpl;
-import com.anova.anovacloud.client.rest.RatingService;
-import com.anova.anovacloud.client.rest.RatingServiceImpl;
 import com.anova.anovacloud.client.rest.SessionService;
 import com.anova.anovacloud.client.rest.SessionServiceImpl;
 import com.anova.anovacloud.client.rest.UserService;
@@ -30,7 +28,6 @@ public class RestGinModule extends AbstractGinModule {
         bind(CustomerService.class).to(CustomerServiceImpl.class).in(Singleton.class);
         bind(MatterActionService.class).to(MatterActionServiceImpl.class).in(Singleton.class);
         bind(MattersService.class).to(MattersServiceImpl.class).in(Singleton.class);
-        bind(RatingService.class).to(RatingServiceImpl.class).in(Singleton.class);
         bind(SessionService.class).to(SessionServiceImpl.class).in(Singleton.class);
         bind(UserService.class).to(UserServiceImpl.class).in(Singleton.class);
     }

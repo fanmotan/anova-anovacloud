@@ -99,12 +99,14 @@ public class MattersView extends ViewWithUiHandlers<MattersUiHandlers> implement
     }
 
     private void initDataColumns() {
+    	/*
         Column<MatterDto, Number> idColumn = new Column<MatterDto, Number>(new NumberCell()) {
             @Override
             public Long getValue(MatterDto matterDto) {
                 return matterDto.getId();
             }
         };
+        */
 
         Column<MatterDto, String> customerColumn = new Column<MatterDto, String>(new TextCell()) {
             @Override
@@ -126,11 +128,25 @@ public class MattersView extends ViewWithUiHandlers<MattersUiHandlers> implement
                 return matterDto.getMatterSerialNum();
             }
         };
-        matterGrid.addColumn(idColumn, "ID");
+        Column<MatterDto, String> titleColumn = new Column<MatterDto, String>(new TextCell()) {
+            @Override
+            public String getValue(MatterDto matterDto) {
+                return matterDto.getMatterProperties().getMatterTitle();
+            }
+        };
+        Column<MatterDto, String> statusColumn = new Column<MatterDto, String>(new TextCell()) {
+            @Override
+            public String getValue(MatterDto matterDto) {
+                return matterDto.getMatterProperties().getStatus();
+            }
+        };
+    //    matterGrid.addColumn(idColumn, "ID");
         matterGrid.addColumn(customerColumn, "Customer");
         matterGrid.addColumn(matterNumColumn, "Matter No");
         matterGrid.addColumn(matterSerialNumColumn, "Matter Serial No");
-        matterGrid.setColumnWidth(idColumn, 50, Unit.PX);
+        matterGrid.addColumn(titleColumn, "Title");
+        matterGrid.addColumn(statusColumn, "Status");
+     //   matterGrid.setColumnWidth(idColumn, 50, Unit.PX);
     }
 
     private void initActionColumns() {

@@ -20,16 +20,16 @@ public class ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGene
         return "style";
       }
       public String getText() {
-        return com.google.gwt.i18n.client.LocaleInfo.getCurrentLocale().isRTL() ? ((".GFOXD4NDDK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-globalWrapper {\n  position : " + ("relative")  + ";\n}\n.GFOXD4NDEK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-messagesWrapper {\n  width : " + ("300px")  + ";\n  position : " + ("absolute")  + ";\n  top : " + ("30px")  + ";\n  right : " + ("50%")  + ";\n  margin-right : " + ("-150px")  + ";\n}\n.GFOXD4NDCK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-container {\n  width : " + ("1000px")  + ";\n  margin : " + ("20px"+ " " +"auto")  + ";\n}\n")) : ((".GFOXD4NDDK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-globalWrapper {\n  position : " + ("relative")  + ";\n}\n.GFOXD4NDEK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-messagesWrapper {\n  width : " + ("300px")  + ";\n  position : " + ("absolute")  + ";\n  top : " + ("30px")  + ";\n  left : " + ("50%")  + ";\n  margin-left : " + ("-150px")  + ";\n}\n.GFOXD4NDCK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-container {\n  width : " + ("1000px")  + ";\n  margin : " + ("20px"+ " " +"auto")  + ";\n}\n"));
+        return com.google.gwt.i18n.client.LocaleInfo.getCurrentLocale().isRTL() ? ((".GFOXD4NDEK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-globalWrapper {\n  position : " + ("relative")  + ";\n}\n.GFOXD4NDFK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-messagesWrapper {\n  width : " + ("300px")  + ";\n  position : " + ("absolute")  + ";\n  top : " + ("30px")  + ";\n  right : " + ("50%")  + ";\n  margin-right : " + ("-150px")  + ";\n}\n.GFOXD4NDDK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-container {\n  width : " + ("1000px")  + ";\n  margin : " + ("20px"+ " " +"auto")  + ";\n}\n")) : ((".GFOXD4NDEK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-globalWrapper {\n  position : " + ("relative")  + ";\n}\n.GFOXD4NDFK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-messagesWrapper {\n  width : " + ("300px")  + ";\n  position : " + ("absolute")  + ";\n  top : " + ("30px")  + ";\n  left : " + ("50%")  + ";\n  margin-left : " + ("-150px")  + ";\n}\n.GFOXD4NDDK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-container {\n  width : " + ("1000px")  + ";\n  margin : " + ("20px"+ " " +"auto")  + ";\n}\n"));
       }
       public java.lang.String container() {
-        return "GFOXD4NDCK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-container";
+        return "GFOXD4NDDK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-container";
       }
       public java.lang.String globalWrapper() {
-        return "GFOXD4NDDK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-globalWrapper";
+        return "GFOXD4NDEK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-globalWrapper";
       }
       public java.lang.String messagesWrapper() {
-        return "GFOXD4NDEK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-messagesWrapper";
+        return "GFOXD4NDFK-com-anova-anovacloud-client-application-ApplicationView_BinderImpl_GenCss_style-messagesWrapper";
       }
     }
     ;

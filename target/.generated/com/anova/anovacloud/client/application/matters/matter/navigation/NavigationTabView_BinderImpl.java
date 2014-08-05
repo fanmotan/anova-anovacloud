@@ -80,11 +80,11 @@ public class NavigationTabView_BinderImpl implements UiBinder<com.google.gwt.use
       // Setup section.
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord17 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord15 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
 
       // Detach section.
-      attachRecord17.detach();
+      attachRecord15.detach();
       f_HTMLPanel1.addAndReplaceElement(get_tabBar(), get_domId0Element().get());
 
       return f_HTMLPanel1;

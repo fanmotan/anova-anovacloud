@@ -6,7 +6,6 @@ import com.anova.anovacloud.client.application.login.LoginModule;
 import com.anova.anovacloud.client.application.customer.CustomerModule;
 import com.anova.anovacloud.client.application.user.UserModule;
 import com.anova.anovacloud.client.application.matterAction.MatterActionModule;
-import com.anova.anovacloud.client.application.rating.RatingModule;
 import com.anova.anovacloud.client.application.report.ReportModule;
 import com.anova.anovacloud.client.application.widget.WidgetModule;
 import com.anova.anovacloud.client.application.widget.message.MessagesModule;
@@ -20,7 +19,6 @@ public class ApplicationDesktopModule extends AbstractPresenterModule {
         install(new CustomerModule());
         install(new MattersDesktopModule());
         install(new MatterActionModule());
-        install(new RatingModule());
         install(new WidgetModule());
         install(new MessagesModule());
         install(new ReportModule());

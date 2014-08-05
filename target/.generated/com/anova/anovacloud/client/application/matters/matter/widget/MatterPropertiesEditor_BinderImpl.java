@@ -16,7 +16,7 @@ import com.google.gwt.user.client.ui.Widget;
 public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gwt.user.client.ui.Widget, com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor>, com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor.Binder {
 
   interface Template extends SafeHtmlTemplates {
-    @Template("<div class='{0}'> <span id='{1}'></span> <span id='{2}'></span> </div> <div class='{3}'> <span id='{4}'></span> <span id='{5}'></span> </div> <div class='{6}'> <span id='{7}'></span> <span id='{8}'></span> </div> <div class='{9}'> <span id='{10}'></span> <span id='{11}'></span> </div> <div class='{12}'> <span id='{13}'></span> <span id='{14}'></span> </div> <div class='{15}'> <span id='{16}'></span> <span id='{17}'></span> </div> <div class='{18}'> <span id='{19}'></span> <span id='{20}'></span> </div> <div class='{21}'> <span id='{22}'></span> <span id='{23}'></span> </div> <div class='{24}'> <span id='{25}'></span> <span id='{26}'></span> </div> <div class='{27}'> <span id='{28}'></span> <span id='{29}'></span> </div> <div class='{30}'> <span id='{31}'></span> <span id='{32}'></span> </div> <div> <span id='{33}'></span> <span id='{34}'></span> </div> <div> <span id='{35}'></span> <span id='{36}'></span> </div> <div> <span id='{37}'></span> <span id='{38}'></span> </div> <div> <span id='{39}'></span> <span id='{40}'></span> </div> <div class='{41}'> <span id='{42}'></span> <span id='{43}'></span> </div> <div> <span id='{44}'></span> <span id='{45}'></span> </div>")
+    @Template("<table width='100%'> <tr> <td width='45%'> <div class='{0}'> <span id='{1}'></span> <span id='{2}'></span> </div> </td> <td width='45%'> <div class='{3}'> <span id='{4}'></span> <span id='{5}'></span> </div> </td></tr> </table> <div class='{6}'> <span id='{7}'></span> <span id='{8}'></span> </div> <div class='{9}'> <span id='{10}'></span> <span id='{11}'></span> </div> <div class='{12}'> <span id='{13}'></span> <span id='{14}'></span> </div> <div class='{15}'> <span id='{16}'></span> <span id='{17}'></span> </div> <div class='{18}'> <span id='{19}'></span> <span id='{20}'></span> </div> <div class='{21}'> <span id='{22}'></span> <span id='{23}'></span> </div> <div class='{24}'> <span id='{25}'></span> <span id='{26}'></span> </div> <div class='{27}'> <span id='{28}'></span> <span id='{29}'></span> </div> <div class='{30}'> <span id='{31}'></span> <span id='{32}'></span> </div> <div> <span id='{33}'></span> <span id='{34}'></span> </div> <div> <span id='{35}'></span> <span id='{36}'></span> </div> <div> <span id='{37}'></span> <span id='{38}'></span> </div> <div> <span id='{39}'></span> <span id='{40}'></span> </div> <div class='{41}'> <span id='{42}'></span> <span id='{43}'></span> </div> <div> <span id='{44}'></span> <span id='{45}'></span> </div>")
     SafeHtml html1(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16, String arg17, String arg18, String arg19, String arg20, String arg21, String arg22, String arg23, String arg24, String arg25, String arg26, String arg27, String arg28, String arg29, String arg30, String arg31, String arg32, String arg33, String arg34, String arg35, String arg36, String arg37, String arg38, String arg39, String arg40, String arg41, String arg42, String arg43, String arg44, String arg45);
      
   }
@@ -175,7 +175,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Setup section.
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord27 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord24 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
@@ -212,7 +212,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       get_domId33Element().get();
 
       // Detach section.
-      attachRecord27.detach();
+      attachRecord24.detach();
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel2(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_matterTitle(), get_domId1Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel3(), get_domId2Element().get());
@@ -325,7 +325,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.TextBox matterTitle = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      matterTitle.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      matterTitle.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.matterTitle = matterTitle;
@@ -423,7 +423,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.TextBox applicationNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      applicationNum.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      applicationNum.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.applicationNum = applicationNum;
@@ -521,7 +521,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.TextBox patentNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      patentNum.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      patentNum.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.patentNum = patentNum;
@@ -619,7 +619,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.TextBox status = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      status.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      status.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.status = status;
@@ -717,7 +717,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.TextBox pubNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      pubNum.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      pubNum.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.pubNum = pubNum;
@@ -815,7 +815,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.TextBox assignee = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      assignee.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      assignee.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.assignee = assignee;
@@ -913,7 +913,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.TextBox assignmentRecord = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      assignmentRecord.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      assignmentRecord.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.assignmentRecord = assignmentRecord;
@@ -1011,7 +1011,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.TextBox remarks = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      remarks.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      remarks.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.remarks = remarks;
@@ -1109,7 +1109,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.TextBox priority = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      priority.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      priority.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.priority = priority;
@@ -1207,7 +1207,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.TextBox patentTermAdj = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      patentTermAdj.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      patentTermAdj.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.patentTermAdj = patentTermAdj;
@@ -1305,7 +1305,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.TextBox country = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      country.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      country.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.country = country;
@@ -1403,7 +1403,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.datepicker.client.DateBox fileDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
       // Setup section.
-      fileDate.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      fileDate.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.fileDate = fileDate;
@@ -1501,7 +1501,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.datepicker.client.DateBox issueDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
       // Setup section.
-      issueDate.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      issueDate.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.issueDate = issueDate;
@@ -1599,7 +1599,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.datepicker.client.DateBox expriationDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
       // Setup section.
-      expriationDate.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      expriationDate.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.expriationDate = expriationDate;
@@ -1697,7 +1697,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.datepicker.client.DateBox pubDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
       // Setup section.
-      pubDate.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      pubDate.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.pubDate = pubDate;
@@ -1795,7 +1795,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.TextBox parentPCTNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      parentPCTNum.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      parentPCTNum.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.parentPCTNum = parentPCTNum;
@@ -1893,7 +1893,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.datepicker.client.DateBox pctDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
       // Setup section.
-      pctDate.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      pctDate.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.pctDate = pctDate;

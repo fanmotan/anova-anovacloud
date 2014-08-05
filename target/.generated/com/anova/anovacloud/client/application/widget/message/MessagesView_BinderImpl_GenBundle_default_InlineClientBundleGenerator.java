@@ -20,10 +20,10 @@ public class MessagesView_BinderImpl_GenBundle_default_InlineClientBundleGenerat
         return "style";
       }
       public String getText() {
-        return (".GFOXD4NDBM-com-anova-anovacloud-client-application-widget-message-MessagesView_BinderImpl_GenCss_style-wrapper {\n  position : " + ("absolute")  + ";\n  z-index : " + ("200")  + ";\n  width : " + ("100%")  + ";\n}\n");
+        return (".GFOXD4NDPL-com-anova-anovacloud-client-application-widget-message-MessagesView_BinderImpl_GenCss_style-wrapper {\n  position : " + ("absolute")  + ";\n  z-index : " + ("200")  + ";\n  width : " + ("100%")  + ";\n}\n");
       }
       public java.lang.String wrapper() {
-        return "GFOXD4NDBM-com-anova-anovacloud-client-application-widget-message-MessagesView_BinderImpl_GenCss_style-wrapper";
+        return "GFOXD4NDPL-com-anova-anovacloud-client-application-widget-message-MessagesView_BinderImpl_GenCss_style-wrapper";
       }
     }
     ;

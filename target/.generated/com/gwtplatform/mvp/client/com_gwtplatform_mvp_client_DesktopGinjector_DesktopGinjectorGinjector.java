@@ -284,38 +284,6 @@ public class com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinject
   
   
   /**
-   * Injector fragment for com.anova.anovacloud.client.application.rating
-   */
-  private com.anova.anovacloud.client.application.rating.com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$rating = null;
-  /**
-   * Getter for injector fragment for com.anova.anovacloud.client.application.rating
-   */
-  public com.anova.anovacloud.client.application.rating.com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_rating() {
-    if (fieldFragment_com$anova$anovacloud$client$application$rating == null) {
-        fieldFragment_com$anova$anovacloud$client$application$rating = new com.anova.anovacloud.client.application.rating.com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment(this);
-    }
-    
-    return fieldFragment_com$anova$anovacloud$client$application$rating;
-  }
-  
-  
-  /**
-   * Injector fragment for com.anova.anovacloud.client.application.rating.ui
-   */
-  private com.anova.anovacloud.client.application.rating.ui.com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$rating$ui = null;
-  /**
-   * Getter for injector fragment for com.anova.anovacloud.client.application.rating.ui
-   */
-  public com.anova.anovacloud.client.application.rating.ui.com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_rating_ui() {
-    if (fieldFragment_com$anova$anovacloud$client$application$rating$ui == null) {
-        fieldFragment_com$anova$anovacloud$client$application$rating$ui = new com.anova.anovacloud.client.application.rating.ui.com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment(this);
-    }
-    
-    return fieldFragment_com$anova$anovacloud$client$application$rating$ui;
-  }
-  
-  
-  /**
    * Injector fragment for com.anova.anovacloud.client.application.report
    */
   private com.anova.anovacloud.client.application.report.com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$report = null;
@@ -600,7 +568,6 @@ public class com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinject
     getFragment_com_anova_anovacloud_client_application_login().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_matterAction().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_matters().initializeEagerSingletons();
-    getFragment_com_anova_anovacloud_client_application_rating().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_report().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_user().initializeEagerSingletons();
     getFragment_com_gwtplatform_dispatch_client_actionhandler().initializeEagerSingletons();

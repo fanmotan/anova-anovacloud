@@ -20,10 +20,6 @@ public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector
     
   }
   
-  public void memberInject_Key$type$com$anova$anovacloud$client$resources$EditRatingMessages$_annotation$$none$$(com.anova.anovacloud.client.resources.EditRatingMessages injectee) {
-    
-  }
-  
   public void memberInject_Key$type$com$anova$anovacloud$client$resources$EditUserMessages$_annotation$$none$$(com.anova.anovacloud.client.resources.EditUserMessages injectee) {
     
   }
@@ -99,22 +95,6 @@ public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector
     com.anova.anovacloud.client.resources.MatterActionMessages result = (com.anova.anovacloud.client.resources.MatterActionMessages) created;
     
     memberInject_Key$type$com$anova$anovacloud$client$resources$MatterActionMessages$_annotation$$none$$(result);
-    
-    return result;
-    
-  }
-  
-  
-  /**
-   * Binding for com.anova.anovacloud.client.resources.EditRatingMessages declared at:
-   *   Implicit GWT.create binding for com.anova.anovacloud.client.resources.EditRatingMessages
-   */
-  public com.anova.anovacloud.client.resources.EditRatingMessages get_Key$type$com$anova$anovacloud$client$resources$EditRatingMessages$_annotation$$none$$() {
-    Object created = GWT.create(com.anova.anovacloud.client.resources.EditRatingMessages.class);
-    assert created instanceof com.anova.anovacloud.client.resources.EditRatingMessages;
-    com.anova.anovacloud.client.resources.EditRatingMessages result = (com.anova.anovacloud.client.resources.EditRatingMessages) created;
-    
-    memberInject_Key$type$com$anova$anovacloud$client$resources$EditRatingMessages$_annotation$$none$$(result);
     
     return result;
     

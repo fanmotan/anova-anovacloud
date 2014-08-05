@@ -108,12 +108,12 @@ public class MessageWidget_BinderImpl implements UiBinder<com.google.gwt.user.cl
       messageBox.setVisible(false);
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord25 = UiBinderUtil.attachToDom(messageBox.getElement());
+      UiBinderUtil.TempAttachment attachRecord22 = UiBinderUtil.attachToDom(messageBox.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
 
       // Detach section.
-      attachRecord25.detach();
+      attachRecord22.detach();
       messageBox.addAndReplaceElement(get_messageLabel(), get_domId0Element().get());
       messageBox.addAndReplaceElement(get_close(), get_domId1Element().get());
 

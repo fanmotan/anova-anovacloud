@@ -8,7 +8,6 @@ import com.googlecode.objectify.ObjectifyService;
 import com.anova.anovacloud.server.dao.domain.Matter;
 import com.anova.anovacloud.server.dao.domain.MatterProperties;
 import com.anova.anovacloud.server.dao.domain.Customer;
-import com.anova.anovacloud.server.dao.domain.Rating;
 import com.anova.anovacloud.server.dao.domain.MatterAction;
 import com.anova.anovacloud.server.dao.domain.User;
 import com.anova.anovacloud.server.dao.domain.UserSession;
@@ -19,7 +18,6 @@ public class OfyService {
         factory().register(MatterProperties.class);
         factory().register(Customer.class);
         factory().register(MatterAction.class);
-        factory().register(Rating.class);
         factory().register(User.class);
         factory().register(UserSession.class);
     }

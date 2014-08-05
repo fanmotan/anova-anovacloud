@@ -16,10 +16,6 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     
   }
   
-  public void memberInject_Key$type$com$anova$anovacloud$client$rest$RatingServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.RatingServiceImpl injectee) {
-    
-  }
-  
   public void memberInject_Key$type$com$anova$anovacloud$client$rest$SessionServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.SessionServiceImpl injectee) {
     
   }
@@ -61,18 +57,6 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
         singleton_Key$type$com$anova$anovacloud$client$rest$MattersService$_annotation$$none$$ = result;
     }
     return singleton_Key$type$com$anova$anovacloud$client$rest$MattersService$_annotation$$none$$;
-    
-  }
-  
-  private com.anova.anovacloud.client.rest.RatingService singleton_Key$type$com$anova$anovacloud$client$rest$RatingService$_annotation$$none$$ = null;
-  
-  public com.anova.anovacloud.client.rest.RatingService get_Key$type$com$anova$anovacloud$client$rest$RatingService$_annotation$$none$$() {
-    
-    if (singleton_Key$type$com$anova$anovacloud$client$rest$RatingService$_annotation$$none$$ == null) {
-    com.anova.anovacloud.client.rest.RatingService result = get_Key$type$com$anova$anovacloud$client$rest$RatingServiceImpl$_annotation$$none$$();
-        singleton_Key$type$com$anova$anovacloud$client$rest$RatingService$_annotation$$none$$ = result;
-    }
-    return singleton_Key$type$com$anova$anovacloud$client$rest$RatingService$_annotation$$none$$;
     
   }
   
@@ -149,23 +133,6 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
   
   public com.anova.anovacloud.client.rest.MattersServiceImpl com$anova$anovacloud$client$rest$MattersServiceImpl_com$anova$anovacloud$client$rest$MattersServiceImpl_methodInjection(java.lang.String _0) {
     return new com.anova.anovacloud.client.rest.MattersServiceImpl(_0);
-  }
-  
-  
-  /**
-   * Binding for com.anova.anovacloud.client.rest.RatingServiceImpl declared at:
-   *   Implicit binding for com.anova.anovacloud.client.rest.RatingServiceImpl
-   */
-  public com.anova.anovacloud.client.rest.RatingServiceImpl get_Key$type$com$anova$anovacloud$client$rest$RatingServiceImpl$_annotation$$none$$() {
-    com.anova.anovacloud.client.rest.RatingServiceImpl result = com$anova$anovacloud$client$rest$RatingServiceImpl_com$anova$anovacloud$client$rest$RatingServiceImpl_methodInjection(injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$java$lang$String$_annotation$$com$gwtplatform$dispatch$rest$client$DefaultDateFormat$());
-    memberInject_Key$type$com$anova$anovacloud$client$rest$RatingServiceImpl$_annotation$$none$$(result);
-    
-    return result;
-    
-  }
-  
-  public com.anova.anovacloud.client.rest.RatingServiceImpl com$anova$anovacloud$client$rest$RatingServiceImpl_com$anova$anovacloud$client$rest$RatingServiceImpl_methodInjection(java.lang.String _0) {
-    return new com.anova.anovacloud.client.rest.RatingServiceImpl(_0);
   }
   
   

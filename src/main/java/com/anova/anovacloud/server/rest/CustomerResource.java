@@ -15,13 +15,9 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.anova.anovacloud.server.dao.CustomerDao;
-import com.anova.anovacloud.server.dao.RatingDao;
 import com.anova.anovacloud.server.dao.domain.Customer;
-import com.anova.anovacloud.server.dao.domain.Rating;
 import com.anova.anovacloud.server.service.ReportService;
 import com.anova.anovacloud.shared.dto.CustomerDto;
-import com.anova.anovacloud.shared.dto.CustomerRatingDto;
-import com.anova.anovacloud.shared.dto.RatingDto;
 import com.anova.anovacloud.shared.rest.PathParameter;
 import com.anova.anovacloud.shared.rest.ResourcesPath;
 import com.anova.anovacloud.shared.rest.RestParameter;
@@ -30,15 +26,12 @@ import com.anova.anovacloud.shared.rest.RestParameter;
 @Produces(MediaType.APPLICATION_JSON)
 public class CustomerResource {
     private final CustomerDao customerDao;
-    private final RatingDao ratingDao;
     private final ReportService reportService;
 
     @Inject
     CustomerResource(CustomerDao customerDao,
-                         RatingDao ratingDao,
                          ReportService reportService) {
         this.customerDao = customerDao;
-        this.ratingDao = ratingDao;
         this.reportService = reportService;
     }
 
@@ -70,15 +63,5 @@ public class CustomerResource {
         customerDao.delete(id);
 
         return Response.ok().build();
-    }
-
-    @Path(ResourcesPath.RATING)
-    @GET
-    public Response getAverageRatings() {
-        List<Rating> ratings = ratingDao.getAll();
-        List<RatingDto> ratingDtos = Rating.createDto(ratings);
-        List<CustomerRatingDto> averageMatterRatings = reportService.getAverageMatterRatings(ratingDtos);
-
-        return Response.ok(averageMatterRatings).build();
     }
 }

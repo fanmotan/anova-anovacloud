@@ -171,7 +171,7 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
       // Setup section.
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord21 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
+      UiBinderUtil.TempAttachment attachRecord19 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
@@ -202,7 +202,7 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
       get_domId27Element().get();
 
       // Detach section.
-      attachRecord21.detach();
+      attachRecord19.detach();
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel3(), get_domId0Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_matter(), get_domId1Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel4(), get_domId2Element().get());

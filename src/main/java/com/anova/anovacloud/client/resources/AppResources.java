@@ -27,6 +27,8 @@ public interface AppResources extends ClientBundle {
         String menuAction();
 
         String mobileTextField();
+        
+        String inputTextField();
 
         String closeButton();
 
@@ -38,10 +40,7 @@ public interface AppResources extends ClientBundle {
 
     Styles styles();
 
-    @Source("carSample.png")
-    @ImageResource.ImageOptions(repeatStyle = ImageResource.RepeatStyle.None)
-    ImageResource logo();
-
+  
     @Source("big_logo.png")
     @ImageResource.ImageOptions(repeatStyle = ImageResource.RepeatStyle.None)
     ImageResource bigLogo();

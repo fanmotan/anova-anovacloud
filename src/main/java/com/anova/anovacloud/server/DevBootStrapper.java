@@ -11,16 +11,13 @@ import com.anova.anovacloud.server.dao.MatterActionDao;
 import com.anova.anovacloud.server.dao.MatterDao;
 import com.anova.anovacloud.server.dao.MatterPropertiesDao;
 import com.anova.anovacloud.server.dao.CustomerDao;
-import com.anova.anovacloud.server.dao.RatingDao;
 import com.anova.anovacloud.server.dao.UserDao;
 import com.anova.anovacloud.server.dao.domain.Matter;
 import com.anova.anovacloud.server.dao.domain.Customer;
-import com.anova.anovacloud.server.dao.domain.Rating;
 import com.anova.anovacloud.server.dao.domain.User;
 import com.anova.anovacloud.shared.dto.MatterDto;
 import com.anova.anovacloud.shared.dto.MatterPropertiesDto;
 import com.anova.anovacloud.shared.dto.CustomerDto;
-import com.anova.anovacloud.shared.dto.RatingDto;
 import com.anova.anovacloud.shared.dto.UserDto;
 
 public class DevBootStrapper {
@@ -29,7 +26,6 @@ public class DevBootStrapper {
     private final CustomerDao customerDao;
     private final MatterDao matterDao;
     private final MatterActionDao matterActionDao;
-    private final RatingDao ratingDao;
     private final MatterPropertiesDao matterPropertiesDao;
 
     @Inject
@@ -38,14 +34,12 @@ public class DevBootStrapper {
                     CustomerDao customerDao,
                     MatterDao matterDao,
                     MatterActionDao matterActionDao,
-                    RatingDao ratingDao,
                     MatterPropertiesDao matterPropertiesDao) {
         this.userDao = userDao;
         this.passwordSecurity = passwordSecurity;
         this.customerDao = customerDao;
         this.matterDao = matterDao;
         this.matterActionDao = matterActionDao;
-        this.ratingDao = ratingDao;
         this.matterPropertiesDao = matterPropertiesDao;
 
         init();
@@ -67,7 +61,6 @@ public class DevBootStrapper {
         customerDao.deleteAll();
         matterDao.deleteAll();
         matterActionDao.deleteAll();
-        ratingDao.deleteAll();
         matterPropertiesDao.deleteAll();
     }
 
@@ -111,15 +104,6 @@ public class DevBootStrapper {
             lancer = Matter.createDto(matterDao.put(Matter.create(lancer)));
             galant = Matter.createDto(matterDao.put(Matter.create(galant)));
 
-            RatingDto rating1 = new RatingDto(accord, 4);
-            RatingDto rating2 = new RatingDto(civic, 2);
-            RatingDto rating3 = new RatingDto(galant, 3);
-            RatingDto rating4 = new RatingDto(lancer, 4);
-
-            ratingDao.put(Rating.create(rating1));
-            ratingDao.put(Rating.create(rating2));
-            ratingDao.put(Rating.create(rating3));
-            ratingDao.put(Rating.create(rating4));
         }
     }
 }

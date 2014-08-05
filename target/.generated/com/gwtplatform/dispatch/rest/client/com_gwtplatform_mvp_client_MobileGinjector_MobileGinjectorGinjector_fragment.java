@@ -31,7 +31,7 @@ public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector
   
   /**
    * Binding for com.gwtplatform.dispatch.rest.client.ActionMetadataProvider declared at:
-   *   com.gwtplatform.dispatch.rest.client.RestGinModule.configure(RestGinModule.java:27)
+   *   com.gwtplatform.dispatch.rest.client.RestGinModule.configure(RestGinModule.java:25)
    */
   public com.gwtplatform.dispatch.rest.client.ActionMetadataProvider get_Key$type$com$gwtplatform$dispatch$rest$client$ActionMetadataProvider$_annotation$$none$$() {
     com.gwtplatform.dispatch.rest.client.ActionMetadataProvider result = get_Key$type$com$gwtplatform$dispatch$rest$client$ActionMetadataProviderImpl$_annotation$$none$$();

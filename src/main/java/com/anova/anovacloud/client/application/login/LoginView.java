@@ -29,7 +29,6 @@ public class LoginView extends ViewWithUiHandlers<LoginUiHandlers> implements Lo
     @Inject
     LoginView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-
         username.getElement().setAttribute("placeholder", "Username");
         password.getElement().setAttribute("placeholder", "Password");
     }

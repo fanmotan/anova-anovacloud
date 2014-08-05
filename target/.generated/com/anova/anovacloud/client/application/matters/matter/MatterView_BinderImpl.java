@@ -133,7 +133,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       // Setup section.
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord24 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
+      UiBinderUtil.TempAttachment attachRecord21 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
@@ -145,7 +145,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       get_domId8Element().get();
 
       // Detach section.
-      attachRecord24.detach();
+      attachRecord21.detach();
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel3(), get_domId0Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_matterNum(), get_domId1Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel4(), get_domId2Element().get());

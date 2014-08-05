@@ -81,10 +81,9 @@
             </div>
 
             <g:HTMLPanel styleName="{style.floatLeft} {style.menuBarWrapper}" ui:field="menubar" debugId="menubar">     
-                <a href="#{REPORT}">Report</a>
+                <a href="#{REPORT}">Home</a>
                 <a href="#{MATTERS}">Matters</a>
                 <a href="#{MATTERACTION}">Matter Actions</a>
-                <a href="#{RATING}">Ratings</a>
                 <a href="#{CUSTOMER}">Customers</a>
                 <a href="#{USER}">Users</a>
                 

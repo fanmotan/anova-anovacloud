@@ -20,10 +20,10 @@ public class WidgetResources_default_InlineClientBundleGenerator implements com.
         return "header";
       }
       public String getText() {
-        return (".GFOXD4NDNB-com-anova-anovacloud-client-resources-WidgetResources-Header-menuActive {\n  font-size : " + ("30px")  + ";\n}\n");
+        return (".GFOXD4NDOB-com-anova-anovacloud-client-resources-WidgetResources-Header-menuActive {\n  font-size : " + ("30px")  + ";\n}\n");
       }
       public java.lang.String menuActive() {
-        return "GFOXD4NDNB-com-anova-anovacloud-client-resources-WidgetResources-Header-menuActive";
+        return "GFOXD4NDOB-com-anova-anovacloud-client-resources-WidgetResources-Header-menuActive";
       }
     }
     ;

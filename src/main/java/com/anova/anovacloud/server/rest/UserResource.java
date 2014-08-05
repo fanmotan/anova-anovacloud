@@ -16,7 +16,6 @@ import javax.ws.rs.core.Response;
 
 import com.anova.anovacloud.server.dao.UserDao;
 import com.anova.anovacloud.server.dao.domain.User;
-import com.anova.anovacloud.server.dao.domain.Rating;
 import com.anova.anovacloud.shared.dto.UserDto;
 import com.anova.anovacloud.shared.rest.PathParameter;
 import com.anova.anovacloud.shared.rest.ResourcesPath;

@@ -200,16 +200,16 @@ public class SimplePager_Resources_default_InlineClientBundleGenerator implement
         return "simplePagerStyle";
       }
       public String getText() {
-        return (".GFOXD4NDJJ-com-google-gwt-user-cellview-client-SimplePager-Style-pageDetails {\n  padding : " + ("4px"+ " " +"8px")  + ";\n  text-align : " + ("center")  + ";\n}\n.GFOXD4NDHJ-com-google-gwt-user-cellview-client-SimplePager-Style-button {\n  padding : " + ("4px")  + ";\n  cursor : " + ("pointer")  + ";\n  cursor : " + ("hand")  + ";\n}\n.GFOXD4NDIJ-com-google-gwt-user-cellview-client-SimplePager-Style-disabledButton {\n  cursor : " + ("default")  + ";\n}\n");
+        return (".GFOXD4NDKJ-com-google-gwt-user-cellview-client-SimplePager-Style-pageDetails {\n  padding : " + ("4px"+ " " +"8px")  + ";\n  text-align : " + ("center")  + ";\n}\n.GFOXD4NDIJ-com-google-gwt-user-cellview-client-SimplePager-Style-button {\n  padding : " + ("4px")  + ";\n  cursor : " + ("pointer")  + ";\n  cursor : " + ("hand")  + ";\n}\n.GFOXD4NDJJ-com-google-gwt-user-cellview-client-SimplePager-Style-disabledButton {\n  cursor : " + ("default")  + ";\n}\n");
       }
       public java.lang.String button() {
-        return "GFOXD4NDHJ-com-google-gwt-user-cellview-client-SimplePager-Style-button";
+        return "GFOXD4NDIJ-com-google-gwt-user-cellview-client-SimplePager-Style-button";
       }
       public java.lang.String disabledButton() {
-        return "GFOXD4NDIJ-com-google-gwt-user-cellview-client-SimplePager-Style-disabledButton";
+        return "GFOXD4NDJJ-com-google-gwt-user-cellview-client-SimplePager-Style-disabledButton";
       }
       public java.lang.String pageDetails() {
-        return "GFOXD4NDJJ-com-google-gwt-user-cellview-client-SimplePager-Style-pageDetails";
+        return "GFOXD4NDKJ-com-google-gwt-user-cellview-client-SimplePager-Style-pageDetails";
       }
     }
     ;
