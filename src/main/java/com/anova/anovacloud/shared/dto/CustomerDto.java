@@ -33,6 +33,7 @@ public class CustomerDto extends BaseEntity {
         this.email = email;
         this.phone = phone;
         this.fax = fax;
+        this.matters = new ArrayList<>();
         
     }
 

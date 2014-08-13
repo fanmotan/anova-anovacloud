@@ -1,8 +1,6 @@
 
 package com.anova.anovacloud.client.application.customers.customer;
 
-import java.util.List;
-
 import javax.inject.Inject;
 
 import com.google.gwt.editor.client.Editor;
@@ -10,7 +8,6 @@ import com.google.gwt.editor.client.SimpleBeanEditorDriver;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.TextBox;
-import com.google.gwt.user.client.ui.ValueListBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.anova.anovacloud.client.application.customers.customer.CustomerPresenter.MyView;
 import com.anova.anovacloud.shared.dto.CustomerDto;
@@ -53,6 +50,7 @@ public class CustomerMobileView extends ViewWithUiHandlers<CustomerUiHandlers> i
         email.getElement().setAttribute("placeholder", "Customer Email");
         phone.getElement().setAttribute("placeholder", "Customer Phone");
         fax.getElement().setAttribute("placeholder", "Customer Fax");
+        
     }
 
     @Override

@@ -98,14 +98,14 @@ public class CustomersView extends ViewWithUiHandlers<CustomersUiHandlers> imple
     }
 
     private void initDataColumns() {
-    	
+    	/*
         Column<CustomerDto, Number> idColumn = new Column<CustomerDto, Number>(new NumberCell()) {
             @Override
             public Long getValue(CustomerDto customerDto) {
                 return customerDto.getId();
             }
         };
-
+*/
         Column<CustomerDto, String> nameColumn = new Column<CustomerDto, String>(new TextCell()) {
             @Override
             public String getValue(CustomerDto customerDto) {

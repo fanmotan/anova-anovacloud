@@ -24,8 +24,6 @@ public class Customer extends BaseEntity {
     private String phone;
     private String fax;
 
-    @Load
-    private HashSet<Ref<Matter>> matters;
 
     public Customer() {
         this.name = "";
@@ -96,31 +94,7 @@ public class Customer extends BaseEntity {
         this.fax = fax;
     }
   
-    public List<Matter> getMatters() {
-        if (this.matters == null) {
-            return null;
-        }
-
-        List<Matter> rmatters = new ArrayList<>();
-        for (Ref<Matter> matter : matters) {
-            rmatters.add(Deref.deref(matter));
-        }
-
-        return rmatters;
-    }
-
-    public void setMatters(List<Matter> matters) {
-        if (matters == null) {
-            this.matters = null;
-        } else {
-            for (Matter matter : matters) {
-                if (this.matters == null) {
-                    this.matters = new HashSet<>();
-                }
-                this.matters.add(Ref.create(matter));
-            }
-        }
-    }
+   
 
     public static List<CustomerDto> createDto(List<Customer> customers) {
         if (customers == null) {
@@ -141,7 +115,6 @@ public class Customer extends BaseEntity {
         }
 
         CustomerDto customerDto = new CustomerDto();
-        customerDto.setMatters(Matter.createDto(customer.getMatters()));
         customerDto.setId(customer.getId());
         customerDto.setName(customer.getName());
         customerDto.setRefNum(customer.getRefNum());
@@ -159,7 +132,6 @@ public class Customer extends BaseEntity {
         }
 
         Customer customer = new Customer();
-        customer.setMatters(Matter.create(customerDto.getMatters()));
         customer.setId(customerDto.getId());
         customer.setName(customerDto.getName());
         customer.setRefNum(customerDto.getRefNum());
@@ -171,4 +143,17 @@ public class Customer extends BaseEntity {
 
         return customer;
     }
+    public static List<Customer> create(List<CustomerDto> customerDtos) {
+        if (customerDtos == null) {
+            return null;
+        }
+
+        List<Customer> customers = new ArrayList<>();
+        for (CustomerDto customerDto : customerDtos) {
+            customers.add(create(customerDto));
+        }
+
+        return customers;
+    }
+    
 }

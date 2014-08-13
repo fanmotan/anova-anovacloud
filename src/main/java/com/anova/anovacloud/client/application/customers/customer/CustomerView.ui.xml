@@ -52,7 +52,9 @@
             		<div class="{style.formRow}">	
                 		<g:TextBox ui:field="email" debugId="customer-input"/>
             		</div>
-            		</td>
+            	</td>
+            	</tr>
+            	<tr>
         		<td width="15%">
             		<div class="{style.formRow}">
                 		<g:InlineLabel>Phone:</g:InlineLabel>
@@ -63,9 +65,7 @@
                 		<g:TextBox ui:field="phone" debugId="customer-input"/>
             		</div>
             	</td>
-            </tr>
             
-            <tr>
      			<td width="15%">
             		<div class="{style.formRow}">
                 		<g:InlineLabel>Fax:</g:InlineLabel>

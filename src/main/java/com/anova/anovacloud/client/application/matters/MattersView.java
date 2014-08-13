@@ -99,7 +99,7 @@ public class MattersView extends ViewWithUiHandlers<MattersUiHandlers> implement
     }
 
     private void initDataColumns() {
-    	/*
+    /*	
         Column<MatterDto, Number> idColumn = new Column<MatterDto, Number>(new NumberCell()) {
             @Override
             public Long getValue(MatterDto matterDto) {
