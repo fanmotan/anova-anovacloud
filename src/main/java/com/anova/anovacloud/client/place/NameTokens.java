@@ -5,8 +5,8 @@ package com.anova.anovacloud.client.place;
 public class NameTokens {
     public static final String UNAUTHORIZED = "unauthorized";
     public static final String LOGIN = "login";
-    public static final String CUSTOMER = "customer";
-    public static final String DETAIL_CUSTOMER = "detailCustomer";
+    public static final String CUSTOMERS = "customers";
+    public static final String NEW_CUSTOMER = "newCustomer";
     public static final String MATTERS = "matters";
     public static final String REPORT = "report";
     public static final String NEW_MATTER = "newMatter";
@@ -19,12 +19,8 @@ public class NameTokens {
         return REPORT;
     }
 
-    public static String getCustomer() {
-        return CUSTOMER;
-    }
-
-    public static String getDetailCustomer() {
-        return DETAIL_CUSTOMER;
+    public static String getCustomers() {
+        return CUSTOMERS;
     }
     
     public static String getMatterAction() {

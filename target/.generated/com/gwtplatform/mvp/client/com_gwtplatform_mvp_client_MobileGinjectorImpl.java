@@ -35,12 +35,12 @@ public class com_gwtplatform_mvp_client_MobileGinjectorImpl implements com.gwtpl
     return fieldcom_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector.getFragment_com_anova_anovacloud_client_application().get_Key$type$com$google$inject$Provider$com$anova$anovacloud$client$application$UnauthorizedPresenter$$_annotation$$none$$();
   }
   
-  public com.google.gwt.inject.client.AsyncProvider<com.anova.anovacloud.client.application.customer.CustomerDetailPresenter> getcomanovaanovacloudclientapplicationcustomerCustomerDetailPresenter() {
-    return fieldcom_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_customer().get_Key$type$com$google$gwt$inject$client$AsyncProvider$com$anova$anovacloud$client$application$customer$CustomerDetailPresenter$$_annotation$$none$$();
+  public com.google.gwt.inject.client.AsyncProvider<com.anova.anovacloud.client.application.customers.CustomersPresenter> getcomanovaanovacloudclientapplicationcustomersCustomersPresenter() {
+    return fieldcom_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_customers().get_Key$type$com$google$gwt$inject$client$AsyncProvider$com$anova$anovacloud$client$application$customers$CustomersPresenter$$_annotation$$none$$();
   }
   
-  public com.google.gwt.inject.client.AsyncProvider<com.anova.anovacloud.client.application.customer.CustomerPresenter> getcomanovaanovacloudclientapplicationcustomerCustomerPresenter() {
-    return fieldcom_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_customer().get_Key$type$com$google$gwt$inject$client$AsyncProvider$com$anova$anovacloud$client$application$customer$CustomerPresenter$$_annotation$$none$$();
+  public javax.inject.Provider<com.anova.anovacloud.client.application.customers.customer.RootCustomerPresenter> getcomanovaanovacloudclientapplicationcustomerscustomerRootCustomerPresenter() {
+    return fieldcom_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_customers_customer().get_Key$type$com$google$inject$Provider$com$anova$anovacloud$client$application$customers$customer$RootCustomerPresenter$$_annotation$$none$$();
   }
   
   public javax.inject.Provider<com.anova.anovacloud.client.application.login.LoginPresenter> getcomanovaanovacloudclientapplicationloginLoginPresenter() {

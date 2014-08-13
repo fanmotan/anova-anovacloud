@@ -84,7 +84,7 @@
                 <a href="#{REPORT}">Home</a>
                 <a href="#{MATTERS}">Matters</a>
                 <a href="#{MATTERACTION}">Matter Actions</a>
-                <a href="#{CUSTOMER}">Customers</a>
+                <a href="#{CUSTOMERS}">Customers</a>
                 <a href="#{USER}">Users</a>
                 
             </g:HTMLPanel>

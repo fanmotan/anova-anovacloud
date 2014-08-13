@@ -7,6 +7,7 @@
     <ui:style>
         .tableWrapper {
             margin-top: 20px;
+            font-size: 11pt;
         }
     </ui:style>
 

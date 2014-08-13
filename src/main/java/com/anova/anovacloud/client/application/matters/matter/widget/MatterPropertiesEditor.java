@@ -4,10 +4,12 @@ package com.anova.anovacloud.client.application.matters.matter.widget;
 import javax.inject.Inject;
 
 import com.google.gwt.editor.client.Editor;
+import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.IntegerBox;
+import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.user.datepicker.client.DateBox;
@@ -32,7 +34,7 @@ public class MatterPropertiesEditor extends Composite implements Editor<MatterPr
     @UiField
     TextBox assignmentRecord;
     @UiField
-    TextBox remarks;
+    TextArea remarks;
     @UiField
     TextBox priority;
     @UiField
@@ -56,24 +58,14 @@ public class MatterPropertiesEditor extends Composite implements Editor<MatterPr
     @Inject
     MatterPropertiesEditor(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        DateTimeFormat format = DateTimeFormat.getShortDateFormat();
+    	
+        fileDate.setFormat(new DateBox.DefaultFormat(format));
+        issueDate.setFormat(new DateBox.DefaultFormat(format));
+        expriationDate.setFormat(new DateBox.DefaultFormat(format));
+        pubDate.setFormat(new DateBox.DefaultFormat(format));
+        pctDate.setFormat(new DateBox.DefaultFormat(format));
 
-        matterTitle.getElement().setAttribute("placeholder", "Title");
-        applicationNum.getElement().setAttribute("placeholder", "Application No.");
-        patentNum.getElement().setAttribute("placeholder", "Patent No.");
-        status.getElement().setAttribute("placeholder", "Status");
-        pubNum.getElement().setAttribute("placeholder", "Pub No.");
-        assignee.getElement().setAttribute("placeholder", "Assignee");
-        assignmentRecord.getElement().setAttribute("placeholder", "Assignment Record");
-        remarks.getElement().setAttribute("placeholder", "Remarks");
-        priority.getElement().setAttribute("placeholder", "Priority");
-        patentTermAdj.getElement().setAttribute("placeholder", "Patent Term Adj.");
-        country.getElement().setAttribute("placeholder", "Country");
-        fileDate.getElement().setAttribute("placeholder", "File Date");
-        issueDate.getElement().setAttribute("placeholder", "Issue Date");
-        expriationDate.getElement().setAttribute("placeholder", "Expiration Date");
-        pubDate.getElement().setAttribute("placeholder", "Pub Date");
-        parentPCTNum.getElement().setAttribute("placeholder", "Parent/PCT No.");
-        pctDate.getElement().setAttribute("placeholder", "PCT Date");
        
     }
 }

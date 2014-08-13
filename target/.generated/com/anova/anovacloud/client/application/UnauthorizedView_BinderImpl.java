@@ -99,33 +99,33 @@ public class UnauthorizedView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for CUSTOMER called 0 times. Type: DEFAULT. Build precedence: 1.
+     * Getter for CUSTOMERS called 0 times. Type: DEFAULT. Build precedence: 1.
      */
-    private java.lang.String get_CUSTOMER() {
-      return build_CUSTOMER();
+    private java.lang.String get_CUSTOMERS() {
+      return build_CUSTOMERS();
     }
-    private java.lang.String build_CUSTOMER() {
+    private java.lang.String build_CUSTOMERS() {
       // Creation section.
-      final java.lang.String CUSTOMER = com.anova.anovacloud.client.place.NameTokens.CUSTOMER;
+      final java.lang.String CUSTOMERS = com.anova.anovacloud.client.place.NameTokens.CUSTOMERS;
       // Setup section.
 
 
-      return CUSTOMER;
+      return CUSTOMERS;
     }
 
     /**
-     * Getter for DETAIL_CUSTOMER called 0 times. Type: DEFAULT. Build precedence: 1.
+     * Getter for NEW_CUSTOMER called 0 times. Type: DEFAULT. Build precedence: 1.
      */
-    private java.lang.String get_DETAIL_CUSTOMER() {
-      return build_DETAIL_CUSTOMER();
+    private java.lang.String get_NEW_CUSTOMER() {
+      return build_NEW_CUSTOMER();
     }
-    private java.lang.String build_DETAIL_CUSTOMER() {
+    private java.lang.String build_NEW_CUSTOMER() {
       // Creation section.
-      final java.lang.String DETAIL_CUSTOMER = com.anova.anovacloud.client.place.NameTokens.DETAIL_CUSTOMER;
+      final java.lang.String NEW_CUSTOMER = com.anova.anovacloud.client.place.NameTokens.NEW_CUSTOMER;
       // Setup section.
 
 
-      return DETAIL_CUSTOMER;
+      return NEW_CUSTOMER;
     }
 
     /**
@@ -245,11 +245,11 @@ public class UnauthorizedView_BinderImpl implements UiBinder<com.google.gwt.user
       // Setup section.
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord3 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord4 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
 
       // Detach section.
-      attachRecord3.detach();
+      attachRecord4.detach();
       f_HTMLPanel1.addAndReplaceElement(get_linkToLogin(), get_domId0Element().get());
 
       return f_HTMLPanel1;

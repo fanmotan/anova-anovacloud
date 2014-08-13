@@ -8,10 +8,6 @@ public class com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinject
     
   }
   
-  public void memberInject_Key$type$com$anova$anovacloud$client$resources$EditCustomerMessages$_annotation$$none$$(com.anova.anovacloud.client.resources.EditCustomerMessages injectee) {
-    
-  }
-  
   public void memberInject_Key$type$com$anova$anovacloud$client$resources$LoginMessages$_annotation$$none$$(com.anova.anovacloud.client.resources.LoginMessages injectee) {
     
   }
@@ -32,6 +28,10 @@ public class com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinject
     
   }
   
+  public void memberInject_Key$type$com$anova$anovacloud$client$resources$CustomerMessages$_annotation$$none$$(com.anova.anovacloud.client.resources.CustomerMessages injectee) {
+    
+  }
+  
   public void memberInject_Key$type$com$anova$anovacloud$client$resources$MatterMessages$_annotation$$none$$(com.anova.anovacloud.client.resources.MatterMessages injectee) {
     
   }
@@ -47,22 +47,6 @@ public class com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinject
     com.anova.anovacloud.client.resources.HeaderMessages result = (com.anova.anovacloud.client.resources.HeaderMessages) created;
     
     memberInject_Key$type$com$anova$anovacloud$client$resources$HeaderMessages$_annotation$$none$$(result);
-    
-    return result;
-    
-  }
-  
-  
-  /**
-   * Binding for com.anova.anovacloud.client.resources.EditCustomerMessages declared at:
-   *   Implicit GWT.create binding for com.anova.anovacloud.client.resources.EditCustomerMessages
-   */
-  public com.anova.anovacloud.client.resources.EditCustomerMessages get_Key$type$com$anova$anovacloud$client$resources$EditCustomerMessages$_annotation$$none$$() {
-    Object created = GWT.create(com.anova.anovacloud.client.resources.EditCustomerMessages.class);
-    assert created instanceof com.anova.anovacloud.client.resources.EditCustomerMessages;
-    com.anova.anovacloud.client.resources.EditCustomerMessages result = (com.anova.anovacloud.client.resources.EditCustomerMessages) created;
-    
-    memberInject_Key$type$com$anova$anovacloud$client$resources$EditCustomerMessages$_annotation$$none$$(result);
     
     return result;
     
@@ -143,6 +127,22 @@ public class com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinject
     com.anova.anovacloud.client.resources.AppResources result = (com.anova.anovacloud.client.resources.AppResources) created;
     
     memberInject_Key$type$com$anova$anovacloud$client$resources$AppResources$_annotation$$none$$(result);
+    
+    return result;
+    
+  }
+  
+  
+  /**
+   * Binding for com.anova.anovacloud.client.resources.CustomerMessages declared at:
+   *   Implicit GWT.create binding for com.anova.anovacloud.client.resources.CustomerMessages
+   */
+  public com.anova.anovacloud.client.resources.CustomerMessages get_Key$type$com$anova$anovacloud$client$resources$CustomerMessages$_annotation$$none$$() {
+    Object created = GWT.create(com.anova.anovacloud.client.resources.CustomerMessages.class);
+    assert created instanceof com.anova.anovacloud.client.resources.CustomerMessages;
+    com.anova.anovacloud.client.resources.CustomerMessages result = (com.anova.anovacloud.client.resources.CustomerMessages) created;
+    
+    memberInject_Key$type$com$anova$anovacloud$client$resources$CustomerMessages$_annotation$$none$$(result);
     
     return result;
     

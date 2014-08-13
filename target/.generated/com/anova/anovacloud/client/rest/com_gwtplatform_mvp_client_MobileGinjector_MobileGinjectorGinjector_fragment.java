@@ -4,7 +4,7 @@ import com.google.gwt.core.client.GWT;
 import com.gwtplatform.mvp.client.com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector;
 
 public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector_fragment {
-  public void memberInject_Key$type$com$anova$anovacloud$client$rest$CustomerServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.CustomerServiceImpl injectee) {
+  public void memberInject_Key$type$com$anova$anovacloud$client$rest$CustomersServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.CustomersServiceImpl injectee) {
     
   }
   
@@ -24,15 +24,15 @@ public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector
     
   }
   
-  private com.anova.anovacloud.client.rest.CustomerService singleton_Key$type$com$anova$anovacloud$client$rest$CustomerService$_annotation$$none$$ = null;
+  private com.anova.anovacloud.client.rest.CustomersService singleton_Key$type$com$anova$anovacloud$client$rest$CustomersService$_annotation$$none$$ = null;
   
-  public com.anova.anovacloud.client.rest.CustomerService get_Key$type$com$anova$anovacloud$client$rest$CustomerService$_annotation$$none$$() {
+  public com.anova.anovacloud.client.rest.CustomersService get_Key$type$com$anova$anovacloud$client$rest$CustomersService$_annotation$$none$$() {
     
-    if (singleton_Key$type$com$anova$anovacloud$client$rest$CustomerService$_annotation$$none$$ == null) {
-    com.anova.anovacloud.client.rest.CustomerService result = get_Key$type$com$anova$anovacloud$client$rest$CustomerServiceImpl$_annotation$$none$$();
-        singleton_Key$type$com$anova$anovacloud$client$rest$CustomerService$_annotation$$none$$ = result;
+    if (singleton_Key$type$com$anova$anovacloud$client$rest$CustomersService$_annotation$$none$$ == null) {
+    com.anova.anovacloud.client.rest.CustomersService result = get_Key$type$com$anova$anovacloud$client$rest$CustomersServiceImpl$_annotation$$none$$();
+        singleton_Key$type$com$anova$anovacloud$client$rest$CustomersService$_annotation$$none$$ = result;
     }
-    return singleton_Key$type$com$anova$anovacloud$client$rest$CustomerService$_annotation$$none$$;
+    return singleton_Key$type$com$anova$anovacloud$client$rest$CustomersService$_annotation$$none$$;
     
   }
   
@@ -86,19 +86,19 @@ public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector
   
   
   /**
-   * Binding for com.anova.anovacloud.client.rest.CustomerServiceImpl declared at:
-   *   Implicit binding for com.anova.anovacloud.client.rest.CustomerServiceImpl
+   * Binding for com.anova.anovacloud.client.rest.CustomersServiceImpl declared at:
+   *   Implicit binding for com.anova.anovacloud.client.rest.CustomersServiceImpl
    */
-  public com.anova.anovacloud.client.rest.CustomerServiceImpl get_Key$type$com$anova$anovacloud$client$rest$CustomerServiceImpl$_annotation$$none$$() {
-    com.anova.anovacloud.client.rest.CustomerServiceImpl result = com$anova$anovacloud$client$rest$CustomerServiceImpl_com$anova$anovacloud$client$rest$CustomerServiceImpl_methodInjection(injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$java$lang$String$_annotation$$com$gwtplatform$dispatch$rest$client$DefaultDateFormat$());
-    memberInject_Key$type$com$anova$anovacloud$client$rest$CustomerServiceImpl$_annotation$$none$$(result);
+  public com.anova.anovacloud.client.rest.CustomersServiceImpl get_Key$type$com$anova$anovacloud$client$rest$CustomersServiceImpl$_annotation$$none$$() {
+    com.anova.anovacloud.client.rest.CustomersServiceImpl result = com$anova$anovacloud$client$rest$CustomersServiceImpl_com$anova$anovacloud$client$rest$CustomersServiceImpl_methodInjection(injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$java$lang$String$_annotation$$com$gwtplatform$dispatch$rest$client$DefaultDateFormat$());
+    memberInject_Key$type$com$anova$anovacloud$client$rest$CustomersServiceImpl$_annotation$$none$$(result);
     
     return result;
     
   }
   
-  public com.anova.anovacloud.client.rest.CustomerServiceImpl com$anova$anovacloud$client$rest$CustomerServiceImpl_com$anova$anovacloud$client$rest$CustomerServiceImpl_methodInjection(java.lang.String _0) {
-    return new com.anova.anovacloud.client.rest.CustomerServiceImpl(_0);
+  public com.anova.anovacloud.client.rest.CustomersServiceImpl com$anova$anovacloud$client$rest$CustomersServiceImpl_com$anova$anovacloud$client$rest$CustomersServiceImpl_methodInjection(java.lang.String _0) {
+    return new com.anova.anovacloud.client.rest.CustomersServiceImpl(_0);
   }
   
   

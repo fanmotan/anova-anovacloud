@@ -22,8 +22,8 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     @Template("Close")
     SafeHtml html2();
      
-    @Template("<div> <span id='{0}'></span> <span id='{1}'></span> </div> <div> <span id='{2}'></span> <span id='{3}'></span> </div> <div> <span id='{4}'></span> <span id='{5}'></span> </div> <div> <span id='{6}'></span> </div> <div> <span id='{7}'></span> <span id='{8}'></span> </div>")
-    SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8);
+    @Template("<table width='100%'> <tr> <td width='15%'> <div class='{0}'> <span id='{1}'></span> </div> </td> <td width='75%'> <div class='{2}'> <span id='{3}'></span> </div> </td> </tr>  <tr> <td width='15%'> <div class='{4}'> <span id='{5}'></span> </div> </td> <td width='75%'> <div class='{6}'> <span id='{7}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{8}'> <span id='{9}'></span> </div> </td> <td width='75%'> <div class='{10}'> <span id='{11}'></span> </div> </td> </tr> </table>  <div> <span id='{12}'></span> </div>  <div> <span id='{13}'></span> <span id='{14}'></span> </div>")
+    SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14);
      
   }
 
@@ -57,6 +57,8 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
 
     public Widgets(final com.anova.anovacloud.client.application.matters.matter.MatterView owner) {
       this.owner = owner;
+      build_style();  // generated css resource must be always created. Type: GENERATED_CSS. Precedence: 1
+      build_resource();  // more than one getter call detected. Type: IMPORTED, precedence: 1
       build_domId0();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId1();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId2();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
@@ -84,11 +86,11 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       return template.html2();
     }
     SafeHtml template_html3() {
-      return template.html3(get_domId0(), get_domId1(), get_domId2(), get_domId3(), get_domId4(), get_domId5(), get_domId6(), get_domId7(), get_domId8());
+      return template.html3("" + get_style().formRow() + "", get_domId0(), "" + get_style().formRow() + "", get_domId1(), "" + get_style().formRow() + "", get_domId2(), "" + get_style().formRow() + "", get_domId3(), "" + get_style().formRow() + "", get_domId4(), "" + get_style().formRow() + "", get_domId5(), get_domId6(), get_domId7(), get_domId8());
     }
 
     /**
-     * Getter for clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay called 0 times. Type: GENERATED_BUNDLE. Build precedence: 1.
+     * Getter for clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay called 1 times. Type: GENERATED_BUNDLE. Build precedence: 1.
      */
     private com.anova.anovacloud.client.application.matters.matter.MatterView_BinderImpl_GenBundle get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay() {
       return build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay();
@@ -100,6 +102,39 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
 
 
       return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay;
+    }
+
+    /**
+     * Getter for resource called 3 times. Type: IMPORTED. Build precedence: 1.
+     */
+    private com.anova.anovacloud.client.resources.AppResources resource;
+    private com.anova.anovacloud.client.resources.AppResources get_resource() {
+      return resource;
+    }
+    private com.anova.anovacloud.client.resources.AppResources build_resource() {
+      // Creation section.
+      resource = (com.anova.anovacloud.client.resources.AppResources) GWT.create(com.anova.anovacloud.client.resources.AppResources.class);
+      // Setup section.
+
+
+      return resource;
+    }
+
+    /**
+     * Getter for style called 6 times. Type: GENERATED_CSS. Build precedence: 1.
+     */
+    private com.anova.anovacloud.client.application.matters.matter.MatterView_BinderImpl_GenCss_style style;
+    private com.anova.anovacloud.client.application.matters.matter.MatterView_BinderImpl_GenCss_style get_style() {
+      return style;
+    }
+    private com.anova.anovacloud.client.application.matters.matter.MatterView_BinderImpl_GenCss_style build_style() {
+      // Creation section.
+      style = get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay().style();
+      // Setup section.
+      style.ensureInjected();
+
+
+      return style;
     }
 
     /**
@@ -133,7 +168,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       // Setup section.
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord21 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
+      UiBinderUtil.TempAttachment attachRecord23 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
@@ -145,7 +180,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       get_domId8Element().get();
 
       // Detach section.
-      attachRecord21.detach();
+      attachRecord23.detach();
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel3(), get_domId0Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_matterNum(), get_domId1Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel4(), get_domId2Element().get());
@@ -233,7 +268,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       // Creation section.
       final com.google.gwt.user.client.ui.TextBox matterNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      matterNum.ensureDebugId("matter-number-input");
+      matterNum.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.matterNum = matterNum;
@@ -331,7 +366,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       // Creation section.
       final com.google.gwt.user.client.ui.TextBox matterSerialNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      matterSerialNum.ensureDebugId("matter-serialnumber-input");
+      matterSerialNum.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       this.owner.matterSerialNum = matterSerialNum;
@@ -430,7 +465,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       final com.google.gwt.user.client.ui.ValueListBox customer = owner.customer;
       assert customer != null : "UiField customer with 'provided = true' was null";
       // Setup section.
-      customer.ensureDebugId("matter-customer-input");
+      customer.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
       return customer;

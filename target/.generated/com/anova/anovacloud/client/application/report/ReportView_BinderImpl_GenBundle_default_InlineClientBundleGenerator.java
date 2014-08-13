@@ -20,10 +20,10 @@ public class ReportView_BinderImpl_GenBundle_default_InlineClientBundleGenerator
         return "style";
       }
       public String getText() {
-        return (".GFOXD4NDBL-com-anova-anovacloud-client-application-report-ReportView_BinderImpl_GenCss_style-tableWrapper {\n  margin-top : " + ("20px")  + ";\n}\n");
+        return (".GFOXD4NDAL-com-anova-anovacloud-client-application-report-ReportView_BinderImpl_GenCss_style-tableWrapper {\n  margin-top : " + ("20px")  + ";\n}\n");
       }
       public java.lang.String tableWrapper() {
-        return "GFOXD4NDBL-com-anova-anovacloud-client-application-report-ReportView_BinderImpl_GenCss_style-tableWrapper";
+        return "GFOXD4NDAL-com-anova-anovacloud-client-application-report-ReportView_BinderImpl_GenCss_style-tableWrapper";
       }
     }
     ;

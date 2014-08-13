@@ -5,11 +5,14 @@ package com.anova.anovacloud.client.application.event;
 import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.event.shared.GwtEvent;
 import com.google.gwt.event.shared.HasHandlers;
+import com.anova.anovacloud.client.application.customers.event.CustomerAddedEvent;
 import com.anova.anovacloud.client.application.event.ChangeActionBarEvent.ActionType;
 
 public class ActionBarEvent extends GwtEvent<ActionBarEvent.ActionBarHandler> {
     public interface ActionBarHandler extends EventHandler {
         void onActionEvent(ActionBarEvent event);
+
+		//void onCustomerAdded(CustomerAddedEvent event);
     }
 
     public static Type<ActionBarHandler> getType() {

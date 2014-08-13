@@ -3,7 +3,7 @@ package com.anova.anovacloud.client.application;
 
 import com.anova.anovacloud.client.application.matters.MattersMobileModule;
 import com.anova.anovacloud.client.application.login.LoginMobileModule;
-import com.anova.anovacloud.client.application.customer.CustomerMobileModule;
+import com.anova.anovacloud.client.application.customers.CustomersMobileModule;
 import com.anova.anovacloud.client.application.matterAction.MatterActionMobileModule;
 import com.anova.anovacloud.client.application.report.ReportMobileModule;
 import com.anova.anovacloud.client.application.widget.WidgetModule;
@@ -16,7 +16,7 @@ public class ApplicationMobileModule extends AbstractPresenterModule {
     protected void configure() {
         install(new UnauthorizedModule());
         install(new LoginMobileModule());
-        install(new CustomerMobileModule());
+        install(new CustomersMobileModule());
         install(new MattersMobileModule());
         install(new MatterActionMobileModule());
         install(new WidgetModule());

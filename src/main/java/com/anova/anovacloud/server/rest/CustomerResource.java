@@ -22,7 +22,7 @@ import com.anova.anovacloud.shared.rest.PathParameter;
 import com.anova.anovacloud.shared.rest.ResourcesPath;
 import com.anova.anovacloud.shared.rest.RestParameter;
 
-@Path(ResourcesPath.CUSTOMER)
+@Path(ResourcesPath.CUSTOMERS)
 @Produces(MediaType.APPLICATION_JSON)
 public class CustomerResource {
     private final CustomerDao customerDao;
