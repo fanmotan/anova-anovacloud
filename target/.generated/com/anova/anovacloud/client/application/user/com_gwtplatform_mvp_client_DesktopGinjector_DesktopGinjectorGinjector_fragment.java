@@ -9,7 +9,7 @@ public class com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinject
   }
   
   public void memberInject_Key$type$com$anova$anovacloud$client$application$user$UserDetailPresenter$_annotation$$none$$(com.anova.anovacloud.client.application.user.UserDetailPresenter injectee) {
-    injector.getFragment_com_gwtplatform_mvp_client().com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection_________________(injectee, injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$());
+    injector.getFragment_com_gwtplatform_mvp_client().com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection________________(injectee, injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$());
     
   }
   
@@ -18,7 +18,7 @@ public class com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinject
   }
   
   public void memberInject_Key$type$com$anova$anovacloud$client$application$user$UserPresenter$_annotation$$none$$(com.anova.anovacloud.client.application.user.UserPresenter injectee) {
-    injector.getFragment_com_gwtplatform_mvp_client().com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection___________________(injectee, injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$());
+    injector.getFragment_com_gwtplatform_mvp_client().com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection__________________(injectee, injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$());
     
   }
   

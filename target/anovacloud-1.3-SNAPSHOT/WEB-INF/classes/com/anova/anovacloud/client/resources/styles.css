@@ -62,13 +62,13 @@
     border: none;
     border-bottom: 1px solid #aeaeae;
     padding-bottom: 6px;
-    font-size: 1.1em;
+    font-size: 0.75em;
 }
 
 .inputTextField {
     width: 75%;
     border: 1px solid #aeaeae;
-    font-size: 1.1em;
+    font-size: 0.75em;
 }
 
 .gwt-PopupPanel {

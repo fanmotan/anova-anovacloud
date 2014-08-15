@@ -136,12 +136,12 @@ public class LoginView_BinderImpl implements UiBinder<com.google.gwt.user.client
       f_HTMLPanel1.setStyleName("" + get_style().loginWrapper() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord5 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord4 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
 
       // Detach section.
-      attachRecord5.detach();
+      attachRecord4.detach();
       f_HTMLPanel1.addAndReplaceElement(get_f_Image2(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_HTMLPanel3(), get_domId1Element().get());
 
@@ -225,13 +225,13 @@ public class LoginView_BinderImpl implements UiBinder<com.google.gwt.user.client
       f_HTMLPanel3.setStyleName("" + get_style().loginPanel() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord6 = UiBinderUtil.attachToDom(f_HTMLPanel3.getElement());
+      UiBinderUtil.TempAttachment attachRecord5 = UiBinderUtil.attachToDom(f_HTMLPanel3.getElement());
       get_domId2Element().get();
       get_domId3Element().get();
       get_domId4Element().get();
 
       // Detach section.
-      attachRecord6.detach();
+      attachRecord5.detach();
       f_HTMLPanel3.addAndReplaceElement(get_username(), get_domId2Element().get());
       f_HTMLPanel3.addAndReplaceElement(get_password(), get_domId3Element().get());
       f_HTMLPanel3.addAndReplaceElement(get_login(), get_domId4Element().get());

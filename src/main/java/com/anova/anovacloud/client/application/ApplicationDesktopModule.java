@@ -3,8 +3,7 @@ package com.anova.anovacloud.client.application;
 
 import com.anova.anovacloud.client.application.matters.MattersDesktopModule;
 import com.anova.anovacloud.client.application.login.LoginModule;
-import com.anova.anovacloud.client.application.customers.CustomersDesktopModule;
-import com.anova.anovacloud.client.application.customers.CustomersModule;
+import com.anova.anovacloud.client.application.customer.CustomerModule;
 import com.anova.anovacloud.client.application.user.UserModule;
 import com.anova.anovacloud.client.application.matterAction.MatterActionModule;
 import com.anova.anovacloud.client.application.report.ReportModule;
@@ -17,7 +16,7 @@ public class ApplicationDesktopModule extends AbstractPresenterModule {
     protected void configure() {
         install(new UnauthorizedModule());
         install(new LoginModule());
-        install(new CustomersDesktopModule());
+        install(new CustomerModule());
         install(new MattersDesktopModule());
         install(new MatterActionModule());
         install(new WidgetModule());

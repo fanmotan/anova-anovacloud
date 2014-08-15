@@ -76,8 +76,8 @@ public class DevBootStrapper {
 
         if (customerCount == 0) {
         	
-            CustomerDto honda = new CustomerDto("Honda", "11", "aaaa", "@honda", "", "");
-            CustomerDto mitsubishi = new CustomerDto("Mitsubishi", "22", "aaaa", "@mmm", "", "");
+            CustomerDto honda = new CustomerDto("Honda", "11", "aaaa", "@honda", "", "", "active");
+            CustomerDto mitsubishi = new CustomerDto("Mitsubishi", "22", "aaaa", "@mmm", "", "", "active");
 
             honda = Customer.createDto(customerDao.put(Customer.create(honda)));
             mitsubishi = Customer.createDto(customerDao.put(Customer.create(mitsubishi)));

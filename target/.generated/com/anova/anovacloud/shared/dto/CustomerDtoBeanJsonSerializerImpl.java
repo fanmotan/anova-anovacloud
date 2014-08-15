@@ -6,7 +6,7 @@ public class CustomerDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjack
   
   @Override
   protected java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, ?>> initSerializers() {
-    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, ?>>(8);
+    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, ?>>(9);
     
     map.put("name", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, java.lang.String>() {
       @Override
@@ -77,6 +77,18 @@ public class CustomerDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjack
       @Override
       public java.lang.String getValue(com.anova.anovacloud.shared.dto.CustomerDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
         return bean.getFax();
+      }
+    });
+    
+    map.put("status", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, java.lang.String>() {
+      @Override
+      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
+        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
+      }
+      
+      @Override
+      public java.lang.String getValue(com.anova.anovacloud.shared.dto.CustomerDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
+        return bean.getStatus();
       }
     });
     

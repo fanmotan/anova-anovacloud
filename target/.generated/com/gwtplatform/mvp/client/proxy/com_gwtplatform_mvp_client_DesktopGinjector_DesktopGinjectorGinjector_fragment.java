@@ -8,10 +8,6 @@ public class com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinject
     invokee.bind(_0, _1);
   }
   
-  public void com$gwtplatform$mvp$client$proxy$ProxyPlaceAbstract_bind_methodInjection_(com.gwtplatform.mvp.client.proxy.ProxyPlaceAbstract invokee, com.gwtplatform.mvp.client.proxy.PlaceManager _0, com.google.web.bindery.event.shared.EventBus _1) {
-    invokee.bind(_0, _1);
-  }
-  
   public void memberInject_Key$type$com$gwtplatform$mvp$client$proxy$DefaultPlaceManager$_annotation$$none$$(com.gwtplatform.mvp.client.proxy.DefaultPlaceManager injectee) {
     
   }

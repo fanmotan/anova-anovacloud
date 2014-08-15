@@ -108,12 +108,12 @@ public class ReportView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       // Setup section.
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord13 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord12 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
 
       // Detach section.
-      attachRecord13.detach();
+      attachRecord12.detach();
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel2(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_reportGrid(), get_domId1Element().get());
 

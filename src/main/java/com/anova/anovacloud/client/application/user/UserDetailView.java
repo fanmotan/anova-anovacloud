@@ -8,6 +8,8 @@ import com.google.gwt.editor.client.Editor;
 import com.google.gwt.editor.client.SimpleBeanEditorDriver;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.ui.ListBox;
+import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.anova.anovacloud.shared.dto.UserDto;
@@ -32,9 +34,9 @@ public class UserDetailView extends ViewWithUiHandlers<UserDetailUiHandlers>
     @UiField
     TextBox hashPassword;
     @UiField
-    TextBox role;
+    ListBox role;
     @UiField
-    TextBox mailAddress;
+    TextArea mailAddress;
     @UiField
     TextBox email;
     @UiField

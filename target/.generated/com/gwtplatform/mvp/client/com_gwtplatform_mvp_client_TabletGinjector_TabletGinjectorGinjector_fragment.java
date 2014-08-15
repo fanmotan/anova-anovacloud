@@ -8,16 +8,16 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     invokee.automaticBind(_0);
   }
   
-  public void com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection_(com.gwtplatform.mvp.client.HandlerContainerImpl invokee, com.gwtplatform.mvp.client.AutobindDisable _0) {
-    invokee.automaticBind(_0);
-  }
-  
   public void memberInject_Key$type$com$gwtplatform$mvp$client$DefaultBootstrapper$_annotation$$none$$(com.gwtplatform.mvp.client.DefaultBootstrapper injectee) {
     
   }
   
   public void memberInject_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$(com.gwtplatform.mvp.client.AutobindDisable injectee) {
     
+  }
+  
+  public void com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection_(com.gwtplatform.mvp.client.HandlerContainerImpl invokee, com.gwtplatform.mvp.client.AutobindDisable _0) {
+    invokee.automaticBind(_0);
   }
   
   public void com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection__(com.gwtplatform.mvp.client.HandlerContainerImpl invokee, com.gwtplatform.mvp.client.AutobindDisable _0) {
@@ -88,20 +88,16 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     invokee.automaticBind(_0);
   }
   
-  public void com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection___________________(com.gwtplatform.mvp.client.HandlerContainerImpl invokee, com.gwtplatform.mvp.client.AutobindDisable _0) {
-    invokee.automaticBind(_0);
-  }
-  
   public void memberInject_Key$type$com$gwtplatform$mvp$client$RootPresenter$RootView$_annotation$$none$$(com.gwtplatform.mvp.client.RootPresenter.RootView injectee) {
     
   }
   
-  public void com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection____________________(com.gwtplatform.mvp.client.HandlerContainerImpl invokee, com.gwtplatform.mvp.client.AutobindDisable _0) {
+  public void com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection___________________(com.gwtplatform.mvp.client.HandlerContainerImpl invokee, com.gwtplatform.mvp.client.AutobindDisable _0) {
     invokee.automaticBind(_0);
   }
   
   public void memberInject_Key$type$com$gwtplatform$mvp$client$RootPresenter$_annotation$$none$$(com.gwtplatform.mvp.client.RootPresenter injectee) {
-    com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection____________________(injectee, get_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$());
+    com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection___________________(injectee, get_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$());
     
   }
   

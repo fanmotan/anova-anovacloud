@@ -76,12 +76,12 @@ public class RootMatterView_BinderImpl implements UiBinder<com.google.gwt.user.c
       // Setup section.
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord1 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord0 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
 
       // Detach section.
-      attachRecord1.detach();
+      attachRecord0.detach();
       f_HTMLPanel1.addAndReplaceElement(get_tabBarPanel(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_contentPanel(), get_domId1Element().get());
 

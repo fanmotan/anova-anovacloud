@@ -24,7 +24,7 @@ import com.anova.anovacloud.client.application.widget.message.MessageStyle;
 import com.anova.anovacloud.client.place.NameTokens;
 import com.anova.anovacloud.client.resources.MatterMessages;
 import com.anova.anovacloud.client.rest.MattersService;
-import com.anova.anovacloud.client.rest.CustomersService;
+import com.anova.anovacloud.client.rest.CustomerService;
 import com.anova.anovacloud.client.util.AbstractAsyncCallback;
 import com.anova.anovacloud.client.util.ErrorHandlerAsyncCallback;
 import com.anova.anovacloud.shared.dto.MatterDto;
@@ -54,7 +54,7 @@ public class MatterPresenter extends Presenter<MyView, MatterPresenter.MyProxy>
     }
 
     private final MattersService mattersService;
-    private final CustomersService customersService;
+    private final CustomerService customerService;
     private final MatterMessages messages;
     private final RestDispatch dispatcher;
     private final PlaceManager placeManager;
@@ -67,7 +67,7 @@ public class MatterPresenter extends Presenter<MyView, MatterPresenter.MyProxy>
                         MyView view,
                         RestDispatch dispatcher,
                         MattersService mattersService,
-                        CustomersService customersService,
+                        CustomerService customerService,
                         PlaceManager placeManager,
                         MatterProxyFactory matterProxyFactory,
                         MatterMessages messages,
@@ -77,7 +77,7 @@ public class MatterPresenter extends Presenter<MyView, MatterPresenter.MyProxy>
 
         this.dispatcher = dispatcher;
         this.mattersService = mattersService;
-        this.customersService = customersService;
+        this.customerService = customerService;
         this.messages = messages;
         this.placeManager = placeManager;
         this.matterProxyFactory = matterProxyFactory;
@@ -148,7 +148,7 @@ public class MatterPresenter extends Presenter<MyView, MatterPresenter.MyProxy>
 
     @Override
     protected void onReveal() {
-        dispatcher.execute(customersService.getCustomers(), new AbstractAsyncCallback<List<CustomerDto>>() {
+        dispatcher.execute(customerService.getCustomers(), new AbstractAsyncCallback<List<CustomerDto>>() {
             @Override
             public void onSuccess(List<CustomerDto> customers) {
                 onGetCustomerSuccess(customers);

@@ -12,8 +12,11 @@ public class CustomerDto extends BaseEntity {
     private String phone;
     private String email;
     private String fax;
+    private String status;
     
-    private List<MatterDto> matters;
+   
+
+	private List<MatterDto> matters;
 
     public CustomerDto() {
         this.name = "";
@@ -22,17 +25,19 @@ public class CustomerDto extends BaseEntity {
         this.email = "";
         this.phone = "";
         this.fax = "";
+        this.status = "";
         this.matters = new ArrayList<>();
         
     }
 
-    public CustomerDto(String name, String refNum, String address, String email, String phone, String fax) {
+    public CustomerDto(String name, String refNum, String address, String email, String phone, String fax, String status) {
         this.name = name;
         this.refNum = refNum;
         this.address = address;
         this.email = email;
         this.phone = phone;
         this.fax = fax;
+        this.status = status;
         this.matters = new ArrayList<>();
         
     }
@@ -84,6 +89,14 @@ public class CustomerDto extends BaseEntity {
         this.fax = fax;
     }
     
+    public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
     public List<MatterDto> getMatters() {
         return matters;
     }

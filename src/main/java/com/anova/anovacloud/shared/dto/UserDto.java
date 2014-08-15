@@ -46,7 +46,7 @@ public class UserDto extends BaseEntity {
         this.fax = fax;
     }
 
-    public String getDisplayName() {
+	public String getDisplayName() {
         return displayName;
     }
 
@@ -128,18 +128,8 @@ public class UserDto extends BaseEntity {
     @Override
     public String toString() {
         String s = " { User ";
-        s += "id=" + id + " ";
-        s += "displayName=" + displayName + " ";
-        s += "username=" + username + " ";
-        s += "hasPassword=" + hashPassword + " ";
-        s += "firstName=" + firstName + " ";
-        s += "lastName=" + lastName + " ";
-        s += "role=" + role + " ";
-        s += "email=" + email + " ";
-        s += "mailAddress=" + mailAddress + " ";
-        s += "phone=" + phone + " ";
-        s += "fax=" + fax + " ";
-        s += " User } ";
+        s += firstName + " "+lastName; 
+        s += "}";
         return s;
     }
 }

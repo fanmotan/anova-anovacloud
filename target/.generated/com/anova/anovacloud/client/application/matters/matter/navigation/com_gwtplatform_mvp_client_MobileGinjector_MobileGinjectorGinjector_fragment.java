@@ -5,7 +5,7 @@ import com.gwtplatform.mvp.client.com_gwtplatform_mvp_client_MobileGinjector_Mob
 
 public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector_fragment {
   public void memberInject_Key$type$com$anova$anovacloud$client$application$matters$matter$navigation$NavigationTabPresenter$_annotation$$none$$(com.anova.anovacloud.client.application.matters.matter.navigation.NavigationTabPresenter injectee) {
-    injector.getFragment_com_gwtplatform_mvp_client().com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection______________(injectee, injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$());
+    injector.getFragment_com_gwtplatform_mvp_client().com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection_____________(injectee, injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$());
     
   }
   

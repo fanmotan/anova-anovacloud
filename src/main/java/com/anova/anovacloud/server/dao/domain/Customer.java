@@ -23,7 +23,12 @@ public class Customer extends BaseEntity {
     private String email;
     private String phone;
     private String fax;
+    private String status;
 
+    
+
+	@Load
+    private HashSet<Ref<Matter>> matters;
 
     public Customer() {
         this.name = "";
@@ -32,15 +37,17 @@ public class Customer extends BaseEntity {
         this.email = "";
         this.phone = "";
         this.fax= "";
+        this.status= "";
     }
 
-    public Customer(String name, String refNum, String address, String email, String phone, String fax) {
+    public Customer(String name, String refNum, String address, String email, String phone, String fax, String status) {
         this.name = name;
         this.refNum = refNum;    
         this.address = address;
         this.email = email;
         this.phone = phone;
         this.fax = fax;
+        this.status = status;
     }
 
     @Override
@@ -93,8 +100,38 @@ public class Customer extends BaseEntity {
     public void setFax(String fax) {
         this.fax = fax;
     }
-  
-   
+    public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+    public List<Matter> getMatters() {
+        if (this.matters == null) {
+            return null;
+        }
+
+        List<Matter> rmatters = new ArrayList<>();
+        for (Ref<Matter> matter : matters) {
+            rmatters.add(Deref.deref(matter));
+        }
+
+        return rmatters;
+    }
+
+    public void setMatters(List<Matter> matters) {
+        if (matters == null) {
+            this.matters = null;
+        } else {
+            for (Matter matter : matters) {
+                if (this.matters == null) {
+                    this.matters = new HashSet<>();
+                }
+                this.matters.add(Ref.create(matter));
+            }
+        }
+    }
 
     public static List<CustomerDto> createDto(List<Customer> customers) {
         if (customers == null) {
@@ -115,6 +152,7 @@ public class Customer extends BaseEntity {
         }
 
         CustomerDto customerDto = new CustomerDto();
+        customerDto.setMatters(Matter.createDto(customer.getMatters()));
         customerDto.setId(customer.getId());
         customerDto.setName(customer.getName());
         customerDto.setRefNum(customer.getRefNum());
@@ -122,6 +160,7 @@ public class Customer extends BaseEntity {
         customerDto.setEmail(customer.getEmail());
         customerDto.setPhone(customer.getPhone());
         customerDto.setFax(customer.getFax());
+        customerDto.setStatus(customer.getStatus());
 
         return customerDto;
     }
@@ -132,6 +171,7 @@ public class Customer extends BaseEntity {
         }
 
         Customer customer = new Customer();
+        customer.setMatters(Matter.create(customerDto.getMatters()));
         customer.setId(customerDto.getId());
         customer.setName(customerDto.getName());
         customer.setRefNum(customerDto.getRefNum());
@@ -139,21 +179,9 @@ public class Customer extends BaseEntity {
         customer.setEmail(customerDto.getEmail());
         customer.setPhone(customerDto.getPhone());
         customer.setFax(customerDto.getFax());
+        customer.setStatus(customerDto.getStatus());
         
 
         return customer;
     }
-    public static List<Customer> create(List<CustomerDto> customerDtos) {
-        if (customerDtos == null) {
-            return null;
-        }
-
-        List<Customer> customers = new ArrayList<>();
-        for (CustomerDto customerDto : customerDtos) {
-            customers.add(create(customerDto));
-        }
-
-        return customers;
-    }
-    
 }

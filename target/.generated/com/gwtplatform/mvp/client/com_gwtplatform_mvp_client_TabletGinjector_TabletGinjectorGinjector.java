@@ -28,18 +28,18 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
   
   
   /**
-   * Injector fragment for com.anova.anovacloud.client.application.customers.customer
+   * Injector fragment for com.anova.anovacloud.client.application.matters.matter
    */
-  private com.anova.anovacloud.client.application.customers.customer.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$customers$customer = null;
+  private com.anova.anovacloud.client.application.matters.matter.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$matters$matter = null;
   /**
-   * Getter for injector fragment for com.anova.anovacloud.client.application.customers.customer
+   * Getter for injector fragment for com.anova.anovacloud.client.application.matters.matter
    */
-  public com.anova.anovacloud.client.application.customers.customer.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_customers_customer() {
-    if (fieldFragment_com$anova$anovacloud$client$application$customers$customer == null) {
-        fieldFragment_com$anova$anovacloud$client$application$customers$customer = new com.anova.anovacloud.client.application.customers.customer.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment(this);
+  public com.anova.anovacloud.client.application.matters.matter.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_matters_matter() {
+    if (fieldFragment_com$anova$anovacloud$client$application$matters$matter == null) {
+        fieldFragment_com$anova$anovacloud$client$application$matters$matter = new com.anova.anovacloud.client.application.matters.matter.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment(this);
     }
     
-    return fieldFragment_com$anova$anovacloud$client$application$customers$customer;
+    return fieldFragment_com$anova$anovacloud$client$application$matters$matter;
   }
   
   
@@ -56,22 +56,6 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     }
     
     return fieldFragment_com$gwtplatform$mvp$client$proxy;
-  }
-  
-  
-  /**
-   * Injector fragment for com.anova.anovacloud.client.application.matters.matter
-   */
-  private com.anova.anovacloud.client.application.matters.matter.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$matters$matter = null;
-  /**
-   * Getter for injector fragment for com.anova.anovacloud.client.application.matters.matter
-   */
-  public com.anova.anovacloud.client.application.matters.matter.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_matters_matter() {
-    if (fieldFragment_com$anova$anovacloud$client$application$matters$matter == null) {
-        fieldFragment_com$anova$anovacloud$client$application$matters$matter = new com.anova.anovacloud.client.application.matters.matter.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment(this);
-    }
-    
-    return fieldFragment_com$anova$anovacloud$client$application$matters$matter;
   }
   
   
@@ -188,34 +172,34 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
   
   
   /**
-   * Injector fragment for com.anova.anovacloud.client.application.customers
+   * Injector fragment for com.anova.anovacloud.client.application.customer
    */
-  private com.anova.anovacloud.client.application.customers.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$customers = null;
+  private com.anova.anovacloud.client.application.customer.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$customer = null;
   /**
-   * Getter for injector fragment for com.anova.anovacloud.client.application.customers
+   * Getter for injector fragment for com.anova.anovacloud.client.application.customer
    */
-  public com.anova.anovacloud.client.application.customers.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_customers() {
-    if (fieldFragment_com$anova$anovacloud$client$application$customers == null) {
-        fieldFragment_com$anova$anovacloud$client$application$customers = new com.anova.anovacloud.client.application.customers.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment(this);
+  public com.anova.anovacloud.client.application.customer.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_customer() {
+    if (fieldFragment_com$anova$anovacloud$client$application$customer == null) {
+        fieldFragment_com$anova$anovacloud$client$application$customer = new com.anova.anovacloud.client.application.customer.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment(this);
     }
     
-    return fieldFragment_com$anova$anovacloud$client$application$customers;
+    return fieldFragment_com$anova$anovacloud$client$application$customer;
   }
   
   
   /**
-   * Injector fragment for com.anova.anovacloud.client.application.customers.customer.navigation
+   * Injector fragment for com.anova.anovacloud.client.application.customer.ui
    */
-  private com.anova.anovacloud.client.application.customers.customer.navigation.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$customers$customer$navigation = null;
+  private com.anova.anovacloud.client.application.customer.ui.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$customer$ui = null;
   /**
-   * Getter for injector fragment for com.anova.anovacloud.client.application.customers.customer.navigation
+   * Getter for injector fragment for com.anova.anovacloud.client.application.customer.ui
    */
-  public com.anova.anovacloud.client.application.customers.customer.navigation.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_customers_customer_navigation() {
-    if (fieldFragment_com$anova$anovacloud$client$application$customers$customer$navigation == null) {
-        fieldFragment_com$anova$anovacloud$client$application$customers$customer$navigation = new com.anova.anovacloud.client.application.customers.customer.navigation.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment(this);
+  public com.anova.anovacloud.client.application.customer.ui.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_customer_ui() {
+    if (fieldFragment_com$anova$anovacloud$client$application$customer$ui == null) {
+        fieldFragment_com$anova$anovacloud$client$application$customer$ui = new com.anova.anovacloud.client.application.customer.ui.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment(this);
     }
     
-    return fieldFragment_com$anova$anovacloud$client$application$customers$customer$navigation;
+    return fieldFragment_com$anova$anovacloud$client$application$customer$ui;
   }
   
   
@@ -577,11 +561,10 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
   public void initializeEagerSingletons() {
     
     getFragment_com_gwtplatform_mvp_client().initializeEagerSingletons();
-    getFragment_com_anova_anovacloud_client_application_customers_customer().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_matters_matter().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_security().initializeEagerSingletons();
-    getFragment_com_anova_anovacloud_client_application_customers().initializeEagerSingletons();
+    getFragment_com_anova_anovacloud_client_application_customer().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_login().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_matterAction().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_matters().initializeEagerSingletons();

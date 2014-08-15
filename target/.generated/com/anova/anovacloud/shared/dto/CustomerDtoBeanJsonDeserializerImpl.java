@@ -94,6 +94,18 @@ public class CustomerDtoBeanJsonDeserializerImpl extends com.github.nmorel.gwtja
       }
     });
     
+    map.put("status", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.CustomerDto, java.lang.String>() {
+      @Override
+      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
+        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
+      }
+      
+      @Override
+      public void setValue(com.anova.anovacloud.shared.dto.CustomerDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
+        bean.setStatus(value);
+      }
+    });
+    
     map.put("matters", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.CustomerDto, java.util.List<com.anova.anovacloud.shared.dto.MatterDto>>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {

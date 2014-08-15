@@ -67,7 +67,7 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     SafeHtml template_html1() {
-      return template.html1(UriUtils.fromString("#" + get_REPORT() + ""), UriUtils.fromString("#" + get_MATTERS() + ""), UriUtils.fromString("#" + get_MATTERACTION() + ""), UriUtils.fromString("#" + get_CUSTOMERS() + ""), UriUtils.fromString("#" + get_USER() + ""));
+      return template.html1(UriUtils.fromString("#" + get_REPORT() + ""), UriUtils.fromString("#" + get_MATTERS() + ""), UriUtils.fromString("#" + get_MATTERACTION() + ""), UriUtils.fromString("#" + get_CUSTOMER() + ""), UriUtils.fromString("#" + get_USER() + ""));
     }
     SafeHtml template_html2() {
       return template.html2("" + get_style().userInfo() + "", get_domId4(), "" + get_style().floatLeft() + "", get_domId5(), "" + get_style().clear() + "");
@@ -122,33 +122,33 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
-     * Getter for CUSTOMERS called 1 times. Type: DEFAULT. Build precedence: 1.
+     * Getter for CUSTOMER called 1 times. Type: DEFAULT. Build precedence: 1.
      */
-    private java.lang.String get_CUSTOMERS() {
-      return build_CUSTOMERS();
+    private java.lang.String get_CUSTOMER() {
+      return build_CUSTOMER();
     }
-    private java.lang.String build_CUSTOMERS() {
+    private java.lang.String build_CUSTOMER() {
       // Creation section.
-      final java.lang.String CUSTOMERS = com.anova.anovacloud.client.place.NameTokens.CUSTOMERS;
+      final java.lang.String CUSTOMER = com.anova.anovacloud.client.place.NameTokens.CUSTOMER;
       // Setup section.
 
 
-      return CUSTOMERS;
+      return CUSTOMER;
     }
 
     /**
-     * Getter for NEW_CUSTOMER called 0 times. Type: DEFAULT. Build precedence: 1.
+     * Getter for DETAIL_CUSTOMER called 0 times. Type: DEFAULT. Build precedence: 1.
      */
-    private java.lang.String get_NEW_CUSTOMER() {
-      return build_NEW_CUSTOMER();
+    private java.lang.String get_DETAIL_CUSTOMER() {
+      return build_DETAIL_CUSTOMER();
     }
-    private java.lang.String build_NEW_CUSTOMER() {
+    private java.lang.String build_DETAIL_CUSTOMER() {
       // Creation section.
-      final java.lang.String NEW_CUSTOMER = com.anova.anovacloud.client.place.NameTokens.NEW_CUSTOMER;
+      final java.lang.String DETAIL_CUSTOMER = com.anova.anovacloud.client.place.NameTokens.DETAIL_CUSTOMER;
       // Setup section.
 
 
-      return NEW_CUSTOMER;
+      return DETAIL_CUSTOMER;
     }
 
     /**
@@ -301,14 +301,14 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       f_HTMLPanel1.setStyleName("" + get_style().header() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord18 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord16 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
       get_domId3Element().get();
 
       // Detach section.
-      attachRecord18.detach();
+      attachRecord16.detach();
       f_HTMLPanel1.addAndReplaceElement(get_f_Image2(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_Label3(), get_domId1Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_menubar(), get_domId2Element().get());
@@ -492,12 +492,12 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       userOptions.setStyleName("" + get_style().floatRight() + " " + get_style().paddingTop() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord19 = UiBinderUtil.attachToDom(userOptions.getElement());
+      UiBinderUtil.TempAttachment attachRecord17 = UiBinderUtil.attachToDom(userOptions.getElement());
       get_domId4Element().get();
       get_domId5Element().get();
 
       // Detach section.
-      attachRecord19.detach();
+      attachRecord17.detach();
       userOptions.addAndReplaceElement(get_name(), get_domId4Element().get());
       userOptions.addAndReplaceElement(get_logout(), get_domId5Element().get());
 

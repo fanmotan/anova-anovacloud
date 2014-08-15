@@ -107,14 +107,14 @@ public class ApplicationView_BinderImpl implements UiBinder<com.google.gwt.user.
       f_HTMLPanel1.setStyleName("" + get_style().globalWrapper() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord2 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord1 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
       get_domId4Element().get();
 
       // Detach section.
-      attachRecord2.detach();
+      attachRecord1.detach();
       f_HTMLPanel1.addAndReplaceElement(get_header(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_messages(), get_domId1Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_container(), get_domId2Element().get());
@@ -251,11 +251,11 @@ public class ApplicationView_BinderImpl implements UiBinder<com.google.gwt.user.
       container.setStyleName("" + get_style().container() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord3 = UiBinderUtil.attachToDom(container.getElement());
+      UiBinderUtil.TempAttachment attachRecord2 = UiBinderUtil.attachToDom(container.getElement());
       get_domId3Element().get();
 
       // Detach section.
-      attachRecord3.detach();
+      attachRecord2.detach();
       container.addAndReplaceElement(get_main(), get_domId3Element().get());
 
       this.owner.container = container;

@@ -14,7 +14,7 @@ import com.google.gwt.user.client.ui.ValueListBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.anova.anovacloud.client.application.matters.matter.MatterPresenter.MyView;
 import com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor;
-import com.anova.anovacloud.client.application.customers.customer.CustomerRenderer;
+import com.anova.anovacloud.client.application.customer.ui.CustomerRenderer;
 import com.anova.anovacloud.shared.dto.MatterDto;
 import com.anova.anovacloud.shared.dto.CustomerDto;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
