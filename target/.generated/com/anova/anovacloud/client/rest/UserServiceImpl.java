@@ -8,6 +8,7 @@ import com.gwtplatform.dispatch.rest.shared.RestAction;
 import com.anova.anovacloud.client.rest.UserService;
 import com.anova.anovacloud.client.rest.UserService_3_deleteImpl;
 import com.anova.anovacloud.client.rest.UserService_1_getImpl;
+import com.anova.anovacloud.client.rest.UserService_4_getUserRolesImpl;
 import com.anova.anovacloud.client.rest.UserService_0_getUsersImpl;
 import com.anova.anovacloud.client.rest.UserService_2_saveOrCreateImpl;
 
@@ -34,6 +35,12 @@ public class UserServiceImpl implements UserService {
         return new UserService_1_getImpl(
                 defaultDateFormat,
                 id);
+    }
+
+    @Override
+    public RestAction<java.util.List<com.anova.anovacloud.shared.dto.UserRoleDto>> getUserRoles() {
+        return new UserService_4_getUserRolesImpl(
+                defaultDateFormat);
     }
 
     @Override

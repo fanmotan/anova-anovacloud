@@ -172,6 +172,38 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
   
   
   /**
+   * Injector fragment for com.anova.anovacloud.client.application.attorney
+   */
+  private com.anova.anovacloud.client.application.attorney.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$attorney = null;
+  /**
+   * Getter for injector fragment for com.anova.anovacloud.client.application.attorney
+   */
+  public com.anova.anovacloud.client.application.attorney.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_attorney() {
+    if (fieldFragment_com$anova$anovacloud$client$application$attorney == null) {
+        fieldFragment_com$anova$anovacloud$client$application$attorney = new com.anova.anovacloud.client.application.attorney.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment(this);
+    }
+    
+    return fieldFragment_com$anova$anovacloud$client$application$attorney;
+  }
+  
+  
+  /**
+   * Injector fragment for com.anova.anovacloud.client.application.attorney.ui
+   */
+  private com.anova.anovacloud.client.application.attorney.ui.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$attorney$ui = null;
+  /**
+   * Getter for injector fragment for com.anova.anovacloud.client.application.attorney.ui
+   */
+  public com.anova.anovacloud.client.application.attorney.ui.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_attorney_ui() {
+    if (fieldFragment_com$anova$anovacloud$client$application$attorney$ui == null) {
+        fieldFragment_com$anova$anovacloud$client$application$attorney$ui = new com.anova.anovacloud.client.application.attorney.ui.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment(this);
+    }
+    
+    return fieldFragment_com$anova$anovacloud$client$application$attorney$ui;
+  }
+  
+  
+  /**
    * Injector fragment for com.anova.anovacloud.client.application.customer
    */
   private com.anova.anovacloud.client.application.customer.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$customer = null;
@@ -564,6 +596,7 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     getFragment_com_anova_anovacloud_client_application_matters_matter().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_security().initializeEagerSingletons();
+    getFragment_com_anova_anovacloud_client_application_attorney().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_customer().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_login().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_matterAction().initializeEagerSingletons();

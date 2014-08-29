@@ -6,7 +6,7 @@ public class UserDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjackson.
   
   @Override
   protected java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.UserDto, ?>> initSerializers() {
-    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.UserDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.UserDto, ?>>(11);
+    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.UserDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.UserDto, ?>>(8);
     
     map.put("displayName", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.UserDto, java.lang.String>() {
       @Override
@@ -68,18 +68,6 @@ public class UserDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjackson.
       }
     });
     
-    map.put("role", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.UserDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
-        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
-      }
-      
-      @Override
-      public java.lang.String getValue(com.anova.anovacloud.shared.dto.UserDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getRole();
-      }
-    });
-    
     map.put("email", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.UserDto, java.lang.String>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
@@ -92,39 +80,15 @@ public class UserDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjackson.
       }
     });
     
-    map.put("mailAddress", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.UserDto, java.lang.String>() {
+    map.put("userRole", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.UserDto, com.anova.anovacloud.shared.dto.UserRoleDto>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
-        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
+        return new com.anova.anovacloud.shared.dto.UserRoleDtoBeanJsonSerializerImpl();
       }
       
       @Override
-      public java.lang.String getValue(com.anova.anovacloud.shared.dto.UserDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getMailAddress();
-      }
-    });
-    
-    map.put("phone", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.UserDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
-        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
-      }
-      
-      @Override
-      public java.lang.String getValue(com.anova.anovacloud.shared.dto.UserDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getPhone();
-      }
-    });
-    
-    map.put("fax", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.UserDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
-        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
-      }
-      
-      @Override
-      public java.lang.String getValue(com.anova.anovacloud.shared.dto.UserDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getFax();
+      public com.anova.anovacloud.shared.dto.UserRoleDto getValue(com.anova.anovacloud.shared.dto.UserDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
+        return bean.getUserRole();
       }
     });
     

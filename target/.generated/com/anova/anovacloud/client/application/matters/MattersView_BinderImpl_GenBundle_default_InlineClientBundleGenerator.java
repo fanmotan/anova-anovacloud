@@ -20,10 +20,10 @@ public class MattersView_BinderImpl_GenBundle_default_InlineClientBundleGenerato
         return "style";
       }
       public String getText() {
-        return (".GFOXD4NDBL-com-anova-anovacloud-client-application-matters-MattersView_BinderImpl_GenCss_style-tableWrapper {\n  margin-top : " + ("20px")  + ";\n  font-size : " + ("11pt")  + ";\n}\n");
+        return (".GFOXD4NDEL-com-anova-anovacloud-client-application-matters-MattersView_BinderImpl_GenCss_style-tableWrapper {\n  margin-top : " + ("20px")  + ";\n  font-size : " + ("11pt")  + ";\n}\n");
       }
       public java.lang.String tableWrapper() {
-        return "GFOXD4NDBL-com-anova-anovacloud-client-application-matters-MattersView_BinderImpl_GenCss_style-tableWrapper";
+        return "GFOXD4NDEL-com-anova-anovacloud-client-application-matters-MattersView_BinderImpl_GenCss_style-tableWrapper";
       }
     }
     ;

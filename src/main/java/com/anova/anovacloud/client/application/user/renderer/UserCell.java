@@ -11,7 +11,7 @@ import com.anova.anovacloud.shared.dto.UserDto;
 public class UserCell extends AbstractCell<UserDto> {
     interface Renderer extends UiRenderer {
         void render(SafeHtmlBuilder sb, String displayName, String username, String hashPassword, String firstName, String lastName,
-    			String role, String email, String mailAddress, String phone, String fax);
+    			String role, String email);
     }
 
     private final Renderer uiRenderer;
@@ -24,6 +24,6 @@ public class UserCell extends AbstractCell<UserDto> {
     @Override
     public void render(Context context, UserDto value, SafeHtmlBuilder safeHtmlBuilder) {
         uiRenderer.render(safeHtmlBuilder, value.getDisplayName(), value.getUsername(),value.getHashPassword(),value.getFirstName(), value.getLastName(),  
-        		value.getRole(), value.getEmail(), value.getMailAddress(), value.getPhone(), value.getFax());
+        		value.getUserRole().getRoleName(), value.getEmail());
     }
 }

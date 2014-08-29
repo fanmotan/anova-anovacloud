@@ -5,16 +5,9 @@ package com.anova.anovacloud.client.application.matterAction.renderer;
 import javax.inject.Inject;
 import java.util.Date;
 import com.google.gwt.cell.client.AbstractCell;
-import com.google.gwt.cell.client.ActionCell.Delegate;
-import com.google.gwt.cell.client.ValueUpdater;
 import com.google.gwt.dom.client.BrowserEvents;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.NativeEvent;
-import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.uibinder.client.UiRenderer;
-import com.google.inject.assistedinject.Assisted;
 import com.anova.anovacloud.shared.dto.MatterActionDto;
 
 public class MatterActionCell extends AbstractCell<MatterActionDto> {

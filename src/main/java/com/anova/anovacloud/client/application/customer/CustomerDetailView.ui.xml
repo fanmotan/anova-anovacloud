@@ -13,10 +13,14 @@
     <g:HTMLPanel styleName="{style.panelWrapper}">
         <g:TextBox ui:field="name" styleName="{resource.styles.mobileTextField}"/>
          <g:TextBox ui:field="refNum" styleName="{resource.styles.mobileTextField}"/>
-          <g:TextBox ui:field="address" styleName="{resource.styles.mobileTextField}"/>
+          <g:TextArea ui:field="address" styleName="{resource.styles.mobileTextField}"/>
            <g:TextBox ui:field="email" styleName="{resource.styles.mobileTextField}"/>
             <g:TextBox ui:field="phone" styleName="{resource.styles.mobileTextField}"/>
              <g:TextBox ui:field="fax" styleName="{resource.styles.mobileTextField}"/>
-             <g:TextBox ui:field="status" styleName="{resource.styles.mobileTextField}"/>
+             <g:ListBox ui:field="status" styleName="{resource.styles.mobileTextField}">
+		                		<g:item>active</g:item>
+		                		<g:item>inactive</g:item>
+		      </g:ListBox>
+		                		    
     </g:HTMLPanel>
 </ui:UiBinder>

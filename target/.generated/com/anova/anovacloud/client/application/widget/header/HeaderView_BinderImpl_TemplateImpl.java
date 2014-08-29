@@ -2,7 +2,7 @@ package com.anova.anovacloud.client.application.widget.header;
 
 public class HeaderView_BinderImpl_TemplateImpl implements com.anova.anovacloud.client.application.widget.header.HeaderView_BinderImpl.Template {
   
-  public com.google.gwt.safehtml.shared.SafeHtml html1(com.google.gwt.safehtml.shared.SafeUri arg0,com.google.gwt.safehtml.shared.SafeUri arg1,com.google.gwt.safehtml.shared.SafeUri arg2,com.google.gwt.safehtml.shared.SafeUri arg3,com.google.gwt.safehtml.shared.SafeUri arg4) {
+  public com.google.gwt.safehtml.shared.SafeHtml html1(com.google.gwt.safehtml.shared.SafeUri arg0,com.google.gwt.safehtml.shared.SafeUri arg1,com.google.gwt.safehtml.shared.SafeUri arg2,com.google.gwt.safehtml.shared.SafeUri arg3,com.google.gwt.safehtml.shared.SafeUri arg4,com.google.gwt.safehtml.shared.SafeUri arg5) {
     StringBuilder sb = new java.lang.StringBuilder();
     sb.append("<a href='");
     sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg0.asString()));
@@ -14,6 +14,8 @@ public class HeaderView_BinderImpl_TemplateImpl implements com.anova.anovacloud.
     sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg3.asString()));
     sb.append("'>Customers</a> <a href='");
     sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg4.asString()));
+    sb.append("'>Attorneys</a> <a href='");
+    sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg5.asString()));
     sb.append("'>Users</a>");
 return new com.google.gwt.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.toString());
 }

@@ -21,10 +21,12 @@ import com.anova.anovacloud.client.application.widget.message.Message;
 import com.anova.anovacloud.client.application.widget.message.MessageStyle;
 import com.anova.anovacloud.client.place.NameTokens;
 import com.anova.anovacloud.client.resources.EditUserMessages;
+import com.anova.anovacloud.client.rest.UserRoleService;
 import com.anova.anovacloud.client.rest.UserService;
 import com.anova.anovacloud.client.util.AbstractAsyncCallback;
 import com.anova.anovacloud.client.util.ErrorHandlerAsyncCallback;
 import com.anova.anovacloud.shared.dto.UserDto;
+import com.anova.anovacloud.shared.dto.UserRoleDto;
 import com.gwtplatform.dispatch.rest.shared.RestDispatch;
 import com.gwtplatform.mvp.client.HasUiHandlers;
 import com.gwtplatform.mvp.client.Presenter;
@@ -41,7 +43,7 @@ public class UserDetailPresenter extends Presenter<MyView, MyProxy>
 
     interface MyView extends View, HasUiHandlers<UserDetailUiHandlers> {
         void edit(UserDto userDto);
-
+        void setAllowedUserRoles(List<UserRoleDto> userRoleDtos);
         void getUser();
     }
 
@@ -52,6 +54,7 @@ public class UserDetailPresenter extends Presenter<MyView, MyProxy>
 
     private final RestDispatch dispatcher;
     private final UserService userService;
+    private final UserRoleService userRoleService;
     private final PlaceManager placeManager;
     private final EditUserMessages messages;
 
@@ -64,12 +67,14 @@ public class UserDetailPresenter extends Presenter<MyView, MyProxy>
                                 MyProxy proxy,
                                 RestDispatch dispatcher,
                                 UserService userService,
-                                PlaceManager placeManager,
-                                EditUserMessages messages) {
+                                UserRoleService userRoleService,
+                                EditUserMessages messages,
+                                PlaceManager placeManager ) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN_CONTENT);
 
         this.dispatcher = dispatcher;
         this.userService = userService;
+        this.userRoleService = userRoleService;
         this.placeManager = placeManager;
         this.messages = messages;
 
@@ -147,7 +152,17 @@ public class UserDetailPresenter extends Presenter<MyView, MyProxy>
             actions = Arrays.asList(ActionType.DELETE, ActionType.UPDATE);
             ChangeActionBarEvent.fire(this, actions, false);
         }
+       
+        //getView().edit(new UserDto());
+        dispatcher.execute(userRoleService.getUserRoles(), new AbstractAsyncCallback<List<UserRoleDto>>() {
+            @Override
+            public void onSuccess(List<UserRoleDto> roles) {
+                onGetUserRolesSuccess(roles);
+            }
+        });
+       
     }
+   
 
     private void deleteUser() {
         Boolean confirm = Window.confirm("Are you sure you want to delete " + currentUser.getDisplayName() + "?");
@@ -160,5 +175,10 @@ public class UserDetailPresenter extends Presenter<MyView, MyProxy>
                         }
                     });
         }
+    }
+    
+    private void onGetUserRolesSuccess(List<UserRoleDto> userRoleDtos) {
+        getView().setAllowedUserRoles(userRoleDtos);
+        getView().edit(new UserDto());
     }
 }

@@ -1,8 +1,6 @@
 
 package com.anova.anovacloud.shared.dto;
 
-import java.util.Date;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ActionDueDto implements Dto {

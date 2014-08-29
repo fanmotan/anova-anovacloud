@@ -16,8 +16,8 @@ import com.google.gwt.user.client.ui.Widget;
 public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.client.ui.Widget, com.anova.anovacloud.client.application.widget.header.HeaderView>, com.anova.anovacloud.client.application.widget.header.HeaderView.Binder {
 
   interface Template extends SafeHtmlTemplates {
-    @Template("<a href='{0}'>Home</a> <a href='{1}'>Matters</a> <a href='{2}'>Matter Actions</a> <a href='{3}'>Customers</a> <a href='{4}'>Users</a>")
-    SafeHtml html1(SafeUri arg0, SafeUri arg1, SafeUri arg2, SafeUri arg3, SafeUri arg4);
+    @Template("<a href='{0}'>Home</a> <a href='{1}'>Matters</a> <a href='{2}'>Matter Actions</a> <a href='{3}'>Customers</a> <a href='{4}'>Attorneys</a> <a href='{5}'>Users</a>")
+    SafeHtml html1(SafeUri arg0, SafeUri arg1, SafeUri arg2, SafeUri arg3, SafeUri arg4, SafeUri arg5);
      
     @Template("<div class='{0}'> Hello <span id='{1}'></span> ! </div> <div class='{2}'> <span id='{3}'></span> </div> <div class='{4}'></div>")
     SafeHtml html2(String arg0, String arg1, String arg2, String arg3, String arg4);
@@ -67,7 +67,7 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     SafeHtml template_html1() {
-      return template.html1(UriUtils.fromString("#" + get_REPORT() + ""), UriUtils.fromString("#" + get_MATTERS() + ""), UriUtils.fromString("#" + get_MATTERACTION() + ""), UriUtils.fromString("#" + get_CUSTOMER() + ""), UriUtils.fromString("#" + get_USER() + ""));
+      return template.html1(UriUtils.fromString("#" + get_REPORT() + ""), UriUtils.fromString("#" + get_MATTERS() + ""), UriUtils.fromString("#" + get_MATTERACTION() + ""), UriUtils.fromString("#" + get_CUSTOMER() + ""), UriUtils.fromString("#" + get_ATTORNEY() + ""), UriUtils.fromString("#" + get_USER() + ""));
     }
     SafeHtml template_html2() {
       return template.html2("" + get_style().userInfo() + "", get_domId4(), "" + get_style().floatLeft() + "", get_domId5(), "" + get_style().clear() + "");
@@ -242,6 +242,21 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
+     * Getter for USERROLE called 0 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_USERROLE() {
+      return build_USERROLE();
+    }
+    private java.lang.String build_USERROLE() {
+      // Creation section.
+      final java.lang.String USERROLE = com.anova.anovacloud.client.place.NameTokens.USERROLE;
+      // Setup section.
+
+
+      return USERROLE;
+    }
+
+    /**
      * Getter for DETAIL_USER called 0 times. Type: DEFAULT. Build precedence: 1.
      */
     private java.lang.String get_DETAIL_USER() {
@@ -254,6 +269,36 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
 
 
       return DETAIL_USER;
+    }
+
+    /**
+     * Getter for ATTORNEY called 1 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_ATTORNEY() {
+      return build_ATTORNEY();
+    }
+    private java.lang.String build_ATTORNEY() {
+      // Creation section.
+      final java.lang.String ATTORNEY = com.anova.anovacloud.client.place.NameTokens.ATTORNEY;
+      // Setup section.
+
+
+      return ATTORNEY;
+    }
+
+    /**
+     * Getter for DETAIL_ATTORNEY called 0 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_DETAIL_ATTORNEY() {
+      return build_DETAIL_ATTORNEY();
+    }
+    private java.lang.String build_DETAIL_ATTORNEY() {
+      // Creation section.
+      final java.lang.String DETAIL_ATTORNEY = com.anova.anovacloud.client.place.NameTokens.DETAIL_ATTORNEY;
+      // Setup section.
+
+
+      return DETAIL_ATTORNEY;
     }
 
     /**
@@ -301,14 +346,14 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       f_HTMLPanel1.setStyleName("" + get_style().header() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord16 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord18 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
       get_domId3Element().get();
 
       // Detach section.
-      attachRecord16.detach();
+      attachRecord18.detach();
       f_HTMLPanel1.addAndReplaceElement(get_f_Image2(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_Label3(), get_domId1Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_menubar(), get_domId2Element().get());
@@ -492,12 +537,12 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       userOptions.setStyleName("" + get_style().floatRight() + " " + get_style().paddingTop() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord17 = UiBinderUtil.attachToDom(userOptions.getElement());
+      UiBinderUtil.TempAttachment attachRecord19 = UiBinderUtil.attachToDom(userOptions.getElement());
       get_domId4Element().get();
       get_domId5Element().get();
 
       // Detach section.
-      attachRecord17.detach();
+      attachRecord19.detach();
       userOptions.addAndReplaceElement(get_name(), get_domId4Element().get());
       userOptions.addAndReplaceElement(get_logout(), get_domId5Element().get());
 

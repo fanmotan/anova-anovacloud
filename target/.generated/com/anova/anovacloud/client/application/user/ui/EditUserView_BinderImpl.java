@@ -22,8 +22,8 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     @Template("Close")
     SafeHtml html2();
      
-    @Template("<div> <span id='{0}'></span> <span id='{1}'></span> </div> <div> <span id='{2}'></span> <span id='{3}'></span> </div> <div> <span id='{4}'></span> <span id='{5}'></span> </div> <div> <span id='{6}'></span> <span id='{7}'></span> </div> <div> <span id='{8}'></span> <span id='{9}'></span> </div> <div> <span id='{10}'></span> <span id='{11}'></span> </div> <div> <span id='{12}'></span> <span id='{13}'></span> </div> <div> <span id='{14}'></span> <span id='{15}'></span> </div> <div> <span id='{16}'></span> <span id='{17}'></span> </div> <div> <span id='{18}'></span> <span id='{19}'></span> </div> <div> <span id='{20}'></span> <span id='{21}'></span> </div>")
-    SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16, String arg17, String arg18, String arg19, String arg20, String arg21);
+    @Template("<div> <span id='{0}'></span> </div> <br> <table width='100%'> <tr> <td width='25%'> <div class='{1}'> <span id='{2}'></span> </div> </td> <td width='75%'> <div class='{3}'> <span id='{4}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{5}'> <span id='{6}'></span> </div> </td> <td width='75%'> <div class='{7}'> <span id='{8}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{9}'> <span id='{10}'></span> </div> </td> <td width='75%'> <div class='{11}'> <span id='{12}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{13}'> <span id='{14}'></span> </div> </td> <td width='75%'> <div class='{15}'> <span id='{16}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{17}'> <span id='{18}'></span> </div> </td> <td width='75%'> <div class='{19}'> <span id='{20}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{21}'> <span id='{22}'></span> </div> </td> <td width='75%'> <div class='{23}'> <span id='{24}'></span>  </div> </td> </tr> <tr> <td width='25%'> <div class='{25}'> <span id='{26}'></span> </div> </td> <td width='75%'> <div class='{27}'> <span id='{28}'></span> </div> </td> </tr>  </table> <div class='{29}'> <span id='{30}'></span> <span id='{31}'></span> </div>")
+    SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16, String arg17, String arg18, String arg19, String arg20, String arg21, String arg22, String arg23, String arg24, String arg25, String arg26, String arg27, String arg28, String arg29, String arg30, String arg31);
      
   }
 
@@ -57,6 +57,7 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
 
     public Widgets(final com.anova.anovacloud.client.application.user.ui.EditUserView owner) {
       this.owner = owner;
+      build_style();  // generated css resource must be always created. Type: GENERATED_CSS. Precedence: 1
       build_domId0();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId1();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId2();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
@@ -74,11 +75,6 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
       build_domId14();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId15();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId16();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
-      build_domId17();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
-      build_domId18();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
-      build_domId19();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
-      build_domId20();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
-      build_domId21();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId0Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId1Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId2Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
@@ -96,11 +92,6 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
       build_domId14Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId15Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId16Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
-      build_domId17Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
-      build_domId18Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
-      build_domId19Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
-      build_domId20Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
-      build_domId21Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
     }
 
     SafeHtml template_html1() {
@@ -110,11 +101,11 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
       return template.html2();
     }
     SafeHtml template_html3() {
-      return template.html3(get_domId0(), get_domId1(), get_domId2(), get_domId3(), get_domId4(), get_domId5(), get_domId6(), get_domId7(), get_domId8(), get_domId9(), get_domId10(), get_domId11(), get_domId12(), get_domId13(), get_domId14(), get_domId15(), get_domId16(), get_domId17(), get_domId18(), get_domId19(), get_domId20(), get_domId21());
+      return template.html3(get_domId0(), "" + get_style().formRow() + "", get_domId1(), "" + get_style().formRow() + "", get_domId2(), "" + get_style().formRow() + "", get_domId3(), "" + get_style().formRow() + "", get_domId4(), "" + get_style().formRow() + "", get_domId5(), "" + get_style().formRow() + "", get_domId6(), "" + get_style().formRow() + "", get_domId7(), "" + get_style().formRow() + "", get_domId8(), "" + get_style().formRow() + "", get_domId9(), "" + get_style().formRow() + "", get_domId10(), "" + get_style().formRow() + "", get_domId11(), "" + get_style().formRow() + "", get_domId12(), "" + get_style().formRow() + "", get_domId13(), "" + get_style().formRow() + "", get_domId14(), "" + get_style().formRow() + "", get_domId15(), get_domId16());
     }
 
     /**
-     * Getter for clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay called 0 times. Type: GENERATED_BUNDLE. Build precedence: 1.
+     * Getter for clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay called 1 times. Type: GENERATED_BUNDLE. Build precedence: 1.
      */
     private com.anova.anovacloud.client.application.user.ui.EditUserView_BinderImpl_GenBundle get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay() {
       return build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay();
@@ -126,6 +117,23 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
 
 
       return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay;
+    }
+
+    /**
+     * Getter for style called 15 times. Type: GENERATED_CSS. Build precedence: 1.
+     */
+    private com.anova.anovacloud.client.application.user.ui.EditUserView_BinderImpl_GenCss_style style;
+    private com.anova.anovacloud.client.application.user.ui.EditUserView_BinderImpl_GenCss_style get_style() {
+      return style;
+    }
+    private com.anova.anovacloud.client.application.user.ui.EditUserView_BinderImpl_GenCss_style build_style() {
+      // Creation section.
+      style = get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay().style();
+      // Setup section.
+      style.ensureInjected();
+
+
+      return style;
     }
 
     /**
@@ -160,7 +168,7 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
       f_HTMLPanel2.ensureDebugId("user-editor");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord20 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
+      UiBinderUtil.TempAttachment attachRecord23 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
@@ -178,36 +186,26 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
       get_domId14Element().get();
       get_domId15Element().get();
       get_domId16Element().get();
-      get_domId17Element().get();
-      get_domId18Element().get();
-      get_domId19Element().get();
-      get_domId20Element().get();
-      get_domId21Element().get();
 
       // Detach section.
-      attachRecord20.detach();
+      attachRecord23.detach();
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel3(), get_domId0Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_displayName(), get_domId1Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel4(), get_domId2Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_firstName(), get_domId3Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel5(), get_domId4Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_lastName(), get_domId5Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel6(), get_domId6Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_username(), get_domId7Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel7(), get_domId8Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_hashPassword(), get_domId9Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel8(), get_domId10Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_role(), get_domId11Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel9(), get_domId12Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_email(), get_domId13Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel10(), get_domId14Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_mailAddress(), get_domId15Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel11(), get_domId16Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_phone(), get_domId17Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel12(), get_domId18Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_fax(), get_domId19Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_save(), get_domId20Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_close(), get_domId21Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel4(), get_domId1Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_displayName(), get_domId2Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel5(), get_domId3Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_firstName(), get_domId4Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel6(), get_domId5Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_lastName(), get_domId6Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel7(), get_domId7Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_username(), get_domId8Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel8(), get_domId9Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_hashPassword(), get_domId10Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel9(), get_domId11Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_userRole(), get_domId12Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel10(), get_domId13Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_email(), get_domId14Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_save(), get_domId15Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_close(), get_domId16Element().get());
 
       return f_HTMLPanel2;
     }
@@ -238,7 +236,7 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel3 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel3.setText("Display Name:");
+      f_InlineLabel3.setText("Please fill in or modify the following customer information:");
 
 
       return f_InlineLabel3;
@@ -277,21 +275,19 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for displayName called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel4 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_displayName() {
-      return build_displayName();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel4() {
+      return build_f_InlineLabel4();
     }
-    private com.google.gwt.user.client.ui.TextBox build_displayName() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel4() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox displayName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel4 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      displayName.ensureDebugId("user-input");
+      f_InlineLabel4.setText("Display Name:");
 
 
-      this.owner.displayName = displayName;
-
-      return displayName;
+      return f_InlineLabel4;
     }
 
     /**
@@ -327,19 +323,21 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for f_InlineLabel4 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for displayName called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel4() {
-      return build_f_InlineLabel4();
+    private com.google.gwt.user.client.ui.TextBox get_displayName() {
+      return build_displayName();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel4() {
+    private com.google.gwt.user.client.ui.TextBox build_displayName() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel4 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.TextBox displayName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      f_InlineLabel4.setText("First Name:");
+      displayName.ensureDebugId("user-input");
 
 
-      return f_InlineLabel4;
+      this.owner.displayName = displayName;
+
+      return displayName;
     }
 
     /**
@@ -375,21 +373,19 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for firstName called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel5 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_firstName() {
-      return build_firstName();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel5() {
+      return build_f_InlineLabel5();
     }
-    private com.google.gwt.user.client.ui.TextBox build_firstName() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel5() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox firstName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel5 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      firstName.ensureDebugId("user-input");
+      f_InlineLabel5.setText("First Name:");
 
 
-      this.owner.firstName = firstName;
-
-      return firstName;
+      return f_InlineLabel5;
     }
 
     /**
@@ -425,19 +421,21 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for f_InlineLabel5 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for firstName called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel5() {
-      return build_f_InlineLabel5();
+    private com.google.gwt.user.client.ui.TextBox get_firstName() {
+      return build_firstName();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel5() {
+    private com.google.gwt.user.client.ui.TextBox build_firstName() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel5 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.TextBox firstName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      f_InlineLabel5.setText("Last Name:");
+      firstName.ensureDebugId("user-input");
 
 
-      return f_InlineLabel5;
+      this.owner.firstName = firstName;
+
+      return firstName;
     }
 
     /**
@@ -473,21 +471,19 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for lastName called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel6 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_lastName() {
-      return build_lastName();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel6() {
+      return build_f_InlineLabel6();
     }
-    private com.google.gwt.user.client.ui.TextBox build_lastName() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel6() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox lastName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel6 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      lastName.ensureDebugId("user-input");
+      f_InlineLabel6.setText("Last Name:");
 
 
-      this.owner.lastName = lastName;
-
-      return lastName;
+      return f_InlineLabel6;
     }
 
     /**
@@ -523,19 +519,21 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for f_InlineLabel6 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for lastName called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel6() {
-      return build_f_InlineLabel6();
+    private com.google.gwt.user.client.ui.TextBox get_lastName() {
+      return build_lastName();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel6() {
+    private com.google.gwt.user.client.ui.TextBox build_lastName() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel6 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.TextBox lastName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      f_InlineLabel6.setText("Username:");
+      lastName.ensureDebugId("user-input");
 
 
-      return f_InlineLabel6;
+      this.owner.lastName = lastName;
+
+      return lastName;
     }
 
     /**
@@ -571,21 +569,19 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for username called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel7 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_username() {
-      return build_username();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel7() {
+      return build_f_InlineLabel7();
     }
-    private com.google.gwt.user.client.ui.TextBox build_username() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel7() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox username = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel7 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      username.ensureDebugId("user-input");
+      f_InlineLabel7.setText("Username:");
 
 
-      this.owner.username = username;
-
-      return username;
+      return f_InlineLabel7;
     }
 
     /**
@@ -621,19 +617,21 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for f_InlineLabel7 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for username called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel7() {
-      return build_f_InlineLabel7();
+    private com.google.gwt.user.client.ui.TextBox get_username() {
+      return build_username();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel7() {
+    private com.google.gwt.user.client.ui.TextBox build_username() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel7 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.TextBox username = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      f_InlineLabel7.setText("Password:");
+      username.ensureDebugId("user-input");
 
 
-      return f_InlineLabel7;
+      this.owner.username = username;
+
+      return username;
     }
 
     /**
@@ -669,21 +667,19 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for hashPassword called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel8 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_hashPassword() {
-      return build_hashPassword();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel8() {
+      return build_f_InlineLabel8();
     }
-    private com.google.gwt.user.client.ui.TextBox build_hashPassword() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel8() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox hashPassword = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel8 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      hashPassword.ensureDebugId("user-input");
+      f_InlineLabel8.setText("Password:");
 
 
-      this.owner.hashPassword = hashPassword;
-
-      return hashPassword;
+      return f_InlineLabel8;
     }
 
     /**
@@ -719,19 +715,21 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for f_InlineLabel8 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for hashPassword called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel8() {
-      return build_f_InlineLabel8();
+    private com.google.gwt.user.client.ui.TextBox get_hashPassword() {
+      return build_hashPassword();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel8() {
+    private com.google.gwt.user.client.ui.TextBox build_hashPassword() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel8 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.TextBox hashPassword = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      f_InlineLabel8.setText("Role:");
+      hashPassword.ensureDebugId("user-input");
 
 
-      return f_InlineLabel8;
+      this.owner.hashPassword = hashPassword;
+
+      return hashPassword;
     }
 
     /**
@@ -767,21 +765,19 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for role called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel9 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_role() {
-      return build_role();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel9() {
+      return build_f_InlineLabel9();
     }
-    private com.google.gwt.user.client.ui.TextBox build_role() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel9() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox role = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel9 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      role.ensureDebugId("user-input");
+      f_InlineLabel9.setText("Role:");
 
 
-      this.owner.role = role;
-
-      return role;
+      return f_InlineLabel9;
     }
 
     /**
@@ -817,19 +813,20 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for f_InlineLabel9 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for userRole called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel9() {
-      return build_f_InlineLabel9();
+    private com.google.gwt.user.client.ui.ValueListBox get_userRole() {
+      return build_userRole();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel9() {
+    private com.google.gwt.user.client.ui.ValueListBox build_userRole() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel9 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.ValueListBox userRole = owner.userRole;
+      assert userRole != null : "UiField userRole with 'provided = true' was null";
       // Setup section.
-      f_InlineLabel9.setText("Email:");
+      userRole.ensureDebugId("user-role-input");
 
 
-      return f_InlineLabel9;
+      return userRole;
     }
 
     /**
@@ -865,21 +862,19 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for email called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel10 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_email() {
-      return build_email();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel10() {
+      return build_f_InlineLabel10();
     }
-    private com.google.gwt.user.client.ui.TextBox build_email() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel10() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox email = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel10 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      email.ensureDebugId("user-input");
+      f_InlineLabel10.setText("Email:");
 
 
-      this.owner.email = email;
-
-      return email;
+      return f_InlineLabel10;
     }
 
     /**
@@ -915,19 +910,21 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for f_InlineLabel10 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for email called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel10() {
-      return build_f_InlineLabel10();
+    private com.google.gwt.user.client.ui.TextBox get_email() {
+      return build_email();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel10() {
+    private com.google.gwt.user.client.ui.TextBox build_email() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel10 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.TextBox email = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      f_InlineLabel10.setText("Mailing Address:");
+      email.ensureDebugId("user-input");
 
 
-      return f_InlineLabel10;
+      this.owner.email = email;
+
+      return email;
     }
 
     /**
@@ -963,21 +960,21 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for mailAddress called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for save called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_mailAddress() {
-      return build_mailAddress();
+    private com.google.gwt.user.client.ui.Button get_save() {
+      return build_save();
     }
-    private com.google.gwt.user.client.ui.TextBox build_mailAddress() {
+    private com.google.gwt.user.client.ui.Button build_save() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox mailAddress = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.Button save = (com.google.gwt.user.client.ui.Button) GWT.create(com.google.gwt.user.client.ui.Button.class);
       // Setup section.
-      mailAddress.ensureDebugId("user-input");
+      save.setHTML(template_html1().asString());
+      save.ensureDebugId("user-save");
+      save.addClickHandler(handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1);
 
 
-      this.owner.mailAddress = mailAddress;
-
-      return mailAddress;
+      return save;
     }
 
     /**
@@ -1013,252 +1010,6 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for f_InlineLabel11 called 1 times. Type: DEFAULT. Build precedence: 3.
-     */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel11() {
-      return build_f_InlineLabel11();
-    }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel11() {
-      // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel11 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
-      // Setup section.
-      f_InlineLabel11.setText("Phone:");
-
-
-      return f_InlineLabel11;
-    }
-
-    /**
-     * Getter for domId16Element called 2 times. Type: DEFAULT. Build precedence: 3.
-     */
-    private com.google.gwt.uibinder.client.LazyDomElement domId16Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId16Element() {
-      return domId16Element;
-    }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId16Element() {
-      // Creation section.
-      domId16Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId16());
-      // Setup section.
-
-
-      return domId16Element;
-    }
-
-    /**
-     * Getter for domId17 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 3.
-     */
-    private java.lang.String domId17;
-    private java.lang.String get_domId17() {
-      return domId17;
-    }
-    private java.lang.String build_domId17() {
-      // Creation section.
-      domId17 = com.google.gwt.dom.client.Document.get().createUniqueId();
-      // Setup section.
-
-
-      return domId17;
-    }
-
-    /**
-     * Getter for phone called 1 times. Type: DEFAULT. Build precedence: 3.
-     */
-    private com.google.gwt.user.client.ui.TextBox get_phone() {
-      return build_phone();
-    }
-    private com.google.gwt.user.client.ui.TextBox build_phone() {
-      // Creation section.
-      final com.google.gwt.user.client.ui.TextBox phone = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
-      // Setup section.
-      phone.ensureDebugId("user-input");
-
-
-      this.owner.phone = phone;
-
-      return phone;
-    }
-
-    /**
-     * Getter for domId17Element called 2 times. Type: DEFAULT. Build precedence: 3.
-     */
-    private com.google.gwt.uibinder.client.LazyDomElement domId17Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId17Element() {
-      return domId17Element;
-    }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId17Element() {
-      // Creation section.
-      domId17Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId17());
-      // Setup section.
-
-
-      return domId17Element;
-    }
-
-    /**
-     * Getter for domId18 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 3.
-     */
-    private java.lang.String domId18;
-    private java.lang.String get_domId18() {
-      return domId18;
-    }
-    private java.lang.String build_domId18() {
-      // Creation section.
-      domId18 = com.google.gwt.dom.client.Document.get().createUniqueId();
-      // Setup section.
-
-
-      return domId18;
-    }
-
-    /**
-     * Getter for f_InlineLabel12 called 1 times. Type: DEFAULT. Build precedence: 3.
-     */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel12() {
-      return build_f_InlineLabel12();
-    }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel12() {
-      // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel12 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
-      // Setup section.
-      f_InlineLabel12.setText("Fax:");
-
-
-      return f_InlineLabel12;
-    }
-
-    /**
-     * Getter for domId18Element called 2 times. Type: DEFAULT. Build precedence: 3.
-     */
-    private com.google.gwt.uibinder.client.LazyDomElement domId18Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId18Element() {
-      return domId18Element;
-    }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId18Element() {
-      // Creation section.
-      domId18Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId18());
-      // Setup section.
-
-
-      return domId18Element;
-    }
-
-    /**
-     * Getter for domId19 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 3.
-     */
-    private java.lang.String domId19;
-    private java.lang.String get_domId19() {
-      return domId19;
-    }
-    private java.lang.String build_domId19() {
-      // Creation section.
-      domId19 = com.google.gwt.dom.client.Document.get().createUniqueId();
-      // Setup section.
-
-
-      return domId19;
-    }
-
-    /**
-     * Getter for fax called 1 times. Type: DEFAULT. Build precedence: 3.
-     */
-    private com.google.gwt.user.client.ui.TextBox get_fax() {
-      return build_fax();
-    }
-    private com.google.gwt.user.client.ui.TextBox build_fax() {
-      // Creation section.
-      final com.google.gwt.user.client.ui.TextBox fax = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
-      // Setup section.
-      fax.ensureDebugId("user-input");
-
-
-      this.owner.fax = fax;
-
-      return fax;
-    }
-
-    /**
-     * Getter for domId19Element called 2 times. Type: DEFAULT. Build precedence: 3.
-     */
-    private com.google.gwt.uibinder.client.LazyDomElement domId19Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId19Element() {
-      return domId19Element;
-    }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId19Element() {
-      // Creation section.
-      domId19Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId19());
-      // Setup section.
-
-
-      return domId19Element;
-    }
-
-    /**
-     * Getter for domId20 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 3.
-     */
-    private java.lang.String domId20;
-    private java.lang.String get_domId20() {
-      return domId20;
-    }
-    private java.lang.String build_domId20() {
-      // Creation section.
-      domId20 = com.google.gwt.dom.client.Document.get().createUniqueId();
-      // Setup section.
-
-
-      return domId20;
-    }
-
-    /**
-     * Getter for save called 1 times. Type: DEFAULT. Build precedence: 3.
-     */
-    private com.google.gwt.user.client.ui.Button get_save() {
-      return build_save();
-    }
-    private com.google.gwt.user.client.ui.Button build_save() {
-      // Creation section.
-      final com.google.gwt.user.client.ui.Button save = (com.google.gwt.user.client.ui.Button) GWT.create(com.google.gwt.user.client.ui.Button.class);
-      // Setup section.
-      save.setHTML(template_html1().asString());
-      save.ensureDebugId("user-save");
-      save.addClickHandler(handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1);
-
-
-      return save;
-    }
-
-    /**
-     * Getter for domId20Element called 2 times. Type: DEFAULT. Build precedence: 3.
-     */
-    private com.google.gwt.uibinder.client.LazyDomElement domId20Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId20Element() {
-      return domId20Element;
-    }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId20Element() {
-      // Creation section.
-      domId20Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId20());
-      // Setup section.
-
-
-      return domId20Element;
-    }
-
-    /**
-     * Getter for domId21 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 3.
-     */
-    private java.lang.String domId21;
-    private java.lang.String get_domId21() {
-      return domId21;
-    }
-    private java.lang.String build_domId21() {
-      // Creation section.
-      domId21 = com.google.gwt.dom.client.Document.get().createUniqueId();
-      // Setup section.
-
-
-      return domId21;
-    }
-
-    /**
      * Getter for close called 1 times. Type: DEFAULT. Build precedence: 3.
      */
     private com.google.gwt.user.client.ui.Button get_close() {
@@ -1277,19 +1028,19 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for domId21Element called 2 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for domId16Element called 2 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.uibinder.client.LazyDomElement domId21Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId21Element() {
-      return domId21Element;
+    private com.google.gwt.uibinder.client.LazyDomElement domId16Element;
+    private com.google.gwt.uibinder.client.LazyDomElement get_domId16Element() {
+      return domId16Element;
     }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId21Element() {
+    private com.google.gwt.uibinder.client.LazyDomElement build_domId16Element() {
       // Creation section.
-      domId21Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId21());
+      domId16Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId16());
       // Setup section.
 
 
-      return domId21Element;
+      return domId16Element;
     }
   }
 }

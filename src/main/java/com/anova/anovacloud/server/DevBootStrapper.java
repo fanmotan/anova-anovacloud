@@ -12,30 +12,37 @@ import com.anova.anovacloud.server.dao.MatterDao;
 import com.anova.anovacloud.server.dao.MatterPropertiesDao;
 import com.anova.anovacloud.server.dao.CustomerDao;
 import com.anova.anovacloud.server.dao.UserDao;
+import com.anova.anovacloud.server.dao.UserRoleDao;
 import com.anova.anovacloud.server.dao.domain.Matter;
 import com.anova.anovacloud.server.dao.domain.Customer;
 import com.anova.anovacloud.server.dao.domain.User;
+import com.anova.anovacloud.server.dao.domain.UserRole;
 import com.anova.anovacloud.shared.dto.MatterDto;
 import com.anova.anovacloud.shared.dto.MatterPropertiesDto;
 import com.anova.anovacloud.shared.dto.CustomerDto;
 import com.anova.anovacloud.shared.dto.UserDto;
+import com.anova.anovacloud.shared.dto.UserRoleDto;
 
 public class DevBootStrapper {
     private final UserDao userDao;
+    private final UserRoleDao userRoleDao;
     private final PasswordSecurity passwordSecurity;
     private final CustomerDao customerDao;
     private final MatterDao matterDao;
     private final MatterActionDao matterActionDao;
     private final MatterPropertiesDao matterPropertiesDao;
 
+
     @Inject
     DevBootStrapper(UserDao userDao,
+    				UserRoleDao userRoleDao,
                     PasswordSecurity passwordSecurity,
                     CustomerDao customerDao,
                     MatterDao matterDao,
                     MatterActionDao matterActionDao,
                     MatterPropertiesDao matterPropertiesDao) {
         this.userDao = userDao;
+        this.userRoleDao = userRoleDao;
         this.passwordSecurity = passwordSecurity;
         this.customerDao = customerDao;
         this.matterDao = matterDao;
@@ -49,11 +56,11 @@ public class DevBootStrapper {
         deleteAllEntities();
 
         long userCount = userDao.countAll();
-
+        
         if (userCount == 0) {
             createBasicUser();
         }
-
+        
         createMockData();
     }
 
@@ -62,13 +69,29 @@ public class DevBootStrapper {
         matterDao.deleteAll();
         matterActionDao.deleteAll();
         matterPropertiesDao.deleteAll();
+        userDao.deleteAll();
+        userRoleDao.deleteAll();
     }
-
+    
+   
+    
     private void createBasicUser() {
-        UserDto userDto = new UserDto("admin",  "FirstName", "LastName", "admin", passwordSecurity.hashPassword("pwd123"),"","","","","");
-        userDao.put(User.create(userDto));
+    	
+    	 UserRoleDto admin = new UserRoleDto("system administrator");
+         UserRoleDto normaluser = new UserRoleDto("general user");
+         UserRoleDto readonlyuser = new UserRoleDto("read only");
+
+         admin = UserRole.createDto(userRoleDao.put(UserRole.create(admin)));
+         normaluser = UserRole.createDto(userRoleDao.put(UserRole.create(normaluser)));
+         readonlyuser = UserRole.createDto(userRoleDao.put(UserRole.create(readonlyuser)));
+        
+    	
+        UserDto userDto = new UserDto("admin",  "Fan", "Mo", "admin", passwordSecurity.hashPassword("pwd123"), "fmo@fanconsultingllc.com", admin);
+        //userDao.put(User.create(userDto));
         userDto  = User.createDto(userDao.put(User.create(userDto)));
     }
+    
+  
 
 
     private void createMockData() {

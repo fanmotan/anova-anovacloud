@@ -8,6 +8,8 @@ import com.google.gwt.editor.client.Editor;
 import com.google.gwt.editor.client.SimpleBeanEditorDriver;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.ui.ListBox;
+import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.anova.anovacloud.shared.dto.CustomerDto;
@@ -26,7 +28,7 @@ public class CustomerDetailView extends ViewWithUiHandlers<CustomerDetailUiHandl
     @UiField
     TextBox refNum;
     @UiField
-    TextBox address;
+    TextArea address;
     @UiField
     TextBox email;
     @UiField
@@ -34,7 +36,7 @@ public class CustomerDetailView extends ViewWithUiHandlers<CustomerDetailUiHandl
     @UiField
     TextBox fax;
     @UiField
-    TextBox status;
+    ListBox status;
 
     private final Driver driver;
 

@@ -15,6 +15,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.anova.anovacloud.server.dao.UserDao;
+import com.anova.anovacloud.server.dao.UserRoleDao;
 import com.anova.anovacloud.server.dao.domain.User;
 import com.anova.anovacloud.shared.dto.UserDto;
 import com.anova.anovacloud.shared.rest.PathParameter;
@@ -25,11 +26,13 @@ import com.anova.anovacloud.shared.rest.RestParameter;
 @Produces(MediaType.APPLICATION_JSON)
 public class UserResource {
     private final UserDao userDao;
+    private final UserRoleDao userRoleDao;
 
 
     @Inject
-    UserResource(UserDao userDao) {
+    UserResource(UserDao userDao, UserRoleDao userRoleDao) {
         this.userDao = userDao;
+        this.userRoleDao = userRoleDao;
     }
 
     @GET

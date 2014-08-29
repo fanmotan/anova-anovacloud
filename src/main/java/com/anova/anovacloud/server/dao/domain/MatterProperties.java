@@ -10,7 +10,6 @@ import com.googlecode.objectify.annotation.Index;
 import com.googlecode.objectify.annotation.Load;
 import com.anova.anovacloud.server.dao.objectify.Deref;
 import com.anova.anovacloud.shared.dto.BaseEntity;
-import com.anova.anovacloud.shared.dto.MatterDto;
 import com.anova.anovacloud.shared.dto.MatterPropertiesDto;
 
 @Index

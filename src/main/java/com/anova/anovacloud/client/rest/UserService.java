@@ -9,7 +9,9 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
+import com.anova.anovacloud.shared.dto.MatterDto;
 import com.anova.anovacloud.shared.dto.UserDto;
+import com.anova.anovacloud.shared.dto.UserRoleDto;
 import com.gwtplatform.dispatch.rest.shared.RestAction;
 
 import static com.anova.anovacloud.shared.rest.PathParameter.PATH_ID;
@@ -31,5 +33,8 @@ public interface UserService {
     @DELETE
     @Path(PATH_ID)
     RestAction<Void> delete(@PathParam(ID) Long id);
+    
+    @GET
+    RestAction<List<UserRoleDto>> getUserRoles();
 
 }

@@ -5,7 +5,6 @@ package com.anova.anovacloud.client.application.matterAction.ui;
 import java.util.Date;
 
 import com.google.gwt.cell.client.DateCell;
-import com.google.gwt.cell.client.NumberCell;
 import com.google.gwt.cell.client.TextCell;
 import com.anova.anovacloud.client.columninitializer.Column;
 import com.anova.anovacloud.client.columninitializer.ColumnInitializer;

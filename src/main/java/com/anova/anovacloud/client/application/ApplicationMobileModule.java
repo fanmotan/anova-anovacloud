@@ -3,6 +3,7 @@ package com.anova.anovacloud.client.application;
 
 import com.anova.anovacloud.client.application.matters.MattersMobileModule;
 import com.anova.anovacloud.client.application.login.LoginMobileModule;
+import com.anova.anovacloud.client.application.attorney.AttorneyMobileModule;
 import com.anova.anovacloud.client.application.customer.CustomerMobileModule;
 import com.anova.anovacloud.client.application.matterAction.MatterActionMobileModule;
 import com.anova.anovacloud.client.application.report.ReportMobileModule;
@@ -22,6 +23,7 @@ public class ApplicationMobileModule extends AbstractPresenterModule {
         install(new WidgetModule());
         install(new ReportMobileModule());
         install(new UserMobileModule());
+        install(new AttorneyMobileModule());
 
         // TODO should we make a messaging module for mobile
         install(new MessagesModule());

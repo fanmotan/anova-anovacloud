@@ -128,13 +128,13 @@ public class MattersView_BinderImpl implements UiBinder<com.google.gwt.user.clie
       // Setup section.
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord10 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord12 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId3Element().get();
       get_domId4Element().get();
 
       // Detach section.
-      attachRecord10.detach();
+      attachRecord12.detach();
       f_HTMLPanel1.addAndReplaceElement(get_f_HTMLPanel2(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_matterGrid(), get_domId3Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_pager(), get_domId4Element().get());
@@ -171,12 +171,12 @@ public class MattersView_BinderImpl implements UiBinder<com.google.gwt.user.clie
       f_HTMLPanel2.setStyleName("" + get_resources().styles().bigTitle() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord11 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
+      UiBinderUtil.TempAttachment attachRecord13 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
       get_domId1Element().get();
       get_domId2Element().get();
 
       // Detach section.
-      attachRecord11.detach();
+      attachRecord13.detach();
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel3(), get_domId1Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_create(), get_domId2Element().get());
 

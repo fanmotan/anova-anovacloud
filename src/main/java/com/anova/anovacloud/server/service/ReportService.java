@@ -4,14 +4,11 @@ package com.anova.anovacloud.server.service;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 
 import com.anova.anovacloud.shared.dto.ActionDueDto;
-import com.anova.anovacloud.shared.dto.CustomerDto;
 import com.anova.anovacloud.shared.dto.MatterActionDto;
 import com.anova.anovacloud.shared.dto.MatterDto;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gwt.i18n.client.DateTimeFormat;
 
 public class ReportService {

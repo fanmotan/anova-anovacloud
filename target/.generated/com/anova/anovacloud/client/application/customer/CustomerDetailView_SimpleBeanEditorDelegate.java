@@ -13,7 +13,6 @@ public class CustomerDetailView_SimpleBeanEditorDelegate extends com.google.gwt.
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate emailDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate phoneDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate faxDelegate;
-  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate statusDelegate;
   @Override protected void initializeSubDelegates() {
     if (editor.name.asEditor() != null) {
       nameDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
@@ -38,10 +37,6 @@ public class CustomerDetailView_SimpleBeanEditorDelegate extends com.google.gwt.
     if (editor.fax.asEditor() != null) {
       faxDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
       addSubDelegate(faxDelegate, appendPath("fax"), editor.fax.asEditor());
-    }
-    if (editor.status.asEditor() != null) {
-      statusDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
-      addSubDelegate(statusDelegate, appendPath("status"), editor.status.asEditor());
     }
   }
   @Override public void accept(com.google.gwt.editor.client.EditorVisitor visitor) {
@@ -80,12 +75,6 @@ public class CustomerDetailView_SimpleBeanEditorDelegate extends com.google.gwt.
       com.anova.anovacloud.client.application.customer.CustomerDetailView_fax_Context ctx = new com.anova.anovacloud.client.application.customer.CustomerDetailView_fax_Context(getObject(), editor.fax.asEditor(), appendPath("fax"));
       ctx.setEditorDelegate(faxDelegate);
       ctx.traverse(visitor, faxDelegate);
-    }
-    if (statusDelegate != null) 
-    {
-      com.anova.anovacloud.client.application.customer.CustomerDetailView_status_Context ctx = new com.anova.anovacloud.client.application.customer.CustomerDetailView_status_Context(getObject(), editor.status.asEditor(), appendPath("status"));
-      ctx.setEditorDelegate(statusDelegate);
-      ctx.traverse(visitor, statusDelegate);
     }
   }
 }

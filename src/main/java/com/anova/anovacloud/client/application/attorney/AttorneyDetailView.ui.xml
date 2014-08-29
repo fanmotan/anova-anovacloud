@@ -1,0 +1,28 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <ui:with field="resource" type="com.anova.anovacloud.client.resources.AppResources"/>
+
+    <ui:style>
+        .panelWrapper {
+            padding: 10px;
+            padding-top: 20px;
+        }
+    </ui:style>
+
+    <g:HTMLPanel styleName="{style.panelWrapper}">
+        <g:TextBox ui:field="displayName" styleName="{resource.styles.mobileTextField}"/>
+         <g:TextBox ui:field="firstName" styleName="{resource.styles.mobileTextField}"/>
+          <g:TextBox ui:field="lastName" styleName="{resource.styles.mobileTextField}"/>
+           <g:TextBox ui:field="attorneyname" styleName="{resource.styles.mobileTextField}"/>
+            <g:TextBox ui:field="hashPassword" styleName="{resource.styles.mobileTextField}"/>
+            <g:ListBox ui:field="role">
+                				<g:item>System Administrator</g:item>
+		                		<g:item>Attorney</g:item>
+		                		<g:item>Read-Only</g:item>
+		     </g:ListBox>
+           <g:TextBox ui:field="email" styleName="{resource.styles.mobileTextField}"/>
+           <g:TextArea ui:field="mailAddress" styleName="{resource.styles.mobileTextField}"/>
+            <g:TextBox ui:field="phone" styleName="{resource.styles.mobileTextField}"/>
+             <g:TextBox ui:field="fax" styleName="{resource.styles.mobileTextField}"/>
+    </g:HTMLPanel>
+</ui:UiBinder>

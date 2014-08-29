@@ -50,7 +50,7 @@ sb.append("'></span> </div> </td> <td width='75%'> <div class='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg15));
 sb.append("'> <span id='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg16));
-sb.append("'></span> </div> </td> </tr>  <tr> <td width='25%'> <div class='");
+sb.append("'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg17));
 sb.append("'> <span id='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg18));

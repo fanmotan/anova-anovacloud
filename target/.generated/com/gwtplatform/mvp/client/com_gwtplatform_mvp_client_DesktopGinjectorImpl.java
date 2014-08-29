@@ -35,6 +35,14 @@ public class com_gwtplatform_mvp_client_DesktopGinjectorImpl implements com.gwtp
     return fieldcom_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector.getFragment_com_anova_anovacloud_client_application().get_Key$type$com$google$inject$Provider$com$anova$anovacloud$client$application$UnauthorizedPresenter$$_annotation$$none$$();
   }
   
+  public com.google.gwt.inject.client.AsyncProvider<com.anova.anovacloud.client.application.attorney.AttorneyDetailPresenter> getcomanovaanovacloudclientapplicationattorneyAttorneyDetailPresenter() {
+    return fieldcom_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_attorney().get_Key$type$com$google$gwt$inject$client$AsyncProvider$com$anova$anovacloud$client$application$attorney$AttorneyDetailPresenter$$_annotation$$none$$();
+  }
+  
+  public com.google.gwt.inject.client.AsyncProvider<com.anova.anovacloud.client.application.attorney.AttorneyPresenter> getcomanovaanovacloudclientapplicationattorneyAttorneyPresenter() {
+    return fieldcom_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_attorney().get_Key$type$com$google$gwt$inject$client$AsyncProvider$com$anova$anovacloud$client$application$attorney$AttorneyPresenter$$_annotation$$none$$();
+  }
+  
   public com.google.gwt.inject.client.AsyncProvider<com.anova.anovacloud.client.application.customer.CustomerDetailPresenter> getcomanovaanovacloudclientapplicationcustomerCustomerDetailPresenter() {
     return fieldcom_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_customer().get_Key$type$com$google$gwt$inject$client$AsyncProvider$com$anova$anovacloud$client$application$customer$CustomerDetailPresenter$$_annotation$$none$$();
   }

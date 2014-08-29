@@ -5,10 +5,14 @@ package com.anova.anovacloud.server.dao.domain;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.googlecode.objectify.Ref;
 import com.googlecode.objectify.annotation.Entity;
+import com.googlecode.objectify.annotation.Load;
 import com.googlecode.objectify.annotation.Index;
 import com.anova.anovacloud.shared.dto.BaseEntity;
+import com.anova.anovacloud.server.dao.objectify.Deref;
 import com.anova.anovacloud.shared.dto.UserDto;
+
 
 @Index
 @Entity
@@ -18,35 +22,45 @@ public class User extends BaseEntity {
     private String hashPassword;
     private String firstName;
     private String lastName;
-    private String role;
     private String email;
-    private String mailAddress;
-    private String phone;
-    private String fax;
-
-    public User() {
-        firstName = "";
-        lastName = "";
-        displayName = "";
-        role = "";
-        email = "";
-        mailAddress ="";
-        phone ="";
-        fax = "";
+    @Load
+    private Ref<UserRole> userRole;
+    
+   
+	public User() {
+    	 firstName = "";
+         lastName = "";
+         displayName = "";
+         email = "";
+         username="";
+         hashPassword="";
+       
     }
+	
     public User(String displayName, String username, String hashPassword, String firstName, String lastName,
-    			String role, String email, String mailAddress, String phone, String fax) {
+    			String email, UserRole userRole) {
         this.displayName = displayName;
         this.username = username;    
         this.hashPassword = hashPassword;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.role = role;
         this.email = email;
-        this.mailAddress = mailAddress;
-        this.phone = phone;
-        this.fax = fax;
+        this.setUserRole(userRole);
     }
+    
+    
+   
+    public UserRole getUserRole() {
+		return Deref.deref(userRole);
+	}
+	public void setUserRole(UserRole userRole) {
+		if (userRole != null) {
+            this.userRole = Ref.create(userRole);
+        } else {
+            this.userRole = null;
+        }
+	}
+   
     
     @Override
     public void setId(Long id) {
@@ -91,13 +105,6 @@ public class User extends BaseEntity {
     public void setHashPassword(String hashPassword) {
         this.hashPassword = hashPassword;
     }
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
     
     public String getEmail() {
         return email;
@@ -107,44 +114,11 @@ public class User extends BaseEntity {
         this.email = email;
     }
     
-    public String getMailAddress() {
-        return mailAddress;
-    }
-
-    public void setMailAddress(String mailAddress) {
-        this.mailAddress = mailAddress;
-    }
-    
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-    
-    public String getFax() {
-        return fax;
-    }
-
-    public void setFax(String fax) {
-        this.fax = fax;
-    }
 
     @Override
     public String toString() {
         String s = "{ User ";
-        s += "id=" + id + " ";
-        s += "displayName=" + displayName + " ";
-        s += "username=" + username + " ";
-        s += "hashPassword=" + hashPassword + " ";
-        s += "firstName=" + firstName + " ";
-        s += "lastName=" + lastName + " ";
-        s += "role=" + role + " ";
-        s += "email=" + email + " ";
-        s += "mailAddress=" + mailAddress + " ";
-        s += "phone=" + phone + " ";
-        s += "fax=" + fax + " ";
+        s +=  displayName;
         s += "}";
         return s;
     }
@@ -172,11 +146,9 @@ public class User extends BaseEntity {
         userDto.setUsername(user.getUsername());
         userDto.setDisplayName(user.getDisplayName());
         userDto.setHashPassword(user.getHashPassword());
-        userDto.setRole(user.getRole());
         userDto.setEmail(user.getEmail());
-        userDto.setMailAddress(user.getMailAddress());
-        userDto.setPhone(user.getPhone());
-        userDto.setFax(user.getFax());
+        userDto.setUserRole(UserRole.createDto(user.getUserRole()));
+        
 
         return userDto;
     }
@@ -193,12 +165,22 @@ public class User extends BaseEntity {
         user.setLastName(userDto.getLastName());
         user.setUsername(userDto.getUsername());
         user.setDisplayName(userDto.getDisplayName());
-        user.setRole(userDto.getRole());
         user.setEmail(userDto.getEmail());
-        user.setMailAddress(userDto.getMailAddress());
-        user.setPhone(userDto.getPhone());
-        user.setFax(userDto.getFax());
-
+        user.setUserRole(UserRole.create(userDto.getUserRole()));
+        
         return user;
+    }
+    
+    public static List<User> create(List<UserDto> userDtos) {
+        if (userDtos == null) {
+            return null;
+        }
+
+        List<User> users = new ArrayList<>();
+        for (UserDto userDto : userDtos) {
+            users.add(create(userDto));
+        }
+
+        return users;
     }
 }

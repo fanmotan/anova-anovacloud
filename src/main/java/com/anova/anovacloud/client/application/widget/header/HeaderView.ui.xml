@@ -85,6 +85,7 @@
                 <a href="#{MATTERS}">Matters</a>
                 <a href="#{MATTERACTION}">Matter Actions</a>
                 <a href="#{CUSTOMER}">Customers</a>
+                <a href="#{ATTORNEY}">Attorneys</a>
                 <a href="#{USER}">Users</a>
                 
             </g:HTMLPanel>

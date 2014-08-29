@@ -8,6 +8,8 @@ import com.gwtplatform.dispatch.rest.client.ActionMetadataProviderImpl;
 import com.gwtplatform.dispatch.rest.client.serialization.JacksonMapperProvider;
 import com.gwtplatform.dispatch.rest.client.serialization.JacksonMapperProviderImpl;
 
+import com.anova.anovacloud.client.rest.AttorneyService;
+import com.anova.anovacloud.client.rest.AttorneyServiceImpl;
 import com.anova.anovacloud.client.rest.CustomerService;
 import com.anova.anovacloud.client.rest.CustomerServiceImpl;
 import com.anova.anovacloud.client.rest.MatterActionService;
@@ -16,6 +18,8 @@ import com.anova.anovacloud.client.rest.MattersService;
 import com.anova.anovacloud.client.rest.MattersServiceImpl;
 import com.anova.anovacloud.client.rest.SessionService;
 import com.anova.anovacloud.client.rest.SessionServiceImpl;
+import com.anova.anovacloud.client.rest.UserRoleService;
+import com.anova.anovacloud.client.rest.UserRoleServiceImpl;
 import com.anova.anovacloud.client.rest.UserService;
 import com.anova.anovacloud.client.rest.UserServiceImpl;
 
@@ -25,10 +29,12 @@ public class RestGinModule extends AbstractGinModule {
         bind(ActionMetadataProvider.class).to(ActionMetadataProviderImpl.class);
         bind(JacksonMapperProvider.class).to(JacksonMapperProviderImpl.class).in(Singleton.class);
 
+        bind(AttorneyService.class).to(AttorneyServiceImpl.class).in(Singleton.class);
         bind(CustomerService.class).to(CustomerServiceImpl.class).in(Singleton.class);
         bind(MatterActionService.class).to(MatterActionServiceImpl.class).in(Singleton.class);
         bind(MattersService.class).to(MattersServiceImpl.class).in(Singleton.class);
         bind(SessionService.class).to(SessionServiceImpl.class).in(Singleton.class);
+        bind(UserRoleService.class).to(UserRoleServiceImpl.class).in(Singleton.class);
         bind(UserService.class).to(UserServiceImpl.class).in(Singleton.class);
     }
 }

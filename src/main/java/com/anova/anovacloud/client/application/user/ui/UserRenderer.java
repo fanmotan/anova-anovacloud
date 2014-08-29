@@ -11,7 +11,7 @@ public class UserRenderer extends AbstractRenderer<UserDto> {
     	if (userDto == null){
     		return "";
     	}
-        return userDto.getDisplayName()+" "+userDto.getFirstName()+" "+userDto.getLastName()+" "+userDto.getUsername()+" "+userDto.getHashPassword()+" "+userDto.getRole()+" "+userDto.getEmail()+" "+userDto.getMailAddress()+" "+userDto.getPhone()+" "+userDto.getFax();
+        return userDto.getDisplayName();
     }
     
 }

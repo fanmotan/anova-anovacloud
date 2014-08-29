@@ -5,11 +5,13 @@ package com.anova.anovacloud.server.dao.objectify;
 import com.googlecode.objectify.Objectify;
 import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.ObjectifyService;
+import com.anova.anovacloud.server.dao.domain.Attorney;
 import com.anova.anovacloud.server.dao.domain.Matter;
 import com.anova.anovacloud.server.dao.domain.MatterProperties;
 import com.anova.anovacloud.server.dao.domain.Customer;
 import com.anova.anovacloud.server.dao.domain.MatterAction;
 import com.anova.anovacloud.server.dao.domain.User;
+import com.anova.anovacloud.server.dao.domain.UserRole;
 import com.anova.anovacloud.server.dao.domain.UserSession;
 
 public class OfyService {
@@ -19,6 +21,8 @@ public class OfyService {
         factory().register(Customer.class);
         factory().register(MatterAction.class);
         factory().register(User.class);
+        factory().register(UserRole.class);
+        factory().register(Attorney.class);
         factory().register(UserSession.class);
     }
 

@@ -6,9 +6,7 @@
    <ui:with field='hashPassword' type='java.lang.String'/>
    <ui:with field='role' type='java.lang.String'/>
    <ui:with field='email' type='java.lang.String'/>
-   <ui:with field='mailAddress' type='java.lang.String'/>
-   <ui:with field='phone' type='java.lang.String'/>
-   <ui:with field='fax' type='java.lang.String'/>
+
   
 
     <ui:style>
@@ -49,22 +47,11 @@
             <ui:text from="{username}"/>
         </div>
         <div class="{style.floatLeft}">
-            <ui:text from="{hashPassword}"/>
+            <ui:text from="{role}"/>
         </div>
         <div class="{style.floatLeft}">
             <ui:text from="{email}"/>
         </div>
-        <div class="{style.floatLeft}">
-            <ui:text from="{mailAddress}"/>
-        </div>
-        <div class="{style.floatLeft}">
-            <ui:text from="{phone}"/>
-        </div>
-        
-        <div class="{style.floatLeft}">
-            <ui:text from="{fax}"/>
-        </div>
-        
 
         <div class="{style.floatRight}">
             &gt;

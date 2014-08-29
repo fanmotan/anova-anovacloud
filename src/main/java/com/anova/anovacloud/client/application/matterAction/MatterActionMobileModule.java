@@ -2,7 +2,6 @@
 
 package com.anova.anovacloud.client.application.matterAction;
 
-import com.google.gwt.inject.client.assistedinject.GinFactoryModuleBuilder;
 import com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionPresenter;
 import com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionUiHandlers;
 import com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionView;

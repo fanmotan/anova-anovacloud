@@ -4,6 +4,10 @@ import com.google.gwt.core.client.GWT;
 import com.gwtplatform.mvp.client.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector;
 
 public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment {
+  public void memberInject_Key$type$com$anova$anovacloud$client$rest$AttorneyServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.AttorneyServiceImpl injectee) {
+    
+  }
+  
   public void memberInject_Key$type$com$anova$anovacloud$client$rest$CustomerServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.CustomerServiceImpl injectee) {
     
   }
@@ -20,7 +24,23 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     
   }
   
+  public void memberInject_Key$type$com$anova$anovacloud$client$rest$UserRoleServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.UserRoleServiceImpl injectee) {
+    
+  }
+  
   public void memberInject_Key$type$com$anova$anovacloud$client$rest$UserServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.UserServiceImpl injectee) {
+    
+  }
+  
+  private com.anova.anovacloud.client.rest.AttorneyService singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyService$_annotation$$none$$ = null;
+  
+  public com.anova.anovacloud.client.rest.AttorneyService get_Key$type$com$anova$anovacloud$client$rest$AttorneyService$_annotation$$none$$() {
+    
+    if (singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyService$_annotation$$none$$ == null) {
+    com.anova.anovacloud.client.rest.AttorneyService result = get_Key$type$com$anova$anovacloud$client$rest$AttorneyServiceImpl$_annotation$$none$$();
+        singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyService$_annotation$$none$$ = result;
+    }
+    return singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyService$_annotation$$none$$;
     
   }
   
@@ -72,6 +92,18 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     
   }
   
+  private com.anova.anovacloud.client.rest.UserRoleService singleton_Key$type$com$anova$anovacloud$client$rest$UserRoleService$_annotation$$none$$ = null;
+  
+  public com.anova.anovacloud.client.rest.UserRoleService get_Key$type$com$anova$anovacloud$client$rest$UserRoleService$_annotation$$none$$() {
+    
+    if (singleton_Key$type$com$anova$anovacloud$client$rest$UserRoleService$_annotation$$none$$ == null) {
+    com.anova.anovacloud.client.rest.UserRoleService result = get_Key$type$com$anova$anovacloud$client$rest$UserRoleServiceImpl$_annotation$$none$$();
+        singleton_Key$type$com$anova$anovacloud$client$rest$UserRoleService$_annotation$$none$$ = result;
+    }
+    return singleton_Key$type$com$anova$anovacloud$client$rest$UserRoleService$_annotation$$none$$;
+    
+  }
+  
   private com.anova.anovacloud.client.rest.UserService singleton_Key$type$com$anova$anovacloud$client$rest$UserService$_annotation$$none$$ = null;
   
   public com.anova.anovacloud.client.rest.UserService get_Key$type$com$anova$anovacloud$client$rest$UserService$_annotation$$none$$() {
@@ -82,6 +114,23 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     }
     return singleton_Key$type$com$anova$anovacloud$client$rest$UserService$_annotation$$none$$;
     
+  }
+  
+  
+  /**
+   * Binding for com.anova.anovacloud.client.rest.AttorneyServiceImpl declared at:
+   *   Implicit binding for com.anova.anovacloud.client.rest.AttorneyServiceImpl
+   */
+  public com.anova.anovacloud.client.rest.AttorneyServiceImpl get_Key$type$com$anova$anovacloud$client$rest$AttorneyServiceImpl$_annotation$$none$$() {
+    com.anova.anovacloud.client.rest.AttorneyServiceImpl result = com$anova$anovacloud$client$rest$AttorneyServiceImpl_com$anova$anovacloud$client$rest$AttorneyServiceImpl_methodInjection(injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$java$lang$String$_annotation$$com$gwtplatform$dispatch$rest$client$DefaultDateFormat$());
+    memberInject_Key$type$com$anova$anovacloud$client$rest$AttorneyServiceImpl$_annotation$$none$$(result);
+    
+    return result;
+    
+  }
+  
+  public com.anova.anovacloud.client.rest.AttorneyServiceImpl com$anova$anovacloud$client$rest$AttorneyServiceImpl_com$anova$anovacloud$client$rest$AttorneyServiceImpl_methodInjection(java.lang.String _0) {
+    return new com.anova.anovacloud.client.rest.AttorneyServiceImpl(_0);
   }
   
   
@@ -150,6 +199,23 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
   
   public com.anova.anovacloud.client.rest.SessionServiceImpl com$anova$anovacloud$client$rest$SessionServiceImpl_com$anova$anovacloud$client$rest$SessionServiceImpl_methodInjection(java.lang.String _0) {
     return new com.anova.anovacloud.client.rest.SessionServiceImpl(_0);
+  }
+  
+  
+  /**
+   * Binding for com.anova.anovacloud.client.rest.UserRoleServiceImpl declared at:
+   *   Implicit binding for com.anova.anovacloud.client.rest.UserRoleServiceImpl
+   */
+  public com.anova.anovacloud.client.rest.UserRoleServiceImpl get_Key$type$com$anova$anovacloud$client$rest$UserRoleServiceImpl$_annotation$$none$$() {
+    com.anova.anovacloud.client.rest.UserRoleServiceImpl result = com$anova$anovacloud$client$rest$UserRoleServiceImpl_com$anova$anovacloud$client$rest$UserRoleServiceImpl_methodInjection(injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$java$lang$String$_annotation$$com$gwtplatform$dispatch$rest$client$DefaultDateFormat$());
+    memberInject_Key$type$com$anova$anovacloud$client$rest$UserRoleServiceImpl$_annotation$$none$$(result);
+    
+    return result;
+    
+  }
+  
+  public com.anova.anovacloud.client.rest.UserRoleServiceImpl com$anova$anovacloud$client$rest$UserRoleServiceImpl_com$anova$anovacloud$client$rest$UserRoleServiceImpl_methodInjection(java.lang.String _0) {
+    return new com.anova.anovacloud.client.rest.UserRoleServiceImpl(_0);
   }
   
   

@@ -15,14 +15,10 @@
           <g:TextBox ui:field="lastName" styleName="{resource.styles.mobileTextField}"/>
            <g:TextBox ui:field="username" styleName="{resource.styles.mobileTextField}"/>
             <g:TextBox ui:field="hashPassword" styleName="{resource.styles.mobileTextField}"/>
-            <g:ListBox ui:field="role">
-                				<g:item>System Administrator</g:item>
-		                		<g:item>User</g:item>
-		                		<g:item>Read-Only</g:item>
-		     </g:ListBox>
-           <g:TextBox ui:field="email" styleName="{resource.styles.mobileTextField}"/>
-           <g:TextArea ui:field="mailAddress" styleName="{resource.styles.mobileTextField}"/>
-            <g:TextBox ui:field="phone" styleName="{resource.styles.mobileTextField}"/>
-             <g:TextBox ui:field="fax" styleName="{resource.styles.mobileTextField}"/>
+
+            <g:ValueListBox  ui:field="userRole"  />
+                			
+		     <g:TextBox ui:field="email" styleName="{resource.styles.mobileTextField}"/>
+
     </g:HTMLPanel>
 </ui:UiBinder>

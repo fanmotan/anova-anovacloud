@@ -9,7 +9,7 @@ public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector
   }
   
   public void memberInject_Key$type$com$anova$anovacloud$client$application$user$UserDetailPresenter$_annotation$$none$$(com.anova.anovacloud.client.application.user.UserDetailPresenter injectee) {
-    injector.getFragment_com_gwtplatform_mvp_client().com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection________________(injectee, injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$());
+    injector.getFragment_com_gwtplatform_mvp_client().com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection___________________(injectee, injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$());
     
   }
   
@@ -18,7 +18,7 @@ public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector
   }
   
   public void memberInject_Key$type$com$anova$anovacloud$client$application$user$UserPresenter$_annotation$$none$$(com.anova.anovacloud.client.application.user.UserPresenter injectee) {
-    injector.getFragment_com_gwtplatform_mvp_client().com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection__________________(injectee, injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$());
+    injector.getFragment_com_gwtplatform_mvp_client().com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection_____________________(injectee, injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$());
     
   }
   
@@ -86,7 +86,7 @@ public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector
   public com.anova.anovacloud.client.application.user.UserDetailPresenter get_Key$type$com$anova$anovacloud$client$application$user$UserDetailPresenter$_annotation$$none$$() {
     
     if (singleton_Key$type$com$anova$anovacloud$client$application$user$UserDetailPresenter$_annotation$$none$$ == null) {
-    com.anova.anovacloud.client.application.user.UserDetailPresenter result = com$anova$anovacloud$client$application$user$UserDetailPresenter_com$anova$anovacloud$client$application$user$UserDetailPresenter_methodInjection(injector.getFragment_com_google_web_bindery_event_shared().get_Key$type$com$google$web$bindery$event$shared$EventBus$_annotation$$none$$(), get_Key$type$com$anova$anovacloud$client$application$user$UserDetailPresenter$MyView$_annotation$$none$$(), get_Key$type$com$anova$anovacloud$client$application$user$UserDetailPresenter$MyProxy$_annotation$$none$$(), injector.getFragment_com_gwtplatform_dispatch_rest_shared().get_Key$type$com$gwtplatform$dispatch$rest$shared$RestDispatch$_annotation$$none$$(), injector.getFragment_com_anova_anovacloud_client_rest().get_Key$type$com$anova$anovacloud$client$rest$UserService$_annotation$$none$$(), injector.getFragment_com_gwtplatform_mvp_client_proxy().get_Key$type$com$gwtplatform$mvp$client$proxy$PlaceManager$_annotation$$none$$(), injector.getFragment_com_anova_anovacloud_client_resources().get_Key$type$com$anova$anovacloud$client$resources$EditUserMessages$_annotation$$none$$());
+    com.anova.anovacloud.client.application.user.UserDetailPresenter result = com$anova$anovacloud$client$application$user$UserDetailPresenter_com$anova$anovacloud$client$application$user$UserDetailPresenter_methodInjection(injector.getFragment_com_google_web_bindery_event_shared().get_Key$type$com$google$web$bindery$event$shared$EventBus$_annotation$$none$$(), get_Key$type$com$anova$anovacloud$client$application$user$UserDetailPresenter$MyView$_annotation$$none$$(), get_Key$type$com$anova$anovacloud$client$application$user$UserDetailPresenter$MyProxy$_annotation$$none$$(), injector.getFragment_com_gwtplatform_dispatch_rest_shared().get_Key$type$com$gwtplatform$dispatch$rest$shared$RestDispatch$_annotation$$none$$(), injector.getFragment_com_anova_anovacloud_client_rest().get_Key$type$com$anova$anovacloud$client$rest$UserService$_annotation$$none$$(), injector.getFragment_com_anova_anovacloud_client_rest().get_Key$type$com$anova$anovacloud$client$rest$UserRoleService$_annotation$$none$$(), injector.getFragment_com_anova_anovacloud_client_resources().get_Key$type$com$anova$anovacloud$client$resources$EditUserMessages$_annotation$$none$$(), injector.getFragment_com_gwtplatform_mvp_client_proxy().get_Key$type$com$gwtplatform$mvp$client$proxy$PlaceManager$_annotation$$none$$());
     memberInject_Key$type$com$anova$anovacloud$client$application$user$UserDetailPresenter$_annotation$$none$$(result);
     
         singleton_Key$type$com$anova$anovacloud$client$application$user$UserDetailPresenter$_annotation$$none$$ = result;
@@ -95,8 +95,8 @@ public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector
     
   }
   
-  public com.anova.anovacloud.client.application.user.UserDetailPresenter com$anova$anovacloud$client$application$user$UserDetailPresenter_com$anova$anovacloud$client$application$user$UserDetailPresenter_methodInjection(com.google.web.bindery.event.shared.EventBus _0, com.anova.anovacloud.client.application.user.UserDetailPresenter.MyView _1, com.anova.anovacloud.client.application.user.UserDetailPresenter.MyProxy _2, com.gwtplatform.dispatch.rest.shared.RestDispatch _3, com.anova.anovacloud.client.rest.UserService _4, com.gwtplatform.mvp.client.proxy.PlaceManager _5, com.anova.anovacloud.client.resources.EditUserMessages _6) {
-    return new com.anova.anovacloud.client.application.user.UserDetailPresenter(_0, _1, _2, _3, _4, _5, _6);
+  public com.anova.anovacloud.client.application.user.UserDetailPresenter com$anova$anovacloud$client$application$user$UserDetailPresenter_com$anova$anovacloud$client$application$user$UserDetailPresenter_methodInjection(com.google.web.bindery.event.shared.EventBus _0, com.anova.anovacloud.client.application.user.UserDetailPresenter.MyView _1, com.anova.anovacloud.client.application.user.UserDetailPresenter.MyProxy _2, com.gwtplatform.dispatch.rest.shared.RestDispatch _3, com.anova.anovacloud.client.rest.UserService _4, com.anova.anovacloud.client.rest.UserRoleService _5, com.anova.anovacloud.client.resources.EditUserMessages _6, com.gwtplatform.mvp.client.proxy.PlaceManager _7) {
+    return new com.anova.anovacloud.client.application.user.UserDetailPresenter(_0, _1, _2, _3, _4, _5, _6, _7);
   }
   
   

@@ -9,7 +9,6 @@ import javax.inject.Inject;
 import com.google.gwt.cell.client.ActionCell;
 import com.google.gwt.cell.client.ActionCell.Delegate;
 import com.google.gwt.cell.client.Cell;
-import com.google.gwt.cell.client.NumberCell;
 import com.google.gwt.cell.client.TextCell;
 import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -25,6 +24,7 @@ import com.google.gwt.view.client.ListDataProvider;
 import com.google.gwt.view.client.NoSelectionModel;
 import com.anova.anovacloud.client.application.user.UserPresenter.MyView;
 import com.anova.anovacloud.shared.dto.UserDto;
+import com.anova.anovacloud.shared.dto.UserRoleDto;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
 public class UserView extends ViewWithUiHandlers<UserUiHandlers> implements MyView {
@@ -85,12 +85,14 @@ public class UserView extends ViewWithUiHandlers<UserUiHandlers> implements MyVi
     }
 
     private void initDataColumns() {
+    	/*
         Column<UserDto, Number> idColumn = new Column<UserDto, Number>(new NumberCell()) {
             @Override
             public Long getValue(UserDto userDto) {
                 return userDto.getId();
             }
         };
+        */
 
         Column<UserDto, String> displayNameColumn = new Column<UserDto, String>(new TextCell()) {
             @Override
@@ -117,55 +119,40 @@ public class UserView extends ViewWithUiHandlers<UserUiHandlers> implements MyVi
                 return userDto.getUsername();
             }
         };
+        /*
         Column<UserDto, String> hashPasswordColumn = new Column<UserDto, String>(new TextCell()) {
             @Override
             public String getValue(UserDto userDto) {
                 return userDto.getHashPassword();
             }
         };
+        */
         Column<UserDto, String> roleColumn = new Column<UserDto, String>(new TextCell()) {
             @Override
             public String getValue(UserDto userDto) {
-                return userDto.getRole();
+            	 UserRoleDto userRole = userDto.getUserRole();
+                 return userRole == null ? "" : userRole.getRoleName();
             }
         };
-        Column<UserDto, String> mailAddressColumn = new Column<UserDto, String>(new TextCell()) {
-            @Override
-            public String getValue(UserDto userDto) {
-                return userDto.getMailAddress();
-            }
-        };
+       
         Column<UserDto, String> emailColumn = new Column<UserDto, String>(new TextCell()) {
             @Override
             public String getValue(UserDto userDto) {
                 return userDto.getEmail();
             }
         };
-        Column<UserDto, String> phoneColumn = new Column<UserDto, String>(new TextCell()) {
-            @Override
-            public String getValue(UserDto userDto) {
-                return userDto.getPhone();
-            }
-        };
-        Column<UserDto, String> faxColumn = new Column<UserDto, String>(new TextCell()) {
-            @Override
-            public String getValue(UserDto userDto) {
-                return userDto.getFax();
-            }
-        };
-        userGrid.addColumn(idColumn, "ID");
+       
+        //userGrid.addColumn(idColumn, "ID");
         userGrid.addColumn(displayNameColumn, "Display Name");
         userGrid.addColumn(firstNameColumn, "First Name");
         userGrid.addColumn(lastNameColumn, "Last Name");
         userGrid.addColumn(usernameColumn, "Username");
-        userGrid.addColumn(hashPasswordColumn, "Password");
+       // userGrid.addColumn(hashPasswordColumn, "Password");
         userGrid.addColumn(roleColumn, "Role");
         userGrid.addColumn(emailColumn, "Email");
-        userGrid.addColumn(mailAddressColumn, "Mailing Address");
-        userGrid.addColumn(phoneColumn, "Phone");
-        userGrid.addColumn(faxColumn, "Fax");
         
-        userGrid.setColumnWidth(idColumn, 50, Unit.PX);
+        
+       // userGrid.setColumnWidth(idColumn, 50, Unit.PX);
     }
 
     private void initActionColumns() {

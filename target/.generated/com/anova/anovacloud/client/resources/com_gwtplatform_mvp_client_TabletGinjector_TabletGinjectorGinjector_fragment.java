@@ -8,6 +8,10 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     
   }
   
+  public void memberInject_Key$type$com$anova$anovacloud$client$resources$EditAttorneyMessages$_annotation$$none$$(com.anova.anovacloud.client.resources.EditAttorneyMessages injectee) {
+    
+  }
+  
   public void memberInject_Key$type$com$anova$anovacloud$client$resources$EditCustomerMessages$_annotation$$none$$(com.anova.anovacloud.client.resources.EditCustomerMessages injectee) {
     
   }
@@ -47,6 +51,22 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     com.anova.anovacloud.client.resources.HeaderMessages result = (com.anova.anovacloud.client.resources.HeaderMessages) created;
     
     memberInject_Key$type$com$anova$anovacloud$client$resources$HeaderMessages$_annotation$$none$$(result);
+    
+    return result;
+    
+  }
+  
+  
+  /**
+   * Binding for com.anova.anovacloud.client.resources.EditAttorneyMessages declared at:
+   *   Implicit GWT.create binding for com.anova.anovacloud.client.resources.EditAttorneyMessages
+   */
+  public com.anova.anovacloud.client.resources.EditAttorneyMessages get_Key$type$com$anova$anovacloud$client$resources$EditAttorneyMessages$_annotation$$none$$() {
+    Object created = GWT.create(com.anova.anovacloud.client.resources.EditAttorneyMessages.class);
+    assert created instanceof com.anova.anovacloud.client.resources.EditAttorneyMessages;
+    com.anova.anovacloud.client.resources.EditAttorneyMessages result = (com.anova.anovacloud.client.resources.EditAttorneyMessages) created;
+    
+    memberInject_Key$type$com$anova$anovacloud$client$resources$EditAttorneyMessages$_annotation$$none$$(result);
     
     return result;
     

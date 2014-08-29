@@ -9,7 +9,6 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
 import com.anova.anovacloud.shared.dto.CustomerDto;
-import com.anova.anovacloud.shared.rest.ResourcesPath;
 import com.gwtplatform.dispatch.rest.shared.RestAction;
 
 import static com.anova.anovacloud.shared.rest.PathParameter.PATH_ID;
@@ -21,10 +20,7 @@ public interface CustomerService {
     @GET
     RestAction<List<CustomerDto>> getCustomers();
   
-    /*
-    @GET
-    RestAction<List<CustomerDto>> getActiveCustomers();
-*/
+   
     @GET
     @Path(PATH_ID)
     RestAction<CustomerDto> get(@PathParam(ID) Long id);

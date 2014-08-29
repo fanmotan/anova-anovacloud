@@ -82,18 +82,6 @@ public class UserDtoBeanJsonDeserializerImpl extends com.github.nmorel.gwtjackso
       }
     });
     
-    map.put("role", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.UserDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
-      }
-      
-      @Override
-      public void setValue(com.anova.anovacloud.shared.dto.UserDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
-        bean.setRole(value);
-      }
-    });
-    
     map.put("email", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.UserDto, java.lang.String>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
@@ -106,39 +94,15 @@ public class UserDtoBeanJsonDeserializerImpl extends com.github.nmorel.gwtjackso
       }
     });
     
-    map.put("mailAddress", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.UserDto, java.lang.String>() {
+    map.put("userRole", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.UserDto, com.anova.anovacloud.shared.dto.UserRoleDto>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
+        return new com.anova.anovacloud.shared.dto.UserRoleDtoBeanJsonDeserializerImpl();
       }
       
       @Override
-      public void setValue(com.anova.anovacloud.shared.dto.UserDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
-        bean.setMailAddress(value);
-      }
-    });
-    
-    map.put("phone", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.UserDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
-      }
-      
-      @Override
-      public void setValue(com.anova.anovacloud.shared.dto.UserDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
-        bean.setPhone(value);
-      }
-    });
-    
-    map.put("fax", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.UserDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
-      }
-      
-      @Override
-      public void setValue(com.anova.anovacloud.shared.dto.UserDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
-        bean.setFax(value);
+      public void setValue(com.anova.anovacloud.shared.dto.UserDto bean, com.anova.anovacloud.shared.dto.UserRoleDto value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
+        bean.setUserRole(value);
       }
     });
     

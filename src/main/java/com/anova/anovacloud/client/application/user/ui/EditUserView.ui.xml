@@ -81,11 +81,8 @@
             </td>
             <td width="75%">
                 <div class="{style.formRow}">	
-                	<g:ListBox ui:field="role" debugId="user-input">
-                				<g:item>System Administrator</g:item>
-		                		<g:item>User</g:item>
-		                		<g:item>Read-Only</g:item>
-		            </g:ListBox>
+                	 <g:ValueListBox ui:field="userRole" debugId="user-role-input"/>
+                		     				
            		</div>
            	</td>
         </tr>
@@ -101,42 +98,7 @@
             	</div>
             </td>
         </tr>
-        <tr>
-        	<td width="25%">
-            	<div class="{style.formRow}">
-                	<g:InlineLabel>Mailing Address:</g:InlineLabel>
-                </div>
-            </td>
-            <td width="75%">
-                <div class="{style.formRow}">
-                	<g:TextArea ui:field="mailAddress" debugId="user-input"/>
-            	</div>
-             </td>
-        </tr>
-        <tr>
-        	<td width="25%">
-            	<div class="{style.formRow}">
-                	<g:InlineLabel>Phone:</g:InlineLabel>
-                </div>
-            </td>
-            <td width="75%">
-                <div class="{style.formRow}"> 
-                	<g:TextBox ui:field="phone" debugId="user-input"/>
-            	</div>
-             </td>
-        </tr>
-        <tr>
-        	<td width="25%">
-            	<div class="{style.formRow}">
-                	<g:InlineLabel>Fax:</g:InlineLabel>
-                </div>
-            </td>
-            <td width="75%">
-                <div class="{style.formRow}">
-                	<g:TextBox ui:field="fax" debugId="user-input"/>
-            	</div>
-			</td>
-        </tr>
+       
         </table>
             	<div class="{style.formRow}">
                 <g:Button ui:field="save" debugId="user-save">Save</g:Button>

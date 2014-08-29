@@ -12,11 +12,8 @@ public class EditUserView_SimpleBeanEditorDelegate extends com.google.gwt.editor
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate lastNameDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate usernameDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate hashPasswordDelegate;
-  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate roleDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate emailDelegate;
-  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate mailAddressDelegate;
-  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate phoneDelegate;
-  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate faxDelegate;
+  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate userRoleDelegate;
   @Override protected void initializeSubDelegates() {
     if (editor.displayName.asEditor() != null) {
       displayNameDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
@@ -38,25 +35,13 @@ public class EditUserView_SimpleBeanEditorDelegate extends com.google.gwt.editor
       hashPasswordDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
       addSubDelegate(hashPasswordDelegate, appendPath("hashPassword"), editor.hashPassword.asEditor());
     }
-    if (editor.role.asEditor() != null) {
-      roleDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
-      addSubDelegate(roleDelegate, appendPath("role"), editor.role.asEditor());
-    }
     if (editor.email.asEditor() != null) {
       emailDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
       addSubDelegate(emailDelegate, appendPath("email"), editor.email.asEditor());
     }
-    if (editor.mailAddress.asEditor() != null) {
-      mailAddressDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
-      addSubDelegate(mailAddressDelegate, appendPath("mailAddress"), editor.mailAddress.asEditor());
-    }
-    if (editor.phone.asEditor() != null) {
-      phoneDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
-      addSubDelegate(phoneDelegate, appendPath("phone"), editor.phone.asEditor());
-    }
-    if (editor.fax.asEditor() != null) {
-      faxDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
-      addSubDelegate(faxDelegate, appendPath("fax"), editor.fax.asEditor());
+    if (editor.userRole.asEditor() != null) {
+      userRoleDelegate = new com.google.gwt.editor.client.adapters.TakesValueEditor_com_anova_anovacloud_shared_dto_UserRoleDto_SimpleBeanEditorDelegate();
+      addSubDelegate(userRoleDelegate, appendPath("userRole"), editor.userRole.asEditor());
     }
   }
   @Override public void accept(com.google.gwt.editor.client.EditorVisitor visitor) {
@@ -90,35 +75,17 @@ public class EditUserView_SimpleBeanEditorDelegate extends com.google.gwt.editor
       ctx.setEditorDelegate(hashPasswordDelegate);
       ctx.traverse(visitor, hashPasswordDelegate);
     }
-    if (roleDelegate != null) 
-    {
-      com.anova.anovacloud.client.application.user.ui.EditUserView_role_Context ctx = new com.anova.anovacloud.client.application.user.ui.EditUserView_role_Context(getObject(), editor.role.asEditor(), appendPath("role"));
-      ctx.setEditorDelegate(roleDelegate);
-      ctx.traverse(visitor, roleDelegate);
-    }
     if (emailDelegate != null) 
     {
       com.anova.anovacloud.client.application.user.ui.EditUserView_email_Context ctx = new com.anova.anovacloud.client.application.user.ui.EditUserView_email_Context(getObject(), editor.email.asEditor(), appendPath("email"));
       ctx.setEditorDelegate(emailDelegate);
       ctx.traverse(visitor, emailDelegate);
     }
-    if (mailAddressDelegate != null) 
+    if (userRoleDelegate != null) 
     {
-      com.anova.anovacloud.client.application.user.ui.EditUserView_mailAddress_Context ctx = new com.anova.anovacloud.client.application.user.ui.EditUserView_mailAddress_Context(getObject(), editor.mailAddress.asEditor(), appendPath("mailAddress"));
-      ctx.setEditorDelegate(mailAddressDelegate);
-      ctx.traverse(visitor, mailAddressDelegate);
-    }
-    if (phoneDelegate != null) 
-    {
-      com.anova.anovacloud.client.application.user.ui.EditUserView_phone_Context ctx = new com.anova.anovacloud.client.application.user.ui.EditUserView_phone_Context(getObject(), editor.phone.asEditor(), appendPath("phone"));
-      ctx.setEditorDelegate(phoneDelegate);
-      ctx.traverse(visitor, phoneDelegate);
-    }
-    if (faxDelegate != null) 
-    {
-      com.anova.anovacloud.client.application.user.ui.EditUserView_fax_Context ctx = new com.anova.anovacloud.client.application.user.ui.EditUserView_fax_Context(getObject(), editor.fax.asEditor(), appendPath("fax"));
-      ctx.setEditorDelegate(faxDelegate);
-      ctx.traverse(visitor, faxDelegate);
+      com.anova.anovacloud.client.application.user.ui.EditUserView_userRole_Context ctx = new com.anova.anovacloud.client.application.user.ui.EditUserView_userRole_Context(getObject(), editor.userRole.asEditor(), appendPath("userRole"));
+      ctx.setEditorDelegate(userRoleDelegate);
+      ctx.traverse(visitor, userRoleDelegate);
     }
   }
 }

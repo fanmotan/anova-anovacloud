@@ -219,6 +219,21 @@ public class UnauthorizedView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
+     * Getter for USERROLE called 0 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_USERROLE() {
+      return build_USERROLE();
+    }
+    private java.lang.String build_USERROLE() {
+      // Creation section.
+      final java.lang.String USERROLE = com.anova.anovacloud.client.place.NameTokens.USERROLE;
+      // Setup section.
+
+
+      return USERROLE;
+    }
+
+    /**
      * Getter for DETAIL_USER called 0 times. Type: DEFAULT. Build precedence: 1.
      */
     private java.lang.String get_DETAIL_USER() {
@@ -231,6 +246,36 @@ public class UnauthorizedView_BinderImpl implements UiBinder<com.google.gwt.user
 
 
       return DETAIL_USER;
+    }
+
+    /**
+     * Getter for ATTORNEY called 0 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_ATTORNEY() {
+      return build_ATTORNEY();
+    }
+    private java.lang.String build_ATTORNEY() {
+      // Creation section.
+      final java.lang.String ATTORNEY = com.anova.anovacloud.client.place.NameTokens.ATTORNEY;
+      // Setup section.
+
+
+      return ATTORNEY;
+    }
+
+    /**
+     * Getter for DETAIL_ATTORNEY called 0 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_DETAIL_ATTORNEY() {
+      return build_DETAIL_ATTORNEY();
+    }
+    private java.lang.String build_DETAIL_ATTORNEY() {
+      // Creation section.
+      final java.lang.String DETAIL_ATTORNEY = com.anova.anovacloud.client.place.NameTokens.DETAIL_ATTORNEY;
+      // Setup section.
+
+
+      return DETAIL_ATTORNEY;
     }
 
     /**

@@ -121,7 +121,7 @@ public class CustomerDetailView_BinderImpl implements UiBinder<com.google.gwt.us
       f_HTMLPanel1.setStyleName("" + get_style().panelWrapper() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord6 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord8 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
@@ -131,7 +131,7 @@ public class CustomerDetailView_BinderImpl implements UiBinder<com.google.gwt.us
       get_domId6Element().get();
 
       // Detach section.
-      attachRecord6.detach();
+      attachRecord8.detach();
       f_HTMLPanel1.addAndReplaceElement(get_name(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_refNum(), get_domId1Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_address(), get_domId2Element().get());
@@ -262,12 +262,12 @@ public class CustomerDetailView_BinderImpl implements UiBinder<com.google.gwt.us
     /**
      * Getter for address called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_address() {
+    private com.google.gwt.user.client.ui.TextArea get_address() {
       return build_address();
     }
-    private com.google.gwt.user.client.ui.TextBox build_address() {
+    private com.google.gwt.user.client.ui.TextArea build_address() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox address = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextArea address = (com.google.gwt.user.client.ui.TextArea) GWT.create(com.google.gwt.user.client.ui.TextArea.class);
       // Setup section.
       address.setStyleName("" + get_resource().styles().mobileTextField() + "");
 
@@ -462,13 +462,15 @@ public class CustomerDetailView_BinderImpl implements UiBinder<com.google.gwt.us
     /**
      * Getter for status called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_status() {
+    private com.google.gwt.user.client.ui.ListBox get_status() {
       return build_status();
     }
-    private com.google.gwt.user.client.ui.TextBox build_status() {
+    private com.google.gwt.user.client.ui.ListBox build_status() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox status = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.ListBox status = (com.google.gwt.user.client.ui.ListBox) GWT.create(com.google.gwt.user.client.ui.ListBox.class);
       // Setup section.
+      status.addItem("active");
+      status.addItem("inactive");
       status.setStyleName("" + get_resource().styles().mobileTextField() + "");
 
 
