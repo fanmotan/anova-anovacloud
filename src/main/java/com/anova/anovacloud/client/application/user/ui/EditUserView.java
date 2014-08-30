@@ -61,8 +61,7 @@ public class EditUserView extends PopupViewWithUiHandlers<EditUserUiHandlers> im
     }
 
     @Override
-    public void edit(UserDto userDto) {
-    	        
+    public void edit(UserDto userDto) {   	        
     	if (userDto.getUserRole() == null) {
             userDto.setUserRole(userRole.getValue());
         }

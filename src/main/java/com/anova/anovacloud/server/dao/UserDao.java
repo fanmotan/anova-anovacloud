@@ -19,11 +19,5 @@ public class UserDao extends BaseDao<User> {
         return ofy().query(User.class).filter("username", username).first().now();
     }
     
-    public List <UserRoleDto> getUserRoles()
-	{
-    	UserRoleDao userRoleDao = new UserRoleDao();
-	
-    	 List<UserRoleDto> userRoleDtos = UserRole.createDto(userRoleDao.getAll());
-    	 return userRoleDtos;
-	}
+    
 }

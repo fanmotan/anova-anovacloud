@@ -26,13 +26,10 @@ import com.anova.anovacloud.shared.rest.RestParameter;
 @Produces(MediaType.APPLICATION_JSON)
 public class UserResource {
     private final UserDao userDao;
-    private final UserRoleDao userRoleDao;
-
 
     @Inject
-    UserResource(UserDao userDao, UserRoleDao userRoleDao) {
+    UserResource(UserDao userDao) {
         this.userDao = userDao;
-        this.userRoleDao = userRoleDao;
     }
 
     @GET

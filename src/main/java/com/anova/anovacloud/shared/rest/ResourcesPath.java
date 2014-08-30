@@ -9,6 +9,7 @@ public class ResourcesPath {
     public static final String COUNT = "/count";
     public static final String DUE3 = "/due3";
     public static final String USER = "/users";
+    public static final String USERROLE = "/userRoles";
     public static final String ATTORNEY = "/attorneys";
     public static final String ACTIONDUE = "/actiondue";
 }

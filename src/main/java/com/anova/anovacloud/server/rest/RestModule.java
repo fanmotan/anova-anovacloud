@@ -13,6 +13,7 @@ public class RestModule extends AbstractModule {
         bind(CustomerResource.class);
         bind(SessionResource.class);
         bind(UserResource.class);
+        bind(UserRoleResource.class);
         bind(AttorneyResource.class);
         bind(JacksonProvider.class).in(Singleton.class);
     }

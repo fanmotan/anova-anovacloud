@@ -9,9 +9,9 @@ import javax.ws.rs.Path;
 import com.anova.anovacloud.shared.dto.UserRoleDto;
 import com.gwtplatform.dispatch.rest.shared.RestAction;
 
-import static com.anova.anovacloud.shared.rest.ResourcesPath.USER;
+import static com.anova.anovacloud.shared.rest.ResourcesPath.USERROLE;
 
-@Path(USER)
+@Path(USERROLE)
 public interface UserRoleService {
    
     @GET

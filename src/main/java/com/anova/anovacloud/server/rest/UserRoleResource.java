@@ -24,7 +24,7 @@ import com.anova.anovacloud.shared.rest.PathParameter;
 import com.anova.anovacloud.shared.rest.ResourcesPath;
 import com.anova.anovacloud.shared.rest.RestParameter;
 
-@Path(ResourcesPath.USER)
+@Path(ResourcesPath.USERROLE)
 @Produces(MediaType.APPLICATION_JSON)
 public class UserRoleResource {
     private final UserRoleDao userRoleDao;
@@ -38,7 +38,6 @@ public class UserRoleResource {
     @GET
     public Response getUserRoles() {
         List<UserRoleDto> userRoleDtos = UserRole.createDto(userRoleDao.getAll());
-
         return Response.ok(userRoleDtos).build();
     }
 

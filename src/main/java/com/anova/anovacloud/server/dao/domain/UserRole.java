@@ -3,14 +3,9 @@
 package com.anova.anovacloud.server.dao.domain;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-
-import com.googlecode.objectify.Ref;
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Index;
-import com.googlecode.objectify.annotation.Load;
-import com.anova.anovacloud.server.dao.objectify.Deref;
 import com.anova.anovacloud.shared.dto.BaseEntity;
 import com.anova.anovacloud.shared.dto.UserRoleDto;
 

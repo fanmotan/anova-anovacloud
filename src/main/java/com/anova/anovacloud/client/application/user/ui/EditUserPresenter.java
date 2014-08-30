@@ -94,13 +94,6 @@ public class EditUserPresenter extends PresenterWidget<MyView> implements EditUs
     	dispatcher.execute(userRoleService.getUserRoles(), new AbstractAsyncCallback<List<UserRoleDto>>() {
             @Override
             public void onSuccess(List<UserRoleDto> roles) {
-            	//Fan
-            	
-            	String role = roles.get(0).getRoleName();
-            	DisplayMessageEvent.fire(EditUserPresenter.this,
-                        new Message("get userroles " + role, MessageStyle.SUCCESS));
-            	
-            	//
                 onGetUserRolesSuccess(roles);
             }
         });
