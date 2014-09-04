@@ -14,6 +14,18 @@
     
         <g:HTMLPanel>
         <table width="100%">
+        <tr>
+     		<td width="15%">
+        		<div class="{style.formRow}">
+            		 <g:InlineLabel>Client:</g:InlineLabel>
+            	</div>
+            </td>
+            <td width = "75%">
+            	<div class="{style.formRow}">
+            		<g:ValueListBox ui:field="customer"  styleName="{resource.styles.inputTextField}"/>
+        		</div>
+        	</td>
+        </tr>
     	<tr>
      		<td width="15%">
         		<div class="{style.formRow}">
@@ -39,18 +51,7 @@
         		</div>
         	</td>
         </tr>
-        <tr>
-     		<td width="15%">
-        		<div class="{style.formRow}">
-            		 <g:InlineLabel>Client Ref:</g:InlineLabel>
-            	</div>
-            </td>
-            <td width = "75%">
-            	<div class="{style.formRow}">
-            		<g:ValueListBox ui:field="customer"  styleName="{resource.styles.inputTextField}"/>
-        		</div>
-        	</td>
-        </tr>
+        
         </table>
              
             <div>

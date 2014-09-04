@@ -19,10 +19,7 @@ import static com.anova.anovacloud.shared.rest.RestParameter.ID;
 public interface CustomerService {
     @GET
     RestAction<List<CustomerDto>> getCustomers();
-    
-    @GET
-    RestAction<List<CustomerDto>> getActiveCustomers();
-  
+ 
     @GET
     @Path(PATH_ID)
     RestAction<CustomerDto> get(@PathParam(ID) Long id);

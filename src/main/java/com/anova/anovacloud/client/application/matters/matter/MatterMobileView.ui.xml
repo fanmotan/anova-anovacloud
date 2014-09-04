@@ -18,6 +18,9 @@
     </ui:style>
 
     <g:HTMLPanel styleName="{style.panelWrapper}">
+    	<div class="{style.formRow}">
+            <g:ValueListBox ui:field="customer"/>
+        </div>
         <div class="{style.formRow}">
             <g:TextBox ui:field="matterNum" styleName="{resource.styles.mobileTextField}"/>
         </div>
@@ -25,11 +28,6 @@
         <div class="{style.formRow}">
             <g:TextBox ui:field="matterSerialNum" styleName="{resource.styles.mobileTextField}"/>
         </div>
-
-        <div class="{style.formRow}">
-            <g:ValueListBox ui:field="customer"/>
-        </div>
-
         <div>
             <c:MatterPropertiesEditor ui:field="matterProperties"/>
         </div>

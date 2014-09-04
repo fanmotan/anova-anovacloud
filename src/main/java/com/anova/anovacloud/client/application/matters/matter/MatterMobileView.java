@@ -1,6 +1,7 @@
 
 package com.anova.anovacloud.client.application.matters.matter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -62,8 +63,15 @@ public class MatterMobileView extends ViewWithUiHandlers<MatterUiHandlers> imple
 
     @Override
     public void setAllowedCustomers(List<CustomerDto> customerDtos) {
-        customer.setValue(customerDtos.isEmpty() ? null : customerDtos.get(0));
-        customer.setAcceptableValues(customerDtos);
+    	List <CustomerDto> results = new ArrayList<>();
+		for (CustomerDto customerDto : customerDtos){
+			if (customerDto.getCustomerStatus()!= null && customerDto.getCustomerStatus().getStatusName().equalsIgnoreCase("active"))
+			{
+				results.add(customerDto);
+			}
+		}
+        customer.setValue(results.isEmpty() ? null : results.get(0));
+        customer.setAcceptableValues(results);
     }
 
     @Override

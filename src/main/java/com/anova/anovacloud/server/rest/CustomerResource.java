@@ -43,20 +43,6 @@ public class CustomerResource {
 
         return Response.ok(customerDtos).build();
     }
-    
-    @GET
-    public Response getActiveCustomers() {
-        List<CustomerDto> customerDtos = Customer.createDto(customerDao.getAll());
-        List <CustomerDto> results = new ArrayList<>();
-		for (CustomerDto customerDto : customerDtos){
-			if (customerDto.getCustomerStatus().getStatusName() != null && customerDto.getCustomerStatus().getStatusName().equalsIgnoreCase("active"))
-			{
-				results.add(customerDto);
-			}
-		}
-
-        return Response.ok(results).build();
-    }
    
 
     @Path(PathParameter.PATH_ID)

@@ -2,6 +2,7 @@
 
 package com.anova.anovacloud.client.application.matters.matter;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -148,12 +149,9 @@ public class MatterPresenter extends Presenter<MyView, MatterPresenter.MyProxy>
 
     @Override
     protected void onReveal() {
-        dispatcher.execute(customerService.getActiveCustomers(), new AbstractAsyncCallback<List<CustomerDto>>() {
+        dispatcher.execute(customerService.getCustomers(), new AbstractAsyncCallback<List<CustomerDto>>() {
             @Override
             public void onSuccess(List<CustomerDto> customers) {
-            	//Fan
-            	DisplayMessageEvent.fire(MatterPresenter.this, new Message(customers.get(0).getName(), MessageStyle.SUCCESS));
-               //
             	onGetCustomerSuccess(customers);
             }
         });
@@ -171,8 +169,8 @@ public class MatterPresenter extends Presenter<MyView, MatterPresenter.MyProxy>
         NavigationTabEvent.fireReveal(this, this);
     }
 
-    private void onGetCustomerSuccess(List<CustomerDto> customerDtos) {
-        getView().setAllowedCustomers(customerDtos);
+    private void onGetCustomerSuccess(List<CustomerDto> customerDtos) {	
+		getView().setAllowedCustomers(customerDtos);
         getView().edit(matterDto);
     }
 

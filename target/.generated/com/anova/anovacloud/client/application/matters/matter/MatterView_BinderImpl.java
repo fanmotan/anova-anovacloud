@@ -22,7 +22,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     @Template("Close")
     SafeHtml html2();
      
-    @Template("<table width='100%'> <tr> <td width='15%'> <div class='{0}'> <span id='{1}'></span> </div> </td> <td width='75%'> <div class='{2}'> <span id='{3}'></span> </div> </td> </tr>  <tr> <td width='15%'> <div class='{4}'> <span id='{5}'></span> </div> </td> <td width='75%'> <div class='{6}'> <span id='{7}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{8}'> <span id='{9}'></span> </div> </td> <td width='75%'> <div class='{10}'> <span id='{11}'></span> </div> </td> </tr> </table>  <div> <span id='{12}'></span> </div>  <div> <span id='{13}'></span> <span id='{14}'></span> </div>")
+    @Template("<table width='100%'> <tr> <td width='15%'> <div class='{0}'> <span id='{1}'></span> </div> </td> <td width='75%'> <div class='{2}'> <span id='{3}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{4}'> <span id='{5}'></span> </div> </td> <td width='75%'> <div class='{6}'> <span id='{7}'></span> </div> </td> </tr>  <tr> <td width='15%'> <div class='{8}'> <span id='{9}'></span> </div> </td> <td width='75%'> <div class='{10}'> <span id='{11}'></span> </div> </td> </tr>  </table>  <div> <span id='{12}'></span> </div>  <div> <span id='{13}'></span> <span id='{14}'></span> </div>")
     SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14);
      
   }
@@ -182,11 +182,11 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       // Detach section.
       attachRecord24.detach();
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel3(), get_domId0Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_matterNum(), get_domId1Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_customer(), get_domId1Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel4(), get_domId2Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_matterSerialNum(), get_domId3Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_matterNum(), get_domId3Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel5(), get_domId4Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_customer(), get_domId5Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_matterSerialNum(), get_domId5Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_matterProperties(), get_domId6Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_save(), get_domId7Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_close(), get_domId8Element().get());
@@ -220,7 +220,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel3 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel3.setText("Matter No:");
+      f_InlineLabel3.setText("Client:");
 
 
       return f_InlineLabel3;
@@ -259,21 +259,20 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
-     * Getter for matterNum called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for customer called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_matterNum() {
-      return build_matterNum();
+    private com.google.gwt.user.client.ui.ValueListBox get_customer() {
+      return build_customer();
     }
-    private com.google.gwt.user.client.ui.TextBox build_matterNum() {
+    private com.google.gwt.user.client.ui.ValueListBox build_customer() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox matterNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.ValueListBox customer = owner.customer;
+      assert customer != null : "UiField customer with 'provided = true' was null";
       // Setup section.
-      matterNum.setStyleName("" + get_resource().styles().inputTextField() + "");
+      customer.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.matterNum = matterNum;
-
-      return matterNum;
+      return customer;
     }
 
     /**
@@ -318,7 +317,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel4 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel4.setText("Case Serial No:");
+      f_InlineLabel4.setText("Matter No:");
 
 
       return f_InlineLabel4;
@@ -357,21 +356,21 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
-     * Getter for matterSerialNum called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for matterNum called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_matterSerialNum() {
-      return build_matterSerialNum();
+    private com.google.gwt.user.client.ui.TextBox get_matterNum() {
+      return build_matterNum();
     }
-    private com.google.gwt.user.client.ui.TextBox build_matterSerialNum() {
+    private com.google.gwt.user.client.ui.TextBox build_matterNum() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox matterSerialNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox matterNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      matterSerialNum.setStyleName("" + get_resource().styles().inputTextField() + "");
+      matterNum.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.matterSerialNum = matterSerialNum;
+      this.owner.matterNum = matterNum;
 
-      return matterSerialNum;
+      return matterNum;
     }
 
     /**
@@ -416,7 +415,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel5 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel5.setText("Client Ref:");
+      f_InlineLabel5.setText("Case Serial No:");
 
 
       return f_InlineLabel5;
@@ -455,20 +454,21 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
-     * Getter for customer called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for matterSerialNum called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.ValueListBox get_customer() {
-      return build_customer();
+    private com.google.gwt.user.client.ui.TextBox get_matterSerialNum() {
+      return build_matterSerialNum();
     }
-    private com.google.gwt.user.client.ui.ValueListBox build_customer() {
+    private com.google.gwt.user.client.ui.TextBox build_matterSerialNum() {
       // Creation section.
-      final com.google.gwt.user.client.ui.ValueListBox customer = owner.customer;
-      assert customer != null : "UiField customer with 'provided = true' was null";
+      final com.google.gwt.user.client.ui.TextBox matterSerialNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      customer.setStyleName("" + get_resource().styles().inputTextField() + "");
+      matterSerialNum.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      return customer;
+      this.owner.matterSerialNum = matterSerialNum;
+
+      return matterSerialNum;
     }
 
     /**
