@@ -6,7 +6,7 @@ public class AttorneyDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjack
   
   @Override
   protected java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, ?>> initSerializers() {
-    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, ?>>(11);
+    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, ?>>(8);
     
     map.put("displayName", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, java.lang.String>() {
       @Override
@@ -17,30 +17,6 @@ public class AttorneyDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjack
       @Override
       public java.lang.String getValue(com.anova.anovacloud.shared.dto.AttorneyDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
         return bean.getDisplayName();
-      }
-    });
-    
-    map.put("attorneyname", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
-        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
-      }
-      
-      @Override
-      public java.lang.String getValue(com.anova.anovacloud.shared.dto.AttorneyDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getAttorneyname();
-      }
-    });
-    
-    map.put("hashPassword", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
-        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
-      }
-      
-      @Override
-      public java.lang.String getValue(com.anova.anovacloud.shared.dto.AttorneyDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getHashPassword();
       }
     });
     
@@ -68,7 +44,7 @@ public class AttorneyDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjack
       }
     });
     
-    map.put("role", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, java.lang.String>() {
+    map.put("mailAddress", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, java.lang.String>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
         return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
@@ -76,7 +52,7 @@ public class AttorneyDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjack
       
       @Override
       public java.lang.String getValue(com.anova.anovacloud.shared.dto.AttorneyDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getRole();
+        return bean.getMailAddress();
       }
     });
     
@@ -89,18 +65,6 @@ public class AttorneyDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjack
       @Override
       public java.lang.String getValue(com.anova.anovacloud.shared.dto.AttorneyDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
         return bean.getEmail();
-      }
-    });
-    
-    map.put("mailAddress", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
-        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
-      }
-      
-      @Override
-      public java.lang.String getValue(com.anova.anovacloud.shared.dto.AttorneyDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getMailAddress();
       }
     });
     

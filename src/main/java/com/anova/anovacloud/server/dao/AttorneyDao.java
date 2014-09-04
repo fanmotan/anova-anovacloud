@@ -9,7 +9,4 @@ public class AttorneyDao extends BaseDao<Attorney> {
         super(Attorney.class);
     }
 
-    public Attorney findByAttorneyname(String attorneyname) {
-        return ofy().query(Attorney.class).filter("attorneyname", attorneyname).first().now();
-    }
 }

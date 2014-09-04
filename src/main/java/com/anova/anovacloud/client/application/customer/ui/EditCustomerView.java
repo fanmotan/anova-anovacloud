@@ -2,6 +2,8 @@
 
 package com.anova.anovacloud.client.application.customer.ui;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import com.google.gwt.editor.client.Editor;
@@ -10,13 +12,18 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.TextBox;
+import com.google.gwt.user.client.ui.ValueListBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.web.bindery.event.shared.EventBus;
 import com.anova.anovacloud.client.application.customer.ui.EditCustomerPresenter.MyView;
+import com.anova.anovacloud.client.application.customerStatus.ui.CustomerStatusRenderer;
+import com.anova.anovacloud.client.application.event.DisplayMessageEvent;
+import com.anova.anovacloud.client.application.widget.message.Message;
+import com.anova.anovacloud.client.application.widget.message.MessageStyle;
 import com.anova.anovacloud.shared.dto.CustomerDto;
+import com.anova.anovacloud.shared.dto.CustomerStatusDto;
 import com.gwtplatform.mvp.client.PopupViewWithUiHandlers;
 
 public class EditCustomerView extends PopupViewWithUiHandlers<EditCustomerUiHandlers> implements MyView,
@@ -30,7 +37,7 @@ public class EditCustomerView extends PopupViewWithUiHandlers<EditCustomerUiHand
     @UiField
     TextBox name;
     @UiField
-    TextBox refNum;
+    TextBox code;
     @UiField
     TextArea address;
     @UiField
@@ -39,8 +46,8 @@ public class EditCustomerView extends PopupViewWithUiHandlers<EditCustomerUiHand
     TextBox phone;
     @UiField
     TextBox fax; 
-    @UiField
-    ListBox status;
+    @UiField(provided = true)
+    ValueListBox<CustomerStatusDto> customerStatus;
 
     private final Driver driver;
     
@@ -52,20 +59,29 @@ public class EditCustomerView extends PopupViewWithUiHandlers<EditCustomerUiHand
                          Driver driver,
                          EventBus eventBus) {
         super(eventBus);
-
+        customerStatus = new ValueListBox<>(new CustomerStatusRenderer());
         this.driver = driver;
-
         initWidget(uiBinder.createAndBindUi(this));
-
         driver.initialize(this);
     }
 
     @Override
     public void edit(CustomerDto customerDto) {
-    	driver.flush();
+    	if (customerDto.getCustomerStatus() == null) {
+            customerDto.setCustomerStatus(customerStatus.getValue());
+        }
+    
+    //	driver.flush();
         driver.edit(customerDto);
     }
-
+    
+    @Override
+    public void setAllowedCustomerStatuss(List<CustomerStatusDto> customerStatusDtos) {
+        customerStatus.setValue(customerStatusDtos.isEmpty() ? null : customerStatusDtos.get(0));
+        customerStatus.setAcceptableValues(customerStatusDtos);
+        
+    }
+    
     @UiHandler("save")
     void onSaveClicked(ClickEvent ignored) {
         getUiHandlers().onSave(driver.flush());

@@ -1,0 +1,28 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:cell="urn:import:com.google.gwt.user.cellview.client">
+
+    <ui:with field="resources" type="com.anova.anovacloud.client.resources.AppResources"/>
+
+    <ui:style>
+        .tableWrapper {
+            margin-top: 20px;
+        }
+    </ui:style>
+
+    <g:HTMLPanel debugId="attorneyPanel">
+        <div class="{resources.styles.bigTitle}">
+            <h2>
+                <g:InlineLabel text="Attorneys"/>
+            </h2>
+            <div>
+                <g:Button ui:field="create" styleName="{resources.styles.addAction}" debugId="create-attorney"/>
+            </div>
+            <span style="display: block; clear: both;"/>
+        </div>
+
+        <div class="{style.tableWrapper}">
+            <cell:CellTable ui:field="attorneyGrid" width="100%" debugId="attorneys"/>
+        </div>
+    </g:HTMLPanel>
+</ui:UiBinder>

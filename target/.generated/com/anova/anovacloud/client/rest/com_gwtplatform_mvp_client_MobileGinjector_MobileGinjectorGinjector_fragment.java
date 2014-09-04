@@ -12,6 +12,10 @@ public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector
     
   }
   
+  public void memberInject_Key$type$com$anova$anovacloud$client$rest$CustomerStatusServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.CustomerStatusServiceImpl injectee) {
+    
+  }
+  
   public void memberInject_Key$type$com$anova$anovacloud$client$rest$MatterActionServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.MatterActionServiceImpl injectee) {
     
   }
@@ -53,6 +57,18 @@ public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector
         singleton_Key$type$com$anova$anovacloud$client$rest$CustomerService$_annotation$$none$$ = result;
     }
     return singleton_Key$type$com$anova$anovacloud$client$rest$CustomerService$_annotation$$none$$;
+    
+  }
+  
+  private com.anova.anovacloud.client.rest.CustomerStatusService singleton_Key$type$com$anova$anovacloud$client$rest$CustomerStatusService$_annotation$$none$$ = null;
+  
+  public com.anova.anovacloud.client.rest.CustomerStatusService get_Key$type$com$anova$anovacloud$client$rest$CustomerStatusService$_annotation$$none$$() {
+    
+    if (singleton_Key$type$com$anova$anovacloud$client$rest$CustomerStatusService$_annotation$$none$$ == null) {
+    com.anova.anovacloud.client.rest.CustomerStatusService result = get_Key$type$com$anova$anovacloud$client$rest$CustomerStatusServiceImpl$_annotation$$none$$();
+        singleton_Key$type$com$anova$anovacloud$client$rest$CustomerStatusService$_annotation$$none$$ = result;
+    }
+    return singleton_Key$type$com$anova$anovacloud$client$rest$CustomerStatusService$_annotation$$none$$;
     
   }
   
@@ -148,6 +164,23 @@ public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector
   
   public com.anova.anovacloud.client.rest.CustomerServiceImpl com$anova$anovacloud$client$rest$CustomerServiceImpl_com$anova$anovacloud$client$rest$CustomerServiceImpl_methodInjection(java.lang.String _0) {
     return new com.anova.anovacloud.client.rest.CustomerServiceImpl(_0);
+  }
+  
+  
+  /**
+   * Binding for com.anova.anovacloud.client.rest.CustomerStatusServiceImpl declared at:
+   *   Implicit binding for com.anova.anovacloud.client.rest.CustomerStatusServiceImpl
+   */
+  public com.anova.anovacloud.client.rest.CustomerStatusServiceImpl get_Key$type$com$anova$anovacloud$client$rest$CustomerStatusServiceImpl$_annotation$$none$$() {
+    com.anova.anovacloud.client.rest.CustomerStatusServiceImpl result = com$anova$anovacloud$client$rest$CustomerStatusServiceImpl_com$anova$anovacloud$client$rest$CustomerStatusServiceImpl_methodInjection(injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$java$lang$String$_annotation$$com$gwtplatform$dispatch$rest$client$DefaultDateFormat$());
+    memberInject_Key$type$com$anova$anovacloud$client$rest$CustomerStatusServiceImpl$_annotation$$none$$(result);
+    
+    return result;
+    
+  }
+  
+  public com.anova.anovacloud.client.rest.CustomerStatusServiceImpl com$anova$anovacloud$client$rest$CustomerStatusServiceImpl_com$anova$anovacloud$client$rest$CustomerStatusServiceImpl_methodInjection(java.lang.String _0) {
+    return new com.anova.anovacloud.client.rest.CustomerStatusServiceImpl(_0);
   }
   
   

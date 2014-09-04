@@ -34,12 +34,6 @@ public class EditAttorneyView extends PopupViewWithUiHandlers<EditAttorneyUiHand
     @UiField
     TextBox lastName;
     @UiField
-    TextBox attorneyname;
-    @UiField
-    TextBox hashPassword;
-    @UiField
-    ListBox role;
-    @UiField
     TextBox email;
     @UiField
     TextArea mailAddress;
@@ -57,11 +51,6 @@ public class EditAttorneyView extends PopupViewWithUiHandlers<EditAttorneyUiHand
         super(eventBus);
 
         this.driver = driver;
-        role = new ListBox();
-        role.addItem("system administrator");
-        role.addItem("user");
-        role.addItem("read-only");
-
         initWidget(uiBinder.createAndBindUi(this));
 
         driver.initialize(this);

@@ -14,13 +14,10 @@ import com.anova.anovacloud.shared.dto.AttorneyDto;
 @Entity
 public class Attorney extends BaseEntity {
 	private String displayName;
-    private String attorneyname;
-    private String hashPassword;
     private String firstName;
     private String lastName;
-    private String role;
-    private String email;
     private String mailAddress;
+    private String email;
     private String phone;
     private String fax;
 
@@ -28,22 +25,17 @@ public class Attorney extends BaseEntity {
         firstName = "";
         lastName = "";
         displayName = "";
-        role = "";
+        mailAddress = "";
         email = "";
-        mailAddress ="";
         phone ="";
         fax = "";
     }
-    public Attorney(String displayName, String attorneyname, String hashPassword, String firstName, String lastName,
-    			String role, String email, String mailAddress, String phone, String fax) {
+    public Attorney(String displayName, String firstName, String lastName,String mailAddress, String email, String phone, String fax) {
         this.displayName = displayName;
-        this.attorneyname = attorneyname;    
-        this.hashPassword = hashPassword;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.role = role;
-        this.email = email;
         this.mailAddress = mailAddress;
+        this.email = email;
         this.phone = phone;
         this.fax = fax;
     }
@@ -76,29 +68,7 @@ public class Attorney extends BaseEntity {
         this.lastName = lastName;
     }
 
-    public String getAttorneyname() {
-        return attorneyname;
-    }
-
-    public void setAttorneyname(String attorneyname) {
-        this.attorneyname = attorneyname;
-    }
-
-    public String getHashPassword() {
-        return hashPassword;
-    }
-
-    public void setHashPassword(String hashPassword) {
-        this.hashPassword = hashPassword;
-    }
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-    
+ 
     public String getEmail() {
         return email;
     }
@@ -134,17 +104,7 @@ public class Attorney extends BaseEntity {
     @Override
     public String toString() {
         String s = "{ Attorney ";
-        s += "id=" + id + " ";
-        s += "displayName=" + displayName + " ";
-        s += "attorneyname=" + attorneyname + " ";
-        s += "hashPassword=" + hashPassword + " ";
-        s += "firstName=" + firstName + " ";
-        s += "lastName=" + lastName + " ";
-        s += "role=" + role + " ";
-        s += "email=" + email + " ";
-        s += "mailAddress=" + mailAddress + " ";
-        s += "phone=" + phone + " ";
-        s += "fax=" + fax + " ";
+        s +=  displayName;
         s += "}";
         return s;
     }
@@ -169,10 +129,7 @@ public class Attorney extends BaseEntity {
         attorneyDto.setFirstName(attorney.getFirstName());
         attorneyDto.setId(attorney.getId());
         attorneyDto.setLastName(attorney.getLastName());
-        attorneyDto.setAttorneyname(attorney.getAttorneyname());
         attorneyDto.setDisplayName(attorney.getDisplayName());
-        attorneyDto.setHashPassword(attorney.getHashPassword());
-        attorneyDto.setRole(attorney.getRole());
         attorneyDto.setEmail(attorney.getEmail());
         attorneyDto.setMailAddress(attorney.getMailAddress());
         attorneyDto.setPhone(attorney.getPhone());
@@ -188,12 +145,9 @@ public class Attorney extends BaseEntity {
 
         Attorney attorney = new Attorney();
         attorney.setFirstName(attorneyDto.getFirstName());
-        attorney.setHashPassword(attorneyDto.getHashPassword());
         attorney.setId(attorneyDto.getId());
         attorney.setLastName(attorneyDto.getLastName());
-        attorney.setAttorneyname(attorneyDto.getAttorneyname());
         attorney.setDisplayName(attorneyDto.getDisplayName());
-        attorney.setRole(attorneyDto.getRole());
         attorney.setEmail(attorneyDto.getEmail());
         attorney.setMailAddress(attorneyDto.getMailAddress());
         attorney.setPhone(attorneyDto.getPhone());

@@ -11,7 +11,7 @@ public class CustomerRenderer extends AbstractRenderer<CustomerDto> {
     	if (customerDto == null){
     		return "";
     	}
-        return customerDto.getName()+"-"+customerDto.getRefNum();
+        return customerDto.getName()+"-"+customerDto.getCode();
     }
     
 }

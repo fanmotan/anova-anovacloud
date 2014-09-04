@@ -19,8 +19,10 @@ import static com.anova.anovacloud.shared.rest.RestParameter.ID;
 public interface CustomerService {
     @GET
     RestAction<List<CustomerDto>> getCustomers();
+    
+    @GET
+    RestAction<List<CustomerDto>> getActiveCustomers();
   
-   
     @GET
     @Path(PATH_ID)
     RestAction<CustomerDto> get(@PathParam(ID) Long id);
@@ -28,8 +30,9 @@ public interface CustomerService {
     @POST
     RestAction<CustomerDto> saveOrCreate(CustomerDto customerDto);
 
+    /*
     @DELETE
     @Path(PATH_ID)
     RestAction<Void> delete(@PathParam(ID) Long id);
-
+*/
 }

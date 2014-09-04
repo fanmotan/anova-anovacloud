@@ -6,7 +6,11 @@ import com.googlecode.objectify.Objectify;
 import com.googlecode.objectify.ObjectifyFactory;
 import com.googlecode.objectify.ObjectifyService;
 import com.anova.anovacloud.server.dao.domain.Attorney;
+import com.anova.anovacloud.server.dao.domain.AttorneyRole;
+import com.anova.anovacloud.server.dao.domain.CaseStatus;
+import com.anova.anovacloud.server.dao.domain.CustomerStatus;
 import com.anova.anovacloud.server.dao.domain.Matter;
+import com.anova.anovacloud.server.dao.domain.MatterActionStatus;
 import com.anova.anovacloud.server.dao.domain.MatterProperties;
 import com.anova.anovacloud.server.dao.domain.Customer;
 import com.anova.anovacloud.server.dao.domain.MatterAction;
@@ -24,6 +28,10 @@ public class OfyService {
         factory().register(UserRole.class);
         factory().register(Attorney.class);
         factory().register(UserSession.class);
+        factory().register(AttorneyRole.class);
+        factory().register(CaseStatus.class);
+        factory().register(CustomerStatus.class);
+        factory().register(MatterActionStatus.class);
     }
 
     public static Objectify ofy() {

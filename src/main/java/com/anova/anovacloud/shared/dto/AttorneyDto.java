@@ -3,13 +3,12 @@ package com.anova.anovacloud.shared.dto;
 
 public class AttorneyDto extends BaseEntity {
 	private String displayName;
-    private String attorneyname;
-    private String hashPassword;
     private String firstName;
     private String lastName;
-    private String role;
-    private String email;
     private String mailAddress;
+    
+
+	private String email;
     private String phone;
     private String fax;
 
@@ -17,9 +16,8 @@ public class AttorneyDto extends BaseEntity {
         firstName = "";
         lastName = "";
         displayName = "";
-        role = "";
+        mailAddress = "";
         email = "";
-        mailAddress ="";
         phone ="";
         fax = "";
     }
@@ -27,21 +25,15 @@ public class AttorneyDto extends BaseEntity {
     public AttorneyDto(String displayName,
                    String firstName,
                    String lastName,
-                   String attorneyname,
-                   String hashPassword,
-                   String role,
+                   String mailAddress,
     			   String email,
-    			   String mailAddress,
     			   String phone,
     			   String fax) {
     	this.displayName = displayName;
-        this.attorneyname = attorneyname;
-        this.hashPassword = hashPassword;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.role = role;
-        this.email = email;
         this.mailAddress = mailAddress;
+        this.email = email;
         this.phone = phone;
         this.fax = fax;
     }
@@ -69,44 +61,19 @@ public class AttorneyDto extends BaseEntity {
         this.lastName = lastName;
     }
 
-    public String getAttorneyname() {
-        return attorneyname;
-    }
+    public String getMailAddress() {
+		return mailAddress;
+	}
 
-    public void setAttorneyname(String attorneyname) {
-        this.attorneyname = attorneyname;
-    }
-
-    public String getHashPassword() {
-        return hashPassword;
-    }
-
-    public void setHashPassword(String hashPassword) {
-        this.hashPassword = hashPassword;
-    }
-    
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-    
+	public void setMailAddress(String mailAddress) {
+		this.mailAddress = mailAddress;
+	}
     public String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
-    }
-    
-    public String getMailAddress() {
-        return mailAddress;
-    }
-
-    public void setMailAddress(String mailAddress) {
-        this.mailAddress = mailAddress;
     }
     
     public String getPhone() {
@@ -128,7 +95,7 @@ public class AttorneyDto extends BaseEntity {
     @Override
     public String toString() {
         String s = " { Attorney ";
-        s += firstName + " "+lastName; 
+        s += displayName ;
         s += "}";
         return s;
     }

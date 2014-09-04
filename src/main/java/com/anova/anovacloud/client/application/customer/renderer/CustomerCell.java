@@ -10,7 +10,7 @@ import com.anova.anovacloud.shared.dto.CustomerDto;
 
 public class CustomerCell extends AbstractCell<CustomerDto> {
     interface Renderer extends UiRenderer {
-        void render(SafeHtmlBuilder sb, String name, String refNum, String address, String email, String phone, String fax, String status);
+        void render(SafeHtmlBuilder sb, String name, String code, String address, String email, String phone, String fax, String status);
     }
 
     private final Renderer uiRenderer;
@@ -22,6 +22,6 @@ public class CustomerCell extends AbstractCell<CustomerDto> {
 
     @Override
     public void render(Context context, CustomerDto value, SafeHtmlBuilder safeHtmlBuilder) {
-        uiRenderer.render(safeHtmlBuilder, value.getName(), value.getRefNum(), value.getAddress(), value.getEmail(), value.getPhone(), value.getFax(), value.getStatus());
+        uiRenderer.render(safeHtmlBuilder, value.getName(), value.getCode(), value.getAddress(), value.getEmail(), value.getPhone(), value.getFax(), value.getCustomerStatus().getStatusName());
     }
 }

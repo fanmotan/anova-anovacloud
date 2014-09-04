@@ -24,6 +24,7 @@ import com.google.gwt.view.client.ListDataProvider;
 import com.google.gwt.view.client.NoSelectionModel;
 import com.anova.anovacloud.client.application.customer.CustomerPresenter.MyView;
 import com.anova.anovacloud.shared.dto.CustomerDto;
+import com.anova.anovacloud.shared.dto.CustomerStatusDto;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
 public class CustomerView extends ViewWithUiHandlers<CustomerUiHandlers> implements MyView {
@@ -55,12 +56,12 @@ public class CustomerView extends ViewWithUiHandlers<CustomerUiHandlers> impleme
     public void addCustomer(CustomerDto customerDto) {
         customerDataProvider.getList().add(customerDto);
     }
-
+/*
     @Override
     public void removeCustomer(CustomerDto customerDto) {
         customerDataProvider.getList().remove(customerDto);
     }
-
+*/
     @Override
     public void replaceCustomer(CustomerDto oldCustomer, CustomerDto newCustomer) {
         List<CustomerDto> customerDtos = customerDataProvider.getList();
@@ -99,10 +100,10 @@ public class CustomerView extends ViewWithUiHandlers<CustomerUiHandlers> impleme
             }
         };
         
-        Column<CustomerDto, String> refNumColumn = new Column<CustomerDto, String>(new TextCell()) {
+        Column<CustomerDto, String> codeColumn = new Column<CustomerDto, String>(new TextCell()) {
             @Override
             public String getValue(CustomerDto customerDto) {
-                return customerDto.getRefNum();
+                return customerDto.getCode();
             }
         };
         Column<CustomerDto, String> addressColumn = new Column<CustomerDto, String>(new TextCell()) {
@@ -132,12 +133,13 @@ public class CustomerView extends ViewWithUiHandlers<CustomerUiHandlers> impleme
         Column<CustomerDto, String> statusColumn = new Column<CustomerDto, String>(new TextCell()) {
             @Override
             public String getValue(CustomerDto customerDto) {
-                return customerDto.getStatus();
+            	CustomerStatusDto customerStatus = customerDto.getCustomerStatus();
+                return customerStatus == null ? "" :customerStatus.getStatusName();
             }
         };
        // customerGrid.addColumn(idColumn, "ID");
         customerGrid.addColumn(nameColumn, "Name");
-        customerGrid.addColumn(refNumColumn, "Ref Num");
+        customerGrid.addColumn(codeColumn, "Code");
         customerGrid.addColumn(addressColumn, "Address");
         customerGrid.addColumn(emailColumn, "Email");
         customerGrid.addColumn(phoneColumn, "Phone");
@@ -154,7 +156,7 @@ public class CustomerView extends ViewWithUiHandlers<CustomerUiHandlers> impleme
                 getUiHandlers().onEdit(customerDto);
             }
         });
-
+/*
         Cell<CustomerDto> deleteCell = new ActionCell<>("Delete", new Delegate<CustomerDto>() {
             @Override
             public void execute(CustomerDto customerDto) {
@@ -165,15 +167,16 @@ public class CustomerView extends ViewWithUiHandlers<CustomerUiHandlers> impleme
                 }
             }
         });
+        */
         
 
         IdentityColumn<CustomerDto> editColumn = new IdentityColumn<>(editCell);
-        IdentityColumn<CustomerDto> deleteColumn = new IdentityColumn<>(deleteCell);
+      //  IdentityColumn<CustomerDto> deleteColumn = new IdentityColumn<>(deleteCell);
 
         customerGrid.addColumn(editColumn, "Edit");
-        customerGrid.addColumn(deleteColumn, "Delete");
+     //   customerGrid.addColumn(deleteColumn, "Delete");
 
         customerGrid.setColumnWidth(editColumn, 75, Unit.PX);
-        customerGrid.setColumnWidth(deleteColumn, 75, Unit.PX);
+     //   customerGrid.setColumnWidth(deleteColumn, 75, Unit.PX);
     }
 }

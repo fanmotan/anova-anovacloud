@@ -4,107 +4,110 @@ import com.gwtplatform.dispatch.rest.shared.MetadataType;
 
 public class ActionMetadataProviderImpl extends AbstractActionMetadataProvider {
     public ActionMetadataProviderImpl() {
-        register(com.anova.anovacloud.client.rest.SessionService_0_logoutImpl.class,
+        register(com.anova.anovacloud.client.rest.MattersService_3_saveOrCreateImpl.class,
+                 MetadataType.BODY_TYPE,
+                 "com.anova.anovacloud.shared.dto.MatterDto");
+        register(com.anova.anovacloud.client.rest.AttorneyService_0_getAttorneysImpl.class,
                  MetadataType.RESPONSE_TYPE,
-                 "java.lang.Void");
-        register(com.anova.anovacloud.client.rest.CustomerService_2_saveOrCreateImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "com.anova.anovacloud.shared.dto.CustomerDto");
+                 "java.util.List<com.anova.anovacloud.shared.dto.AttorneyDto>");
+        register(com.anova.anovacloud.client.rest.MatterActionService_2_saveOrCreateImpl.class,
+                 MetadataType.BODY_TYPE,
+                 "com.anova.anovacloud.shared.dto.MatterActionDto");
         register(com.anova.anovacloud.client.rest.MattersService_4_MatterService_0_getImpl.class,
                  MetadataType.RESPONSE_TYPE,
                  "com.anova.anovacloud.shared.dto.MatterDto");
-        register(com.anova.anovacloud.client.rest.CustomerService_2_saveOrCreateImpl.class,
+        register(com.anova.anovacloud.client.rest.UserService_3_deleteImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "java.lang.Void");
+        register(com.anova.anovacloud.client.rest.CustomerService_3_saveOrCreateImpl.class,
                  MetadataType.BODY_TYPE,
                  "com.anova.anovacloud.shared.dto.CustomerDto");
-        register(com.anova.anovacloud.client.rest.SessionService_2_loginImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "com.anova.anovacloud.shared.dispatch.LogInResult");
-        register(com.anova.anovacloud.client.rest.MatterActionService_1_getImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "com.anova.anovacloud.shared.dto.MatterActionDto");
-        register(com.anova.anovacloud.client.rest.CustomerService_1_getImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "com.anova.anovacloud.shared.dto.CustomerDto");
-        register(com.anova.anovacloud.client.rest.SessionService_2_loginImpl.class,
-                 MetadataType.BODY_TYPE,
-                 "com.anova.anovacloud.shared.dispatch.LogInRequest");
-        register(com.anova.anovacloud.client.rest.MattersService_2_getMattersCountImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "java.lang.Integer");
-        register(com.anova.anovacloud.client.rest.UserService_2_saveOrCreateImpl.class,
-                 MetadataType.BODY_TYPE,
-                 "com.anova.anovacloud.shared.dto.UserDto");
-        register(com.anova.anovacloud.client.rest.UserService_0_getUsersImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "java.util.List<com.anova.anovacloud.shared.dto.UserDto>");
-        register(com.anova.anovacloud.client.rest.MattersService_4_MatterService_1_deleteImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "java.lang.Void");
-        register(com.anova.anovacloud.client.rest.UserService_2_saveOrCreateImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "com.anova.anovacloud.shared.dto.UserDto");
-        register(com.anova.anovacloud.client.rest.MattersService_0_getMattersImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "java.util.List<com.anova.anovacloud.shared.dto.MatterDto>");
-        register(com.anova.anovacloud.client.rest.CustomerService_0_getCustomersImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "java.util.List<com.anova.anovacloud.shared.dto.CustomerDto>");
-        register(com.anova.anovacloud.client.rest.UserService_4_getUserRolesImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "java.util.List<com.anova.anovacloud.shared.dto.UserRoleDto>");
-        register(com.anova.anovacloud.client.rest.UserRoleService_0_getUserRolesImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "java.util.List<com.anova.anovacloud.shared.dto.UserRoleDto>");
-        register(com.anova.anovacloud.client.rest.MatterActionService_2_saveOrCreateImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "com.anova.anovacloud.shared.dto.MatterActionDto");
-        register(com.anova.anovacloud.client.rest.AttorneyService_1_getImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "com.anova.anovacloud.shared.dto.AttorneyDto");
-        register(com.anova.anovacloud.client.rest.MatterActionService_0_getMatterActionsImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "java.util.List<com.anova.anovacloud.shared.dto.MatterActionDto>");
-        register(com.anova.anovacloud.client.rest.MatterActionService_3_deleteImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "java.lang.Void");
-        register(com.anova.anovacloud.client.rest.MatterActionService_4_getDueThreeDaysActionsImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "java.util.List<com.anova.anovacloud.shared.dto.ActionDueDto>");
-        register(com.anova.anovacloud.client.rest.MattersService_3_saveOrCreateImpl.class,
-                 MetadataType.BODY_TYPE,
-                 "com.anova.anovacloud.shared.dto.MatterDto");
-        register(com.anova.anovacloud.client.rest.CustomerService_3_deleteImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "java.lang.Void");
-        register(com.anova.anovacloud.client.rest.MattersService_3_saveOrCreateImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "com.anova.anovacloud.shared.dto.MatterDto");
-        register(com.anova.anovacloud.client.rest.UserService_1_getImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "com.anova.anovacloud.shared.dto.UserDto");
-        register(com.anova.anovacloud.client.rest.MatterActionService_2_saveOrCreateImpl.class,
-                 MetadataType.BODY_TYPE,
-                 "com.anova.anovacloud.shared.dto.MatterActionDto");
-        register(com.anova.anovacloud.client.rest.MattersService_1_getMattersImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "java.util.List<com.anova.anovacloud.shared.dto.MatterDto>");
-        register(com.anova.anovacloud.client.rest.AttorneyService_3_deleteImpl.class,
-                 MetadataType.RESPONSE_TYPE,
-                 "java.lang.Void");
         register(com.anova.anovacloud.client.rest.SessionService_1_getCurrentUserImpl.class,
                  MetadataType.RESPONSE_TYPE,
                  "com.anova.anovacloud.shared.dto.CurrentUserDto");
         register(com.anova.anovacloud.client.rest.AttorneyService_2_saveOrCreateImpl.class,
                  MetadataType.RESPONSE_TYPE,
                  "com.anova.anovacloud.shared.dto.AttorneyDto");
-        register(com.anova.anovacloud.client.rest.UserService_3_deleteImpl.class,
+        register(com.anova.anovacloud.client.rest.UserService_2_saveOrCreateImpl.class,
+                 MetadataType.BODY_TYPE,
+                 "com.anova.anovacloud.shared.dto.UserDto");
+        register(com.anova.anovacloud.client.rest.UserService_1_getImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "com.anova.anovacloud.shared.dto.UserDto");
+        register(com.anova.anovacloud.client.rest.MatterActionService_3_deleteImpl.class,
                  MetadataType.RESPONSE_TYPE,
                  "java.lang.Void");
-        register(com.anova.anovacloud.client.rest.AttorneyService_0_getAttorneysImpl.class,
+        register(com.anova.anovacloud.client.rest.AttorneyService_3_deleteImpl.class,
                  MetadataType.RESPONSE_TYPE,
-                 "java.util.List<com.anova.anovacloud.shared.dto.AttorneyDto>");
+                 "java.lang.Void");
         register(com.anova.anovacloud.client.rest.AttorneyService_2_saveOrCreateImpl.class,
                  MetadataType.BODY_TYPE,
                  "com.anova.anovacloud.shared.dto.AttorneyDto");
+        register(com.anova.anovacloud.client.rest.SessionService_2_loginImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "com.anova.anovacloud.shared.dispatch.LogInResult");
+        register(com.anova.anovacloud.client.rest.MatterActionService_4_getDueThreeDaysActionsImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "java.util.List<com.anova.anovacloud.shared.dto.ActionDueDto>");
+        register(com.anova.anovacloud.client.rest.CustomerStatusService_0_getCustomerStatussImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "java.util.List<com.anova.anovacloud.shared.dto.CustomerStatusDto>");
+        register(com.anova.anovacloud.client.rest.MatterActionService_2_saveOrCreateImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "com.anova.anovacloud.shared.dto.MatterActionDto");
+        register(com.anova.anovacloud.client.rest.CustomerService_0_getCustomersImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "java.util.List<com.anova.anovacloud.shared.dto.CustomerDto>");
+        register(com.anova.anovacloud.client.rest.SessionService_2_loginImpl.class,
+                 MetadataType.BODY_TYPE,
+                 "com.anova.anovacloud.shared.dispatch.LogInRequest");
+        register(com.anova.anovacloud.client.rest.MattersService_1_getMattersImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "java.util.List<com.anova.anovacloud.shared.dto.MatterDto>");
+        register(com.anova.anovacloud.client.rest.UserService_4_getUserRolesImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "java.util.List<com.anova.anovacloud.shared.dto.UserRoleDto>");
+        register(com.anova.anovacloud.client.rest.MattersService_4_MatterService_1_deleteImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "java.lang.Void");
+        register(com.anova.anovacloud.client.rest.CustomerService_2_getImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "com.anova.anovacloud.shared.dto.CustomerDto");
+        register(com.anova.anovacloud.client.rest.MattersService_2_getMattersCountImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "java.lang.Integer");
+        register(com.anova.anovacloud.client.rest.UserRoleService_0_getUserRolesImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "java.util.List<com.anova.anovacloud.shared.dto.UserRoleDto>");
+        register(com.anova.anovacloud.client.rest.AttorneyService_1_getImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "com.anova.anovacloud.shared.dto.AttorneyDto");
+        register(com.anova.anovacloud.client.rest.CustomerService_3_saveOrCreateImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "com.anova.anovacloud.shared.dto.CustomerDto");
+        register(com.anova.anovacloud.client.rest.UserService_0_getUsersImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "java.util.List<com.anova.anovacloud.shared.dto.UserDto>");
+        register(com.anova.anovacloud.client.rest.MattersService_3_saveOrCreateImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "com.anova.anovacloud.shared.dto.MatterDto");
+        register(com.anova.anovacloud.client.rest.SessionService_0_logoutImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "java.lang.Void");
+        register(com.anova.anovacloud.client.rest.UserService_2_saveOrCreateImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "com.anova.anovacloud.shared.dto.UserDto");
+        register(com.anova.anovacloud.client.rest.CustomerService_1_getActiveCustomersImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "java.util.List<com.anova.anovacloud.shared.dto.CustomerDto>");
+        register(com.anova.anovacloud.client.rest.MatterActionService_1_getImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "com.anova.anovacloud.shared.dto.MatterActionDto");
+        register(com.anova.anovacloud.client.rest.MatterActionService_0_getMatterActionsImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "java.util.List<com.anova.anovacloud.shared.dto.MatterActionDto>");
+        register(com.anova.anovacloud.client.rest.MattersService_0_getMattersImpl.class,
+                 MetadataType.RESPONSE_TYPE,
+                 "java.util.List<com.anova.anovacloud.shared.dto.MatterDto>");
     }
 }

@@ -148,10 +148,13 @@ public class MatterPresenter extends Presenter<MyView, MatterPresenter.MyProxy>
 
     @Override
     protected void onReveal() {
-        dispatcher.execute(customerService.getCustomers(), new AbstractAsyncCallback<List<CustomerDto>>() {
+        dispatcher.execute(customerService.getActiveCustomers(), new AbstractAsyncCallback<List<CustomerDto>>() {
             @Override
             public void onSuccess(List<CustomerDto> customers) {
-                onGetCustomerSuccess(customers);
+            	//Fan
+            	DisplayMessageEvent.fire(MatterPresenter.this, new Message(customers.get(0).getName(), MessageStyle.SUCCESS));
+               //
+            	onGetCustomerSuccess(customers);
             }
         });
 

@@ -74,7 +74,7 @@ sb.append("'></span> </div> </td> <td width='75%'> <div class='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg27));
 sb.append("'> <span id='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg28));
-sb.append("'></span> </div> </td> </tr> </table> <div class='");
+sb.append("'></span>  </div> </td> </tr> </table> <div class='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg29));
 sb.append("'> <span id='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg30));

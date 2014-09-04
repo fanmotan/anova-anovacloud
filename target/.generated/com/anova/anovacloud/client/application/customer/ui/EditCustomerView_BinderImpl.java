@@ -22,7 +22,7 @@ public class EditCustomerView_BinderImpl implements UiBinder<com.google.gwt.user
     @Template("Close")
     SafeHtml html2();
      
-    @Template("<div> <span id='{0}'></span> </div> <br> <table width='100%'> <tr> <td width='25%'> <div class='{1}'> <span id='{2}'></span> </div> </td> <td width='75%'> <div class='{3}'> <span id='{4}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{5}'> <span id='{6}'></span> </div> </td> <td width='75%'> <div class='{7}'> <span id='{8}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{9}'> <span id='{10}'></span> </div> </td> <td width='75%'> <div class='{11}'> <span id='{12}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{13}'> <span id='{14}'></span> </div> </td> <td width='75%'> <div class='{15}'> <span id='{16}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{17}'> <span id='{18}'></span> </div> </td> <td width='75%'> <div class='{19}'> <span id='{20}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{21}'> <span id='{22}'></span> </div> </td> <td width='75%'> <div class='{23}'> <span id='{24}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{25}'> <span id='{26}'></span> </div> </td> <td width='75%'> <div class='{27}'> <span id='{28}'></span> </div> </td> </tr> </table> <div class='{29}'> <span id='{30}'></span> <span id='{31}'></span> </div>")
+    @Template("<div> <span id='{0}'></span> </div> <br> <table width='100%'> <tr> <td width='25%'> <div class='{1}'> <span id='{2}'></span> </div> </td> <td width='75%'> <div class='{3}'> <span id='{4}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{5}'> <span id='{6}'></span> </div> </td> <td width='75%'> <div class='{7}'> <span id='{8}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{9}'> <span id='{10}'></span> </div> </td> <td width='75%'> <div class='{11}'> <span id='{12}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{13}'> <span id='{14}'></span> </div> </td> <td width='75%'> <div class='{15}'> <span id='{16}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{17}'> <span id='{18}'></span> </div> </td> <td width='75%'> <div class='{19}'> <span id='{20}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{21}'> <span id='{22}'></span> </div> </td> <td width='75%'> <div class='{23}'> <span id='{24}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{25}'> <span id='{26}'></span> </div> </td> <td width='75%'> <div class='{27}'> <span id='{28}'></span>  </div> </td> </tr> </table> <div class='{29}'> <span id='{30}'></span> <span id='{31}'></span> </div>")
     SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16, String arg17, String arg18, String arg19, String arg20, String arg21, String arg22, String arg23, String arg24, String arg25, String arg26, String arg27, String arg28, String arg29, String arg30, String arg31);
      
   }
@@ -193,7 +193,7 @@ public class EditCustomerView_BinderImpl implements UiBinder<com.google.gwt.user
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel4(), get_domId1Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_name(), get_domId2Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel5(), get_domId3Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_refNum(), get_domId4Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_code(), get_domId4Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel6(), get_domId5Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_address(), get_domId6Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel7(), get_domId7Element().get());
@@ -203,7 +203,7 @@ public class EditCustomerView_BinderImpl implements UiBinder<com.google.gwt.user
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel9(), get_domId11Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_fax(), get_domId12Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel10(), get_domId13Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_status(), get_domId14Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_customerStatus(), get_domId14Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_save(), get_domId15Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_close(), get_domId16Element().get());
 
@@ -421,21 +421,21 @@ public class EditCustomerView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for refNum called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for code called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_refNum() {
-      return build_refNum();
+    private com.google.gwt.user.client.ui.TextBox get_code() {
+      return build_code();
     }
-    private com.google.gwt.user.client.ui.TextBox build_refNum() {
+    private com.google.gwt.user.client.ui.TextBox build_code() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox refNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox code = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      refNum.ensureDebugId("customer-input");
+      code.ensureDebugId("customer-input");
 
 
-      this.owner.refNum = refNum;
+      this.owner.code = code;
 
-      return refNum;
+      return code;
     }
 
     /**
@@ -911,23 +911,20 @@ public class EditCustomerView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for status called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for customerStatus called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.ListBox get_status() {
-      return build_status();
+    private com.google.gwt.user.client.ui.ValueListBox get_customerStatus() {
+      return build_customerStatus();
     }
-    private com.google.gwt.user.client.ui.ListBox build_status() {
+    private com.google.gwt.user.client.ui.ValueListBox build_customerStatus() {
       // Creation section.
-      final com.google.gwt.user.client.ui.ListBox status = (com.google.gwt.user.client.ui.ListBox) GWT.create(com.google.gwt.user.client.ui.ListBox.class);
+      final com.google.gwt.user.client.ui.ValueListBox customerStatus = owner.customerStatus;
+      assert customerStatus != null : "UiField customerStatus with 'provided = true' was null";
       // Setup section.
-      status.addItem("active");
-      status.addItem("inactive");
-      status.ensureDebugId("customer-input");
+      customerStatus.ensureDebugId("customer-input");
 
 
-      this.owner.status = status;
-
-      return status;
+      return customerStatus;
     }
 
     /**

@@ -7,39 +7,25 @@ import java.util.List;
 
 public class CustomerDto extends BaseEntity {
     private String name;
-    private String refNum;
+    private String code;
     private String address;
     private String phone;
     private String email;
     private String fax;
-    private String status;
-    
-   
-
-	private List<MatterDto> matters;
-
-    public CustomerDto() {
-        this.name = "";
-        this.refNum = "";
-        this.address = "";
-        this.email = "";
-        this.phone = "";
-        this.fax = "";
-        this.status = "";
-        this.matters = new ArrayList<>();
+    private CustomerStatusDto customerStatus;
+	
+	public CustomerDto() {
         
     }
 
-    public CustomerDto(String name, String refNum, String address, String email, String phone, String fax, String status) {
+    public CustomerDto(String name, String code, String address, String email, String phone, String fax, CustomerStatusDto customerStatus) {
         this.name = name;
-        this.refNum = refNum;
+        this.code = code;
         this.address = address;
         this.email = email;
         this.phone = phone;
         this.fax = fax;
-        this.status = status;
-        this.matters = new ArrayList<>();
-        
+        this.customerStatus = customerStatus;
     }
 
     public String getName() {
@@ -49,12 +35,12 @@ public class CustomerDto extends BaseEntity {
     public void setName(String name) {
         this.name = name;
     }
-    public String getRefNum() {
-        return refNum;
+    public String getCode() {
+        return code;
     }
 
-    public void setRefNum(String refNum) {
-        this.refNum = refNum;
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public String getAddress() {
@@ -89,19 +75,20 @@ public class CustomerDto extends BaseEntity {
         this.fax = fax;
     }
     
-    public String getStatus() {
-		return status;
+    public CustomerStatusDto getCustomerStatus() {
+		return customerStatus;
 	}
 
-	public void setStatus(String status) {
-		this.status = status;
+	public void setCustomerStatus(CustomerStatusDto customerStatus) {
+		this.customerStatus = customerStatus;
 	}
 	
-    public List<MatterDto> getMatters() {
-        return matters;
-    }
+	 @Override
+	    public String toString() {
+	        String s = " { Customer ";
+	        s += name + "-"+code; 
+	        s += "}";
+	        return s;
+	    }
 
-    public void setMatters(List<MatterDto> matters) {
-        this.matters = matters;
-    }
 }

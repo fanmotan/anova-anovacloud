@@ -60,12 +60,12 @@ public class CustomerMobileView extends ViewWithUiHandlers<CustomerUiHandlers> i
     public void addCustomer(CustomerDto customerDto) {
         customerDataProvider.getList().add(customerDto);
     }
-
+/*
     @Override
     public void removeCustomer(CustomerDto customerDto) {
         customerDataProvider.getList().remove(customerDto);
     }
-
+*/
     @Override
     public void replaceCustomer(CustomerDto oldCustomer, CustomerDto newCustomer) {
         List<CustomerDto> customerDtos = customerDataProvider.getList();

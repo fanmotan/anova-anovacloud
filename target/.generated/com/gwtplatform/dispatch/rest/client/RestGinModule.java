@@ -12,6 +12,8 @@ import com.anova.anovacloud.client.rest.AttorneyService;
 import com.anova.anovacloud.client.rest.AttorneyServiceImpl;
 import com.anova.anovacloud.client.rest.CustomerService;
 import com.anova.anovacloud.client.rest.CustomerServiceImpl;
+import com.anova.anovacloud.client.rest.CustomerStatusService;
+import com.anova.anovacloud.client.rest.CustomerStatusServiceImpl;
 import com.anova.anovacloud.client.rest.MatterActionService;
 import com.anova.anovacloud.client.rest.MatterActionServiceImpl;
 import com.anova.anovacloud.client.rest.MattersService;
@@ -31,6 +33,7 @@ public class RestGinModule extends AbstractGinModule {
 
         bind(AttorneyService.class).to(AttorneyServiceImpl.class).in(Singleton.class);
         bind(CustomerService.class).to(CustomerServiceImpl.class).in(Singleton.class);
+        bind(CustomerStatusService.class).to(CustomerStatusServiceImpl.class).in(Singleton.class);
         bind(MatterActionService.class).to(MatterActionServiceImpl.class).in(Singleton.class);
         bind(MattersService.class).to(MattersServiceImpl.class).in(Singleton.class);
         bind(SessionService.class).to(SessionServiceImpl.class).in(Singleton.class);

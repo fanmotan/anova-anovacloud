@@ -10,8 +10,6 @@ public class EditAttorneyView_SimpleBeanEditorDelegate extends com.google.gwt.ed
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate displayNameDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate firstNameDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate lastNameDelegate;
-  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate attorneynameDelegate;
-  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate hashPasswordDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate emailDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate mailAddressDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate phoneDelegate;
@@ -28,14 +26,6 @@ public class EditAttorneyView_SimpleBeanEditorDelegate extends com.google.gwt.ed
     if (editor.lastName.asEditor() != null) {
       lastNameDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
       addSubDelegate(lastNameDelegate, appendPath("lastName"), editor.lastName.asEditor());
-    }
-    if (editor.attorneyname.asEditor() != null) {
-      attorneynameDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
-      addSubDelegate(attorneynameDelegate, appendPath("attorneyname"), editor.attorneyname.asEditor());
-    }
-    if (editor.hashPassword.asEditor() != null) {
-      hashPasswordDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
-      addSubDelegate(hashPasswordDelegate, appendPath("hashPassword"), editor.hashPassword.asEditor());
     }
     if (editor.email.asEditor() != null) {
       emailDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
@@ -72,18 +62,6 @@ public class EditAttorneyView_SimpleBeanEditorDelegate extends com.google.gwt.ed
       com.anova.anovacloud.client.application.attorney.ui.EditAttorneyView_lastName_Context ctx = new com.anova.anovacloud.client.application.attorney.ui.EditAttorneyView_lastName_Context(getObject(), editor.lastName.asEditor(), appendPath("lastName"));
       ctx.setEditorDelegate(lastNameDelegate);
       ctx.traverse(visitor, lastNameDelegate);
-    }
-    if (attorneynameDelegate != null) 
-    {
-      com.anova.anovacloud.client.application.attorney.ui.EditAttorneyView_attorneyname_Context ctx = new com.anova.anovacloud.client.application.attorney.ui.EditAttorneyView_attorneyname_Context(getObject(), editor.attorneyname.asEditor(), appendPath("attorneyname"));
-      ctx.setEditorDelegate(attorneynameDelegate);
-      ctx.traverse(visitor, attorneynameDelegate);
-    }
-    if (hashPasswordDelegate != null) 
-    {
-      com.anova.anovacloud.client.application.attorney.ui.EditAttorneyView_hashPassword_Context ctx = new com.anova.anovacloud.client.application.attorney.ui.EditAttorneyView_hashPassword_Context(getObject(), editor.hashPassword.asEditor(), appendPath("hashPassword"));
-      ctx.setEditorDelegate(hashPasswordDelegate);
-      ctx.traverse(visitor, hashPasswordDelegate);
     }
     if (emailDelegate != null) 
     {

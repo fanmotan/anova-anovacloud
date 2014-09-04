@@ -10,8 +10,7 @@ import com.anova.anovacloud.shared.dto.AttorneyDto;
 
 public class AttorneyCell extends AbstractCell<AttorneyDto> {
     interface Renderer extends UiRenderer {
-        void render(SafeHtmlBuilder sb, String displayName, String attorneyname, String hashPassword, String firstName, String lastName,
-    			String role, String email, String mailAddress, String phone, String fax);
+        void render(SafeHtmlBuilder sb, String displayName, String firstName, String lastName, String email, String mailAddress, String phone, String fax);
     }
 
     private final Renderer uiRenderer;
@@ -23,7 +22,6 @@ public class AttorneyCell extends AbstractCell<AttorneyDto> {
 
     @Override
     public void render(Context context, AttorneyDto value, SafeHtmlBuilder safeHtmlBuilder) {
-        uiRenderer.render(safeHtmlBuilder, value.getDisplayName(), value.getAttorneyname(),value.getHashPassword(),value.getFirstName(), value.getLastName(),  
-        		value.getRole(), value.getEmail(), value.getMailAddress(), value.getPhone(), value.getFax());
+        uiRenderer.render(safeHtmlBuilder, value.getDisplayName(), value.getFirstName(), value.getLastName(), value.getEmail(), value.getMailAddress(), value.getPhone(), value.getFax());
     }
 }

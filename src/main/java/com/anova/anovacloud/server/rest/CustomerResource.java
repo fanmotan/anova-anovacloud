@@ -2,6 +2,8 @@
 
 package com.anova.anovacloud.server.rest;
 
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -17,7 +19,10 @@ import javax.ws.rs.core.Response;
 import com.anova.anovacloud.server.dao.CustomerDao;
 import com.anova.anovacloud.server.dao.domain.Customer;
 import com.anova.anovacloud.server.service.ReportService;
+import com.anova.anovacloud.shared.dto.ActionDueDto;
 import com.anova.anovacloud.shared.dto.CustomerDto;
+import com.anova.anovacloud.shared.dto.MatterActionDto;
+import com.anova.anovacloud.shared.dto.MatterDto;
 import com.anova.anovacloud.shared.rest.PathParameter;
 import com.anova.anovacloud.shared.rest.ResourcesPath;
 import com.anova.anovacloud.shared.rest.RestParameter;
@@ -26,13 +31,10 @@ import com.anova.anovacloud.shared.rest.RestParameter;
 @Produces(MediaType.APPLICATION_JSON)
 public class CustomerResource {
     private final CustomerDao customerDao;
- //   private final ReportService reportService;
 
     @Inject
-    CustomerResource(CustomerDao customerDao,
-                         ReportService reportService) {
+    CustomerResource(CustomerDao customerDao) {
         this.customerDao = customerDao;
-      //  this.reportService = reportService;
     }
 
     @GET
@@ -41,14 +43,21 @@ public class CustomerResource {
 
         return Response.ok(customerDtos).build();
     }
- /*   
+    
     @GET
     public Response getActiveCustomers() {
-        List<CustomerDto> customerDtos = Customer.createDto(customerDao.getActiveCustomers());
+        List<CustomerDto> customerDtos = Customer.createDto(customerDao.getAll());
+        List <CustomerDto> results = new ArrayList<>();
+		for (CustomerDto customerDto : customerDtos){
+			if (customerDto.getCustomerStatus().getStatusName() != null && customerDto.getCustomerStatus().getStatusName().equalsIgnoreCase("active"))
+			{
+				results.add(customerDto);
+			}
+		}
 
-        return Response.ok(customerDtos).build();
+        return Response.ok(results).build();
     }
-    */
+   
 
     @Path(PathParameter.PATH_ID)
     @GET

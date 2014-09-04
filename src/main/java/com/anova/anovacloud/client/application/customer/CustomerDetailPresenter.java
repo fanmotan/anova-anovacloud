@@ -22,9 +22,11 @@ import com.anova.anovacloud.client.application.widget.message.MessageStyle;
 import com.anova.anovacloud.client.place.NameTokens;
 import com.anova.anovacloud.client.resources.EditCustomerMessages;
 import com.anova.anovacloud.client.rest.CustomerService;
+import com.anova.anovacloud.client.rest.CustomerStatusService;
 import com.anova.anovacloud.client.util.AbstractAsyncCallback;
 import com.anova.anovacloud.client.util.ErrorHandlerAsyncCallback;
 import com.anova.anovacloud.shared.dto.CustomerDto;
+import com.anova.anovacloud.shared.dto.CustomerStatusDto;
 import com.gwtplatform.dispatch.rest.shared.RestDispatch;
 import com.gwtplatform.mvp.client.HasUiHandlers;
 import com.gwtplatform.mvp.client.Presenter;
@@ -41,7 +43,7 @@ public class CustomerDetailPresenter extends Presenter<MyView, MyProxy>
 
     interface MyView extends View, HasUiHandlers<CustomerDetailUiHandlers> {
         void edit(CustomerDto customerDto);
-
+        void setAllowedCustomerStatuss(List<CustomerStatusDto> customerStatusDtos);
         void getCustomer();
     }
 
@@ -52,6 +54,7 @@ public class CustomerDetailPresenter extends Presenter<MyView, MyProxy>
 
     private final RestDispatch dispatcher;
     private final CustomerService customerService;
+    private final CustomerStatusService customerStatusService;
     private final PlaceManager placeManager;
     private final EditCustomerMessages messages;
 
@@ -64,12 +67,14 @@ public class CustomerDetailPresenter extends Presenter<MyView, MyProxy>
                                 MyProxy proxy,
                                 RestDispatch dispatcher,
                                 CustomerService customerService,
+                                CustomerStatusService customerStatusService,
                                 PlaceManager placeManager,
                                 EditCustomerMessages messages) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN_CONTENT);
 
         this.dispatcher = dispatcher;
         this.customerService = customerService;
+        this.customerStatusService = customerStatusService;
         this.placeManager = placeManager;
         this.messages = messages;
 
@@ -111,9 +116,9 @@ public class CustomerDetailPresenter extends Presenter<MyView, MyProxy>
                 case DONE:
                     getView().getCustomer();
                     break;
-                case DELETE:
-                    deleteCustomer();
-                    break;
+           //     case DELETE:
+          //          deleteCustomer();
+          //          break;
             }
         }
     }
@@ -147,8 +152,15 @@ public class CustomerDetailPresenter extends Presenter<MyView, MyProxy>
             actions = Arrays.asList(ActionType.DELETE, ActionType.UPDATE);
             ChangeActionBarEvent.fire(this, actions, false);
         }
+        
+        dispatcher.execute(customerStatusService.getCustomerStatuss(), new AbstractAsyncCallback<List<CustomerStatusDto>>() {
+            @Override
+            public void onSuccess(List<CustomerStatusDto> statuss) {
+                onGetCustomerStatussSuccess(statuss);
+            }
+        });
     }
-
+/*
     private void deleteCustomer() {
         Boolean confirm = Window.confirm("Are you sure you want to delete " + currentCustomer.getName() + "?");
         if (confirm) {
@@ -160,5 +172,10 @@ public class CustomerDetailPresenter extends Presenter<MyView, MyProxy>
                         }
                     });
         }
+    }
+    */
+    private void onGetCustomerStatussSuccess(List<CustomerStatusDto> customerStatusDtos) {
+        getView().setAllowedCustomerStatuss(customerStatusDtos);
+        getView().edit(new CustomerDto());
     }
 }

@@ -133,12 +133,12 @@ public class CustomerDetailView_BinderImpl implements UiBinder<com.google.gwt.us
       // Detach section.
       attachRecord8.detach();
       f_HTMLPanel1.addAndReplaceElement(get_name(), get_domId0Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_refNum(), get_domId1Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_code(), get_domId1Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_address(), get_domId2Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_email(), get_domId3Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_phone(), get_domId4Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_fax(), get_domId5Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_status(), get_domId6Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_customerStatus(), get_domId6Element().get());
 
       return f_HTMLPanel1;
     }
@@ -210,21 +210,21 @@ public class CustomerDetailView_BinderImpl implements UiBinder<com.google.gwt.us
     }
 
     /**
-     * Getter for refNum called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for code called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_refNum() {
-      return build_refNum();
+    private com.google.gwt.user.client.ui.TextBox get_code() {
+      return build_code();
     }
-    private com.google.gwt.user.client.ui.TextBox build_refNum() {
+    private com.google.gwt.user.client.ui.TextBox build_code() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox refNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox code = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      refNum.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      code.setStyleName("" + get_resource().styles().mobileTextField() + "");
 
 
-      this.owner.refNum = refNum;
+      this.owner.code = code;
 
-      return refNum;
+      return code;
     }
 
     /**
@@ -460,23 +460,20 @@ public class CustomerDetailView_BinderImpl implements UiBinder<com.google.gwt.us
     }
 
     /**
-     * Getter for status called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for customerStatus called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.ListBox get_status() {
-      return build_status();
+    private com.google.gwt.user.client.ui.ValueListBox get_customerStatus() {
+      return build_customerStatus();
     }
-    private com.google.gwt.user.client.ui.ListBox build_status() {
+    private com.google.gwt.user.client.ui.ValueListBox build_customerStatus() {
       // Creation section.
-      final com.google.gwt.user.client.ui.ListBox status = (com.google.gwt.user.client.ui.ListBox) GWT.create(com.google.gwt.user.client.ui.ListBox.class);
+      final com.google.gwt.user.client.ui.ValueListBox customerStatus = owner.customerStatus;
+      assert customerStatus != null : "UiField customerStatus with 'provided = true' was null";
       // Setup section.
-      status.addItem("active");
-      status.addItem("inactive");
-      status.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      customerStatus.setStyleName("" + get_resource().styles().mobileTextField() + "");
 
 
-      this.owner.status = status;
-
-      return status;
+      return customerStatus;
     }
 
     /**

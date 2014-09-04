@@ -30,12 +30,6 @@ public class AttorneyDetailView extends ViewWithUiHandlers<AttorneyDetailUiHandl
     @UiField
     TextBox lastName;
     @UiField
-    TextBox attorneyname;
-    @UiField
-    TextBox hashPassword;
-    @UiField
-    ListBox role;
-    @UiField
     TextArea mailAddress;
     @UiField
     TextBox email;
@@ -58,9 +52,6 @@ public class AttorneyDetailView extends ViewWithUiHandlers<AttorneyDetailUiHandl
         displayName.getElement().setAttribute("placeholder", "Display Name");
         firstName.getElement().setAttribute("placeholder", "First Name");
         lastName.getElement().setAttribute("placeholder", "Last Name");
-        attorneyname.getElement().setAttribute("placeholder", "Attorneyname");
-        hashPassword.getElement().setAttribute("placeholder", "Password");
-        role.getElement().setAttribute("placeholder", "Attorney Role");
         email.getElement().setAttribute("placeholder", "Attorney Email");
         mailAddress.getElement().setAttribute("placeholder", "Mailing Address");
         

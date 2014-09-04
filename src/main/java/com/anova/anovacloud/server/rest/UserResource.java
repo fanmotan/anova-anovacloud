@@ -15,7 +15,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.anova.anovacloud.server.dao.UserDao;
-import com.anova.anovacloud.server.dao.UserRoleDao;
 import com.anova.anovacloud.server.dao.domain.User;
 import com.anova.anovacloud.shared.dto.UserDto;
 import com.anova.anovacloud.shared.rest.PathParameter;

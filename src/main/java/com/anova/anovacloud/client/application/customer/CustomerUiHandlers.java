@@ -10,7 +10,7 @@ public interface CustomerUiHandlers extends UiHandlers {
 
     void onEdit(CustomerDto customerDto);
 
-    void onDelete(CustomerDto customerDto);
+   // void onDelete(CustomerDto customerDto);
 
     void onCreate();
 }

@@ -3,7 +3,6 @@
 package com.anova.anovacloud.server.dao.domain;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 import com.googlecode.objectify.Ref;
@@ -18,38 +17,44 @@ import com.anova.anovacloud.shared.dto.CustomerDto;
 @Entity
 public class Customer extends BaseEntity {
     private String name;
-    private String refNum;
+    private String code;
     private String address;
     private String email;
     private String phone;
     private String fax;
-    private String status;
-
-    
-
-	@Load
-    private HashSet<Ref<Matter>> matters;
+    @Load
+    private Ref<CustomerStatus> customerStatus;
 
     public Customer() {
         this.name = "";
-        this.refNum = "";
+        this.code = "";
         this.address = "";
         this.email = "";
         this.phone = "";
         this.fax= "";
-        this.status= "";
     }
 
-    public Customer(String name, String refNum, String address, String email, String phone, String fax, String status) {
+    public Customer(String name, String code, String address, String email, String phone, String fax, CustomerStatus customerStatus) {
         this.name = name;
-        this.refNum = refNum;    
+        this.code = code;    
         this.address = address;
         this.email = email;
         this.phone = phone;
         this.fax = fax;
-        this.status = status;
+       this.setCustomerStatus(customerStatus);
     }
 
+    public CustomerStatus getCustomerStatus() {
+		return Deref.deref(customerStatus);
+	}
+	public void setCustomerStatus(CustomerStatus customerStatus) {
+		if (customerStatus != null) {
+            this.customerStatus = Ref.create(customerStatus);
+        } else {
+            this.customerStatus = null;
+        }
+	}
+   
     @Override
     public void setId(Long id) {
         this.id = id;
@@ -63,12 +68,12 @@ public class Customer extends BaseEntity {
         this.name = name;
     }
     
-    public String getRefNum() {
-        return refNum;
+    public String getCode() {
+        return code;
     }
 
-    public void setRefNum(String refNum) {
-        this.refNum = refNum;
+    public void setCode(String code) {
+        this.code = code;
     }
     
     public String getAddress() {
@@ -100,38 +105,7 @@ public class Customer extends BaseEntity {
     public void setFax(String fax) {
         this.fax = fax;
     }
-    public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
-	}
-    public List<Matter> getMatters() {
-        if (this.matters == null) {
-            return null;
-        }
-
-        List<Matter> rmatters = new ArrayList<>();
-        for (Ref<Matter> matter : matters) {
-            rmatters.add(Deref.deref(matter));
-        }
-
-        return rmatters;
-    }
-
-    public void setMatters(List<Matter> matters) {
-        if (matters == null) {
-            this.matters = null;
-        } else {
-            for (Matter matter : matters) {
-                if (this.matters == null) {
-                    this.matters = new HashSet<>();
-                }
-                this.matters.add(Ref.create(matter));
-            }
-        }
-    }
+    
 
     public static List<CustomerDto> createDto(List<Customer> customers) {
         if (customers == null) {
@@ -152,15 +126,14 @@ public class Customer extends BaseEntity {
         }
 
         CustomerDto customerDto = new CustomerDto();
-        customerDto.setMatters(Matter.createDto(customer.getMatters()));
         customerDto.setId(customer.getId());
         customerDto.setName(customer.getName());
-        customerDto.setRefNum(customer.getRefNum());
+        customerDto.setCode(customer.getCode());
         customerDto.setAddress(customer.getAddress());
         customerDto.setEmail(customer.getEmail());
         customerDto.setPhone(customer.getPhone());
         customerDto.setFax(customer.getFax());
-        customerDto.setStatus(customer.getStatus());
+        customerDto.setCustomerStatus(CustomerStatus.createDto(customer.getCustomerStatus()));
 
         return customerDto;
     }
@@ -171,15 +144,14 @@ public class Customer extends BaseEntity {
         }
 
         Customer customer = new Customer();
-        customer.setMatters(Matter.create(customerDto.getMatters()));
         customer.setId(customerDto.getId());
         customer.setName(customerDto.getName());
-        customer.setRefNum(customerDto.getRefNum());
+        customer.setCode(customerDto.getCode());
         customer.setAddress(customerDto.getAddress());
         customer.setEmail(customerDto.getEmail());
         customer.setPhone(customerDto.getPhone());
         customer.setFax(customerDto.getFax());
-        customer.setStatus(customerDto.getStatus());
+        customer.setCustomerStatus(CustomerStatus.create(customerDto.getCustomerStatus()));
         
 
         return customer;

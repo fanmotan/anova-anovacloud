@@ -11,7 +11,7 @@ public class AttorneyRenderer extends AbstractRenderer<AttorneyDto> {
     	if (attorneyDto == null){
     		return "";
     	}
-        return attorneyDto.getDisplayName()+" "+attorneyDto.getFirstName()+" "+attorneyDto.getLastName()+" "+attorneyDto.getAttorneyname()+" "+attorneyDto.getHashPassword()+" "+attorneyDto.getRole()+" "+attorneyDto.getEmail()+" "+attorneyDto.getMailAddress()+" "+attorneyDto.getPhone()+" "+attorneyDto.getFax();
+        return attorneyDto.getDisplayName();
     }
     
 }

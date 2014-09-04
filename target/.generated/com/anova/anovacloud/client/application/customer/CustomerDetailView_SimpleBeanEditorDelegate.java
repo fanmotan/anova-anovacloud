@@ -8,19 +8,20 @@ public class CustomerDetailView_SimpleBeanEditorDelegate extends com.google.gwt.
   @Override public com.anova.anovacloud.shared.dto.CustomerDto getObject() {return object;}
   @Override protected void setObject(Object object) {this.object=(com.anova.anovacloud.shared.dto.CustomerDto)object;}
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate nameDelegate;
-  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate refNumDelegate;
+  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate codeDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate addressDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate emailDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate phoneDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate faxDelegate;
+  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate customerStatusDelegate;
   @Override protected void initializeSubDelegates() {
     if (editor.name.asEditor() != null) {
       nameDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
       addSubDelegate(nameDelegate, appendPath("name"), editor.name.asEditor());
     }
-    if (editor.refNum.asEditor() != null) {
-      refNumDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
-      addSubDelegate(refNumDelegate, appendPath("refNum"), editor.refNum.asEditor());
+    if (editor.code.asEditor() != null) {
+      codeDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
+      addSubDelegate(codeDelegate, appendPath("code"), editor.code.asEditor());
     }
     if (editor.address.asEditor() != null) {
       addressDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
@@ -38,6 +39,10 @@ public class CustomerDetailView_SimpleBeanEditorDelegate extends com.google.gwt.
       faxDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
       addSubDelegate(faxDelegate, appendPath("fax"), editor.fax.asEditor());
     }
+    if (editor.customerStatus.asEditor() != null) {
+      customerStatusDelegate = new com.google.gwt.editor.client.adapters.TakesValueEditor_com_anova_anovacloud_shared_dto_CustomerStatusDto_SimpleBeanEditorDelegate();
+      addSubDelegate(customerStatusDelegate, appendPath("customerStatus"), editor.customerStatus.asEditor());
+    }
   }
   @Override public void accept(com.google.gwt.editor.client.EditorVisitor visitor) {
     if (nameDelegate != null) 
@@ -46,11 +51,11 @@ public class CustomerDetailView_SimpleBeanEditorDelegate extends com.google.gwt.
       ctx.setEditorDelegate(nameDelegate);
       ctx.traverse(visitor, nameDelegate);
     }
-    if (refNumDelegate != null) 
+    if (codeDelegate != null) 
     {
-      com.anova.anovacloud.client.application.customer.CustomerDetailView_refNum_Context ctx = new com.anova.anovacloud.client.application.customer.CustomerDetailView_refNum_Context(getObject(), editor.refNum.asEditor(), appendPath("refNum"));
-      ctx.setEditorDelegate(refNumDelegate);
-      ctx.traverse(visitor, refNumDelegate);
+      com.anova.anovacloud.client.application.customer.CustomerDetailView_code_Context ctx = new com.anova.anovacloud.client.application.customer.CustomerDetailView_code_Context(getObject(), editor.code.asEditor(), appendPath("code"));
+      ctx.setEditorDelegate(codeDelegate);
+      ctx.traverse(visitor, codeDelegate);
     }
     if (addressDelegate != null) 
     {
@@ -75,6 +80,12 @@ public class CustomerDetailView_SimpleBeanEditorDelegate extends com.google.gwt.
       com.anova.anovacloud.client.application.customer.CustomerDetailView_fax_Context ctx = new com.anova.anovacloud.client.application.customer.CustomerDetailView_fax_Context(getObject(), editor.fax.asEditor(), appendPath("fax"));
       ctx.setEditorDelegate(faxDelegate);
       ctx.traverse(visitor, faxDelegate);
+    }
+    if (customerStatusDelegate != null) 
+    {
+      com.anova.anovacloud.client.application.customer.CustomerDetailView_customerStatus_Context ctx = new com.anova.anovacloud.client.application.customer.CustomerDetailView_customerStatus_Context(getObject(), editor.customerStatus.asEditor(), appendPath("customerStatus"));
+      ctx.setEditorDelegate(customerStatusDelegate);
+      ctx.traverse(visitor, customerStatusDelegate);
     }
   }
 }

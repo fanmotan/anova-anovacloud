@@ -6,7 +6,7 @@ public class CustomerDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjack
   
   @Override
   protected java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, ?>> initSerializers() {
-    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, ?>>(9);
+    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, ?>>(8);
     
     map.put("name", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, java.lang.String>() {
       @Override
@@ -20,7 +20,7 @@ public class CustomerDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjack
       }
     });
     
-    map.put("refNum", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, java.lang.String>() {
+    map.put("code", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, java.lang.String>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
         return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
@@ -28,7 +28,7 @@ public class CustomerDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjack
       
       @Override
       public java.lang.String getValue(com.anova.anovacloud.shared.dto.CustomerDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getRefNum();
+        return bean.getCode();
       }
     });
     
@@ -80,27 +80,15 @@ public class CustomerDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjack
       }
     });
     
-    map.put("status", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, java.lang.String>() {
+    map.put("customerStatus", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, com.anova.anovacloud.shared.dto.CustomerStatusDto>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
-        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
+        return new com.anova.anovacloud.shared.dto.CustomerStatusDtoBeanJsonSerializerImpl();
       }
       
       @Override
-      public java.lang.String getValue(com.anova.anovacloud.shared.dto.CustomerDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getStatus();
-      }
-    });
-    
-    map.put("matters", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerDto, java.util.List<com.anova.anovacloud.shared.dto.MatterDto>>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
-        return com.github.nmorel.gwtjackson.client.ser.IterableJsonSerializer.newInstance(new com.anova.anovacloud.shared.dto.MatterDtoBeanJsonSerializerImpl());
-      }
-      
-      @Override
-      public java.util.List<com.anova.anovacloud.shared.dto.MatterDto> getValue(com.anova.anovacloud.shared.dto.CustomerDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getMatters();
+      public com.anova.anovacloud.shared.dto.CustomerStatusDto getValue(com.anova.anovacloud.shared.dto.CustomerDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
+        return bean.getCustomerStatus();
       }
     });
     

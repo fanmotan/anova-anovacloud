@@ -34,30 +34,6 @@ public class AttorneyDtoBeanJsonDeserializerImpl extends com.github.nmorel.gwtja
       }
     });
     
-    map.put("attorneyname", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.AttorneyDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
-      }
-      
-      @Override
-      public void setValue(com.anova.anovacloud.shared.dto.AttorneyDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
-        bean.setAttorneyname(value);
-      }
-    });
-    
-    map.put("hashPassword", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.AttorneyDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
-      }
-      
-      @Override
-      public void setValue(com.anova.anovacloud.shared.dto.AttorneyDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
-        bean.setHashPassword(value);
-      }
-    });
-    
     map.put("firstName", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.AttorneyDto, java.lang.String>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
@@ -82,7 +58,7 @@ public class AttorneyDtoBeanJsonDeserializerImpl extends com.github.nmorel.gwtja
       }
     });
     
-    map.put("role", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.AttorneyDto, java.lang.String>() {
+    map.put("mailAddress", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.AttorneyDto, java.lang.String>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
         return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
@@ -90,7 +66,7 @@ public class AttorneyDtoBeanJsonDeserializerImpl extends com.github.nmorel.gwtja
       
       @Override
       public void setValue(com.anova.anovacloud.shared.dto.AttorneyDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
-        bean.setRole(value);
+        bean.setMailAddress(value);
       }
     });
     
@@ -103,18 +79,6 @@ public class AttorneyDtoBeanJsonDeserializerImpl extends com.github.nmorel.gwtja
       @Override
       public void setValue(com.anova.anovacloud.shared.dto.AttorneyDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
         bean.setEmail(value);
-      }
-    });
-    
-    map.put("mailAddress", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.AttorneyDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
-      }
-      
-      @Override
-      public void setValue(com.anova.anovacloud.shared.dto.AttorneyDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
-        bean.setMailAddress(value);
       }
     });
     

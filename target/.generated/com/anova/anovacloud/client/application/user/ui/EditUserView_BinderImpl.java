@@ -236,7 +236,7 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel3 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel3.setText("Please fill in or modify the following customer information:");
+      f_InlineLabel3.setText("Please fill in or modify the following user information:");
 
 
       return f_InlineLabel3;
@@ -717,12 +717,12 @@ public class EditUserView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     /**
      * Getter for hashPassword called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_hashPassword() {
+    private com.google.gwt.user.client.ui.PasswordTextBox get_hashPassword() {
       return build_hashPassword();
     }
-    private com.google.gwt.user.client.ui.TextBox build_hashPassword() {
+    private com.google.gwt.user.client.ui.PasswordTextBox build_hashPassword() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox hashPassword = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.PasswordTextBox hashPassword = (com.google.gwt.user.client.ui.PasswordTextBox) GWT.create(com.google.gwt.user.client.ui.PasswordTextBox.class);
       // Setup section.
       hashPassword.ensureDebugId("user-input");
 

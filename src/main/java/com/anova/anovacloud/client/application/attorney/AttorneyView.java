@@ -85,13 +85,14 @@ public class AttorneyView extends ViewWithUiHandlers<AttorneyUiHandlers> impleme
     }
 
     private void initDataColumns() {
+    	/*
         Column<AttorneyDto, Number> idColumn = new Column<AttorneyDto, Number>(new NumberCell()) {
             @Override
             public Long getValue(AttorneyDto attorneyDto) {
                 return attorneyDto.getId();
             }
         };
-
+*/
         Column<AttorneyDto, String> displayNameColumn = new Column<AttorneyDto, String>(new TextCell()) {
             @Override
             public String getValue(AttorneyDto attorneyDto) {
@@ -109,24 +110,6 @@ public class AttorneyView extends ViewWithUiHandlers<AttorneyUiHandlers> impleme
             @Override
             public String getValue(AttorneyDto attorneyDto) {
                 return attorneyDto.getLastName();
-            }
-        };
-        Column<AttorneyDto, String> attorneynameColumn = new Column<AttorneyDto, String>(new TextCell()) {
-            @Override
-            public String getValue(AttorneyDto attorneyDto) {
-                return attorneyDto.getAttorneyname();
-            }
-        };
-        Column<AttorneyDto, String> hashPasswordColumn = new Column<AttorneyDto, String>(new TextCell()) {
-            @Override
-            public String getValue(AttorneyDto attorneyDto) {
-                return attorneyDto.getHashPassword();
-            }
-        };
-        Column<AttorneyDto, String> roleColumn = new Column<AttorneyDto, String>(new TextCell()) {
-            @Override
-            public String getValue(AttorneyDto attorneyDto) {
-                return attorneyDto.getRole();
             }
         };
         Column<AttorneyDto, String> mailAddressColumn = new Column<AttorneyDto, String>(new TextCell()) {
@@ -153,19 +136,16 @@ public class AttorneyView extends ViewWithUiHandlers<AttorneyUiHandlers> impleme
                 return attorneyDto.getFax();
             }
         };
-        attorneyGrid.addColumn(idColumn, "ID");
+       // attorneyGrid.addColumn(idColumn, "ID");
         attorneyGrid.addColumn(displayNameColumn, "Display Name");
         attorneyGrid.addColumn(firstNameColumn, "First Name");
         attorneyGrid.addColumn(lastNameColumn, "Last Name");
-        attorneyGrid.addColumn(attorneynameColumn, "Attorneyname");
-        attorneyGrid.addColumn(hashPasswordColumn, "Password");
-        attorneyGrid.addColumn(roleColumn, "Role");
         attorneyGrid.addColumn(emailColumn, "Email");
         attorneyGrid.addColumn(mailAddressColumn, "Mailing Address");
         attorneyGrid.addColumn(phoneColumn, "Phone");
         attorneyGrid.addColumn(faxColumn, "Fax");
         
-        attorneyGrid.setColumnWidth(idColumn, 50, Unit.PX);
+        //attorneyGrid.setColumnWidth(idColumn, 50, Unit.PX);
     }
 
     private void initActionColumns() {

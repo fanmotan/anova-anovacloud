@@ -42,7 +42,7 @@ public class CustomerPresenter extends Presenter<MyView, MyProxy>
 
         void displayCustomers(List<CustomerDto> customerDtos);
 
-        void removeCustomer(CustomerDto customerDto);
+   //     void removeCustomer(CustomerDto customerDto);
 
         void replaceCustomer(CustomerDto oldCustomer, CustomerDto newCustomer);
     }
@@ -104,7 +104,7 @@ public class CustomerPresenter extends Presenter<MyView, MyProxy>
         editingCustomer = null;
         editCustomerPresenter.createNew();
     }
-
+/*
     @Override
     public void onDelete(final CustomerDto customerDto) {
         dispatcher.execute(customerService.delete(customerDto.getId()),
@@ -115,7 +115,7 @@ public class CustomerPresenter extends Presenter<MyView, MyProxy>
                     }
                 });
     }
-
+*/
     @Override
     protected void onReveal() {
         ActionBarVisibilityEvent.fire(this, true);
