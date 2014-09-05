@@ -42,7 +42,7 @@ public class AttorneyPresenter extends Presenter<MyView, MyProxy>
 
         void displayAttorneys(List<AttorneyDto> attorneyDtos);
 
-        void removeAttorney(AttorneyDto attorneyDto);
+     //   void removeAttorney(AttorneyDto attorneyDto);
 
         void replaceAttorney(AttorneyDto oldAttorney, AttorneyDto newAttorney);
     }
@@ -104,7 +104,7 @@ public class AttorneyPresenter extends Presenter<MyView, MyProxy>
         editingAttorney = null;
         editAttorneyPresenter.createNew();
     }
-
+/*
     @Override
     public void onDelete(final AttorneyDto attorneyDto) {
         dispatcher.execute(attorneyService.delete(attorneyDto.getId()),
@@ -115,7 +115,7 @@ public class AttorneyPresenter extends Presenter<MyView, MyProxy>
                     }
                 });
     }
-
+*/
     @Override
     protected void onReveal() {
         ActionBarVisibilityEvent.fire(this, true);

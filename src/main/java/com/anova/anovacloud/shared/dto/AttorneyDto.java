@@ -6,20 +6,15 @@ public class AttorneyDto extends BaseEntity {
     private String firstName;
     private String lastName;
     private String mailAddress;
-    
-
 	private String email;
     private String phone;
     private String fax;
+    private AttorneyStatusDto attorneyStatus;
 
-    public AttorneyDto() {
-        firstName = "";
-        lastName = "";
-        displayName = "";
-        mailAddress = "";
-        email = "";
-        phone ="";
-        fax = "";
+   
+
+	public AttorneyDto() {
+       
     }
 
     public AttorneyDto(String displayName,
@@ -28,7 +23,8 @@ public class AttorneyDto extends BaseEntity {
                    String mailAddress,
     			   String email,
     			   String phone,
-    			   String fax) {
+    			   String fax,
+    			   AttorneyStatusDto attorneyStatus) {
     	this.displayName = displayName;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -36,6 +32,7 @@ public class AttorneyDto extends BaseEntity {
         this.email = email;
         this.phone = phone;
         this.fax = fax;
+        this.attorneyStatus = attorneyStatus;
     }
 
 	public String getDisplayName() {
@@ -92,6 +89,13 @@ public class AttorneyDto extends BaseEntity {
         this.fax = fax;
     }
 
+    public AttorneyStatusDto getAttorneyStatus() {
+		return attorneyStatus;
+	}
+
+	public void setAttorneyStatus(AttorneyStatusDto attorneyStatus) {
+		this.attorneyStatus = attorneyStatus;
+	}
     @Override
     public String toString() {
         String s = " { Attorney ";

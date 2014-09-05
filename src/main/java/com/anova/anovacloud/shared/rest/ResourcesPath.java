@@ -15,5 +15,6 @@ public class ResourcesPath {
     public static final String ATTORNEYROLE = "/attorneyRoles";
     public static final String CASESTATUS = "/caseStatus";
     public static final String CUSTOMERSTATUS = "/customerStatuss";
+    public static final String ATTORNEYSTATUS = "/attorneyStatuss";
     public static final String MATTERACTIONSTATUS = "/matterActionStatus";
 }

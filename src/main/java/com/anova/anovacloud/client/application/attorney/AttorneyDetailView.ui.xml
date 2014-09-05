@@ -17,5 +17,6 @@
            <g:TextArea ui:field="mailAddress" styleName="{resource.styles.mobileTextField}"/>
             <g:TextBox ui:field="phone" styleName="{resource.styles.mobileTextField}"/>
              <g:TextBox ui:field="fax" styleName="{resource.styles.mobileTextField}"/>
+             <g:ValueListBox ui:field="attorneyStatus" styleName="{resource.styles.mobileTextField}" />
     </g:HTMLPanel>
 </ui:UiBinder>

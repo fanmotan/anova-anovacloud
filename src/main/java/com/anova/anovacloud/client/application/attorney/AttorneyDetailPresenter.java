@@ -7,7 +7,6 @@ import java.util.List;
 import javax.inject.Inject;
 
 import com.google.common.base.Strings;
-import com.google.gwt.user.client.Window;
 import com.google.web.bindery.event.shared.EventBus;
 import com.anova.anovacloud.client.application.ApplicationPresenter;
 import com.anova.anovacloud.client.application.event.ActionBarEvent;
@@ -22,9 +21,11 @@ import com.anova.anovacloud.client.application.widget.message.MessageStyle;
 import com.anova.anovacloud.client.place.NameTokens;
 import com.anova.anovacloud.client.resources.EditAttorneyMessages;
 import com.anova.anovacloud.client.rest.AttorneyService;
+import com.anova.anovacloud.client.rest.AttorneyStatusService;
 import com.anova.anovacloud.client.util.AbstractAsyncCallback;
 import com.anova.anovacloud.client.util.ErrorHandlerAsyncCallback;
 import com.anova.anovacloud.shared.dto.AttorneyDto;
+import com.anova.anovacloud.shared.dto.AttorneyStatusDto;
 import com.gwtplatform.dispatch.rest.shared.RestDispatch;
 import com.gwtplatform.mvp.client.HasUiHandlers;
 import com.gwtplatform.mvp.client.Presenter;
@@ -41,7 +42,7 @@ public class AttorneyDetailPresenter extends Presenter<MyView, MyProxy>
 
     interface MyView extends View, HasUiHandlers<AttorneyDetailUiHandlers> {
         void edit(AttorneyDto attorneyDto);
-
+        void setAllowedAttorneyStatuss(List<AttorneyStatusDto> attorneyStatusDtos);
         void getAttorney();
     }
 
@@ -52,6 +53,7 @@ public class AttorneyDetailPresenter extends Presenter<MyView, MyProxy>
 
     private final RestDispatch dispatcher;
     private final AttorneyService attorneyService;
+    private final AttorneyStatusService attorneyStatusService;
     private final PlaceManager placeManager;
     private final EditAttorneyMessages messages;
 
@@ -64,12 +66,14 @@ public class AttorneyDetailPresenter extends Presenter<MyView, MyProxy>
                                 MyProxy proxy,
                                 RestDispatch dispatcher,
                                 AttorneyService attorneyService,
+                                AttorneyStatusService attorneyStatusService,
                                 PlaceManager placeManager,
                                 EditAttorneyMessages messages) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN_CONTENT);
 
         this.dispatcher = dispatcher;
         this.attorneyService = attorneyService;
+        this.attorneyStatusService = attorneyStatusService;
         this.placeManager = placeManager;
         this.messages = messages;
 
@@ -111,9 +115,9 @@ public class AttorneyDetailPresenter extends Presenter<MyView, MyProxy>
                 case DONE:
                     getView().getAttorney();
                     break;
-                case DELETE:
-                    deleteAttorney();
-                    break;
+             //   case DELETE:
+              //      deleteAttorney();
+             //       break;
             }
         }
     }
@@ -148,7 +152,7 @@ public class AttorneyDetailPresenter extends Presenter<MyView, MyProxy>
             ChangeActionBarEvent.fire(this, actions, false);
         }
     }
-
+/*
     private void deleteAttorney() {
         Boolean confirm = Window.confirm("Are you sure you want to delete " + currentAttorney.getDisplayName() + "?");
         if (confirm) {
@@ -161,4 +165,11 @@ public class AttorneyDetailPresenter extends Presenter<MyView, MyProxy>
                     });
         }
     }
+    */
+    
+    private void onGetAttorneyStatussSuccess(List<AttorneyStatusDto> attorneyStatusDtos) {
+        getView().setAllowedAttorneyStatuss(attorneyStatusDtos);
+        getView().edit(new AttorneyDto());
+    }
+    
 }

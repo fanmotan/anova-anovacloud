@@ -8,6 +8,7 @@ import javax.inject.Inject;
 
 import com.anova.anovacloud.server.authentication.PasswordSecurity;
 import com.anova.anovacloud.server.dao.AttorneyRoleDao;
+import com.anova.anovacloud.server.dao.AttorneyStatusDao;
 import com.anova.anovacloud.server.dao.CaseStatusDao;
 import com.anova.anovacloud.server.dao.CustomerStatusDao;
 import com.anova.anovacloud.server.dao.MatterActionDao;
@@ -18,6 +19,7 @@ import com.anova.anovacloud.server.dao.CustomerDao;
 import com.anova.anovacloud.server.dao.UserDao;
 import com.anova.anovacloud.server.dao.UserRoleDao;
 import com.anova.anovacloud.server.dao.domain.AttorneyRole;
+import com.anova.anovacloud.server.dao.domain.AttorneyStatus;
 import com.anova.anovacloud.server.dao.domain.CaseStatus;
 import com.anova.anovacloud.server.dao.domain.CustomerStatus;
 import com.anova.anovacloud.server.dao.domain.Matter;
@@ -26,6 +28,7 @@ import com.anova.anovacloud.server.dao.domain.MatterActionStatus;
 import com.anova.anovacloud.server.dao.domain.User;
 import com.anova.anovacloud.server.dao.domain.UserRole;
 import com.anova.anovacloud.shared.dto.AttorneyRoleDto;
+import com.anova.anovacloud.shared.dto.AttorneyStatusDto;
 import com.anova.anovacloud.shared.dto.CaseStatusDto;
 import com.anova.anovacloud.shared.dto.CustomerStatusDto;
 import com.anova.anovacloud.shared.dto.MatterActionStatusDto;
@@ -41,6 +44,7 @@ public class DevBootStrapper {
     private final PasswordSecurity passwordSecurity;
     private final CustomerDao customerDao;
     private final CustomerStatusDao customerStatusDao;
+    private final AttorneyStatusDao attorneyStatusDao;
     private final MatterDao matterDao;
     private final MatterActionDao matterActionDao;
     private final MatterPropertiesDao matterPropertiesDao;
@@ -55,6 +59,7 @@ public class DevBootStrapper {
                     PasswordSecurity passwordSecurity,
                     CustomerDao customerDao,
                     CustomerStatusDao customerStatusDao,
+                    AttorneyStatusDao attorneyStatusDao,
                     MatterDao matterDao,
                     MatterActionDao matterActionDao,
                     MatterPropertiesDao matterPropertiesDao,
@@ -66,6 +71,7 @@ public class DevBootStrapper {
         this.passwordSecurity = passwordSecurity;
         this.customerDao = customerDao;
         this.customerStatusDao = customerStatusDao;
+        this.attorneyStatusDao = attorneyStatusDao;
         this.matterDao = matterDao;
         this.matterActionDao = matterActionDao;
         this.matterPropertiesDao = matterPropertiesDao;
@@ -147,6 +153,13 @@ public class DevBootStrapper {
     	
     	csstatus1 = CustomerStatus.createDto(customerStatusDao.put(CustomerStatus.create(csstatus1)));
     	csstatus2 = CustomerStatus.createDto(customerStatusDao.put(CustomerStatus.create(csstatus2)));
+    	
+    	AttorneyStatusDto astatus1 = new AttorneyStatusDto("active");
+    	AttorneyStatusDto astatus2 = new AttorneyStatusDto("inactive");
+    	
+    	astatus1 = AttorneyStatus.createDto(attorneyStatusDao.put(AttorneyStatus.create(astatus1)));
+    	astatus2 = AttorneyStatus.createDto(attorneyStatusDao.put(AttorneyStatus.create(astatus2)));
+    	
     	
     	
     	MatterActionStatusDto mstatus1 = new MatterActionStatusDto("open");

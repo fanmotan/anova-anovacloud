@@ -60,11 +60,12 @@ public class AttorneyMobileView extends ViewWithUiHandlers<AttorneyUiHandlers> i
     public void addAttorney(AttorneyDto attorneyDto) {
         attorneyDataProvider.getList().add(attorneyDto);
     }
-
+/*
     @Override
     public void removeAttorney(AttorneyDto attorneyDto) {
         attorneyDataProvider.getList().remove(attorneyDto);
     }
+    */
 
     @Override
     public void replaceAttorney(AttorneyDto oldAttorney, AttorneyDto newAttorney) {

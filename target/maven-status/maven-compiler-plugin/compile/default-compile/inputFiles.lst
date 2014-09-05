@@ -60,6 +60,7 @@ E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anova
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\rest\UserRoleService.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\customer\CustomerModule.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\login\LoginView.java
+E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\dao\domain\AttorneyStatus.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\matterAction\ui\EditMatterActionUiHandlers.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\attorney\ui\EditAttorneyUiHandlers.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\widget\message\MessagesView.java
@@ -112,6 +113,7 @@ E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anova
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\widget\header\HeaderView.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\dao\MatterActionDao.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\authentication\PasswordSecurity.java
+E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\shared\dto\AttorneyStatusDto.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\dao\domain\Attorney.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\resources\MatterMessages.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\login\LoginModule.java
@@ -185,9 +187,11 @@ E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anova
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\report\renderer\ReportCell.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\matters\matter\MatterProxyImpl.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\matters\matter\RootMatterView.java
+E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\dao\AttorneyStatusDao.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\login\LoginMobileView.java
-E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\dao\MatterActionStatusDao.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\widget\message\MessagesModule.java
+E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\dao\MatterActionStatusDao.java
+E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\rest\AttorneyStatusResource.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\widget\header\HeaderUiHandlers.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\report\ReportMobileModule.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\util\AbstractAsyncCallback.java
@@ -240,6 +244,8 @@ E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anova
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\user\ui\EditUserUiHandlers.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\dao\domain\UserSession.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\dao\UserDao.java
+E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\attorneyStatus\ui\AttorneyStatusRenderer.java
+E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\rest\AttorneyStatusService.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\dao\domain\UserRole.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\widget\message\ui\MessageWidgetFactory.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\rest\UserService.java

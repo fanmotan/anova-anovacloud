@@ -6,7 +6,7 @@ public class AttorneyDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjack
   
   @Override
   protected java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, ?>> initSerializers() {
-    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, ?>>(8);
+    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, ?>>(9);
     
     map.put("displayName", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, java.lang.String>() {
       @Override
@@ -89,6 +89,18 @@ public class AttorneyDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjack
       @Override
       public java.lang.String getValue(com.anova.anovacloud.shared.dto.AttorneyDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
         return bean.getFax();
+      }
+    });
+    
+    map.put("attorneyStatus", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyDto, com.anova.anovacloud.shared.dto.AttorneyStatusDto>() {
+      @Override
+      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
+        return new com.anova.anovacloud.shared.dto.AttorneyStatusDtoBeanJsonSerializerImpl();
+      }
+      
+      @Override
+      public com.anova.anovacloud.shared.dto.AttorneyStatusDto getValue(com.anova.anovacloud.shared.dto.AttorneyDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
+        return bean.getAttorneyStatus();
       }
     });
     

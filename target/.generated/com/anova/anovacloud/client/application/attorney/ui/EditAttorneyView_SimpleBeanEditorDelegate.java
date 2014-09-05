@@ -14,6 +14,7 @@ public class EditAttorneyView_SimpleBeanEditorDelegate extends com.google.gwt.ed
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate mailAddressDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate phoneDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate faxDelegate;
+  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate attorneyStatusDelegate;
   @Override protected void initializeSubDelegates() {
     if (editor.displayName.asEditor() != null) {
       displayNameDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
@@ -42,6 +43,10 @@ public class EditAttorneyView_SimpleBeanEditorDelegate extends com.google.gwt.ed
     if (editor.fax.asEditor() != null) {
       faxDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
       addSubDelegate(faxDelegate, appendPath("fax"), editor.fax.asEditor());
+    }
+    if (editor.attorneyStatus.asEditor() != null) {
+      attorneyStatusDelegate = new com.google.gwt.editor.client.adapters.TakesValueEditor_com_anova_anovacloud_shared_dto_AttorneyStatusDto_SimpleBeanEditorDelegate();
+      addSubDelegate(attorneyStatusDelegate, appendPath("attorneyStatus"), editor.attorneyStatus.asEditor());
     }
   }
   @Override public void accept(com.google.gwt.editor.client.EditorVisitor visitor) {
@@ -86,6 +91,12 @@ public class EditAttorneyView_SimpleBeanEditorDelegate extends com.google.gwt.ed
       com.anova.anovacloud.client.application.attorney.ui.EditAttorneyView_fax_Context ctx = new com.anova.anovacloud.client.application.attorney.ui.EditAttorneyView_fax_Context(getObject(), editor.fax.asEditor(), appendPath("fax"));
       ctx.setEditorDelegate(faxDelegate);
       ctx.traverse(visitor, faxDelegate);
+    }
+    if (attorneyStatusDelegate != null) 
+    {
+      com.anova.anovacloud.client.application.attorney.ui.EditAttorneyView_attorneyStatus_Context ctx = new com.anova.anovacloud.client.application.attorney.ui.EditAttorneyView_attorneyStatus_Context(getObject(), editor.attorneyStatus.asEditor(), appendPath("attorneyStatus"));
+      ctx.setEditorDelegate(attorneyStatusDelegate);
+      ctx.traverse(visitor, attorneyStatusDelegate);
     }
   }
 }

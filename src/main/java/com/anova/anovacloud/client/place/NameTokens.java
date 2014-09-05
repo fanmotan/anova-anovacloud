@@ -7,6 +7,7 @@ public class NameTokens {
     public static final String LOGIN = "login";
     public static final String CUSTOMER = "customer";
     public static final String CUSTOMERSTATUS = "customerStatus";
+    public static final String ATTORNEYSTATUS = "attorneyStatus";
     public static final String DETAIL_CUSTOMER = "detailCustomer";
     public static final String MATTERS = "matters";
     public static final String REPORT = "report";
@@ -58,6 +59,10 @@ public class NameTokens {
     
     public static String getCustomerStatus() {
         return CUSTOMERSTATUS;
+    }
+    
+    public static String getAttorneyStatus() {
+        return ATTORNEYSTATUS;
     }
     
 

@@ -6,7 +6,6 @@ import com.gwtplatform.dispatch.rest.client.DefaultDateFormat;
 import com.gwtplatform.dispatch.rest.shared.HttpMethod;
 import com.gwtplatform.dispatch.rest.shared.RestAction;
 import com.anova.anovacloud.client.rest.AttorneyService;
-import com.anova.anovacloud.client.rest.AttorneyService_3_deleteImpl;
 import com.anova.anovacloud.client.rest.AttorneyService_1_getImpl;
 import com.anova.anovacloud.client.rest.AttorneyService_0_getAttorneysImpl;
 import com.anova.anovacloud.client.rest.AttorneyService_2_saveOrCreateImpl;
@@ -18,14 +17,6 @@ public class AttorneyServiceImpl implements AttorneyService {
     public AttorneyServiceImpl(
             @DefaultDateFormat String defaultDateFormat) {
         this.defaultDateFormat = defaultDateFormat;
-    }
-
-    @Override
-    public RestAction<java.lang.Void> delete(
-            java.lang.Long id) {
-        return new AttorneyService_3_deleteImpl(
-                defaultDateFormat,
-                id);
     }
 
     @Override

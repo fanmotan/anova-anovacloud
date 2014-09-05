@@ -62,6 +62,7 @@ com\anova\anovacloud\client\application\user\UserView$2.class
 com\anova\anovacloud\shared\dto\CaseStatusDto.class
 com\anova\anovacloud\client\application\ApplicationMobileView.class
 com\anova\anovacloud\client\application\matterAction\ui\EditMatterActionView$Driver.class
+com\anova\anovacloud\shared\dto\AttorneyStatusDto.class
 com\anova\anovacloud\server\rest\AttorneyResource.class
 com\anova\anovacloud\client\application\event\UserLoginEvent$UserLoginHandler.class
 com\anova\anovacloud\client\application\report\renderer\ReportCell$Renderer.class
@@ -127,7 +128,6 @@ com\anova\anovacloud\client\application\matters\matter\navigation\NavigationTabE
 com\anova\anovacloud\client\application\login\LoginView$Binder.class
 com\anova\anovacloud\client\application\widget\message\ui\MessageWidget$2.class
 com\anova\anovacloud\client\application\matters\MattersView$3.class
-com\anova\anovacloud\client\application\attorney\AttorneyDetailPresenter$4.class
 com\anova\anovacloud\client\application\matters\matter\MatterProxyFactory.class
 com\anova\anovacloud\client\application\matters\MattersUiHandlers.class
 com\anova\anovacloud\shared\dto\CustomerDto.class
@@ -140,6 +140,7 @@ com\anova\anovacloud\client\application\customer\ui\CustomerRenderer.class
 com\anova\anovacloud\client\application\matterAction\MatterActionPresenter.class
 com\anova\anovacloud\shared\dto\UserRoleDto.class
 com\anova\anovacloud\client\application\widget\header\HeaderPresenter.class
+com\anova\anovacloud\client\application\attorney\ui\EditAttorneyPresenter$2.class
 com\anova\anovacloud\client\application\customer\CustomerMobileModule.class
 com\anova\anovacloud\client\application\report\ReportPresenter$MyView.class
 com\anova\anovacloud\shared\dto\BaseEntity.class
@@ -151,7 +152,6 @@ com\anova\anovacloud\client\application\matterAction\ui\EditMatterActionUiHandle
 com\anova\anovacloud\client\application\login\LoginUiHandlers.class
 com\anova\anovacloud\client\application\report\ReportView$1.class
 com\anova\anovacloud\client\resources\NavigationListStyle.class
-com\anova\anovacloud\client\application\attorney\AttorneyPresenter$2.class
 com\anova\anovacloud\client\application\matterAction\ui\EditMatterActionPresenter$MyView.class
 com\anova\anovacloud\client\application\matterAction\MatterActionView$1.class
 com\anova\anovacloud\client\application\login\LoginMobileView.class
@@ -220,6 +220,7 @@ com\anova\anovacloud\client\application\login\LoginPresenter.class
 com\anova\anovacloud\client\application\matters\matter\RootMatterView.class
 com\anova\anovacloud\client\application\matters\matter\MatterMobileView.class
 com\anova\anovacloud\client\application\attorney\AttorneyMobileView$Binder.class
+com\anova\anovacloud\client\rest\AttorneyStatusService.class
 com\anova\anovacloud\client\application\attorney\AttorneyDetailPresenter.class
 com\anova\anovacloud\client\application\matters\matter\navigation\CloseTabEvent$CloseTabHandler.class
 com\anova\anovacloud\shared\dto\MatterPropertiesDto.class
@@ -251,6 +252,7 @@ com\anova\anovacloud\client\application\attorney\AttorneyDetailPresenter$MyView.
 com\anova\anovacloud\client\application\customer\CustomerView$5.class
 com\anova\anovacloud\client\application\matters\MattersMobileView$2.class
 com\anova\anovacloud\client\application\user\ui\EditUserView.class
+com\anova\anovacloud\server\rest\AttorneyStatusResource.class
 com\anova\anovacloud\server\rest\CaseStatusResource.class
 com\anova\anovacloud\client\application\matters\matter\MatterProxyImpl.class
 com\anova\anovacloud\client\util\AbstractAsyncCallback.class
@@ -400,6 +402,7 @@ com\anova\anovacloud\client\application\ApplicationDesktopModule.class
 com\anova\anovacloud\client\place\NameTokens.class
 com\anova\anovacloud\rebind\GeneratorUtil.class
 com\anova\anovacloud\client\application\matters\matter\navigation\CloseTabEvent$HasCloseTabHandlers.class
+com\anova\anovacloud\client\application\attorneyStatus\ui\AttorneyStatusRenderer.class
 com\anova\anovacloud\client\application\user\event\UserAddedEvent.class
 com\anova\anovacloud\client\resources\EditUserMessages.class
 com\anova\anovacloud\client\application\matters\matter\navigation\CloseTabEvent.class
@@ -427,6 +430,7 @@ com\anova\anovacloud\client\application\user\UserDetailUiHandlers.class
 com\anova\anovacloud\client\application\attorney\AttorneyView$3.class
 com\anova\anovacloud\client\application\matters\matter\widget\MatterPropertiesEditor.class
 com\anova\anovacloud\client\resources\MobileDataListStyle.class
+com\anova\anovacloud\server\dao\domain\AttorneyStatus.class
 com\anova\anovacloud\client\application\matters\MattersView$4.class
 com\anova\anovacloud\client\application\matters\MattersView$Binder.class
 com\anova\anovacloud\client\application\matters\matter\MatterMobileView$Binder.class
@@ -449,6 +453,7 @@ com\anova\anovacloud\client\gin\AnovaCloudModule.class
 com\anova\anovacloud\client\application\attorney\AttorneyPresenter$MyProxy.class
 com\anova\anovacloud\client\application\attorney\AttorneyDetailPresenter$1.class
 com\anova\anovacloud\server\dao\MatterDao.class
+com\anova\anovacloud\server\dao\AttorneyStatusDao.class
 com\anova\anovacloud\client\application\customer\CustomerView$2.class
 com\anova\anovacloud\client\application\report\ReportPresenter.class
 com\anova\anovacloud\client\application\attorney\AttorneyView$Binder.class

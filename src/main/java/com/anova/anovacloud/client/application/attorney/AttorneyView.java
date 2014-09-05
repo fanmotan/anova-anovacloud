@@ -25,6 +25,7 @@ import com.google.gwt.view.client.ListDataProvider;
 import com.google.gwt.view.client.NoSelectionModel;
 import com.anova.anovacloud.client.application.attorney.AttorneyPresenter.MyView;
 import com.anova.anovacloud.shared.dto.AttorneyDto;
+import com.anova.anovacloud.shared.dto.AttorneyStatusDto;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
 public class AttorneyView extends ViewWithUiHandlers<AttorneyUiHandlers> implements MyView {
@@ -56,12 +57,12 @@ public class AttorneyView extends ViewWithUiHandlers<AttorneyUiHandlers> impleme
     public void addAttorney(AttorneyDto attorneyDto) {
         attorneyDataProvider.getList().add(attorneyDto);
     }
-
+/*
     @Override
     public void removeAttorney(AttorneyDto attorneyDto) {
         attorneyDataProvider.getList().remove(attorneyDto);
     }
-
+*/
     @Override
     public void replaceAttorney(AttorneyDto oldAttorney, AttorneyDto newAttorney) {
         List<AttorneyDto> attorneyDtos = attorneyDataProvider.getList();
@@ -136,6 +137,13 @@ public class AttorneyView extends ViewWithUiHandlers<AttorneyUiHandlers> impleme
                 return attorneyDto.getFax();
             }
         };
+        Column<AttorneyDto, String> statusColumn = new Column<AttorneyDto, String>(new TextCell()) {
+            @Override
+            public String getValue(AttorneyDto attorneyDto) {
+            	AttorneyStatusDto attorneyStatus = attorneyDto.getAttorneyStatus();
+                return attorneyStatus == null ? "" :attorneyStatus.getStatusName();
+            }
+        };
        // attorneyGrid.addColumn(idColumn, "ID");
         attorneyGrid.addColumn(displayNameColumn, "Display Name");
         attorneyGrid.addColumn(firstNameColumn, "First Name");
@@ -144,6 +152,7 @@ public class AttorneyView extends ViewWithUiHandlers<AttorneyUiHandlers> impleme
         attorneyGrid.addColumn(mailAddressColumn, "Mailing Address");
         attorneyGrid.addColumn(phoneColumn, "Phone");
         attorneyGrid.addColumn(faxColumn, "Fax");
+        attorneyGrid.addColumn(statusColumn, "Status");
         
         //attorneyGrid.setColumnWidth(idColumn, 50, Unit.PX);
     }
@@ -156,6 +165,7 @@ public class AttorneyView extends ViewWithUiHandlers<AttorneyUiHandlers> impleme
             }
         });
 
+        /*
         Cell<AttorneyDto> deleteCell = new ActionCell<>("Delete", new Delegate<AttorneyDto>() {
             @Override
             public void execute(AttorneyDto attorneyDto) {
@@ -166,14 +176,14 @@ public class AttorneyView extends ViewWithUiHandlers<AttorneyUiHandlers> impleme
                 }
             }
         });
-
+*/
         IdentityColumn<AttorneyDto> editColumn = new IdentityColumn<>(editCell);
-        IdentityColumn<AttorneyDto> deleteColumn = new IdentityColumn<>(deleteCell);
+   //     IdentityColumn<AttorneyDto> deleteColumn = new IdentityColumn<>(deleteCell);
 
         attorneyGrid.addColumn(editColumn, "Edit");
-        attorneyGrid.addColumn(deleteColumn, "Delete");
+      //  attorneyGrid.addColumn(deleteColumn, "Delete");
 
         attorneyGrid.setColumnWidth(editColumn, 75, Unit.PX);
-        attorneyGrid.setColumnWidth(deleteColumn, 75, Unit.PX);
+     //   attorneyGrid.setColumnWidth(deleteColumn, 75, Unit.PX);
     }
 }

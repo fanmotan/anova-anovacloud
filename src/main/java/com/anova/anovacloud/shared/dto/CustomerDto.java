@@ -2,9 +2,6 @@
 
 package com.anova.anovacloud.shared.dto;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class CustomerDto extends BaseEntity {
     private String name;
     private String code;

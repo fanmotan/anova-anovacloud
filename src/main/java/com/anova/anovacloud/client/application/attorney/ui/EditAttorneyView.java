@@ -2,6 +2,8 @@
 
 package com.anova.anovacloud.client.application.attorney.ui;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import com.google.gwt.editor.client.Editor;
@@ -10,13 +12,15 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.TextBox;
+import com.google.gwt.user.client.ui.ValueListBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.web.bindery.event.shared.EventBus;
 import com.anova.anovacloud.client.application.attorney.ui.EditAttorneyPresenter.MyView;
+import com.anova.anovacloud.client.application.attorneyStatus.ui.AttorneyStatusRenderer;
 import com.anova.anovacloud.shared.dto.AttorneyDto;
+import com.anova.anovacloud.shared.dto.AttorneyStatusDto;
 import com.gwtplatform.mvp.client.PopupViewWithUiHandlers;
 
 public class EditAttorneyView extends PopupViewWithUiHandlers<EditAttorneyUiHandlers> implements MyView,
@@ -41,6 +45,8 @@ public class EditAttorneyView extends PopupViewWithUiHandlers<EditAttorneyUiHand
     TextBox phone;
     @UiField
     TextBox fax;
+    @UiField(provided = true)
+    ValueListBox<AttorneyStatusDto> attorneyStatus;
 
     private final Driver driver;
 
@@ -49,7 +55,7 @@ public class EditAttorneyView extends PopupViewWithUiHandlers<EditAttorneyUiHand
                          Driver driver,
                          EventBus eventBus) {
         super(eventBus);
-
+        attorneyStatus = new ValueListBox<>(new AttorneyStatusRenderer());
         this.driver = driver;
         initWidget(uiBinder.createAndBindUi(this));
 
@@ -58,7 +64,16 @@ public class EditAttorneyView extends PopupViewWithUiHandlers<EditAttorneyUiHand
 
     @Override
     public void edit(AttorneyDto attorneyDto) {
+    	if (attorneyDto.getAttorneyStatus() == null) {
+            attorneyDto.setAttorneyStatus(attorneyStatus.getValue());
+        }
         driver.edit(attorneyDto);
+    }
+    @Override
+    public void setAllowedAttorneyStatuss(List<AttorneyStatusDto> attorneyStatusDtos) {
+        attorneyStatus.setValue(attorneyStatusDtos.isEmpty() ? null : attorneyStatusDtos.get(0));
+        attorneyStatus.setAcceptableValues(attorneyStatusDtos);
+        
     }
 
     @UiHandler("save")

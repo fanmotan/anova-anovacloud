@@ -9,6 +9,7 @@ import com.anova.anovacloud.server.dao.domain.Attorney;
 import com.anova.anovacloud.server.dao.domain.AttorneyRole;
 import com.anova.anovacloud.server.dao.domain.CaseStatus;
 import com.anova.anovacloud.server.dao.domain.CustomerStatus;
+import com.anova.anovacloud.server.dao.domain.AttorneyStatus;
 import com.anova.anovacloud.server.dao.domain.Matter;
 import com.anova.anovacloud.server.dao.domain.MatterActionStatus;
 import com.anova.anovacloud.server.dao.domain.MatterProperties;
@@ -31,6 +32,7 @@ public class OfyService {
         factory().register(AttorneyRole.class);
         factory().register(CaseStatus.class);
         factory().register(CustomerStatus.class);
+        factory().register(AttorneyStatus.class);
         factory().register(MatterActionStatus.class);
     }
 

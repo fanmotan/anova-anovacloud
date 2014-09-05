@@ -15,6 +15,7 @@ public class RestModule extends AbstractModule {
         bind(UserResource.class);
         bind(UserRoleResource.class);
         bind(CustomerStatusResource.class);
+        bind(AttorneyStatusResource.class);
         bind(AttorneyRoleResource.class);
         bind(CaseStatusResource.class);
         bind(MatterActionStatusResource.class);

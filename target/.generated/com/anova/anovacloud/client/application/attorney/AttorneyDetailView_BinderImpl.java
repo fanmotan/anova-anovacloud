@@ -16,8 +16,8 @@ import com.google.gwt.user.client.ui.Widget;
 public class AttorneyDetailView_BinderImpl implements UiBinder<com.google.gwt.user.client.ui.Widget, com.anova.anovacloud.client.application.attorney.AttorneyDetailView>, com.anova.anovacloud.client.application.attorney.AttorneyDetailView.Binder {
 
   interface Template extends SafeHtmlTemplates {
-    @Template("<span id='{0}'></span> <span id='{1}'></span> <span id='{2}'></span> <span id='{3}'></span> <span id='{4}'></span> <span id='{5}'></span> <span id='{6}'></span>")
-    SafeHtml html1(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6);
+    @Template("<span id='{0}'></span> <span id='{1}'></span> <span id='{2}'></span> <span id='{3}'></span> <span id='{4}'></span> <span id='{5}'></span> <span id='{6}'></span> <span id='{7}'></span>")
+    SafeHtml html1(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7);
      
   }
 
@@ -48,6 +48,7 @@ public class AttorneyDetailView_BinderImpl implements UiBinder<com.google.gwt.us
       build_domId4();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 2
       build_domId5();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 2
       build_domId6();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 2
+      build_domId7();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 2
       build_domId0Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
       build_domId1Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
       build_domId2Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
@@ -55,10 +56,11 @@ public class AttorneyDetailView_BinderImpl implements UiBinder<com.google.gwt.us
       build_domId4Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
       build_domId5Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
       build_domId6Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
+      build_domId7Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
     }
 
     SafeHtml template_html1() {
-      return template.html1(get_domId0(), get_domId1(), get_domId2(), get_domId3(), get_domId4(), get_domId5(), get_domId6());
+      return template.html1(get_domId0(), get_domId1(), get_domId2(), get_domId3(), get_domId4(), get_domId5(), get_domId6(), get_domId7());
     }
 
     /**
@@ -77,7 +79,7 @@ public class AttorneyDetailView_BinderImpl implements UiBinder<com.google.gwt.us
     }
 
     /**
-     * Getter for resource called 7 times. Type: IMPORTED. Build precedence: 1.
+     * Getter for resource called 8 times. Type: IMPORTED. Build precedence: 1.
      */
     private com.anova.anovacloud.client.resources.AppResources resource;
     private com.anova.anovacloud.client.resources.AppResources get_resource() {
@@ -129,6 +131,7 @@ public class AttorneyDetailView_BinderImpl implements UiBinder<com.google.gwt.us
       get_domId4Element().get();
       get_domId5Element().get();
       get_domId6Element().get();
+      get_domId7Element().get();
 
       // Detach section.
       attachRecord6.detach();
@@ -139,6 +142,7 @@ public class AttorneyDetailView_BinderImpl implements UiBinder<com.google.gwt.us
       f_HTMLPanel1.addAndReplaceElement(get_mailAddress(), get_domId4Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_phone(), get_domId5Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_fax(), get_domId6Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_attorneyStatus(), get_domId7Element().get());
 
       return f_HTMLPanel1;
     }
@@ -491,6 +495,55 @@ public class AttorneyDetailView_BinderImpl implements UiBinder<com.google.gwt.us
 
 
       return domId6Element;
+    }
+
+    /**
+     * Getter for domId7 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 2.
+     */
+    private java.lang.String domId7;
+    private java.lang.String get_domId7() {
+      return domId7;
+    }
+    private java.lang.String build_domId7() {
+      // Creation section.
+      domId7 = com.google.gwt.dom.client.Document.get().createUniqueId();
+      // Setup section.
+
+
+      return domId7;
+    }
+
+    /**
+     * Getter for attorneyStatus called 1 times. Type: DEFAULT. Build precedence: 2.
+     */
+    private com.google.gwt.user.client.ui.ValueListBox get_attorneyStatus() {
+      return build_attorneyStatus();
+    }
+    private com.google.gwt.user.client.ui.ValueListBox build_attorneyStatus() {
+      // Creation section.
+      final com.google.gwt.user.client.ui.ValueListBox attorneyStatus = owner.attorneyStatus;
+      assert attorneyStatus != null : "UiField attorneyStatus with 'provided = true' was null";
+      // Setup section.
+      attorneyStatus.setStyleName("" + get_resource().styles().mobileTextField() + "");
+
+
+      return attorneyStatus;
+    }
+
+    /**
+     * Getter for domId7Element called 2 times. Type: DEFAULT. Build precedence: 2.
+     */
+    private com.google.gwt.uibinder.client.LazyDomElement domId7Element;
+    private com.google.gwt.uibinder.client.LazyDomElement get_domId7Element() {
+      return domId7Element;
+    }
+    private com.google.gwt.uibinder.client.LazyDomElement build_domId7Element() {
+      // Creation section.
+      domId7Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId7());
+      // Setup section.
+
+
+      return domId7Element;
     }
   }
 }

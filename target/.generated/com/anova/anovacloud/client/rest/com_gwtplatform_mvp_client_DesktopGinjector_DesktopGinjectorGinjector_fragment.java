@@ -8,6 +8,10 @@ public class com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinject
     
   }
   
+  public void memberInject_Key$type$com$anova$anovacloud$client$rest$AttorneyStatusServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.AttorneyStatusServiceImpl injectee) {
+    
+  }
+  
   public void memberInject_Key$type$com$anova$anovacloud$client$rest$CustomerServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.CustomerServiceImpl injectee) {
     
   }
@@ -45,6 +49,18 @@ public class com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinject
         singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyService$_annotation$$none$$ = result;
     }
     return singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyService$_annotation$$none$$;
+    
+  }
+  
+  private com.anova.anovacloud.client.rest.AttorneyStatusService singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyStatusService$_annotation$$none$$ = null;
+  
+  public com.anova.anovacloud.client.rest.AttorneyStatusService get_Key$type$com$anova$anovacloud$client$rest$AttorneyStatusService$_annotation$$none$$() {
+    
+    if (singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyStatusService$_annotation$$none$$ == null) {
+    com.anova.anovacloud.client.rest.AttorneyStatusService result = get_Key$type$com$anova$anovacloud$client$rest$AttorneyStatusServiceImpl$_annotation$$none$$();
+        singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyStatusService$_annotation$$none$$ = result;
+    }
+    return singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyStatusService$_annotation$$none$$;
     
   }
   
@@ -147,6 +163,23 @@ public class com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinject
   
   public com.anova.anovacloud.client.rest.AttorneyServiceImpl com$anova$anovacloud$client$rest$AttorneyServiceImpl_com$anova$anovacloud$client$rest$AttorneyServiceImpl_methodInjection(java.lang.String _0) {
     return new com.anova.anovacloud.client.rest.AttorneyServiceImpl(_0);
+  }
+  
+  
+  /**
+   * Binding for com.anova.anovacloud.client.rest.AttorneyStatusServiceImpl declared at:
+   *   Implicit binding for com.anova.anovacloud.client.rest.AttorneyStatusServiceImpl
+   */
+  public com.anova.anovacloud.client.rest.AttorneyStatusServiceImpl get_Key$type$com$anova$anovacloud$client$rest$AttorneyStatusServiceImpl$_annotation$$none$$() {
+    com.anova.anovacloud.client.rest.AttorneyStatusServiceImpl result = com$anova$anovacloud$client$rest$AttorneyStatusServiceImpl_com$anova$anovacloud$client$rest$AttorneyStatusServiceImpl_methodInjection(injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$java$lang$String$_annotation$$com$gwtplatform$dispatch$rest$client$DefaultDateFormat$());
+    memberInject_Key$type$com$anova$anovacloud$client$rest$AttorneyStatusServiceImpl$_annotation$$none$$(result);
+    
+    return result;
+    
+  }
+  
+  public com.anova.anovacloud.client.rest.AttorneyStatusServiceImpl com$anova$anovacloud$client$rest$AttorneyStatusServiceImpl_com$anova$anovacloud$client$rest$AttorneyStatusServiceImpl_methodInjection(java.lang.String _0) {
+    return new com.anova.anovacloud.client.rest.AttorneyStatusServiceImpl(_0);
   }
   
   

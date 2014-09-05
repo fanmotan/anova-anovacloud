@@ -4,9 +4,11 @@ package com.anova.anovacloud.server.dao.domain;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import com.googlecode.objectify.Ref;
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Index;
+import com.googlecode.objectify.annotation.Load;
+import com.anova.anovacloud.server.dao.objectify.Deref;
 import com.anova.anovacloud.shared.dto.BaseEntity;
 import com.anova.anovacloud.shared.dto.AttorneyDto;
 
@@ -20,6 +22,8 @@ public class Attorney extends BaseEntity {
     private String email;
     private String phone;
     private String fax;
+    @Load
+    private Ref<AttorneyStatus> attorneyStatus;
 
     public Attorney() {
         firstName = "";
@@ -30,7 +34,7 @@ public class Attorney extends BaseEntity {
         phone ="";
         fax = "";
     }
-    public Attorney(String displayName, String firstName, String lastName,String mailAddress, String email, String phone, String fax) {
+    public Attorney(String displayName, String firstName, String lastName,String mailAddress, String email, String phone, String fax, AttorneyStatus attorneyStatus) {
         this.displayName = displayName;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -38,8 +42,20 @@ public class Attorney extends BaseEntity {
         this.email = email;
         this.phone = phone;
         this.fax = fax;
+        this.setAttorneyStatus(attorneyStatus);
     }
     
+    public AttorneyStatus getAttorneyStatus() {
+		return Deref.deref(attorneyStatus);
+	}
+	public void setAttorneyStatus(AttorneyStatus attorneyStatus) {
+		if (attorneyStatus != null) {
+            this.attorneyStatus = Ref.create(attorneyStatus);
+        } else {
+            this.attorneyStatus = null;
+        }
+	}
+	
     @Override
     public void setId(Long id) {
         this.id = id;
@@ -134,7 +150,7 @@ public class Attorney extends BaseEntity {
         attorneyDto.setMailAddress(attorney.getMailAddress());
         attorneyDto.setPhone(attorney.getPhone());
         attorneyDto.setFax(attorney.getFax());
-
+        attorneyDto.setAttorneyStatus(AttorneyStatus.createDto(attorney.getAttorneyStatus()));
         return attorneyDto;
     }
 
@@ -152,7 +168,7 @@ public class Attorney extends BaseEntity {
         attorney.setMailAddress(attorneyDto.getMailAddress());
         attorney.setPhone(attorneyDto.getPhone());
         attorney.setFax(attorneyDto.getFax());
-
+        attorney.setAttorneyStatus(AttorneyStatus.create(attorneyDto.getAttorneyStatus()));
         return attorney;
     }
 }

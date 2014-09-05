@@ -27,9 +27,9 @@ public interface AttorneyService {
 
     @POST
     RestAction<AttorneyDto> saveOrCreate(AttorneyDto attorneyDto);
-
+/*
     @DELETE
     @Path(PATH_ID)
     RestAction<Void> delete(@PathParam(ID) Long id);
-
+*/
 }

@@ -152,6 +152,21 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
+     * Getter for ATTORNEYSTATUS called 0 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_ATTORNEYSTATUS() {
+      return build_ATTORNEYSTATUS();
+    }
+    private java.lang.String build_ATTORNEYSTATUS() {
+      // Creation section.
+      final java.lang.String ATTORNEYSTATUS = com.anova.anovacloud.client.place.NameTokens.ATTORNEYSTATUS;
+      // Setup section.
+
+
+      return ATTORNEYSTATUS;
+    }
+
+    /**
      * Getter for DETAIL_CUSTOMER called 0 times. Type: DEFAULT. Build precedence: 1.
      */
     private java.lang.String get_DETAIL_CUSTOMER() {

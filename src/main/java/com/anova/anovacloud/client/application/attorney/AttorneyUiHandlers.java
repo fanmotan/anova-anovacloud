@@ -10,7 +10,7 @@ public interface AttorneyUiHandlers extends UiHandlers {
 
     void onEdit(AttorneyDto attorneyDto);
 
-    void onDelete(AttorneyDto attorneyDto);
+ //   void onDelete(AttorneyDto attorneyDto);
 
     void onCreate();
 }

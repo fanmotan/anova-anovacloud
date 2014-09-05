@@ -106,6 +106,18 @@ public class AttorneyDtoBeanJsonDeserializerImpl extends com.github.nmorel.gwtja
       }
     });
     
+    map.put("attorneyStatus", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.AttorneyDto, com.anova.anovacloud.shared.dto.AttorneyStatusDto>() {
+      @Override
+      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
+        return new com.anova.anovacloud.shared.dto.AttorneyStatusDtoBeanJsonDeserializerImpl();
+      }
+      
+      @Override
+      public void setValue(com.anova.anovacloud.shared.dto.AttorneyDto bean, com.anova.anovacloud.shared.dto.AttorneyStatusDto value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
+        bean.setAttorneyStatus(value);
+      }
+    });
+    
     map.put("id", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.AttorneyDto, java.lang.Long>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
