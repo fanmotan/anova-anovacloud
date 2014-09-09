@@ -72,6 +72,7 @@ E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anova
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\columninitializer\Column.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\ApplicationMobileModule.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\rest\AttorneyRoleResource.java
+E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\caseStatus\ui\CaseStatusRenderer.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\resources\EditAttorneyMessages.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\rest\RestModule.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\attorney\AttorneyModule.java
@@ -248,6 +249,7 @@ E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anova
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\rest\AttorneyStatusService.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\dao\domain\UserRole.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\widget\message\ui\MessageWidgetFactory.java
+E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\rest\CaseStatusService.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\rest\UserService.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\gin\PhoneGapRemoteModule.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\dao\UserRoleDao.java

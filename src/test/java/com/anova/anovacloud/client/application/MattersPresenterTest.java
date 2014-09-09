@@ -57,7 +57,7 @@ public class MattersPresenterTest extends PresenterWidgetTestBase {
         // Given
         MatterDto matterDto = mock(MatterDto.class);
         when(matterDto.getCustomer()).thenReturn(customerDto);
-        when(matterProxyFactory.create(matterDto, matterDto.getCustomer().getName() + matterDto.getMatterNum()+matterDto.getMatterSerialNum())).thenReturn(proxy);
+        when(matterProxyFactory.create(matterDto, matterDto.getCaseNum())).thenReturn(proxy);
         when(proxy.getNameToken()).thenReturn("token");
 
         PlaceRequest placeRequest = new PlaceRequest.Builder().nameToken("token").build();
@@ -80,7 +80,7 @@ public class MattersPresenterTest extends PresenterWidgetTestBase {
         // Then
         verify(placeManager).revealPlace(eq(placeRequest));
     }
-
+/*
     @Test
     public void onDelete(MatterDto matterDto, HasData<MatterDto> hasMatterData, Range range) {
         // Given we have DeleteMatterAction
@@ -103,7 +103,7 @@ public class MattersPresenterTest extends PresenterWidgetTestBase {
         // Then
         verify(view).setMattersCount(-1);
     }
-
+*/
     @Test
     public void onFetchData(ArrayList<MatterDto> matterDtos) {
         // Given

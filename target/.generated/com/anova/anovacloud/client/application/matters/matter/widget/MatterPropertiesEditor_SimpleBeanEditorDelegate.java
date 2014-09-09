@@ -7,10 +7,9 @@ public class MatterPropertiesEditor_SimpleBeanEditorDelegate extends com.google.
   private com.anova.anovacloud.shared.dto.MatterPropertiesDto object;
   @Override public com.anova.anovacloud.shared.dto.MatterPropertiesDto getObject() {return object;}
   @Override protected void setObject(Object object) {this.object=(com.anova.anovacloud.shared.dto.MatterPropertiesDto)object;}
-  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate matterTitleDelegate;
+  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate caseTitleDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate applicationNumDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate patentNumDelegate;
-  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate statusDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate pubNumDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate assigneeDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate assignmentRecordDelegate;
@@ -20,9 +19,9 @@ public class MatterPropertiesEditor_SimpleBeanEditorDelegate extends com.google.
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate countryDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate parentPCTNumDelegate;
   @Override protected void initializeSubDelegates() {
-    if (editor.matterTitle.asEditor() != null) {
-      matterTitleDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
-      addSubDelegate(matterTitleDelegate, appendPath("matterTitle"), editor.matterTitle.asEditor());
+    if (editor.caseTitle.asEditor() != null) {
+      caseTitleDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
+      addSubDelegate(caseTitleDelegate, appendPath("caseTitle"), editor.caseTitle.asEditor());
     }
     if (editor.applicationNum.asEditor() != null) {
       applicationNumDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
@@ -31,10 +30,6 @@ public class MatterPropertiesEditor_SimpleBeanEditorDelegate extends com.google.
     if (editor.patentNum.asEditor() != null) {
       patentNumDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
       addSubDelegate(patentNumDelegate, appendPath("patentNum"), editor.patentNum.asEditor());
-    }
-    if (editor.status.asEditor() != null) {
-      statusDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
-      addSubDelegate(statusDelegate, appendPath("status"), editor.status.asEditor());
     }
     if (editor.pubNum.asEditor() != null) {
       pubNumDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
@@ -70,11 +65,11 @@ public class MatterPropertiesEditor_SimpleBeanEditorDelegate extends com.google.
     }
   }
   @Override public void accept(com.google.gwt.editor.client.EditorVisitor visitor) {
-    if (matterTitleDelegate != null) 
+    if (caseTitleDelegate != null) 
     {
-      com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor_matterTitle_Context ctx = new com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor_matterTitle_Context(getObject(), editor.matterTitle.asEditor(), appendPath("matterTitle"));
-      ctx.setEditorDelegate(matterTitleDelegate);
-      ctx.traverse(visitor, matterTitleDelegate);
+      com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor_caseTitle_Context ctx = new com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor_caseTitle_Context(getObject(), editor.caseTitle.asEditor(), appendPath("caseTitle"));
+      ctx.setEditorDelegate(caseTitleDelegate);
+      ctx.traverse(visitor, caseTitleDelegate);
     }
     if (applicationNumDelegate != null) 
     {
@@ -87,12 +82,6 @@ public class MatterPropertiesEditor_SimpleBeanEditorDelegate extends com.google.
       com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor_patentNum_Context ctx = new com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor_patentNum_Context(getObject(), editor.patentNum.asEditor(), appendPath("patentNum"));
       ctx.setEditorDelegate(patentNumDelegate);
       ctx.traverse(visitor, patentNumDelegate);
-    }
-    if (statusDelegate != null) 
-    {
-      com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor_status_Context ctx = new com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor_status_Context(getObject(), editor.status.asEditor(), appendPath("status"));
-      ctx.setEditorDelegate(statusDelegate);
-      ctx.traverse(visitor, statusDelegate);
     }
     if (pubNumDelegate != null) 
     {

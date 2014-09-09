@@ -15,9 +15,10 @@ public class MatterServiceImpl implements MatterService {
     public RestAction<MatterDto> get() {
         return new ActionImpl<MatterDto>(new TypeLiteral<RestAction<MatterDto>>() {});
     }
-
+/*
     @Override
     public RestAction<Void> delete() {
         return new ActionImpl<Void>(new TypeLiteral<RestAction<Void>>() {});
     }
+    */
 }

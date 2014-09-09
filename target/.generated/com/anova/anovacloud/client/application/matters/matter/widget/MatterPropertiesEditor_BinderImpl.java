@@ -16,8 +16,8 @@ import com.google.gwt.user.client.ui.Widget;
 public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gwt.user.client.ui.Widget, com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor>, com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor.Binder {
 
   interface Template extends SafeHtmlTemplates {
-    @Template("<table width='100%'> <tr> <td width='15%'> <div class='{0}'> <span id='{1}'></span> </div> </td> <td width='75%'> <div class='{2}'> <span id='{3}'></span> </div> </td> </tr> </table> <table width='100%'> <tr> <td width='15%'> <div class='{4}'> <span id='{5}'></span> </div> </td> <td width='30%'> <div class='{6}'> <span id='{7}'></span> </div> </td> <td width='15%'> <div> <span id='{8}'></span> </div> </td> <td width='30%'> <div class='{9}'> <span id='{10}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{11}'> <span id='{12}'></span> </div> </td> <td width='30%'> <div class='{13}'> <span id='{14}'></span> </div> </td> <td width='15%'> <div> <span id='{15}'></span> </div> </td>  <td width='30%'> <div class='{16}'> <span id='{17}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{18}'> <span id='{19}'></span> </div> </td> <td width='30%'> <div class='{20}'> <span id='{21}'></span> </div> </td> <td width='15%'> <div> <span id='{22}'></span> </div> </td> <td width='30%'> <div class='{23}'> <span id='{24}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{25}'> <span id='{26}'></span> </div> </td> <td width='30%'> <div class='{27}'> <span id='{28}'></span> </div> </td> <td width='15%'> <div> <span id='{29}'></span> </div> </td> <td width='30%'> <div class='{30}'> <span id='{31}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{32}'> <span id='{33}'></span> </div> </td> <td width='30%'> <div class='{34}'> <span id='{35}'></span> </div> </td> <td width='15%'> <div class='{36}'> <span id='{37}'></span> </div> </td> <td width='30%'> <div class='{38}'> <span id='{39}'></span> </div> </td> </tr> </table> <table width='100%'> <tr> <td width='15%'> <div class='{40}'> <span id='{41}'></span> </div> </td> <td width='75%'> <div class='{42}'> <span id='{43}'></span> </div> </td> </tr> </table> <table width='100%'> <tr> <td width='15%'> <div class='{44}'> <span id='{45}'></span> </div> </td> <td width='30%'> <div class='{46}'> <span id='{47}'></span> </div> </td> <td width='15%'> <div class='{48}'> <span id='{49}'></span> </div> </td> <td width='30%'> <div class='{50}'> <span id='{51}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{52}'> <span id='{53}'></span> </div> </td> <td width='30%'> <div class='{54}'> <span id='{55}'></span> </div> </td> <td width='15%'> <div> <span id='{56}'></span> </div> </td> <td width='30%'> <div class='{57}'> <span id='{58}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{59}'> <span id='{60}'></span> </div> </td> <td width='30%'> <div class='{61}'> <span id='{62}'></span> </div> </td> <td></td><td></td> </tr> <tr> </tr> </table>")
-    SafeHtml html1(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16, String arg17, String arg18, String arg19, String arg20, String arg21, String arg22, String arg23, String arg24, String arg25, String arg26, String arg27, String arg28, String arg29, String arg30, String arg31, String arg32, String arg33, String arg34, String arg35, String arg36, String arg37, String arg38, String arg39, String arg40, String arg41, String arg42, String arg43, String arg44, String arg45, String arg46, String arg47, String arg48, String arg49, String arg50, String arg51, String arg52, String arg53, String arg54, String arg55, String arg56, String arg57, String arg58, String arg59, String arg60, String arg61, String arg62);
+    @Template("<table width='100%'> <tr> <td width='15%'> <div class='{0}'> <span id='{1}'></span> </div> </td> <td width='75%'> <div class='{2}'> <span id='{3}'></span> </div> </td> </tr> </table> <table width='100%'> <tr> <td width='15%'> <div class='{4}'> <span id='{5}'></span> </div> </td> <td width='30%'> <div class='{6}'> <span id='{7}'></span> </div> </td> <td width='15%'> <div> <span id='{8}'></span> </div> </td> <td width='30%'> <div class='{9}'> <span id='{10}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{11}'> <span id='{12}'></span> </div> </td> <td width='30%'> <div class='{13}'> <span id='{14}'></span> </div> </td> <td width='15%'> <div> <span id='{15}'></span> </div> </td>  <td width='30%'> <div class='{16}'> <span id='{17}'></span> </div> </td> </tr> <tr> <td width='15%'> <div> <span id='{18}'></span> </div> </td> <td width='30%'> <div class='{19}'> <span id='{20}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{21}'> <span id='{22}'></span> </div> </td> <td width='30%'> <div class='{23}'> <span id='{24}'></span> </div> </td> <td width='15%'> <div> <span id='{25}'></span> </div> </td> <td width='30%'> <div class='{26}'> <span id='{27}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{28}'> <span id='{29}'></span> </div> </td> <td width='30%'> <div class='{30}'> <span id='{31}'></span> </div> </td> <td width='15%'> <div class='{32}'> <span id='{33}'></span> </div> </td> <td width='30%'> <div class='{34}'> <span id='{35}'></span> </div> </td> </tr> </table> <table width='100%'> <tr> <td width='15%'> <div class='{36}'> <span id='{37}'></span> </div> </td> <td width='75%'> <div class='{38}'> <span id='{39}'></span> </div> </td> </tr> </table> <table width='100%'> <tr> <td width='15%'> <div class='{40}'> <span id='{41}'></span> </div> </td> <td width='30%'> <div class='{42}'> <span id='{43}'></span> </div> </td> <td width='15%'> <div class='{44}'> <span id='{45}'></span> </div> </td> <td width='30%'> <div class='{46}'> <span id='{47}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{48}'> <span id='{49}'></span> </div> </td> <td width='30%'> <div class='{50}'> <span id='{51}'></span> </div> </td> <td width='15%'> <div> <span id='{52}'></span> </div> </td> <td width='30%'> <div class='{53}'> <span id='{54}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{55}'> <span id='{56}'></span> </div> </td> <td width='30%'> <div class='{57}'> <span id='{58}'></span> </div> </td> <td></td><td></td> </tr> <tr> </tr> </table>")
+    SafeHtml html1(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16, String arg17, String arg18, String arg19, String arg20, String arg21, String arg22, String arg23, String arg24, String arg25, String arg26, String arg27, String arg28, String arg29, String arg30, String arg31, String arg32, String arg33, String arg34, String arg35, String arg36, String arg37, String arg38, String arg39, String arg40, String arg41, String arg42, String arg43, String arg44, String arg45, String arg46, String arg47, String arg48, String arg49, String arg50, String arg51, String arg52, String arg53, String arg54, String arg55, String arg56, String arg57, String arg58);
      
   }
 
@@ -73,8 +73,6 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       build_domId29();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 2
       build_domId30();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 2
       build_domId31();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 2
-      build_domId32();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 2
-      build_domId33();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 2
       build_domId0Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
       build_domId1Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
       build_domId2Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
@@ -107,12 +105,10 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       build_domId29Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
       build_domId30Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
       build_domId31Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
-      build_domId32Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
-      build_domId33Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
     }
 
     SafeHtml template_html1() {
-      return template.html1("" + get_style().formRow() + "", get_domId0(), "" + get_style().formRow() + "", get_domId1(), "" + get_style().formRow() + "", get_domId2(), "" + get_style().formRow() + "", get_domId3(), get_domId4(), "" + get_style().formRow() + "", get_domId5(), "" + get_style().formRow() + "", get_domId6(), "" + get_style().formRow() + "", get_domId7(), get_domId8(), "" + get_style().formRow() + "", get_domId9(), "" + get_style().formRow() + "", get_domId10(), "" + get_style().formRow() + "", get_domId11(), get_domId12(), "" + get_style().formRow() + "", get_domId13(), "" + get_style().formRow() + "", get_domId14(), "" + get_style().formRow() + "", get_domId15(), get_domId16(), "" + get_style().formRow() + "", get_domId17(), "" + get_style().formRow() + "", get_domId18(), "" + get_style().formRow() + "", get_domId19(), "" + get_style().formRow() + "", get_domId20(), "" + get_style().formRow() + "", get_domId21(), "" + get_style().formRow() + "", get_domId22(), "" + get_style().formRow() + "", get_domId23(), "" + get_style().formRow() + "", get_domId24(), "" + get_style().formRow() + "", get_domId25(), "" + get_style().formRow() + "", get_domId26(), "" + get_style().formRow() + "", get_domId27(), "" + get_style().formRow() + "", get_domId28(), "" + get_style().formRow() + "", get_domId29(), get_domId30(), "" + get_style().formRow() + "", get_domId31(), "" + get_style().formRow() + "", get_domId32(), "" + get_style().formRow() + "", get_domId33());
+      return template.html1("" + get_style().formRow() + "", get_domId0(), "" + get_style().formRow() + "", get_domId1(), "" + get_style().formRow() + "", get_domId2(), "" + get_style().formRow() + "", get_domId3(), get_domId4(), "" + get_style().formRow() + "", get_domId5(), "" + get_style().formRow() + "", get_domId6(), "" + get_style().formRow() + "", get_domId7(), get_domId8(), "" + get_style().formRow() + "", get_domId9(), get_domId10(), "" + get_style().formRow() + "", get_domId11(), "" + get_style().formRow() + "", get_domId12(), "" + get_style().formRow() + "", get_domId13(), get_domId14(), "" + get_style().formRow() + "", get_domId15(), "" + get_style().formRow() + "", get_domId16(), "" + get_style().formRow() + "", get_domId17(), "" + get_style().formRow() + "", get_domId18(), "" + get_style().formRow() + "", get_domId19(), "" + get_style().formRow() + "", get_domId20(), "" + get_style().formRow() + "", get_domId21(), "" + get_style().formRow() + "", get_domId22(), "" + get_style().formRow() + "", get_domId23(), "" + get_style().formRow() + "", get_domId24(), "" + get_style().formRow() + "", get_domId25(), "" + get_style().formRow() + "", get_domId26(), "" + get_style().formRow() + "", get_domId27(), get_domId28(), "" + get_style().formRow() + "", get_domId29(), "" + get_style().formRow() + "", get_domId30(), "" + get_style().formRow() + "", get_domId31());
     }
 
     /**
@@ -131,7 +127,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for resource called 17 times. Type: IMPORTED. Build precedence: 1.
+     * Getter for resource called 16 times. Type: IMPORTED. Build precedence: 1.
      */
     private com.anova.anovacloud.client.resources.AppResources resource;
     private com.anova.anovacloud.client.resources.AppResources get_resource() {
@@ -147,7 +143,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for style called 29 times. Type: GENERATED_CSS. Build precedence: 1.
+     * Getter for style called 27 times. Type: GENERATED_CSS. Build precedence: 1.
      */
     private com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor_BinderImpl_GenCss_style style;
     private com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor_BinderImpl_GenCss_style get_style() {
@@ -208,13 +204,11 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       get_domId29Element().get();
       get_domId30Element().get();
       get_domId31Element().get();
-      get_domId32Element().get();
-      get_domId33Element().get();
 
       // Detach section.
       attachRecord27.detach();
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel2(), get_domId0Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_matterTitle(), get_domId1Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_caseTitle(), get_domId1Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel3(), get_domId2Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_applicationNum(), get_domId3Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel4(), get_domId4Element().get());
@@ -224,29 +218,27 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel6(), get_domId8Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_issueDate(), get_domId9Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel7(), get_domId10Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_status(), get_domId11Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_expriationDate(), get_domId11Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel8(), get_domId12Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_expriationDate(), get_domId13Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_pubNum(), get_domId13Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel9(), get_domId14Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_pubNum(), get_domId15Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_pubDate(), get_domId15Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel10(), get_domId16Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_pubDate(), get_domId17Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_assignee(), get_domId17Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel11(), get_domId18Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_assignee(), get_domId19Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_assignmentRecord(), get_domId19Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel12(), get_domId20Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_assignmentRecord(), get_domId21Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_remarks(), get_domId21Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel13(), get_domId22Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_remarks(), get_domId23Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_priority(), get_domId23Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel14(), get_domId24Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_priority(), get_domId25Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_parentPCTNum(), get_domId25Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel15(), get_domId26Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_parentPCTNum(), get_domId27Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_patentTermAdj(), get_domId27Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel16(), get_domId28Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_patentTermAdj(), get_domId29Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_pctDate(), get_domId29Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel17(), get_domId30Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_pctDate(), get_domId31Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel18(), get_domId32Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_country(), get_domId33Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_country(), get_domId31Element().get());
 
       return f_HTMLPanel1;
     }
@@ -316,21 +308,21 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for matterTitle called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for caseTitle called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_matterTitle() {
-      return build_matterTitle();
+    private com.google.gwt.user.client.ui.TextBox get_caseTitle() {
+      return build_caseTitle();
     }
-    private com.google.gwt.user.client.ui.TextBox build_matterTitle() {
+    private com.google.gwt.user.client.ui.TextBox build_caseTitle() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox matterTitle = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox caseTitle = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      matterTitle.setStyleName("" + get_resource().styles().inputTextField() + "");
+      caseTitle.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.matterTitle = matterTitle;
+      this.owner.caseTitle = caseTitle;
 
-      return matterTitle;
+      return caseTitle;
     }
 
     /**
@@ -767,7 +759,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel7 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel7.setText("Status:");
+      f_InlineLabel7.setText("Expiration Date:");
 
 
       return f_InlineLabel7;
@@ -806,21 +798,21 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for status called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for expriationDate called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_status() {
-      return build_status();
+    private com.google.gwt.user.datepicker.client.DateBox get_expriationDate() {
+      return build_expriationDate();
     }
-    private com.google.gwt.user.client.ui.TextBox build_status() {
+    private com.google.gwt.user.datepicker.client.DateBox build_expriationDate() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox status = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.datepicker.client.DateBox expriationDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
       // Setup section.
-      status.setStyleName("" + get_resource().styles().inputTextField() + "");
+      expriationDate.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.status = status;
+      this.owner.expriationDate = expriationDate;
 
-      return status;
+      return expriationDate;
     }
 
     /**
@@ -865,7 +857,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel8 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel8.setText("Expiration Date:");
+      f_InlineLabel8.setText("Pub. No.:");
 
 
       return f_InlineLabel8;
@@ -904,21 +896,21 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for expriationDate called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for pubNum called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.datepicker.client.DateBox get_expriationDate() {
-      return build_expriationDate();
+    private com.google.gwt.user.client.ui.TextBox get_pubNum() {
+      return build_pubNum();
     }
-    private com.google.gwt.user.datepicker.client.DateBox build_expriationDate() {
+    private com.google.gwt.user.client.ui.TextBox build_pubNum() {
       // Creation section.
-      final com.google.gwt.user.datepicker.client.DateBox expriationDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
+      final com.google.gwt.user.client.ui.TextBox pubNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      expriationDate.setStyleName("" + get_resource().styles().inputTextField() + "");
+      pubNum.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.expriationDate = expriationDate;
+      this.owner.pubNum = pubNum;
 
-      return expriationDate;
+      return pubNum;
     }
 
     /**
@@ -963,7 +955,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel9 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel9.setText("Pub. No.:");
+      f_InlineLabel9.setText("Pub Date:");
 
 
       return f_InlineLabel9;
@@ -1002,21 +994,21 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for pubNum called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for pubDate called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_pubNum() {
-      return build_pubNum();
+    private com.google.gwt.user.datepicker.client.DateBox get_pubDate() {
+      return build_pubDate();
     }
-    private com.google.gwt.user.client.ui.TextBox build_pubNum() {
+    private com.google.gwt.user.datepicker.client.DateBox build_pubDate() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox pubNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.datepicker.client.DateBox pubDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
       // Setup section.
-      pubNum.setStyleName("" + get_resource().styles().inputTextField() + "");
+      pubDate.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.pubNum = pubNum;
+      this.owner.pubDate = pubDate;
 
-      return pubNum;
+      return pubDate;
     }
 
     /**
@@ -1061,7 +1053,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel10 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel10.setText("Pub Date:");
+      f_InlineLabel10.setText("Assignee:");
 
 
       return f_InlineLabel10;
@@ -1100,21 +1092,21 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for pubDate called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for assignee called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.datepicker.client.DateBox get_pubDate() {
-      return build_pubDate();
+    private com.google.gwt.user.client.ui.TextBox get_assignee() {
+      return build_assignee();
     }
-    private com.google.gwt.user.datepicker.client.DateBox build_pubDate() {
+    private com.google.gwt.user.client.ui.TextBox build_assignee() {
       // Creation section.
-      final com.google.gwt.user.datepicker.client.DateBox pubDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
+      final com.google.gwt.user.client.ui.TextBox assignee = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      pubDate.setStyleName("" + get_resource().styles().inputTextField() + "");
+      assignee.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.pubDate = pubDate;
+      this.owner.assignee = assignee;
 
-      return pubDate;
+      return assignee;
     }
 
     /**
@@ -1159,7 +1151,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel11 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel11.setText("Assignee:");
+      f_InlineLabel11.setText("Assignment Record:");
 
 
       return f_InlineLabel11;
@@ -1198,21 +1190,21 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for assignee called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for assignmentRecord called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_assignee() {
-      return build_assignee();
+    private com.google.gwt.user.client.ui.TextBox get_assignmentRecord() {
+      return build_assignmentRecord();
     }
-    private com.google.gwt.user.client.ui.TextBox build_assignee() {
+    private com.google.gwt.user.client.ui.TextBox build_assignmentRecord() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox assignee = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox assignmentRecord = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      assignee.setStyleName("" + get_resource().styles().inputTextField() + "");
+      assignmentRecord.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.assignee = assignee;
+      this.owner.assignmentRecord = assignmentRecord;
 
-      return assignee;
+      return assignmentRecord;
     }
 
     /**
@@ -1257,7 +1249,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel12 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel12.setText("Assignment Record:");
+      f_InlineLabel12.setText("Remarks:");
 
 
       return f_InlineLabel12;
@@ -1296,21 +1288,21 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for assignmentRecord called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for remarks called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_assignmentRecord() {
-      return build_assignmentRecord();
+    private com.google.gwt.user.client.ui.TextArea get_remarks() {
+      return build_remarks();
     }
-    private com.google.gwt.user.client.ui.TextBox build_assignmentRecord() {
+    private com.google.gwt.user.client.ui.TextArea build_remarks() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox assignmentRecord = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextArea remarks = (com.google.gwt.user.client.ui.TextArea) GWT.create(com.google.gwt.user.client.ui.TextArea.class);
       // Setup section.
-      assignmentRecord.setStyleName("" + get_resource().styles().inputTextField() + "");
+      remarks.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.assignmentRecord = assignmentRecord;
+      this.owner.remarks = remarks;
 
-      return assignmentRecord;
+      return remarks;
     }
 
     /**
@@ -1355,7 +1347,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel13 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel13.setText("Remarks:");
+      f_InlineLabel13.setText("Priority:");
 
 
       return f_InlineLabel13;
@@ -1394,21 +1386,21 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for remarks called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for priority called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextArea get_remarks() {
-      return build_remarks();
+    private com.google.gwt.user.client.ui.TextBox get_priority() {
+      return build_priority();
     }
-    private com.google.gwt.user.client.ui.TextArea build_remarks() {
+    private com.google.gwt.user.client.ui.TextBox build_priority() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextArea remarks = (com.google.gwt.user.client.ui.TextArea) GWT.create(com.google.gwt.user.client.ui.TextArea.class);
+      final com.google.gwt.user.client.ui.TextBox priority = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      remarks.setStyleName("" + get_resource().styles().inputTextField() + "");
+      priority.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.remarks = remarks;
+      this.owner.priority = priority;
 
-      return remarks;
+      return priority;
     }
 
     /**
@@ -1453,7 +1445,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel14 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel14.setText("Priority:");
+      f_InlineLabel14.setText("Parent/PCT No.:");
 
 
       return f_InlineLabel14;
@@ -1492,21 +1484,21 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for priority called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for parentPCTNum called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_priority() {
-      return build_priority();
+    private com.google.gwt.user.client.ui.TextBox get_parentPCTNum() {
+      return build_parentPCTNum();
     }
-    private com.google.gwt.user.client.ui.TextBox build_priority() {
+    private com.google.gwt.user.client.ui.TextBox build_parentPCTNum() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox priority = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox parentPCTNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      priority.setStyleName("" + get_resource().styles().inputTextField() + "");
+      parentPCTNum.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.priority = priority;
+      this.owner.parentPCTNum = parentPCTNum;
 
-      return priority;
+      return parentPCTNum;
     }
 
     /**
@@ -1551,7 +1543,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel15 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel15.setText("Parent/PCT No.:");
+      f_InlineLabel15.setText("Patent Term Adj.:");
 
 
       return f_InlineLabel15;
@@ -1590,21 +1582,21 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for parentPCTNum called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for patentTermAdj called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_parentPCTNum() {
-      return build_parentPCTNum();
+    private com.google.gwt.user.client.ui.TextBox get_patentTermAdj() {
+      return build_patentTermAdj();
     }
-    private com.google.gwt.user.client.ui.TextBox build_parentPCTNum() {
+    private com.google.gwt.user.client.ui.TextBox build_patentTermAdj() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox parentPCTNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox patentTermAdj = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      parentPCTNum.setStyleName("" + get_resource().styles().inputTextField() + "");
+      patentTermAdj.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.parentPCTNum = parentPCTNum;
+      this.owner.patentTermAdj = patentTermAdj;
 
-      return parentPCTNum;
+      return patentTermAdj;
     }
 
     /**
@@ -1649,7 +1641,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel16 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel16.setText("Patent Term Adj.:");
+      f_InlineLabel16.setText("PCT Date:");
 
 
       return f_InlineLabel16;
@@ -1688,21 +1680,21 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for patentTermAdj called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for pctDate called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_patentTermAdj() {
-      return build_patentTermAdj();
+    private com.google.gwt.user.datepicker.client.DateBox get_pctDate() {
+      return build_pctDate();
     }
-    private com.google.gwt.user.client.ui.TextBox build_patentTermAdj() {
+    private com.google.gwt.user.datepicker.client.DateBox build_pctDate() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox patentTermAdj = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.datepicker.client.DateBox pctDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
       // Setup section.
-      patentTermAdj.setStyleName("" + get_resource().styles().inputTextField() + "");
+      pctDate.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.patentTermAdj = patentTermAdj;
+      this.owner.pctDate = pctDate;
 
-      return patentTermAdj;
+      return pctDate;
     }
 
     /**
@@ -1747,7 +1739,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel17 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel17.setText("PCT Date:");
+      f_InlineLabel17.setText("Country:");
 
 
       return f_InlineLabel17;
@@ -1786,104 +1778,6 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for pctDate called 1 times. Type: DEFAULT. Build precedence: 2.
-     */
-    private com.google.gwt.user.datepicker.client.DateBox get_pctDate() {
-      return build_pctDate();
-    }
-    private com.google.gwt.user.datepicker.client.DateBox build_pctDate() {
-      // Creation section.
-      final com.google.gwt.user.datepicker.client.DateBox pctDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
-      // Setup section.
-      pctDate.setStyleName("" + get_resource().styles().inputTextField() + "");
-
-
-      this.owner.pctDate = pctDate;
-
-      return pctDate;
-    }
-
-    /**
-     * Getter for domId31Element called 2 times. Type: DEFAULT. Build precedence: 2.
-     */
-    private com.google.gwt.uibinder.client.LazyDomElement domId31Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId31Element() {
-      return domId31Element;
-    }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId31Element() {
-      // Creation section.
-      domId31Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId31());
-      // Setup section.
-
-
-      return domId31Element;
-    }
-
-    /**
-     * Getter for domId32 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 2.
-     */
-    private java.lang.String domId32;
-    private java.lang.String get_domId32() {
-      return domId32;
-    }
-    private java.lang.String build_domId32() {
-      // Creation section.
-      domId32 = com.google.gwt.dom.client.Document.get().createUniqueId();
-      // Setup section.
-
-
-      return domId32;
-    }
-
-    /**
-     * Getter for f_InlineLabel18 called 1 times. Type: DEFAULT. Build precedence: 2.
-     */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel18() {
-      return build_f_InlineLabel18();
-    }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel18() {
-      // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel18 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
-      // Setup section.
-      f_InlineLabel18.setText("Country:");
-
-
-      return f_InlineLabel18;
-    }
-
-    /**
-     * Getter for domId32Element called 2 times. Type: DEFAULT. Build precedence: 2.
-     */
-    private com.google.gwt.uibinder.client.LazyDomElement domId32Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId32Element() {
-      return domId32Element;
-    }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId32Element() {
-      // Creation section.
-      domId32Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId32());
-      // Setup section.
-
-
-      return domId32Element;
-    }
-
-    /**
-     * Getter for domId33 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 2.
-     */
-    private java.lang.String domId33;
-    private java.lang.String get_domId33() {
-      return domId33;
-    }
-    private java.lang.String build_domId33() {
-      // Creation section.
-      domId33 = com.google.gwt.dom.client.Document.get().createUniqueId();
-      // Setup section.
-
-
-      return domId33;
-    }
-
-    /**
      * Getter for country called 1 times. Type: DEFAULT. Build precedence: 2.
      */
     private com.google.gwt.user.client.ui.TextBox get_country() {
@@ -1902,19 +1796,19 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
     }
 
     /**
-     * Getter for domId33Element called 2 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for domId31Element called 2 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.uibinder.client.LazyDomElement domId33Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId33Element() {
-      return domId33Element;
+    private com.google.gwt.uibinder.client.LazyDomElement domId31Element;
+    private com.google.gwt.uibinder.client.LazyDomElement get_domId31Element() {
+      return domId31Element;
     }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId33Element() {
+    private com.google.gwt.uibinder.client.LazyDomElement build_domId31Element() {
       // Creation section.
-      domId33Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId33());
+      domId31Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId31());
       // Setup section.
 
 
-      return domId33Element;
+      return domId31Element;
     }
   }
 }

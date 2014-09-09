@@ -15,7 +15,9 @@ import com.google.gwt.user.client.ui.ValueListBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.anova.anovacloud.client.application.matters.matter.MatterPresenter.MyView;
 import com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor;
+import com.anova.anovacloud.client.application.caseStatus.ui.CaseStatusRenderer;
 import com.anova.anovacloud.client.application.customer.ui.CustomerRenderer;
+import com.anova.anovacloud.shared.dto.CaseStatusDto;
 import com.anova.anovacloud.shared.dto.MatterDto;
 import com.anova.anovacloud.shared.dto.CustomerDto;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
@@ -28,11 +30,13 @@ public class MatterMobileView extends ViewWithUiHandlers<MatterUiHandlers> imple
     }
 
     @UiField
-    TextBox matterNum;
+    TextBox caseNum;
     @UiField
-    TextBox matterSerialNum;
+    TextBox clientRef;
     @UiField(provided = true)
     ValueListBox<CustomerDto> customer;
+    @UiField(provided = true)
+    ValueListBox<CaseStatusDto> caseStatus;
     @UiField
     MatterPropertiesEditor matterProperties;
 
@@ -42,20 +46,25 @@ public class MatterMobileView extends ViewWithUiHandlers<MatterUiHandlers> imple
     MatterMobileView(Binder uiBinder,
                   Driver driver) {
         customer = new ValueListBox<>(new CustomerRenderer());
+        caseStatus = new ValueListBox<>(new CaseStatusRenderer());
         this.driver = driver;
 
         initWidget(uiBinder.createAndBindUi(this));
 
         driver.initialize(this);
 
-        matterNum.getElement().setAttribute("placeholder", "MatterNum");
-        matterSerialNum.getElement().setAttribute("placeholder", "MatterSerialNum");
+        caseNum.getElement().setAttribute("placeholder", "Case Number");
+        clientRef.getElement().setAttribute("placeholder", "Client Ref");
     }
 
     @Override
     public void edit(MatterDto matterDto) {
         if (matterDto.getCustomer() == null) {
             matterDto.setCustomer(customer.getValue());
+        }
+        
+        if (matterDto.getCaseStatus() == null) {
+            matterDto.setCaseStatus(caseStatus.getValue());
         }
 
         driver.edit(matterDto);
@@ -73,6 +82,14 @@ public class MatterMobileView extends ViewWithUiHandlers<MatterUiHandlers> imple
         customer.setValue(results.isEmpty() ? null : results.get(0));
         customer.setAcceptableValues(results);
     }
+    
+    @Override
+    public void setAllowedCaseStatuss(List<CaseStatusDto> caseStatusDtos) {
+    	
+    	caseStatus.setValue(caseStatusDtos.isEmpty() ? null : caseStatusDtos.get(0));
+    	caseStatus.setAcceptableValues(caseStatusDtos);
+    }
+
 
     @Override
     public void resetFields(MatterDto matterDto) {

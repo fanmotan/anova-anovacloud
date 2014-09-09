@@ -19,13 +19,11 @@ public class MatterPropertiesEditor extends Composite implements Editor<MatterPr
     }
 
     @UiField
-    TextBox matterTitle;
+    TextBox caseTitle;
     @UiField
     TextBox applicationNum;
     @UiField
     TextBox patentNum;
-    @UiField
-    TextBox status;
     @UiField
     TextBox pubNum;
     @UiField
@@ -52,11 +50,13 @@ public class MatterPropertiesEditor extends Composite implements Editor<MatterPr
     TextBox parentPCTNum;
     @UiField
     DateBox pctDate;
+    
    
     
     @Inject
     MatterPropertiesEditor(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        
         DateTimeFormat format = DateTimeFormat.getShortDateFormat();
     	
         fileDate.setFormat(new DateBox.DefaultFormat(format));

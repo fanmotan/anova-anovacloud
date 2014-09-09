@@ -16,13 +16,28 @@ import com.anova.anovacloud.shared.dto.MatterDto;
 @Index
 @Entity
 public class Matter extends BaseEntity {
-	    private String matterNum;
-	    private String matterSerialNum;
+	    private String caseNum;
+	    private String clientRef;
 	    @Load
 	    private Ref<Customer> customer;
 	    @Load
+	    private Ref<CaseStatus> caseStatus;
+	    @Load
 	    private Ref<MatterProperties> matterProperties;
 
+	    public Matter() {
+	        this.caseNum = "";
+	        this.clientRef = "";
+	    }
+	 /*   
+	    public Matter(String caseNum, String clientRef, Customer customer, CaseStatus caseStatus, MatterProperties matterProperties) {
+	        this.caseNum = caseNum;
+	        this.clientRef = clientRef;    
+	        this.setCustomer(customer);
+	       this.setCaseStatus(caseStatus);
+	       this.setMatterProperties(matterProperties);
+	    }
+	 */
 	    
     public static List<MatterDto> createDto(List<Matter> matters) {
         if (matters == null) {
@@ -46,8 +61,9 @@ public class Matter extends BaseEntity {
         matterDto.setMatterProperties(MatterProperties.createDto(matter.getMatterProperties()));
         matterDto.setId(matter.getId());
         matterDto.setCustomer(Customer.createDto(matter.getCustomer()));
-        matterDto.setMatterNum(matter.getMatterNum());
-        matterDto.setMatterSerialNum(matter.getMatterSerialNum());
+        matterDto.setCaseNum(matter.getCaseNum());
+        matterDto.setClientRef(matter.getClientRef());
+        matterDto.setCaseStatus(CaseStatus.createDto(matter.getCaseStatus()));
 
         return matterDto;
     }
@@ -74,31 +90,40 @@ public class Matter extends BaseEntity {
         matter.setMatterProperties(MatterProperties.create(matterDto.getMatterProperties()));
         matter.setId(matterDto.getId());
         matter.setCustomer(Customer.create(matterDto.getCustomer()));
-        matter.setMatterNum(matterDto.getMatterNum());
-        matter.setMatterSerialNum(matterDto.getMatterSerialNum());
+        matter.setCaseNum(matterDto.getCaseNum());
+        matter.setClientRef(matterDto.getClientRef());
+        matter.setCaseStatus(CaseStatus.create(matterDto.getCaseStatus()));
         return matter;
     }
 
 
-   
-    public Matter() {
-        this.matterNum = "";
-        this.matterSerialNum = "";
+    public String getCaseNum() {
+        return caseNum;
     }
 
-    public String getMatterNum() {
-        return matterNum;
+    public void setCaseNum(final String caseNum) {
+        this.caseNum = caseNum;
+    }
+    
+    
+    public CaseStatus getCaseStatus() {
+		return Deref.deref(caseStatus);
+	}
+
+	public void setCaseStatus(CaseStatus caseStatus) {
+		 if (caseStatus != null) {
+	            this.caseStatus = Ref.create(caseStatus);
+	        } else {
+	            this.caseStatus = null;
+	        }
+	}
+
+	public String getClientRef() {
+        return clientRef;
     }
 
-    public void setMatterNum(final String matterNum) {
-        this.matterNum = matterNum;
-    }
-    public String getMatterSerialNum() {
-        return matterSerialNum;
-    }
-
-    public void setMatterSerialNum(final String matterSerialNum) {
-        this.matterSerialNum = matterSerialNum;
+    public void setClientRef(final String clientRef) {
+        this.clientRef = clientRef;
     }
 
     public Customer getCustomer() {

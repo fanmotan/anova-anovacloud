@@ -14,7 +14,7 @@ sb.append("Close");
 return new com.google.gwt.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.toString());
 }
 
-public com.google.gwt.safehtml.shared.SafeHtml html3(java.lang.String arg0,java.lang.String arg1,java.lang.String arg2,java.lang.String arg3,java.lang.String arg4,java.lang.String arg5,java.lang.String arg6,java.lang.String arg7,java.lang.String arg8,java.lang.String arg9,java.lang.String arg10,java.lang.String arg11,java.lang.String arg12,java.lang.String arg13,java.lang.String arg14) {
+public com.google.gwt.safehtml.shared.SafeHtml html3(java.lang.String arg0,java.lang.String arg1,java.lang.String arg2,java.lang.String arg3,java.lang.String arg4,java.lang.String arg5,java.lang.String arg6,java.lang.String arg7,java.lang.String arg8,java.lang.String arg9,java.lang.String arg10,java.lang.String arg11,java.lang.String arg12,java.lang.String arg13,java.lang.String arg14,java.lang.String arg15,java.lang.String arg16,java.lang.String arg17,java.lang.String arg18) {
 StringBuilder sb = new java.lang.StringBuilder();
 sb.append("<table width='100%'> <tr> <td width='15%'> <div class='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg0));
@@ -40,12 +40,20 @@ sb.append("'></span> </div> </td> <td width='75%'> <div class='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg10));
 sb.append("'> <span id='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg11));
-sb.append("'></span> </div> </td> </tr>  </table>  <div> <span id='");
+sb.append("'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg12));
-sb.append("'></span> </div>  <div> <span id='");
+sb.append("'> <span id='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg13));
-sb.append("'></span> <span id='");
+sb.append("'></span> </div> </td> <td width='75%'> <div class='");
 sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg14));
+sb.append("'> <span id='");
+sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg15));
+sb.append("'></span> </div> </td> </tr> </table>  <div> <span id='");
+sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg16));
+sb.append("'></span> </div>  <div> <span id='");
+sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg17));
+sb.append("'></span> <span id='");
+sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg18));
 sb.append("'></span> </div>");
 return new com.google.gwt.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.toString());
 }

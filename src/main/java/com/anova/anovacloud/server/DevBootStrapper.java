@@ -102,6 +102,7 @@ public class DevBootStrapper {
         userDao.deleteAll();
         userRoleDao.deleteAll();
         customerStatusDao.deleteAll();
+        caseStatusDao.deleteAll();
     }
     
    
@@ -180,22 +181,22 @@ public class DevBootStrapper {
             honda = Customer.createDto(customerDao.put(Customer.create(honda)));
             mitsubishi = Customer.createDto(customerDao.put(Customer.create(mitsubishi)));
 
-            MatterPropertiesDto matterPropertiesCivic = new MatterPropertiesDto("Cat", "testing1", "", "active", "us-001", "","","","high", "", "Us", new Date(), new Date(), new Date(), new Date(), "", new Date(), "tester", new Date(), "", new Date());
+            MatterPropertiesDto matterPropertiesCivic = new MatterPropertiesDto("Cat", "testing1", "",  "us-001", "","","","high", "", "Us", new Date(), new Date(), new Date(), new Date(), "", new Date(), "tester", new Date(), "", new Date());
             matterPropertiesCivic = matterPropertiesDao.put(matterPropertiesCivic);
 
-            MatterPropertiesDto matterPropertiesAccord = new MatterPropertiesDto("Fish", "testing2", "", "active", "us-001", "","","","high", "", "Us", new Date(), new Date(), new Date(), new Date(), "", new Date(), "tester", new Date(), "", new Date());
+            MatterPropertiesDto matterPropertiesAccord = new MatterPropertiesDto("Fish", "testing2", "",  "us-001", "","","","high", "", "Us", new Date(), new Date(), new Date(), new Date(), "", new Date(), "tester", new Date(), "", new Date());
             matterPropertiesAccord = matterPropertiesDao.put(matterPropertiesAccord);
 
-            MatterPropertiesDto matterPropertiesLancer = new MatterPropertiesDto("Dog", "testing3", "", "active", "us-001", "","","","high", "", "Us", new Date(), new Date(), new Date(), new Date(), "", new Date(), "tester", new Date(), "", new Date());
+            MatterPropertiesDto matterPropertiesLancer = new MatterPropertiesDto("Dog", "testing3", "", "us-001", "","","","high", "", "Us", new Date(), new Date(), new Date(), new Date(), "", new Date(), "tester", new Date(), "", new Date());
             matterPropertiesLancer = matterPropertiesDao.put(matterPropertiesLancer);
 
-            MatterPropertiesDto matterPropertiesMitsubishi = new MatterPropertiesDto("Cow", "testing4", "", "active", "us-001", "","","","high", "", "Us", new Date(), new Date(), new Date(), new Date(), "", new Date(), "tester", new Date(), "", new Date());
+            MatterPropertiesDto matterPropertiesMitsubishi = new MatterPropertiesDto("Cow", "testing4", "", "us-001", "","","","high", "", "Us", new Date(), new Date(), new Date(), new Date(), "", new Date(), "tester", new Date(), "", new Date());
             matterPropertiesMitsubishi = matterPropertiesDao.put(matterPropertiesMitsubishi);
 
-            MatterDto civic = new MatterDto("Civic", "0001",  honda, matterPropertiesCivic);
-            MatterDto accord = new MatterDto("Accord", "0001", honda, matterPropertiesAccord);
-            MatterDto lancer = new MatterDto("Lancer", "0001", mitsubishi, matterPropertiesLancer);
-            MatterDto galant = new MatterDto("Galant", "0001",  mitsubishi, matterPropertiesMitsubishi);
+            MatterDto civic = new MatterDto("Civic", "0001",  honda,cstatus1, matterPropertiesCivic);
+            MatterDto accord = new MatterDto("Accord", "0001", honda, cstatus2, matterPropertiesAccord);
+            MatterDto lancer = new MatterDto("Lancer", "0001", mitsubishi,cstatus3, matterPropertiesLancer);
+            MatterDto galant = new MatterDto("Galant", "0001",  mitsubishi,cstatus4,  matterPropertiesMitsubishi);
 
             civic = Matter.createDto(matterDao.put(Matter.create(civic)));
             accord = Matter.createDto(matterDao.put(Matter.create(accord)));

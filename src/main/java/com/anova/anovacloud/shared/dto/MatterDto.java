@@ -2,46 +2,53 @@
 
 package com.anova.anovacloud.shared.dto;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MatterDto extends BaseEntity {
     private CustomerDto customer;
-    private String matterNum;
-    private String matterSerialNum;
-    private List<MatterActionDto> actions;
+    private String caseNum;
+    private String clientRef;
+    private CaseStatusDto caseStatus;
     private MatterPropertiesDto matterProperties;
 
     public MatterDto() {
-        this.matterNum = "";
-        this.matterSerialNum = "";
+    	
+        this.caseNum = "";
+        this.clientRef = "";
         this.matterProperties = new MatterPropertiesDto();
-        this.actions = new ArrayList<>();
+
     }
 
-    public MatterDto(String matterNum,String matterSerialNum,
+    public MatterDto(String caseNum,String clientRef,
                   CustomerDto customer,
+                  CaseStatusDto caseStatus,
                   MatterPropertiesDto matterProperties) {
-        this.matterNum = matterNum;
-        this.matterSerialNum = matterSerialNum;
+        this.caseNum = caseNum;
+        this.clientRef = clientRef;
         this.customer = customer;
+        this.caseStatus = caseStatus;
         this.matterProperties = matterProperties;
-        this.actions = new ArrayList<>();
     }
 
-    public String getMatterNum() {
-        return matterNum;
+    public CaseStatusDto getCaseStatus() {
+		return caseStatus;
+	}
+
+	public void setCaseStatus(CaseStatusDto caseStatus) {
+		this.caseStatus = caseStatus;
+	}
+
+	public String getCaseNum() {
+        return caseNum;
     }
 
-    public void setMatterNum(final String matterNum) {
-        this.matterNum = matterNum;
+    public void setCaseNum(final String caseNum) {
+        this.caseNum = caseNum;
     }
-    public String getMatterSerialNum() {
-        return matterSerialNum;
+    public String getClientRef() {
+        return clientRef;
     }
 
-    public void setMatterSerialNum(final String matterSerialNum) {
-        this.matterSerialNum = matterSerialNum;
+    public void setClientRef(final String clientRef) {
+        this.clientRef = clientRef;
     }
 
     public CustomerDto getCustomer() {
@@ -50,14 +57,6 @@ public class MatterDto extends BaseEntity {
 
     public void setCustomer(CustomerDto customer) {
         this.customer = customer;
-    }
-
-    public List<MatterActionDto> getActions() {
-        return actions;
-    }
-
-    public void setActions(List<MatterActionDto> actions) {
-        this.actions = actions;
     }
 
     public MatterPropertiesDto getMatterProperties() {

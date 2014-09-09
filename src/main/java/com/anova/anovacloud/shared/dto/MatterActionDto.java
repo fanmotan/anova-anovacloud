@@ -190,7 +190,7 @@ public class MatterActionDto extends BaseEntity {
     @Override
     public String toString() {
         if (matter != null) {
-            return matter.getMatterNum()+"."+matter.getMatterSerialNum();
+            return matter.getCaseNum();
         }
         return super.toString();
     }

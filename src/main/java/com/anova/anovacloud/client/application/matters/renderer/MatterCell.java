@@ -9,7 +9,7 @@ import com.anova.anovacloud.shared.dto.MatterDto;
 
 public class MatterCell extends AbstractCell<MatterDto> {
     interface Renderer extends UiRenderer {
-        void render(SafeHtmlBuilder sb, String name);
+        void render(SafeHtmlBuilder sb, String name );
     }
 
     private final Renderer uiRenderer;
@@ -21,6 +21,6 @@ public class MatterCell extends AbstractCell<MatterDto> {
 
     @Override
     public void render(Context context, MatterDto value, SafeHtmlBuilder safeHtmlBuilder) {
-        uiRenderer.render(safeHtmlBuilder, value.getMatterNum()+"."+value.getMatterSerialNum());
+        uiRenderer.render(safeHtmlBuilder, value.getCaseNum());
     }
 }

@@ -29,12 +29,12 @@
     	<tr>
      		<td width="15%">
         		<div class="{style.formRow}">
-            		<g:InlineLabel>Matter No:</g:InlineLabel>
+            		<g:InlineLabel>Case Number:</g:InlineLabel>
             	</div>
             </td>
             <td width = "75%">
             	<div class="{style.formRow}">
-            		<g:TextBox ui:field="matterNum"  styleName="{resource.styles.inputTextField}"/>
+            		<g:TextBox ui:field="caseNum"  styleName="{resource.styles.inputTextField}"/>
         		</div>
         	</td>
         </tr>
@@ -42,16 +42,27 @@
         <tr>
      		<td width="15%">
         		<div class="{style.formRow}">
-            		<g:InlineLabel>Case Serial No:</g:InlineLabel>
+            		<g:InlineLabel>Client Ref:</g:InlineLabel>
             	</div>
             </td>
             <td width = "75%">
             	<div class="{style.formRow}">
-            		<g:TextBox ui:field="matterSerialNum" styleName="{resource.styles.inputTextField}"/>
+            		<g:TextBox ui:field="clientRef" styleName="{resource.styles.inputTextField}"/>
         		</div>
         	</td>
         </tr>
-        
+        <tr>
+     		<td width="15%">
+        		<div class="{style.formRow}">
+            		<g:InlineLabel>Case Status:</g:InlineLabel>
+            	</div>
+            </td>
+            <td width = "75%">
+            	<div class="{style.formRow}">
+            		<g:ValueListBox ui:field="caseStatus" styleName="{resource.styles.inputTextField}"/>
+        		</div>
+        	</td>
+        </tr>
         </table>
              
             <div>

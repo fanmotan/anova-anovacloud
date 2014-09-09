@@ -144,6 +144,21 @@ public class UnauthorizedView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
+     * Getter for CASESTATUS called 0 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_CASESTATUS() {
+      return build_CASESTATUS();
+    }
+    private java.lang.String build_CASESTATUS() {
+      // Creation section.
+      final java.lang.String CASESTATUS = com.anova.anovacloud.client.place.NameTokens.CASESTATUS;
+      // Setup section.
+
+
+      return CASESTATUS;
+    }
+
+    /**
      * Getter for DETAIL_CUSTOMER called 0 times. Type: DEFAULT. Build precedence: 1.
      */
     private java.lang.String get_DETAIL_CUSTOMER() {

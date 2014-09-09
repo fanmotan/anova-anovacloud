@@ -19,7 +19,7 @@
             </td>
             <td width = "75%">
             	<div class="{style.formRow}">
-            		<g:TextBox ui:field="matterTitle" styleName="{resource.styles.inputTextField}"/>
+            		<g:TextBox ui:field="caseTitle" styleName="{resource.styles.inputTextField}"/>
         		</div>
         	</td>
         </tr>
@@ -70,16 +70,6 @@
         	</td>
         </tr>
         <tr>	
-        	<td width="15%">
-        		<div class="{style.formRow}">
-            		<g:InlineLabel>Status:</g:InlineLabel>
-            	</div>
-            </td>
-            <td width = "30%">
-            	<div class="{style.formRow}">
-            		<g:TextBox ui:field="status" styleName="{resource.styles.inputTextField}"/>
-        		</div>
-        	</td>
         	<td width="15%">
         		<div>
             		<g:InlineLabel>Expiration Date:</g:InlineLabel>

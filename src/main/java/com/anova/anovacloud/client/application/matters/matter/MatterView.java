@@ -18,7 +18,9 @@ import com.google.gwt.user.client.ui.ValueListBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.anova.anovacloud.client.application.matters.matter.MatterPresenter.MyView;
 import com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor;
+import com.anova.anovacloud.client.application.caseStatus.ui.CaseStatusRenderer;
 import com.anova.anovacloud.client.application.customer.ui.CustomerRenderer;
+import com.anova.anovacloud.shared.dto.CaseStatusDto;
 import com.anova.anovacloud.shared.dto.MatterDto;
 import com.anova.anovacloud.shared.dto.CustomerDto;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
@@ -31,11 +33,13 @@ public class MatterView extends ViewWithUiHandlers<MatterUiHandlers> implements 
     }
 
     @UiField
-    TextBox matterNum;
+    TextBox caseNum;
     @UiField
-    TextBox matterSerialNum;
+    TextBox clientRef;
     @UiField(provided = true)
     ValueListBox<CustomerDto> customer = null;
+    @UiField(provided = true)
+    ValueListBox<CaseStatusDto> caseStatus = null;
     @UiField
     MatterPropertiesEditor matterProperties;
 
@@ -45,6 +49,7 @@ public class MatterView extends ViewWithUiHandlers<MatterUiHandlers> implements 
     MatterView(Binder uiBinder,
             Driver driver) {
         customer = new ValueListBox<>(new CustomerRenderer());
+        caseStatus = new ValueListBox<>(new CaseStatusRenderer());
         this.driver = driver;
         initWidget(uiBinder.createAndBindUi(this));
         driver.initialize(this);
@@ -54,6 +59,9 @@ public class MatterView extends ViewWithUiHandlers<MatterUiHandlers> implements 
     public void edit(MatterDto matterDto) {
         if (matterDto.getCustomer() == null) {
             matterDto.setCustomer(customer.getValue());
+        }
+        if (matterDto.getCaseStatus() == null) {
+            matterDto.setCaseStatus(caseStatus.getValue());
         }
 
         driver.edit(matterDto);
@@ -70,6 +78,13 @@ public class MatterView extends ViewWithUiHandlers<MatterUiHandlers> implements 
 		}
         customer.setValue(results.isEmpty() ? null : results.get(0));
         customer.setAcceptableValues(results);
+    }
+    
+    @Override
+    public void setAllowedCaseStatuss(List<CaseStatusDto> caseStatusDtos) {
+   
+    	caseStatus.setValue(caseStatusDtos.isEmpty() ? null : caseStatusDtos.get(0));
+    	caseStatus.setAcceptableValues(caseStatusDtos);
     }
 
     @Override

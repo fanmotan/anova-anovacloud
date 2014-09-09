@@ -22,8 +22,8 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     @Template("Close")
     SafeHtml html2();
      
-    @Template("<table width='100%'> <tr> <td width='15%'> <div class='{0}'> <span id='{1}'></span> </div> </td> <td width='75%'> <div class='{2}'> <span id='{3}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{4}'> <span id='{5}'></span> </div> </td> <td width='75%'> <div class='{6}'> <span id='{7}'></span> </div> </td> </tr>  <tr> <td width='15%'> <div class='{8}'> <span id='{9}'></span> </div> </td> <td width='75%'> <div class='{10}'> <span id='{11}'></span> </div> </td> </tr>  </table>  <div> <span id='{12}'></span> </div>  <div> <span id='{13}'></span> <span id='{14}'></span> </div>")
-    SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14);
+    @Template("<table width='100%'> <tr> <td width='15%'> <div class='{0}'> <span id='{1}'></span> </div> </td> <td width='75%'> <div class='{2}'> <span id='{3}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{4}'> <span id='{5}'></span> </div> </td> <td width='75%'> <div class='{6}'> <span id='{7}'></span> </div> </td> </tr>  <tr> <td width='15%'> <div class='{8}'> <span id='{9}'></span> </div> </td> <td width='75%'> <div class='{10}'> <span id='{11}'></span> </div> </td> </tr> <tr> <td width='15%'> <div class='{12}'> <span id='{13}'></span> </div> </td> <td width='75%'> <div class='{14}'> <span id='{15}'></span> </div> </td> </tr> </table>  <div> <span id='{16}'></span> </div>  <div> <span id='{17}'></span> <span id='{18}'></span> </div>")
+    SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16, String arg17, String arg18);
      
   }
 
@@ -68,6 +68,8 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       build_domId6();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId7();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId8();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
+      build_domId9();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
+      build_domId10();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId0Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId1Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId2Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
@@ -77,6 +79,8 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       build_domId6Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId7Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId8Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
+      build_domId9Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
+      build_domId10Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
     }
 
     SafeHtml template_html1() {
@@ -86,7 +90,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       return template.html2();
     }
     SafeHtml template_html3() {
-      return template.html3("" + get_style().formRow() + "", get_domId0(), "" + get_style().formRow() + "", get_domId1(), "" + get_style().formRow() + "", get_domId2(), "" + get_style().formRow() + "", get_domId3(), "" + get_style().formRow() + "", get_domId4(), "" + get_style().formRow() + "", get_domId5(), get_domId6(), get_domId7(), get_domId8());
+      return template.html3("" + get_style().formRow() + "", get_domId0(), "" + get_style().formRow() + "", get_domId1(), "" + get_style().formRow() + "", get_domId2(), "" + get_style().formRow() + "", get_domId3(), "" + get_style().formRow() + "", get_domId4(), "" + get_style().formRow() + "", get_domId5(), "" + get_style().formRow() + "", get_domId6(), "" + get_style().formRow() + "", get_domId7(), get_domId8(), get_domId9(), get_domId10());
     }
 
     /**
@@ -105,7 +109,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
-     * Getter for resource called 3 times. Type: IMPORTED. Build precedence: 1.
+     * Getter for resource called 4 times. Type: IMPORTED. Build precedence: 1.
      */
     private com.anova.anovacloud.client.resources.AppResources resource;
     private com.anova.anovacloud.client.resources.AppResources get_resource() {
@@ -121,7 +125,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
-     * Getter for style called 6 times. Type: GENERATED_CSS. Build precedence: 1.
+     * Getter for style called 8 times. Type: GENERATED_CSS. Build precedence: 1.
      */
     private com.anova.anovacloud.client.application.matters.matter.MatterView_BinderImpl_GenCss_style style;
     private com.anova.anovacloud.client.application.matters.matter.MatterView_BinderImpl_GenCss_style get_style() {
@@ -178,18 +182,22 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       get_domId6Element().get();
       get_domId7Element().get();
       get_domId8Element().get();
+      get_domId9Element().get();
+      get_domId10Element().get();
 
       // Detach section.
       attachRecord24.detach();
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel3(), get_domId0Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_customer(), get_domId1Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel4(), get_domId2Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_matterNum(), get_domId3Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_caseNum(), get_domId3Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel5(), get_domId4Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_matterSerialNum(), get_domId5Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_matterProperties(), get_domId6Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_save(), get_domId7Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_close(), get_domId8Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_clientRef(), get_domId5Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel6(), get_domId6Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_caseStatus(), get_domId7Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_matterProperties(), get_domId8Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_save(), get_domId9Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_close(), get_domId10Element().get());
 
       return f_HTMLPanel2;
     }
@@ -317,7 +325,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel4 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel4.setText("Matter No:");
+      f_InlineLabel4.setText("Case Number:");
 
 
       return f_InlineLabel4;
@@ -356,21 +364,21 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
-     * Getter for matterNum called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for caseNum called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_matterNum() {
-      return build_matterNum();
+    private com.google.gwt.user.client.ui.TextBox get_caseNum() {
+      return build_caseNum();
     }
-    private com.google.gwt.user.client.ui.TextBox build_matterNum() {
+    private com.google.gwt.user.client.ui.TextBox build_caseNum() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox matterNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox caseNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      matterNum.setStyleName("" + get_resource().styles().inputTextField() + "");
+      caseNum.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.matterNum = matterNum;
+      this.owner.caseNum = caseNum;
 
-      return matterNum;
+      return caseNum;
     }
 
     /**
@@ -415,7 +423,7 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel5 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel5.setText("Case Serial No:");
+      f_InlineLabel5.setText("Client Ref:");
 
 
       return f_InlineLabel5;
@@ -454,21 +462,21 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
-     * Getter for matterSerialNum called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for clientRef called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_matterSerialNum() {
-      return build_matterSerialNum();
+    private com.google.gwt.user.client.ui.TextBox get_clientRef() {
+      return build_clientRef();
     }
-    private com.google.gwt.user.client.ui.TextBox build_matterSerialNum() {
+    private com.google.gwt.user.client.ui.TextBox build_clientRef() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox matterSerialNum = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox clientRef = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      matterSerialNum.setStyleName("" + get_resource().styles().inputTextField() + "");
+      clientRef.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      this.owner.matterSerialNum = matterSerialNum;
+      this.owner.clientRef = clientRef;
 
-      return matterSerialNum;
+      return clientRef;
     }
 
     /**
@@ -504,21 +512,19 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
-     * Getter for matterProperties called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel6 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor get_matterProperties() {
-      return build_matterProperties();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel6() {
+      return build_f_InlineLabel6();
     }
-    private com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor build_matterProperties() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel6() {
       // Creation section.
-      final com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor matterProperties = (com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor) (((com.gwtplatform.mvp.client.ClientGinjector)com.gwtplatform.mvp.client.DelayedBindRegistry.getGinjector()).getPropertiesEditor());
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel6 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      matterProperties.ensureDebugId("matter-properties-editor");
+      f_InlineLabel6.setText("Case Status:");
 
 
-      this.owner.matterProperties = matterProperties;
-
-      return matterProperties;
+      return f_InlineLabel6;
     }
 
     /**
@@ -554,21 +560,20 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
-     * Getter for save called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for caseStatus called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.Button get_save() {
-      return build_save();
+    private com.google.gwt.user.client.ui.ValueListBox get_caseStatus() {
+      return build_caseStatus();
     }
-    private com.google.gwt.user.client.ui.Button build_save() {
+    private com.google.gwt.user.client.ui.ValueListBox build_caseStatus() {
       // Creation section.
-      final com.google.gwt.user.client.ui.Button save = (com.google.gwt.user.client.ui.Button) GWT.create(com.google.gwt.user.client.ui.Button.class);
+      final com.google.gwt.user.client.ui.ValueListBox caseStatus = owner.caseStatus;
+      assert caseStatus != null : "UiField caseStatus with 'provided = true' was null";
       // Setup section.
-      save.setHTML(template_html1().asString());
-      save.ensureDebugId("matter-save");
-      save.addClickHandler(handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1);
+      caseStatus.setStyleName("" + get_resource().styles().inputTextField() + "");
 
 
-      return save;
+      return caseStatus;
     }
 
     /**
@@ -604,6 +609,106 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
+     * Getter for matterProperties called 1 times. Type: DEFAULT. Build precedence: 3.
+     */
+    private com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor get_matterProperties() {
+      return build_matterProperties();
+    }
+    private com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor build_matterProperties() {
+      // Creation section.
+      final com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor matterProperties = (com.anova.anovacloud.client.application.matters.matter.widget.MatterPropertiesEditor) (((com.gwtplatform.mvp.client.ClientGinjector)com.gwtplatform.mvp.client.DelayedBindRegistry.getGinjector()).getPropertiesEditor());
+      // Setup section.
+      matterProperties.ensureDebugId("matter-properties-editor");
+
+
+      this.owner.matterProperties = matterProperties;
+
+      return matterProperties;
+    }
+
+    /**
+     * Getter for domId8Element called 2 times. Type: DEFAULT. Build precedence: 3.
+     */
+    private com.google.gwt.uibinder.client.LazyDomElement domId8Element;
+    private com.google.gwt.uibinder.client.LazyDomElement get_domId8Element() {
+      return domId8Element;
+    }
+    private com.google.gwt.uibinder.client.LazyDomElement build_domId8Element() {
+      // Creation section.
+      domId8Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId8());
+      // Setup section.
+
+
+      return domId8Element;
+    }
+
+    /**
+     * Getter for domId9 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 3.
+     */
+    private java.lang.String domId9;
+    private java.lang.String get_domId9() {
+      return domId9;
+    }
+    private java.lang.String build_domId9() {
+      // Creation section.
+      domId9 = com.google.gwt.dom.client.Document.get().createUniqueId();
+      // Setup section.
+
+
+      return domId9;
+    }
+
+    /**
+     * Getter for save called 1 times. Type: DEFAULT. Build precedence: 3.
+     */
+    private com.google.gwt.user.client.ui.Button get_save() {
+      return build_save();
+    }
+    private com.google.gwt.user.client.ui.Button build_save() {
+      // Creation section.
+      final com.google.gwt.user.client.ui.Button save = (com.google.gwt.user.client.ui.Button) GWT.create(com.google.gwt.user.client.ui.Button.class);
+      // Setup section.
+      save.setHTML(template_html1().asString());
+      save.ensureDebugId("matter-save");
+      save.addClickHandler(handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1);
+
+
+      return save;
+    }
+
+    /**
+     * Getter for domId9Element called 2 times. Type: DEFAULT. Build precedence: 3.
+     */
+    private com.google.gwt.uibinder.client.LazyDomElement domId9Element;
+    private com.google.gwt.uibinder.client.LazyDomElement get_domId9Element() {
+      return domId9Element;
+    }
+    private com.google.gwt.uibinder.client.LazyDomElement build_domId9Element() {
+      // Creation section.
+      domId9Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId9());
+      // Setup section.
+
+
+      return domId9Element;
+    }
+
+    /**
+     * Getter for domId10 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 3.
+     */
+    private java.lang.String domId10;
+    private java.lang.String get_domId10() {
+      return domId10;
+    }
+    private java.lang.String build_domId10() {
+      // Creation section.
+      domId10 = com.google.gwt.dom.client.Document.get().createUniqueId();
+      // Setup section.
+
+
+      return domId10;
+    }
+
+    /**
      * Getter for close called 1 times. Type: DEFAULT. Build precedence: 3.
      */
     private com.google.gwt.user.client.ui.Button get_close() {
@@ -622,19 +727,19 @@ public class MatterView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
-     * Getter for domId8Element called 2 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for domId10Element called 2 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.uibinder.client.LazyDomElement domId8Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId8Element() {
-      return domId8Element;
+    private com.google.gwt.uibinder.client.LazyDomElement domId10Element;
+    private com.google.gwt.uibinder.client.LazyDomElement get_domId10Element() {
+      return domId10Element;
     }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId8Element() {
+    private com.google.gwt.uibinder.client.LazyDomElement build_domId10Element() {
       // Creation section.
-      domId8Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId8());
+      domId10Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId10());
       // Setup section.
 
 
-      return domId8Element;
+      return domId10Element;
     }
   }
 }

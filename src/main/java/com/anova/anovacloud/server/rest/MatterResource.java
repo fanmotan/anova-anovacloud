@@ -76,7 +76,7 @@ public class MatterResource {
 
         return Response.ok(Matter.createDto(matter)).build();
     }
-
+/*
     @Path(PathParameter.PATH_ID)
     @DELETE
     public Response delete(@PathParam(RestParameter.ID) Long id) {
@@ -84,4 +84,5 @@ public class MatterResource {
 
         return Response.ok().build();
     }
+    */
 }

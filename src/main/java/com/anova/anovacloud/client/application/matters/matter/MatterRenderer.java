@@ -12,9 +12,9 @@ public class MatterRenderer extends AbstractRenderer<MatterDto> {
             return "";
         }
 
-        CustomerRenderer customerRenderer = new CustomerRenderer();
-        String customer = customerRenderer.render(matterDto.getCustomer());
+     //   CustomerRenderer customerRenderer = new CustomerRenderer();
+       // String customer = customerRenderer.render(matterDto.getCustomer());
 
-        return customer + " " + matterDto.getMatterNum() + " "+matterDto.getMatterSerialNum();
+        return matterDto.getCaseNum();
     }
 }

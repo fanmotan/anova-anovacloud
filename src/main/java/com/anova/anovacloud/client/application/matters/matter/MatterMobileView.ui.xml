@@ -22,11 +22,14 @@
             <g:ValueListBox ui:field="customer"/>
         </div>
         <div class="{style.formRow}">
-            <g:TextBox ui:field="matterNum" styleName="{resource.styles.mobileTextField}"/>
+            <g:TextBox ui:field="caseNum" styleName="{resource.styles.mobileTextField}"/>
         </div>
         
         <div class="{style.formRow}">
-            <g:TextBox ui:field="matterSerialNum" styleName="{resource.styles.mobileTextField}"/>
+            <g:TextBox ui:field="clientRef" styleName="{resource.styles.mobileTextField}"/>
+        </div>
+        <div class="{style.formRow}">
+            <g:ValueListBox ui:field="caseStatus"/>
         </div>
         <div>
             <c:MatterPropertiesEditor ui:field="matterProperties"/>

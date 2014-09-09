@@ -33,6 +33,7 @@ import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.annotations.ProxyEvent;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
+import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 import com.gwtplatform.mvp.shared.proxy.PlaceRequest.Builder;
 
 public class MattersPresenter extends Presenter<MyView, MyProxy>
@@ -85,8 +86,7 @@ public class MattersPresenter extends Presenter<MyView, MyProxy>
 
     @Override
     public void onEdit(MatterDto matterDto) {
-        MatterPresenter.MyProxy proxy = matterProxyFactory.create(matterDto,
-                matterDto.getCustomer().getName() + matterDto.getMatterNum()+matterDto.getMatterSerialNum());
+        MatterPresenter.MyProxy proxy = matterProxyFactory.create(matterDto, matterDto.getCaseNum());
 
         placeManager.revealPlace(new Builder().nameToken(proxy.getNameToken()).build());
     }
@@ -106,6 +106,8 @@ public class MattersPresenter extends Presenter<MyView, MyProxy>
         });
     }
 
+    
+    /*
     @Override
     public void onDelete(MatterDto matterDto) {
         dispatcher.execute(mattersService.matter(matterDto.getId()).delete(), new ErrorHandlerAsyncCallback<Void>(this) {
@@ -117,7 +119,7 @@ public class MattersPresenter extends Presenter<MyView, MyProxy>
             }
         });
     }
-
+*/
     @ProxyEvent
     @Override
     public void onMatterAdded(MatterAddedEvent event) {
@@ -146,6 +148,11 @@ public class MattersPresenter extends Presenter<MyView, MyProxy>
                 getView().setMattersCount(result);
             }
         });
+    }
+    
+    @Override
+    protected void revealInParent() {
+        RevealContentEvent.fire(this, ApplicationPresenter.SLOT_MAIN_CONTENT, this);
     }
 
     private void fetchDataForDisplay() {

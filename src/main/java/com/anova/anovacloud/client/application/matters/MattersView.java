@@ -19,7 +19,6 @@ import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.cellview.client.Column;
 import com.google.gwt.user.cellview.client.IdentityColumn;
 import com.google.gwt.user.cellview.client.SimplePager;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.view.client.AsyncDataProvider;
 import com.google.gwt.view.client.HasData;
@@ -115,40 +114,43 @@ public class MattersView extends ViewWithUiHandlers<MattersUiHandlers> implement
             }
         };
 
-        Column<MatterDto, String> matterNumColumn = new Column<MatterDto, String>(new TextCell()) {
+        Column<MatterDto, String> caseNumColumn = new Column<MatterDto, String>(new TextCell()) {
             @Override
             public String getValue(MatterDto matterDto) {
-                return matterDto.getMatterNum();
+                return matterDto.getCaseNum();
             }
         };
-        Column<MatterDto, String> matterSerialNumColumn = new Column<MatterDto, String>(new TextCell()) {
+        Column<MatterDto, String> clientRefColumn = new Column<MatterDto, String>(new TextCell()) {
             @Override
             public String getValue(MatterDto matterDto) {
-                return matterDto.getMatterSerialNum();
+                return matterDto.getClientRef();
             }
         };
         Column<MatterDto, String> titleColumn = new Column<MatterDto, String>(new TextCell()) {
             @Override
             public String getValue(MatterDto matterDto) {
-                return matterDto.getMatterProperties().getMatterTitle();
+                return matterDto.getMatterProperties().getCaseTitle();
             }
         };
         Column<MatterDto, String> statusColumn = new Column<MatterDto, String>(new TextCell()) {
             @Override
             public String getValue(MatterDto matterDto) {
-                return matterDto.getMatterProperties().getStatus();
+                return matterDto.getCaseStatus().getStatusName();
             }
         };
+ 
     //    matterGrid.addColumn(idColumn, "ID");
         matterGrid.addColumn(customerColumn, "Customer");
-        matterGrid.addColumn(matterNumColumn, "Matter No");
-        matterGrid.addColumn(matterSerialNumColumn, "Matter Serial No");
+        matterGrid.addColumn(caseNumColumn, "Case Number");
+        matterGrid.addColumn(clientRefColumn, "Client Ref");
         matterGrid.addColumn(titleColumn, "Title");
         matterGrid.addColumn(statusColumn, "Status");
      //   matterGrid.setColumnWidth(idColumn, 50, Unit.PX);
     }
 
     private void initActionColumns() {
+    	
+    	
         Cell<MatterDto> editCell = new ActionCell<>("Edit", new Delegate<MatterDto>() {
             @Override
             public void execute(MatterDto matterDto) {
@@ -156,24 +158,13 @@ public class MattersView extends ViewWithUiHandlers<MattersUiHandlers> implement
             }
         });
 
-        Cell<MatterDto> deleteCell = new ActionCell<>("Delete", new Delegate<MatterDto>() {
-            @Override
-            public void execute(MatterDto matterDto) {
-                Boolean confirm = Window.confirm("Are you sure you want to delete " + matterDto.getMatterNum()+"."+matterDto.getMatterSerialNum() + "?");
-
-                if (confirm) {
-                    getUiHandlers().onDelete(matterDto);
-                }
-            }
-        });
-
+       
+      
         IdentityColumn<MatterDto> editColumn = new IdentityColumn<>(editCell);
-        IdentityColumn<MatterDto> deleteColumn = new IdentityColumn<>(deleteCell);
 
         matterGrid.addColumn(editColumn, "Edit");
-        matterGrid.addColumn(deleteColumn, "Delete");
 
         matterGrid.setColumnWidth(editColumn, 75, Unit.PX);
-        matterGrid.setColumnWidth(deleteColumn, 75, Unit.PX);
+
     }
 }

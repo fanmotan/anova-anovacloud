@@ -27,7 +27,7 @@ public class CaseStatusResource {
     }
 
     @GET
-    public Response getCaseStatus() {
+    public Response getCaseStatuss() {
         List<CaseStatusDto> caseStatusDtos = CaseStatus.createDto(caseStatusDao.getAll());
         return Response.ok(caseStatusDtos).build();
     }

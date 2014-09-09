@@ -31,7 +31,7 @@ public class MatterActionCell extends AbstractCell<MatterActionDto> {
 
     @Override
     public void render(Context context, MatterActionDto value, SafeHtmlBuilder safeHtmlBuilder) {
-        uiRenderer.render(safeHtmlBuilder, value.getMatter().getMatterNum()+"."+value.getMatter().getMatterSerialNum(), value.getDueDate(), value.getActionDue(), value.getPtoMailDate(), value.getResponseDate(), 
+        uiRenderer.render(safeHtmlBuilder, value.getMatter().getCaseNum(), value.getDueDate(), value.getActionDue(), value.getPtoMailDate(), value.getResponseDate(), 
         		value.getTakenDate(), value.getAtty(), value.getActionRemarks());
     }
     

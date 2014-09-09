@@ -23,7 +23,7 @@ public class MatterActionDao extends BaseDao<MatterAction> {
     				MatterDto matterDto = actionDto.getMatter();
     				Date dueDate = actionDto.getDueDate();
     				Date today = new Date();
-    				String status = matterDto.getMatterProperties().getStatus();
+    				String status = matterDto.getCaseStatus().getStatusName();
     				if (dueDate != null && status != null)
     				{
     					if (!status.equalsIgnoreCase("inactive") && !status.equalsIgnoreCase("closed") && !status.equalsIgnoreCase("abandoned") )
@@ -35,8 +35,8 @@ public class MatterActionDao extends BaseDao<MatterAction> {
     						
     						if (days < 4 )
     						{
-    							results.add (new ActionDueDto(matterDto.getMatterNum()+"."+matterDto.getMatterSerialNum(), matterDto.getCustomer().getCode(),
-    									matterDto.getMatterProperties().getMatterTitle(),matterDto.getMatterProperties().getStatus(), DateTimeFormat.getShortDateFormat().format(actionDto.getDueDate()), actionDto.getActionDue(),
+    							results.add (new ActionDueDto(matterDto.getCaseNum(), matterDto.getClientRef(),
+    									matterDto.getMatterProperties().getCaseTitle(),matterDto.getCaseStatus().getStatusName(), DateTimeFormat.getShortDateFormat().format(actionDto.getDueDate()), actionDto.getActionDue(),
     									actionDto.getAssignee1()+"/"+actionDto.getAssignee1Role()+";"+actionDto.getAssignee2()+"/"+actionDto.getAssignee2Role()+";"
     									+actionDto.getAssignee3()+"/"+actionDto.getAssignee3Role()+";", actionDto.getActionRemarks()));
     						}

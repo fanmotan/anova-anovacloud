@@ -5,10 +5,9 @@ package com.anova.anovacloud.shared.dto;
 import java.util.Date;
 
 public class MatterPropertiesDto extends BaseEntity {
-    private String matterTitle;
+    private String caseTitle;
     private String applicationNum;
     private String patentNum;
-    private String status;
     private String pubNum;
     private String assignee;
     private String assignmentRecord;
@@ -29,35 +28,17 @@ public class MatterPropertiesDto extends BaseEntity {
 
     private MatterDto matter;
 
-    public MatterPropertiesDto() {
-        this.matterTitle = "";
-        this.applicationNum = "";
-        this.patentNum = "";
-        this.status = "";
-        this.pubNum = "";
-        this.assignee = "";
-        this.assignmentRecord = "";
-        this.remarks = "";
-        this.priority = "";
-        this.patentTermAdj = "";
-        this.country = "";
-        this.parentPCTNum = "";
-        this.createBy = "";
-        this.updateBy = "";
-        
-
-        
+    public MatterPropertiesDto() {  
     }
 
-    public MatterPropertiesDto(String matterTitle,String applicationNum, String patentNum, String status, String pubNum,
+    public MatterPropertiesDto(String caseTitle,String applicationNum, String patentNum, String pubNum,
     							String assignee, String assignmentRecord, String remarks, String priority, String patentTermAdj,
     							String country, Date fileDate, Date issueDate, Date expriationDate, Date pubDate,String parentPCTNum,
     							Date pctDate, String createBy, Date createDate,String updateBy, Date updateDate)
     {
-    	 this.matterTitle = matterTitle;
+    	 this.caseTitle = caseTitle;
          this.applicationNum = applicationNum;
          this.patentNum = patentNum;
-         this.status = status;
          this.pubNum = pubNum;
          this.assignee = assignee;
          this.assignmentRecord = assignmentRecord;
@@ -85,12 +66,12 @@ public class MatterPropertiesDto extends BaseEntity {
         this.matter = matterDto;
     }
     
-    public String getMatterTitle() {
-        return matterTitle;
+    public String getCaseTitle() {
+        return caseTitle;
     }
 
-    public void setMatterTitle(String matterTitle) {
-        this.matterTitle = matterTitle;
+    public void setCaseTitle(String caseTitle) {
+        this.caseTitle = caseTitle;
     }
 
     public String getApplicationNum() {
@@ -107,16 +88,9 @@ public class MatterPropertiesDto extends BaseEntity {
     public void setPatentNum(String patentNum) {
         this.patentNum = patentNum;
     }
- 
-    public String getStatus() {
-        return status;
-    }
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
 
-    public String getPubNum() {
+	public String getPubNum() {
         return pubNum;
     }
 

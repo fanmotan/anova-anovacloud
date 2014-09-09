@@ -33,6 +33,7 @@ com\anova\anovacloud\client\application\renderer\EnumCell.class
 com\anova\anovacloud\client\application\widget\message\Message.class
 com\anova\anovacloud\shared\dto\CustomerStatusDto.class
 com\anova\anovacloud\server\dao\UserRoleDao.class
+com\anova\anovacloud\client\rest\CaseStatusService.class
 com\anova\anovacloud\client\application\matters\MattersMobileView.class
 com\anova\anovacloud\client\application\user\ui\EditUserView$Binder.class
 com\anova\anovacloud\client\resources\MobileNavigationListStyle$ListStyle.class
@@ -116,7 +117,6 @@ com\anova\anovacloud\rebind\ColumnsInitializerDefinitions.class
 com\anova\anovacloud\client\application\matterAction\MatterActionPresenter$MyView.class
 com\anova\anovacloud\server\dao\domain\MatterProperties.class
 com\anova\anovacloud\client\application\user\UserPresenter$MyView.class
-com\anova\anovacloud\client\application\matters\MattersView$8.class
 com\anova\anovacloud\client\util\exceptiontranslators\NotNullTranslator.class
 com\anova\anovacloud\client\application\UnauthorizedPresenter$MyView.class
 com\anova\anovacloud\server\rest\SessionResource.class
@@ -268,7 +268,6 @@ com\anova\anovacloud\client\application\attorney\ui\EditAttorneyUiHandlers.class
 com\anova\anovacloud\client\application\matterAction\MatterActionView.class
 com\anova\anovacloud\server\authentication\AuthenticationException.class
 com\anova\anovacloud\client\application\attorney\event\AttorneyAddedEvent$AttorneyAddedHandler.class
-com\anova\anovacloud\client\application\matters\MattersPresenter$3.class
 com\anova\anovacloud\client\application\widget\message\ui\MessageWidgetFactory.class
 com\anova\anovacloud\client\application\user\UserView$8.class
 com\anova\anovacloud\client\application\customer\CustomerView$Binder.class
@@ -454,6 +453,7 @@ com\anova\anovacloud\client\application\attorney\AttorneyPresenter$MyProxy.class
 com\anova\anovacloud\client\application\attorney\AttorneyDetailPresenter$1.class
 com\anova\anovacloud\server\dao\MatterDao.class
 com\anova\anovacloud\server\dao\AttorneyStatusDao.class
+com\anova\anovacloud\client\application\caseStatus\ui\CaseStatusRenderer.class
 com\anova\anovacloud\client\application\customer\CustomerView$2.class
 com\anova\anovacloud\client\application\report\ReportPresenter.class
 com\anova\anovacloud\client\application\attorney\AttorneyView$Binder.class

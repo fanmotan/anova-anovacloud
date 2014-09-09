@@ -12,6 +12,10 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     
   }
   
+  public void memberInject_Key$type$com$anova$anovacloud$client$rest$CaseStatusServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.CaseStatusServiceImpl injectee) {
+    
+  }
+  
   public void memberInject_Key$type$com$anova$anovacloud$client$rest$CustomerServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.CustomerServiceImpl injectee) {
     
   }
@@ -61,6 +65,18 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
         singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyStatusService$_annotation$$none$$ = result;
     }
     return singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyStatusService$_annotation$$none$$;
+    
+  }
+  
+  private com.anova.anovacloud.client.rest.CaseStatusService singleton_Key$type$com$anova$anovacloud$client$rest$CaseStatusService$_annotation$$none$$ = null;
+  
+  public com.anova.anovacloud.client.rest.CaseStatusService get_Key$type$com$anova$anovacloud$client$rest$CaseStatusService$_annotation$$none$$() {
+    
+    if (singleton_Key$type$com$anova$anovacloud$client$rest$CaseStatusService$_annotation$$none$$ == null) {
+    com.anova.anovacloud.client.rest.CaseStatusService result = get_Key$type$com$anova$anovacloud$client$rest$CaseStatusServiceImpl$_annotation$$none$$();
+        singleton_Key$type$com$anova$anovacloud$client$rest$CaseStatusService$_annotation$$none$$ = result;
+    }
+    return singleton_Key$type$com$anova$anovacloud$client$rest$CaseStatusService$_annotation$$none$$;
     
   }
   
@@ -180,6 +196,23 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
   
   public com.anova.anovacloud.client.rest.AttorneyStatusServiceImpl com$anova$anovacloud$client$rest$AttorneyStatusServiceImpl_com$anova$anovacloud$client$rest$AttorneyStatusServiceImpl_methodInjection(java.lang.String _0) {
     return new com.anova.anovacloud.client.rest.AttorneyStatusServiceImpl(_0);
+  }
+  
+  
+  /**
+   * Binding for com.anova.anovacloud.client.rest.CaseStatusServiceImpl declared at:
+   *   Implicit binding for com.anova.anovacloud.client.rest.CaseStatusServiceImpl
+   */
+  public com.anova.anovacloud.client.rest.CaseStatusServiceImpl get_Key$type$com$anova$anovacloud$client$rest$CaseStatusServiceImpl$_annotation$$none$$() {
+    com.anova.anovacloud.client.rest.CaseStatusServiceImpl result = com$anova$anovacloud$client$rest$CaseStatusServiceImpl_com$anova$anovacloud$client$rest$CaseStatusServiceImpl_methodInjection(injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$java$lang$String$_annotation$$com$gwtplatform$dispatch$rest$client$DefaultDateFormat$());
+    memberInject_Key$type$com$anova$anovacloud$client$rest$CaseStatusServiceImpl$_annotation$$none$$(result);
+    
+    return result;
+    
+  }
+  
+  public com.anova.anovacloud.client.rest.CaseStatusServiceImpl com$anova$anovacloud$client$rest$CaseStatusServiceImpl_com$anova$anovacloud$client$rest$CaseStatusServiceImpl_methodInjection(java.lang.String _0) {
+    return new com.anova.anovacloud.client.rest.CaseStatusServiceImpl(_0);
   }
   
   

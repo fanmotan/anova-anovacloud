@@ -15,10 +15,9 @@ import com.anova.anovacloud.shared.dto.MatterPropertiesDto;
 @Index
 @Entity
 public class MatterProperties extends BaseEntity {
-	private String matterTitle;
+	private String caseTitle;
     private String applicationNum;
-    private String patentNum;
-    private String status;
+    private String patentNum; 
     private String pubNum;
     private String assignee;
     private String assignmentRecord;
@@ -40,12 +39,12 @@ public class MatterProperties extends BaseEntity {
 
     @Load
     private Ref<Matter> matter;
+  
 
     public MatterProperties() {
-    	this.matterTitle = "";
+    	this.caseTitle = "";
         this.applicationNum = "";
         this.patentNum = "";
-        this.status = "";
         this.pubNum = "";
         this.assignee = "";
         this.assignmentRecord = "";
@@ -58,15 +57,14 @@ public class MatterProperties extends BaseEntity {
         this.updateBy = "";
     }
 
-    public MatterProperties(String matterTitle,String applicationNum, String patentNum, String status, String pubNum,
+    public MatterProperties(String caseTitle,String applicationNum, String patentNum, String pubNum,
 			String assignee, String assignmentRecord, String remarks, String priority, String patentTermAdj,
 			String country, Date fileDate, Date issueDate, Date expriationDate, Date pubDate,String parentPCTNum,
 			Date pctDate, String createBy, String updateBy, Date createDate, Date updateDate)
 {
-	this.matterTitle = matterTitle;
+	this.caseTitle = caseTitle;
 	this.applicationNum = applicationNum;
 	this.patentNum = patentNum;
-	this.status = status;
 	this.pubNum = pubNum;
 	this.assignee = assignee;
 	this.assignmentRecord = assignmentRecord;
@@ -87,13 +85,12 @@ public class MatterProperties extends BaseEntity {
 }
 
 
-
-public String getMatterTitle() {
-return matterTitle;
+public String getCaseTitle() {
+return caseTitle;
 }
 
-public void setMatterTitle(String matterTitle) {
-this.matterTitle = matterTitle;
+public void setCaseTitle(String caseTitle) {
+this.caseTitle = caseTitle;
 }
 
 public String getApplicationNum() {
@@ -111,13 +108,6 @@ public void setPatentNum(String patentNum) {
 this.patentNum = patentNum;
 }
 
-public String getStatus() {
-return status;
-}
-
-public void setStatus(String status) {
-this.status = status;
-}
 
 public String getPubNum() {
 return pubNum;
@@ -272,10 +262,9 @@ this.updateBy = updateBy;
         MatterPropertiesDto matterPropertiesDto = new MatterPropertiesDto();
         matterPropertiesDto.setMatter(Matter.createDto(matterProperties.getMatter()));
         matterPropertiesDto.setId(matterProperties.getId());
-        matterPropertiesDto.setMatterTitle(matterProperties.getMatterTitle());
+        matterPropertiesDto.setCaseTitle(matterProperties.getCaseTitle());
         matterPropertiesDto.setApplicationNum(matterProperties.getApplicationNum());
         matterPropertiesDto.setPatentNum(matterProperties.getPatentNum());
-        matterPropertiesDto.setStatus(matterProperties.getStatus());
         matterPropertiesDto.setPubNum(matterProperties.getPubNum());
         matterPropertiesDto.setAssignee(matterProperties.getAssignee());
         matterPropertiesDto.setAssignmentRecord(matterProperties.getAssignmentRecord());
@@ -305,10 +294,9 @@ this.updateBy = updateBy;
         MatterProperties matterProperties = new MatterProperties();
         matterProperties.setMatter(Matter.create(matterPropertiesDto.getMatter()));
         matterProperties.setId(matterPropertiesDto.getId());
-        matterProperties.setMatterTitle(matterPropertiesDto.getMatterTitle());
+        matterProperties.setCaseTitle(matterPropertiesDto.getCaseTitle());
         matterProperties.setApplicationNum(matterPropertiesDto.getApplicationNum());
         matterProperties.setPatentNum(matterPropertiesDto.getPatentNum());
-        matterProperties.setStatus(matterPropertiesDto.getStatus());
         matterProperties.setPubNum(matterPropertiesDto.getPubNum());
         matterProperties.setAssignee(matterPropertiesDto.getAssignee());
         matterProperties.setAssignmentRecord(matterPropertiesDto.getAssignmentRecord());

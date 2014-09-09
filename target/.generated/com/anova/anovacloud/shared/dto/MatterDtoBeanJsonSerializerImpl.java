@@ -20,7 +20,7 @@ public class MatterDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjackso
       }
     });
     
-    map.put("matterNum", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterDto, java.lang.String>() {
+    map.put("caseNum", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterDto, java.lang.String>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
         return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
@@ -28,11 +28,11 @@ public class MatterDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjackso
       
       @Override
       public java.lang.String getValue(com.anova.anovacloud.shared.dto.MatterDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getMatterNum();
+        return bean.getCaseNum();
       }
     });
     
-    map.put("matterSerialNum", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterDto, java.lang.String>() {
+    map.put("clientRef", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterDto, java.lang.String>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
         return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
@@ -40,19 +40,19 @@ public class MatterDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtjackso
       
       @Override
       public java.lang.String getValue(com.anova.anovacloud.shared.dto.MatterDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getMatterSerialNum();
+        return bean.getClientRef();
       }
     });
     
-    map.put("actions", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterDto, java.util.List<com.anova.anovacloud.shared.dto.MatterActionDto>>() {
+    map.put("caseStatus", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterDto, com.anova.anovacloud.shared.dto.CaseStatusDto>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
-        return com.github.nmorel.gwtjackson.client.ser.IterableJsonSerializer.newInstance(new com.anova.anovacloud.shared.dto.MatterActionDtoBeanJsonSerializerImpl());
+        return new com.anova.anovacloud.shared.dto.CaseStatusDtoBeanJsonSerializerImpl();
       }
       
       @Override
-      public java.util.List<com.anova.anovacloud.shared.dto.MatterActionDto> getValue(com.anova.anovacloud.shared.dto.MatterDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getActions();
+      public com.anova.anovacloud.shared.dto.CaseStatusDto getValue(com.anova.anovacloud.shared.dto.MatterDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
+        return bean.getCaseStatus();
       }
     });
     

@@ -7,6 +7,5 @@ import com.gwtplatform.mvp.client.UiHandlers;
 
 public interface MatterUiHandlers extends UiHandlers {
     void onSave(MatterDto matterDto);
-
     void onCancel();
 }
