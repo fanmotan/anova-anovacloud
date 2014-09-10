@@ -2,6 +2,8 @@
 
 package com.anova.anovacloud.client.application.customer;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -47,6 +49,11 @@ public class CustomerView extends ViewWithUiHandlers<CustomerUiHandlers> impleme
 
     @Override
     public void displayCustomers(List<CustomerDto> customerDtos) {
+    	Collections.sort(customerDtos, new Comparator<CustomerDto>() {
+		    public int compare(CustomerDto c1, CustomerDto c2) {
+		        return c1.getName().compareTo(c2.getName());
+		    }
+		});
         customerDataProvider.getList().clear();
         customerDataProvider.getList().addAll(customerDtos);
     }

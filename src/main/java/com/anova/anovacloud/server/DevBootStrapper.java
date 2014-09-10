@@ -137,11 +137,11 @@ public class DevBootStrapper {
     	sptatty = AttorneyRole.createDto(attorneyRoleDao.put(AttorneyRole.create(sptatty)));
         
        
-    	CaseStatusDto cstatus1 = new CaseStatusDto("new");
-    	CaseStatusDto cstatus2 = new CaseStatusDto("pending");
-    	CaseStatusDto cstatus3 = new CaseStatusDto("issued");
-    	CaseStatusDto cstatus4 = new CaseStatusDto("closed");
-    	CaseStatusDto cstatus5 = new CaseStatusDto("abandoned");
+    	CaseStatusDto cstatus1 = new CaseStatusDto("1", "new");
+    	CaseStatusDto cstatus2 = new CaseStatusDto("2", "pending");
+    	CaseStatusDto cstatus3 = new CaseStatusDto("3", "issued");
+    	CaseStatusDto cstatus4 = new CaseStatusDto("4", "closed");
+    	CaseStatusDto cstatus5 = new CaseStatusDto("5", "abandoned");
 
     	cstatus1 = CaseStatus.createDto(caseStatusDao.put(CaseStatus.create(cstatus1)));
     	cstatus2 = CaseStatus.createDto(caseStatusDao.put(CaseStatus.create(cstatus2)));

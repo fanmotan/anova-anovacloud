@@ -2,6 +2,8 @@
 
 package com.anova.anovacloud.client.application.attorney;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -26,6 +28,7 @@ import com.google.gwt.view.client.NoSelectionModel;
 import com.anova.anovacloud.client.application.attorney.AttorneyPresenter.MyView;
 import com.anova.anovacloud.shared.dto.AttorneyDto;
 import com.anova.anovacloud.shared.dto.AttorneyStatusDto;
+import com.anova.anovacloud.shared.dto.CustomerDto;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
 public class AttorneyView extends ViewWithUiHandlers<AttorneyUiHandlers> implements MyView {
@@ -49,6 +52,11 @@ public class AttorneyView extends ViewWithUiHandlers<AttorneyUiHandlers> impleme
 
     @Override
     public void displayAttorneys(List<AttorneyDto> attorneyDtos) {
+    	Collections.sort(attorneyDtos, new Comparator<AttorneyDto>() {
+		    public int compare(AttorneyDto c1, AttorneyDto c2) {
+		        return c1.getDisplayName().compareTo(c2.getDisplayName());
+		    }
+		});
         attorneyDataProvider.getList().clear();
         attorneyDataProvider.getList().addAll(attorneyDtos);
     }

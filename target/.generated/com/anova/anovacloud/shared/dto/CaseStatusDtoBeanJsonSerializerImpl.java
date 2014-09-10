@@ -6,7 +6,7 @@ public class CaseStatusDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtja
   
   @Override
   protected java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CaseStatusDto, ?>> initSerializers() {
-    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CaseStatusDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CaseStatusDto, ?>>(2);
+    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CaseStatusDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CaseStatusDto, ?>>(3);
     
     map.put("statusName", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CaseStatusDto, java.lang.String>() {
       @Override
@@ -17,6 +17,18 @@ public class CaseStatusDtoBeanJsonSerializerImpl extends com.github.nmorel.gwtja
       @Override
       public java.lang.String getValue(com.anova.anovacloud.shared.dto.CaseStatusDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
         return bean.getStatusName();
+      }
+    });
+    
+    map.put("statusValue", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CaseStatusDto, java.lang.String>() {
+      @Override
+      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
+        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
+      }
+      
+      @Override
+      public java.lang.String getValue(com.anova.anovacloud.shared.dto.CaseStatusDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
+        return bean.getStatusValue();
       }
     });
     

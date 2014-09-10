@@ -2,6 +2,8 @@
 
 package com.anova.anovacloud.client.application.matters;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -75,6 +77,11 @@ public class MattersView extends ViewWithUiHandlers<MattersUiHandlers> implement
 
     @Override
     public void displayMatters(int offset, List<MatterDto> matterDtos) {
+    	Collections.sort(matterDtos, new Comparator<MatterDto>() {
+		    public int compare(MatterDto c1, MatterDto c2) {
+		        return c1.getCaseNum().compareTo(c2.getCaseNum());
+		    }
+		});
         asyncDataProvider.updateRowData(offset, matterDtos);
     }
 

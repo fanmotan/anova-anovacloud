@@ -1,4 +1,5 @@
 com\anova\anovacloud\client\rest\MatterActionService.class
+com\anova\anovacloud\client\application\customer\CustomerView$9.class
 com\anova\anovacloud\client\application\matters\MattersPresenter$2.class
 com\anova\anovacloud\rebind\AbstractVelocityGenerator.class
 com\anova\anovacloud\client\place\ParameterTokens.class
@@ -35,8 +36,8 @@ com\anova\anovacloud\shared\dto\CustomerStatusDto.class
 com\anova\anovacloud\server\dao\UserRoleDao.class
 com\anova\anovacloud\client\rest\CaseStatusService.class
 com\anova\anovacloud\client\application\matters\MattersMobileView.class
-com\anova\anovacloud\client\application\user\ui\EditUserView$Binder.class
 com\anova\anovacloud\client\resources\MobileNavigationListStyle$ListStyle.class
+com\anova\anovacloud\client\application\user\ui\EditUserView$Binder.class
 com\anova\anovacloud\client\application\login\LoginMobileView$Binder.class
 com\anova\anovacloud\shared\dto\ActionType.class
 com\anova\anovacloud\client\application\attorney\ui\EditAttorneyPresenter$MyView.class
@@ -81,6 +82,7 @@ com\anova\anovacloud\client\application\widget\WidgetModule.class
 com\anova\anovacloud\client\application\matterAction\MatterActionView$Binder.class
 com\anova\anovacloud\client\application\customer\ui\EditCustomerView$Binder.class
 com\anova\anovacloud\client\rest\SessionService.class
+com\anova\anovacloud\client\application\attorney\AttorneyView$10.class
 com\anova\anovacloud\client\application\ui\ShowMorePagerPanel.class
 com\anova\anovacloud\client\application\matters\matter\MatterView.class
 com\anova\anovacloud\client\application\matters\MattersPresenter$MyView.class
@@ -103,6 +105,7 @@ com\anova\anovacloud\client\application\user\UserView$4.class
 com\anova\anovacloud\client\application\ApplicationMobileView$Binder.class
 com\anova\anovacloud\client\security\LoggedInGatekeeper.class
 com\anova\anovacloud\client\application\matters\matter\MatterProxyImplFactory.class
+com\anova\anovacloud\client\application\matters\matter\MatterView$2.class
 com\anova\anovacloud\client\application\customer\ui\EditCustomerUiHandlers.class
 com\anova\anovacloud\client\application\report\renderer\ReportCell.class
 com\anova\anovacloud\client\application\matters\matter\navigation\NavigationTabView.class
@@ -117,6 +120,7 @@ com\anova\anovacloud\rebind\ColumnsInitializerDefinitions.class
 com\anova\anovacloud\client\application\matterAction\MatterActionPresenter$MyView.class
 com\anova\anovacloud\server\dao\domain\MatterProperties.class
 com\anova\anovacloud\client\application\user\UserPresenter$MyView.class
+com\anova\anovacloud\client\application\matters\MattersView$8.class
 com\anova\anovacloud\client\util\exceptiontranslators\NotNullTranslator.class
 com\anova\anovacloud\client\application\UnauthorizedPresenter$MyView.class
 com\anova\anovacloud\server\rest\SessionResource.class
@@ -440,6 +444,7 @@ com\anova\anovacloud\client\application\matterAction\MatterActionDetailPresenter
 com\anova\anovacloud\server\rest\JacksonProvider.class
 com\anova\anovacloud\client\application\user\UserDetailView$Binder.class
 com\anova\anovacloud\client\columninitializer\Column.class
+com\anova\anovacloud\client\application\matters\matter\MatterView$1.class
 com\anova\anovacloud\client\application\widget\header\UserInfoPopup$Binder.class
 com\anova\anovacloud\client\application\customer\CustomerUiHandlers.class
 com\anova\anovacloud\client\application\event\GoBackEvent$GoBackHandler.class

@@ -13,14 +13,16 @@ import com.anova.anovacloud.shared.dto.CaseStatusDto;
 @Entity
 public class CaseStatus extends BaseEntity {
     private String statusName;
- 
+    private String statusValue;
 
 	public CaseStatus() {
         this.statusName = "";
+        this.statusValue = "";
     }
 
-    public CaseStatus(String statusName) {
+    public CaseStatus(String stausValue, String statusName) {
         this.statusName = statusName;
+        this.statusValue = statusValue;
     }
 
     public static List<CaseStatusDto> createDto(List<CaseStatus> caseStatuss) {
@@ -45,6 +47,7 @@ public class CaseStatus extends BaseEntity {
       
         caseStatusDto.setId(caseStatus.getId());
         caseStatusDto.setStatusName(caseStatus.getStatusName());
+        caseStatusDto.setStatusValue(caseStatus.getStatusValue());
 
         return caseStatusDto;
     }
@@ -70,6 +73,7 @@ public class CaseStatus extends BaseEntity {
         CaseStatus caseStatus = new CaseStatus();
         caseStatus.setId(caseStatusDto.getId());
         caseStatus.setStatusName(caseStatusDto.getStatusName());
+        caseStatus.setStatusValue(caseStatusDto.getStatusValue());
 
         return caseStatus;
     }
@@ -80,6 +84,14 @@ public class CaseStatus extends BaseEntity {
 
 	public void setStatusName(String statusName) {
 		this.statusName = statusName;
+	}
+
+	public String getStatusValue() {
+		return statusValue;
+	}
+
+	public void setStatusValue(String statusValue) {
+		this.statusValue = statusValue;
 	}
    
 }
