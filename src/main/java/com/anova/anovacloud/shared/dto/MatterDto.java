@@ -66,4 +66,5 @@ public class MatterDto extends BaseEntity {
     public void setMatterProperties(MatterPropertiesDto matterProperties) {
         this.matterProperties = matterProperties;
     }
+    
 }

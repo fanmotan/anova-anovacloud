@@ -19,12 +19,8 @@
 
     <g:HTMLPanel styleName="{style.panelWrapper}">
         <div class="{style.formRow}">
+        	<g:InlineLabel>Case Number:</g:InlineLabel>
             <g:ValueListBox ui:field="matter"/>
-        </div>
-
-        <div>
-            <g:IntegerBox ui:field="matterAction" maxLength="3" styleName="{resource.styles.mobileTextField}"
-                          debugId="matterActionInput"/>
         </div>
         
         <div>
@@ -49,32 +45,35 @@
             </div>
             <div>
                 <g:InlineLabel>Assignee1:</g:InlineLabel>
-                <g:TextBox ui:field="assignee1" styleName="{resource.styles.mobileTextField}" debugId="assignee1Input"/>
+                <g:ValueListBox ui:field="assignee1" styleName="{resource.styles.mobileTextField}" debugId="assignee1Input"/>
             </div>
             <div>
                 <g:InlineLabel>Assignee1 Role:</g:InlineLabel>
-                <g:TextBox ui:field="assignee1Role" styleName="{resource.styles.mobileTextField}" debugId="assignee1RoleInput"/>
+                <g:ValueListBox ui:field="assignee1Role" styleName="{resource.styles.mobileTextField}" debugId="assignee1RoleInput"/>
             </div>
             <div>
                 <g:InlineLabel>Assignee2:</g:InlineLabel>
-                <g:TextBox ui:field="assignee2" styleName="{resource.styles.mobileTextField}"  debugId="assignee2Input"/>
+                <g:ValueListBox ui:field="assignee2" styleName="{resource.styles.mobileTextField}"  debugId="assignee2Input"/>
             </div>
             <div>
                 <g:InlineLabel>Assignee2 Role:</g:InlineLabel>
-                <g:TextBox ui:field="assignee2Role" styleName="{resource.styles.mobileTextField}" debugId="assignee2RoleInput"/>
+                <g:ValueListBox ui:field="assignee2Role" styleName="{resource.styles.mobileTextField}" debugId="assignee2RoleInput"/>
             </div>
             <div>
                 <g:InlineLabel>Assignee3:</g:InlineLabel>
-                <g:TextBox ui:field="assignee3" styleName="{resource.styles.mobileTextField}"  debugId="assignee3Input"/>
+                <g:ValueListBox ui:field="assignee3" styleName="{resource.styles.mobileTextField}"  debugId="assignee3Input"/>
             </div>
             <div>
                 <g:InlineLabel>Assignee3 Role:</g:InlineLabel>
-                <g:TextBox ui:field="assignee3Role" styleName="{resource.styles.mobileTextField}" debugId="assignee3RoleInput"/>
+                <g:ValueListBox ui:field="assignee3Role" styleName="{resource.styles.mobileTextField}" debugId="assignee3RoleInput"/>
             </div>
             <div>
                 <g:InlineLabel>Action Remarks:</g:InlineLabel>
                 <g:TextBox ui:field="actionRemarks" styleName="{resource.styles.mobileTextField}" debugId="actionRemarksInput"/>
             </div>
-            
+            <div>
+                <g:InlineLabel>Action Status:</g:InlineLabel>
+                <g:ValueListBox ui:field="actionStatus" styleName="{resource.styles.mobileTextField}" debugId="actionStatusInput"/>
+            </div>
     </g:HTMLPanel>
 </ui:UiBinder>

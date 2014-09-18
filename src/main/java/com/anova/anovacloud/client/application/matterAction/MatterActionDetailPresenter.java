@@ -20,10 +20,16 @@ import com.anova.anovacloud.client.application.widget.message.Message;
 import com.anova.anovacloud.client.application.widget.message.MessageStyle;
 import com.anova.anovacloud.client.place.NameTokens;
 import com.anova.anovacloud.client.resources.MatterActionMessages;
+import com.anova.anovacloud.client.rest.AttorneyRoleService;
+import com.anova.anovacloud.client.rest.AttorneyService;
+import com.anova.anovacloud.client.rest.MatterActionStatusService;
 import com.anova.anovacloud.client.rest.MattersService;
 import com.anova.anovacloud.client.rest.MatterActionService;
 import com.anova.anovacloud.client.util.AbstractAsyncCallback;
 import com.anova.anovacloud.client.util.ErrorHandlerAsyncCallback;
+import com.anova.anovacloud.shared.dto.AttorneyDto;
+import com.anova.anovacloud.shared.dto.AttorneyRoleDto;
+import com.anova.anovacloud.shared.dto.MatterActionStatusDto;
 import com.anova.anovacloud.shared.dto.MatterDto;
 import com.anova.anovacloud.shared.dto.MatterActionDto;
 import com.gwtplatform.dispatch.rest.shared.RestDispatch;
@@ -41,9 +47,10 @@ public class MatterActionDetailPresenter extends Presenter<MyView, MyProxy>
 
     interface MyView extends View, HasUiHandlers<MatterActionDetailUiHandlers> {
         void edit(MatterActionDto matterActionDto);
-
         void setAllowedMatters(List<MatterDto> matterDtos);
-
+        void setAllowedMatterActionStatuss(List<MatterActionStatusDto> actionStatusDtos);
+        void setAllowedAttorneys(List<AttorneyDto> attorneyDtos);
+        void setAllowedAttorneyRoles(List<AttorneyRoleDto> attorneyRoleDtos);
         void getMatterAction();
     }
 
@@ -55,6 +62,9 @@ public class MatterActionDetailPresenter extends Presenter<MyView, MyProxy>
     private final RestDispatch dispatcher;
     private final MattersService mattersService;
     private final MatterActionService matterActionService;
+    private final MatterActionStatusService matterActionStatusService;
+    private final AttorneyService attorneyService;
+    private final AttorneyRoleService attorneyRoleService;
     private final MatterActionMessages messages;
     private final PlaceManager placeManager;
 
@@ -65,6 +75,9 @@ public class MatterActionDetailPresenter extends Presenter<MyView, MyProxy>
                           RestDispatch dispatcher,
                           MattersService mattersService,
                           MatterActionService matterActionService,
+                          MatterActionStatusService matterActionStatusService,
+                          AttorneyService attorneyService,
+                          AttorneyRoleService attorneyRoleService,
                           MatterActionMessages messages,
                           PlaceManager placeManager) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN_CONTENT);
@@ -72,6 +85,9 @@ public class MatterActionDetailPresenter extends Presenter<MyView, MyProxy>
         this.dispatcher = dispatcher;
         this.mattersService = mattersService;
         this.matterActionService = matterActionService;
+        this.matterActionStatusService = matterActionStatusService;
+        this.attorneyService = attorneyService;
+        this.attorneyRoleService = attorneyRoleService;
         this.messages = messages;
         this.placeManager = placeManager;
 
@@ -119,10 +135,42 @@ public class MatterActionDetailPresenter extends Presenter<MyView, MyProxy>
                 onGetMattersSuccess(matters);
             }
         });
+        dispatcher.execute(matterActionStatusService.getMatterActionStatuss(), new AbstractAsyncCallback<List<MatterActionStatusDto>>() {
+            @Override
+            public void onSuccess(List<MatterActionStatusDto> actionStatuss) {
+                onGetMatterActionStatussSuccess(actionStatuss);
+            }
+        });
+        dispatcher.execute(attorneyService.getAttorneys(), new AbstractAsyncCallback<List<AttorneyDto>>() {
+            @Override
+            public void onSuccess(List<AttorneyDto> attorneys) {
+                onGetAttorneysSuccess(attorneys);
+            }
+        });
+        dispatcher.execute(attorneyRoleService.getAttorneyRoles(), new AbstractAsyncCallback<List<AttorneyRoleDto>>() {
+            @Override
+            public void onSuccess(List<AttorneyRoleDto> attorneyRoles) {
+                onGetAttorneyRolesSuccess(attorneyRoles);
+            }
+        });
     }
 
     private void onGetMattersSuccess(List<MatterDto> matterDtos) {
         getView().setAllowedMatters(matterDtos);
+       
+    }
+    private void onGetMatterActionStatussSuccess(List<MatterActionStatusDto> actionStatusDtos) {
+        getView().setAllowedMatterActionStatuss(actionStatusDtos);
+       
+    }
+    
+    private void onGetAttorneysSuccess(List<AttorneyDto> attorneyDtos) {
+        getView().setAllowedAttorneys(attorneyDtos);
+    }
+    
+    private void onGetAttorneyRolesSuccess(List<AttorneyRoleDto> attorneyRoleDtos) {
+        getView().setAllowedAttorneyRoles(attorneyRoleDtos);
         getView().edit(new MatterActionDto());
+       
     }
 }

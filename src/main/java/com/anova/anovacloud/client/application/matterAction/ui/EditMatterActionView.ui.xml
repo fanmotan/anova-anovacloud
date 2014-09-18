@@ -42,43 +42,50 @@
              <tr><tb>
             <div>
                 <g:InlineLabel>Assignee1:</g:InlineLabel>
-                <g:TextBox ui:field="assignee1" debugId="assignee1Input"/>
+                <g:ValueListBox ui:field="assignee1" debugId="assignee1Input"/>
             </div>
             </tb>
 <tb>
             <div>
                 <g:InlineLabel>Assignee1 Role:</g:InlineLabel>
-                <g:TextBox ui:field="assignee1Role" debugId="assignee1RoleInput"/>
+                <g:ValueListBox ui:field="assignee1Role" debugId="assignee1RoleInput"/>
             </div>
              </tb></tr>
              <tr><tb>
             <div>
                 <g:InlineLabel>Assignee2:</g:InlineLabel>
-                <g:TextBox ui:field="assignee2" debugId="assignee2Input"/>
+                <g:ValueListBox ui:field="assignee2" debugId="assignee2Input"/>
             </div>
             </tb>
 			<tb>
             <div>
                 <g:InlineLabel>Assignee2 Role:</g:InlineLabel>
-                <g:TextBox ui:field="assignee2Role" debugId="assignee2RoleInput"/>
+                <g:ValueListBox ui:field="assignee2Role" debugId="assignee2RoleInput"/>
             </div>
              </tb></tr>
              <tr><tb>
             <div>
                 <g:InlineLabel>Assignee3:</g:InlineLabel>
-                <g:TextBox ui:field="assignee3" debugId="assignee3Input"/>
+                <g:ValueListBox ui:field="assignee3" debugId="assignee3Input"/>
             </div>
             </tb>
 			<tb>
             <div>
                 <g:InlineLabel>Assignee3 Role:</g:InlineLabel>
-                <g:TextBox ui:field="assignee3Role" debugId="assignee3RoleInput"/>
+                <g:ValueListBox ui:field="assignee3Role" debugId="assignee3RoleInput"/>
             </div>
             </tb></tr>
              <tr><tb>
             <div>
                 <g:InlineLabel>Action Remarks:</g:InlineLabel>
                 <g:TextBox ui:field="actionRemarks" debugId="actionRemarksInput"/>
+            </div>
+            </tb>
+			</tr>
+			 <tr><tb>
+            <div>
+                <g:InlineLabel>Action Status:</g:InlineLabel>
+                <g:ValueListBox ui:field="actionStatus" debugId="actionRemarksInput"/>
             </div>
             </tb>
 			</tr>

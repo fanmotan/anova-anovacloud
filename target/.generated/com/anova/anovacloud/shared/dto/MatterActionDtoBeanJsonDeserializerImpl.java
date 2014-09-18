@@ -82,74 +82,74 @@ public class MatterActionDtoBeanJsonDeserializerImpl extends com.github.nmorel.g
       }
     });
     
-    map.put("assignee1", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.lang.String>() {
+    map.put("assignee1", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, com.anova.anovacloud.shared.dto.AttorneyDto>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
+        return new com.anova.anovacloud.shared.dto.AttorneyDtoBeanJsonDeserializerImpl();
       }
       
       @Override
-      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
+      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.anova.anovacloud.shared.dto.AttorneyDto value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
         bean.setAssignee1(value);
       }
     });
     
-    map.put("assignee1Role", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.lang.String>() {
+    map.put("assignee1Role", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, com.anova.anovacloud.shared.dto.AttorneyRoleDto>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
+        return new com.anova.anovacloud.shared.dto.AttorneyRoleDtoBeanJsonDeserializerImpl();
       }
       
       @Override
-      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
+      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.anova.anovacloud.shared.dto.AttorneyRoleDto value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
         bean.setAssignee1Role(value);
       }
     });
     
-    map.put("assignee2", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.lang.String>() {
+    map.put("assignee2", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, com.anova.anovacloud.shared.dto.AttorneyDto>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
+        return new com.anova.anovacloud.shared.dto.AttorneyDtoBeanJsonDeserializerImpl();
       }
       
       @Override
-      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
+      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.anova.anovacloud.shared.dto.AttorneyDto value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
         bean.setAssignee2(value);
       }
     });
     
-    map.put("assignee2Role", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.lang.String>() {
+    map.put("assignee2Role", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, com.anova.anovacloud.shared.dto.AttorneyRoleDto>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
+        return new com.anova.anovacloud.shared.dto.AttorneyRoleDtoBeanJsonDeserializerImpl();
       }
       
       @Override
-      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
+      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.anova.anovacloud.shared.dto.AttorneyRoleDto value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
         bean.setAssignee2Role(value);
       }
     });
     
-    map.put("assignee3", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.lang.String>() {
+    map.put("assignee3", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, com.anova.anovacloud.shared.dto.AttorneyDto>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
+        return new com.anova.anovacloud.shared.dto.AttorneyDtoBeanJsonDeserializerImpl();
       }
       
       @Override
-      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
+      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.anova.anovacloud.shared.dto.AttorneyDto value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
         bean.setAssignee3(value);
       }
     });
     
-    map.put("assignee3Role", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.lang.String>() {
+    map.put("assignee3Role", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, com.anova.anovacloud.shared.dto.AttorneyRoleDto>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
+        return new com.anova.anovacloud.shared.dto.AttorneyRoleDtoBeanJsonDeserializerImpl();
       }
       
       @Override
-      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
+      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.anova.anovacloud.shared.dto.AttorneyRoleDto value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
         bean.setAssignee3Role(value);
       }
     });
@@ -235,6 +235,18 @@ public class MatterActionDtoBeanJsonDeserializerImpl extends com.github.nmorel.g
       @Override
       public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.anova.anovacloud.shared.dto.MatterDto value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
         bean.setMatter(value);
+      }
+    });
+    
+    map.put("actionStatus", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, com.anova.anovacloud.shared.dto.MatterActionStatusDto>() {
+      @Override
+      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
+        return new com.anova.anovacloud.shared.dto.MatterActionStatusDtoBeanJsonDeserializerImpl();
+      }
+      
+      @Override
+      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.anova.anovacloud.shared.dto.MatterActionStatusDto value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
+        bean.setActionStatus(value);
       }
     });
     

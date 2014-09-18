@@ -22,8 +22,8 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     @Template("Close")
     SafeHtml html2();
      
-    @Template("<table> <tr><tb> <div> <span id='{0}'></span> <span id='{1}'></span> </div> </tb> <tb> <div> <span id='{2}'></span> <span id='{3}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{4}'></span> <span id='{5}'></span> </div> </tb> <tb> <div> <span id='{6}'></span> <span id='{7}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{8}'></span> <span id='{9}'></span> </div> </tb> <tb> <div> <span id='{10}'></span> <span id='{11}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{12}'></span> <span id='{13}'></span> </div> </tb> <tb> <div> <span id='{14}'></span> <span id='{15}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{16}'></span> <span id='{17}'></span> </div> </tb> <tb> <div> <span id='{18}'></span> <span id='{19}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{20}'></span> <span id='{21}'></span> </div> </tb> <tb> <div> <span id='{22}'></span> <span id='{23}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{24}'></span> <span id='{25}'></span> </div> </tb> </tr> </table>  <div> <span id='{26}'></span> <span id='{27}'></span> </div>")
-    SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16, String arg17, String arg18, String arg19, String arg20, String arg21, String arg22, String arg23, String arg24, String arg25, String arg26, String arg27);
+    @Template("<table> <tr><tb> <div> <span id='{0}'></span> <span id='{1}'></span> </div> </tb> <tb> <div> <span id='{2}'></span> <span id='{3}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{4}'></span> <span id='{5}'></span> </div> </tb> <tb> <div> <span id='{6}'></span> <span id='{7}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{8}'></span> <span id='{9}'></span> </div> </tb> <tb> <div> <span id='{10}'></span> <span id='{11}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{12}'></span> <span id='{13}'></span> </div> </tb> <tb> <div> <span id='{14}'></span> <span id='{15}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{16}'></span> <span id='{17}'></span> </div>  </tb> <tb> <div> <span id='{18}'></span> <span id='{19}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{20}'></span> <span id='{21}'></span> </div> </tb> <tb> <div> <span id='{22}'></span> <span id='{23}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{24}'></span> <span id='{25}'></span> </div> </tb> </tr> <tr><tb> <div> <span id='{26}'></span> <span id='{27}'></span> </div> </tb> </tr> </table>  <div> <span id='{28}'></span> <span id='{29}'></span> </div>")
+    SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16, String arg17, String arg18, String arg19, String arg20, String arg21, String arg22, String arg23, String arg24, String arg25, String arg26, String arg27, String arg28, String arg29);
      
   }
 
@@ -85,6 +85,8 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
       build_domId25();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId26();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId27();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
+      build_domId28();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
+      build_domId29();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId0Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId1Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId2Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
@@ -113,6 +115,8 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
       build_domId25Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId26Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId27Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
+      build_domId28Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
+      build_domId29Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
     }
 
     SafeHtml template_html1() {
@@ -122,7 +126,7 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
       return template.html2();
     }
     SafeHtml template_html3() {
-      return template.html3(get_domId0(), get_domId1(), get_domId2(), get_domId3(), get_domId4(), get_domId5(), get_domId6(), get_domId7(), get_domId8(), get_domId9(), get_domId10(), get_domId11(), get_domId12(), get_domId13(), get_domId14(), get_domId15(), get_domId16(), get_domId17(), get_domId18(), get_domId19(), get_domId20(), get_domId21(), get_domId22(), get_domId23(), get_domId24(), get_domId25(), get_domId26(), get_domId27());
+      return template.html3(get_domId0(), get_domId1(), get_domId2(), get_domId3(), get_domId4(), get_domId5(), get_domId6(), get_domId7(), get_domId8(), get_domId9(), get_domId10(), get_domId11(), get_domId12(), get_domId13(), get_domId14(), get_domId15(), get_domId16(), get_domId17(), get_domId18(), get_domId19(), get_domId20(), get_domId21(), get_domId22(), get_domId23(), get_domId24(), get_domId25(), get_domId26(), get_domId27(), get_domId28(), get_domId29());
     }
 
     /**
@@ -200,6 +204,8 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
       get_domId25Element().get();
       get_domId26Element().get();
       get_domId27Element().get();
+      get_domId28Element().get();
+      get_domId29Element().get();
 
       // Detach section.
       attachRecord22.detach();
@@ -229,8 +235,10 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
       f_HTMLPanel2.addAndReplaceElement(get_assignee3Role(), get_domId23Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel15(), get_domId24Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_actionRemarks(), get_domId25Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_save(), get_domId26Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_close(), get_domId27Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel16(), get_domId26Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_actionStatus(), get_domId27Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_save(), get_domId28Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_close(), get_domId29Element().get());
 
       return f_HTMLPanel2;
     }
@@ -888,17 +896,16 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     /**
      * Getter for assignee1 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_assignee1() {
+    private com.google.gwt.user.client.ui.ValueListBox get_assignee1() {
       return build_assignee1();
     }
-    private com.google.gwt.user.client.ui.TextBox build_assignee1() {
+    private com.google.gwt.user.client.ui.ValueListBox build_assignee1() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox assignee1 = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.ValueListBox assignee1 = owner.assignee1;
+      assert assignee1 != null : "UiField assignee1 with 'provided = true' was null";
       // Setup section.
       assignee1.ensureDebugId("assignee1Input");
 
-
-      this.owner.assignee1 = assignee1;
 
       return assignee1;
     }
@@ -986,17 +993,16 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     /**
      * Getter for assignee1Role called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_assignee1Role() {
+    private com.google.gwt.user.client.ui.ValueListBox get_assignee1Role() {
       return build_assignee1Role();
     }
-    private com.google.gwt.user.client.ui.TextBox build_assignee1Role() {
+    private com.google.gwt.user.client.ui.ValueListBox build_assignee1Role() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox assignee1Role = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.ValueListBox assignee1Role = owner.assignee1Role;
+      assert assignee1Role != null : "UiField assignee1Role with 'provided = true' was null";
       // Setup section.
       assignee1Role.ensureDebugId("assignee1RoleInput");
 
-
-      this.owner.assignee1Role = assignee1Role;
 
       return assignee1Role;
     }
@@ -1084,17 +1090,16 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     /**
      * Getter for assignee2 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_assignee2() {
+    private com.google.gwt.user.client.ui.ValueListBox get_assignee2() {
       return build_assignee2();
     }
-    private com.google.gwt.user.client.ui.TextBox build_assignee2() {
+    private com.google.gwt.user.client.ui.ValueListBox build_assignee2() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox assignee2 = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.ValueListBox assignee2 = owner.assignee2;
+      assert assignee2 != null : "UiField assignee2 with 'provided = true' was null";
       // Setup section.
       assignee2.ensureDebugId("assignee2Input");
 
-
-      this.owner.assignee2 = assignee2;
 
       return assignee2;
     }
@@ -1182,17 +1187,16 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     /**
      * Getter for assignee2Role called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_assignee2Role() {
+    private com.google.gwt.user.client.ui.ValueListBox get_assignee2Role() {
       return build_assignee2Role();
     }
-    private com.google.gwt.user.client.ui.TextBox build_assignee2Role() {
+    private com.google.gwt.user.client.ui.ValueListBox build_assignee2Role() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox assignee2Role = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.ValueListBox assignee2Role = owner.assignee2Role;
+      assert assignee2Role != null : "UiField assignee2Role with 'provided = true' was null";
       // Setup section.
       assignee2Role.ensureDebugId("assignee2RoleInput");
 
-
-      this.owner.assignee2Role = assignee2Role;
 
       return assignee2Role;
     }
@@ -1280,17 +1284,16 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     /**
      * Getter for assignee3 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_assignee3() {
+    private com.google.gwt.user.client.ui.ValueListBox get_assignee3() {
       return build_assignee3();
     }
-    private com.google.gwt.user.client.ui.TextBox build_assignee3() {
+    private com.google.gwt.user.client.ui.ValueListBox build_assignee3() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox assignee3 = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.ValueListBox assignee3 = owner.assignee3;
+      assert assignee3 != null : "UiField assignee3 with 'provided = true' was null";
       // Setup section.
       assignee3.ensureDebugId("assignee3Input");
 
-
-      this.owner.assignee3 = assignee3;
 
       return assignee3;
     }
@@ -1378,17 +1381,16 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     /**
      * Getter for assignee3Role called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_assignee3Role() {
+    private com.google.gwt.user.client.ui.ValueListBox get_assignee3Role() {
       return build_assignee3Role();
     }
-    private com.google.gwt.user.client.ui.TextBox build_assignee3Role() {
+    private com.google.gwt.user.client.ui.ValueListBox build_assignee3Role() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox assignee3Role = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.ValueListBox assignee3Role = owner.assignee3Role;
+      assert assignee3Role != null : "UiField assignee3Role with 'provided = true' was null";
       // Setup section.
       assignee3Role.ensureDebugId("assignee3RoleInput");
 
-
-      this.owner.assignee3Role = assignee3Role;
 
       return assignee3Role;
     }
@@ -1524,21 +1526,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for save called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel16 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.Button get_save() {
-      return build_save();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel16() {
+      return build_f_InlineLabel16();
     }
-    private com.google.gwt.user.client.ui.Button build_save() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel16() {
       // Creation section.
-      final com.google.gwt.user.client.ui.Button save = (com.google.gwt.user.client.ui.Button) GWT.create(com.google.gwt.user.client.ui.Button.class);
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel16 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      save.setHTML(template_html1().asString());
-      save.ensureDebugId("matterActionSave");
-      save.addClickHandler(handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1);
+      f_InlineLabel16.setText("Action Status:");
 
 
-      return save;
+      return f_InlineLabel16;
     }
 
     /**
@@ -1574,6 +1574,105 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
+     * Getter for actionStatus called 1 times. Type: DEFAULT. Build precedence: 3.
+     */
+    private com.google.gwt.user.client.ui.ValueListBox get_actionStatus() {
+      return build_actionStatus();
+    }
+    private com.google.gwt.user.client.ui.ValueListBox build_actionStatus() {
+      // Creation section.
+      final com.google.gwt.user.client.ui.ValueListBox actionStatus = owner.actionStatus;
+      assert actionStatus != null : "UiField actionStatus with 'provided = true' was null";
+      // Setup section.
+      actionStatus.ensureDebugId("actionRemarksInput");
+
+
+      return actionStatus;
+    }
+
+    /**
+     * Getter for domId27Element called 2 times. Type: DEFAULT. Build precedence: 3.
+     */
+    private com.google.gwt.uibinder.client.LazyDomElement domId27Element;
+    private com.google.gwt.uibinder.client.LazyDomElement get_domId27Element() {
+      return domId27Element;
+    }
+    private com.google.gwt.uibinder.client.LazyDomElement build_domId27Element() {
+      // Creation section.
+      domId27Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId27());
+      // Setup section.
+
+
+      return domId27Element;
+    }
+
+    /**
+     * Getter for domId28 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 3.
+     */
+    private java.lang.String domId28;
+    private java.lang.String get_domId28() {
+      return domId28;
+    }
+    private java.lang.String build_domId28() {
+      // Creation section.
+      domId28 = com.google.gwt.dom.client.Document.get().createUniqueId();
+      // Setup section.
+
+
+      return domId28;
+    }
+
+    /**
+     * Getter for save called 1 times. Type: DEFAULT. Build precedence: 3.
+     */
+    private com.google.gwt.user.client.ui.Button get_save() {
+      return build_save();
+    }
+    private com.google.gwt.user.client.ui.Button build_save() {
+      // Creation section.
+      final com.google.gwt.user.client.ui.Button save = (com.google.gwt.user.client.ui.Button) GWT.create(com.google.gwt.user.client.ui.Button.class);
+      // Setup section.
+      save.setHTML(template_html1().asString());
+      save.ensureDebugId("matterActionSave");
+      save.addClickHandler(handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1);
+
+
+      return save;
+    }
+
+    /**
+     * Getter for domId28Element called 2 times. Type: DEFAULT. Build precedence: 3.
+     */
+    private com.google.gwt.uibinder.client.LazyDomElement domId28Element;
+    private com.google.gwt.uibinder.client.LazyDomElement get_domId28Element() {
+      return domId28Element;
+    }
+    private com.google.gwt.uibinder.client.LazyDomElement build_domId28Element() {
+      // Creation section.
+      domId28Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId28());
+      // Setup section.
+
+
+      return domId28Element;
+    }
+
+    /**
+     * Getter for domId29 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 3.
+     */
+    private java.lang.String domId29;
+    private java.lang.String get_domId29() {
+      return domId29;
+    }
+    private java.lang.String build_domId29() {
+      // Creation section.
+      domId29 = com.google.gwt.dom.client.Document.get().createUniqueId();
+      // Setup section.
+
+
+      return domId29;
+    }
+
+    /**
      * Getter for close called 1 times. Type: DEFAULT. Build precedence: 3.
      */
     private com.google.gwt.user.client.ui.Button get_close() {
@@ -1591,19 +1690,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for domId27Element called 2 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for domId29Element called 2 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.uibinder.client.LazyDomElement domId27Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId27Element() {
-      return domId27Element;
+    private com.google.gwt.uibinder.client.LazyDomElement domId29Element;
+    private com.google.gwt.uibinder.client.LazyDomElement get_domId29Element() {
+      return domId29Element;
     }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId27Element() {
+    private com.google.gwt.uibinder.client.LazyDomElement build_domId29Element() {
       // Creation section.
-      domId27Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId27());
+      domId29Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId29());
       // Setup section.
 
 
-      return domId27Element;
+      return domId29Element;
     }
   }
 }

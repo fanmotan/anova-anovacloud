@@ -7,6 +7,7 @@
     <ui:with field='takenDate' type='java.util.Date'/>
     <ui:with field='atty' type='java.lang.String'/>
     <ui:with field='actionRemarks' type='java.lang.String'/>
+     <ui:with field='actionStatus' type='java.lang.String'/>
 
     <ui:style>
         .listItemWrapper {
@@ -59,12 +60,12 @@
              <div class="{style.subtitle}">
                 <ui:text from="{actionRemarks}"/>
             </div>
-        </div>
-        
-        <div class="{style.floatRight}">
-            <div class="removeButton" ui:field="remove">
-                Remove
+            <div class="{style.subtitle}">
+                <ui:text from="{actionStatus}"/>
             </div>
+        </div>
+      <div class="{style.floatRight}">
+            &gt;
         </div>
 
         <div class="{style.clear}"/>

@@ -4,6 +4,10 @@ import com.google.gwt.core.client.GWT;
 import com.gwtplatform.mvp.client.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector;
 
 public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment {
+  public void memberInject_Key$type$com$anova$anovacloud$client$rest$AttorneyRoleServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.AttorneyRoleServiceImpl injectee) {
+    
+  }
+  
   public void memberInject_Key$type$com$anova$anovacloud$client$rest$AttorneyServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.AttorneyServiceImpl injectee) {
     
   }
@@ -28,6 +32,10 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     
   }
   
+  public void memberInject_Key$type$com$anova$anovacloud$client$rest$MatterActionStatusServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.MatterActionStatusServiceImpl injectee) {
+    
+  }
+  
   public void memberInject_Key$type$com$anova$anovacloud$client$rest$MattersServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.MattersServiceImpl injectee) {
     
   }
@@ -41,6 +49,18 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
   }
   
   public void memberInject_Key$type$com$anova$anovacloud$client$rest$UserServiceImpl$_annotation$$none$$(com.anova.anovacloud.client.rest.UserServiceImpl injectee) {
+    
+  }
+  
+  private com.anova.anovacloud.client.rest.AttorneyRoleService singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyRoleService$_annotation$$none$$ = null;
+  
+  public com.anova.anovacloud.client.rest.AttorneyRoleService get_Key$type$com$anova$anovacloud$client$rest$AttorneyRoleService$_annotation$$none$$() {
+    
+    if (singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyRoleService$_annotation$$none$$ == null) {
+    com.anova.anovacloud.client.rest.AttorneyRoleService result = get_Key$type$com$anova$anovacloud$client$rest$AttorneyRoleServiceImpl$_annotation$$none$$();
+        singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyRoleService$_annotation$$none$$ = result;
+    }
+    return singleton_Key$type$com$anova$anovacloud$client$rest$AttorneyRoleService$_annotation$$none$$;
     
   }
   
@@ -116,6 +136,18 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     
   }
   
+  private com.anova.anovacloud.client.rest.MatterActionStatusService singleton_Key$type$com$anova$anovacloud$client$rest$MatterActionStatusService$_annotation$$none$$ = null;
+  
+  public com.anova.anovacloud.client.rest.MatterActionStatusService get_Key$type$com$anova$anovacloud$client$rest$MatterActionStatusService$_annotation$$none$$() {
+    
+    if (singleton_Key$type$com$anova$anovacloud$client$rest$MatterActionStatusService$_annotation$$none$$ == null) {
+    com.anova.anovacloud.client.rest.MatterActionStatusService result = get_Key$type$com$anova$anovacloud$client$rest$MatterActionStatusServiceImpl$_annotation$$none$$();
+        singleton_Key$type$com$anova$anovacloud$client$rest$MatterActionStatusService$_annotation$$none$$ = result;
+    }
+    return singleton_Key$type$com$anova$anovacloud$client$rest$MatterActionStatusService$_annotation$$none$$;
+    
+  }
+  
   private com.anova.anovacloud.client.rest.MattersService singleton_Key$type$com$anova$anovacloud$client$rest$MattersService$_annotation$$none$$ = null;
   
   public com.anova.anovacloud.client.rest.MattersService get_Key$type$com$anova$anovacloud$client$rest$MattersService$_annotation$$none$$() {
@@ -162,6 +194,23 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     }
     return singleton_Key$type$com$anova$anovacloud$client$rest$UserService$_annotation$$none$$;
     
+  }
+  
+  
+  /**
+   * Binding for com.anova.anovacloud.client.rest.AttorneyRoleServiceImpl declared at:
+   *   Implicit binding for com.anova.anovacloud.client.rest.AttorneyRoleServiceImpl
+   */
+  public com.anova.anovacloud.client.rest.AttorneyRoleServiceImpl get_Key$type$com$anova$anovacloud$client$rest$AttorneyRoleServiceImpl$_annotation$$none$$() {
+    com.anova.anovacloud.client.rest.AttorneyRoleServiceImpl result = com$anova$anovacloud$client$rest$AttorneyRoleServiceImpl_com$anova$anovacloud$client$rest$AttorneyRoleServiceImpl_methodInjection(injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$java$lang$String$_annotation$$com$gwtplatform$dispatch$rest$client$DefaultDateFormat$());
+    memberInject_Key$type$com$anova$anovacloud$client$rest$AttorneyRoleServiceImpl$_annotation$$none$$(result);
+    
+    return result;
+    
+  }
+  
+  public com.anova.anovacloud.client.rest.AttorneyRoleServiceImpl com$anova$anovacloud$client$rest$AttorneyRoleServiceImpl_com$anova$anovacloud$client$rest$AttorneyRoleServiceImpl_methodInjection(java.lang.String _0) {
+    return new com.anova.anovacloud.client.rest.AttorneyRoleServiceImpl(_0);
   }
   
   
@@ -264,6 +313,23 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
   
   public com.anova.anovacloud.client.rest.MatterActionServiceImpl com$anova$anovacloud$client$rest$MatterActionServiceImpl_com$anova$anovacloud$client$rest$MatterActionServiceImpl_methodInjection(java.lang.String _0) {
     return new com.anova.anovacloud.client.rest.MatterActionServiceImpl(_0);
+  }
+  
+  
+  /**
+   * Binding for com.anova.anovacloud.client.rest.MatterActionStatusServiceImpl declared at:
+   *   Implicit binding for com.anova.anovacloud.client.rest.MatterActionStatusServiceImpl
+   */
+  public com.anova.anovacloud.client.rest.MatterActionStatusServiceImpl get_Key$type$com$anova$anovacloud$client$rest$MatterActionStatusServiceImpl$_annotation$$none$$() {
+    com.anova.anovacloud.client.rest.MatterActionStatusServiceImpl result = com$anova$anovacloud$client$rest$MatterActionStatusServiceImpl_com$anova$anovacloud$client$rest$MatterActionStatusServiceImpl_methodInjection(injector.getFragment_com_gwtplatform_mvp_client().get_Key$type$java$lang$String$_annotation$$com$gwtplatform$dispatch$rest$client$DefaultDateFormat$());
+    memberInject_Key$type$com$anova$anovacloud$client$rest$MatterActionStatusServiceImpl$_annotation$$none$$(result);
+    
+    return result;
+    
+  }
+  
+  public com.anova.anovacloud.client.rest.MatterActionStatusServiceImpl com$anova$anovacloud$client$rest$MatterActionStatusServiceImpl_com$anova$anovacloud$client$rest$MatterActionStatusServiceImpl_methodInjection(java.lang.String _0) {
+    return new com.anova.anovacloud.client.rest.MatterActionStatusServiceImpl(_0);
   }
   
   

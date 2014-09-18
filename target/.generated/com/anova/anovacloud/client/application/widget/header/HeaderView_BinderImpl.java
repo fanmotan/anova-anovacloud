@@ -257,6 +257,21 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
+     * Getter for MATTERACTIONSTATUS called 0 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_MATTERACTIONSTATUS() {
+      return build_MATTERACTIONSTATUS();
+    }
+    private java.lang.String build_MATTERACTIONSTATUS() {
+      // Creation section.
+      final java.lang.String MATTERACTIONSTATUS = com.anova.anovacloud.client.place.NameTokens.MATTERACTIONSTATUS;
+      // Setup section.
+
+
+      return MATTERACTIONSTATUS;
+    }
+
+    /**
      * Getter for DETAIL_MATTERACTION called 0 times. Type: DEFAULT. Build precedence: 1.
      */
     private java.lang.String get_DETAIL_MATTERACTION() {
@@ -344,6 +359,21 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
 
 
       return DETAIL_ATTORNEY;
+    }
+
+    /**
+     * Getter for ATTORNEYROLE called 0 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_ATTORNEYROLE() {
+      return build_ATTORNEYROLE();
+    }
+    private java.lang.String build_ATTORNEYROLE() {
+      // Creation section.
+      final java.lang.String ATTORNEYROLE = com.anova.anovacloud.client.place.NameTokens.ATTORNEYROLE;
+      // Setup section.
+
+
+      return ATTORNEYROLE;
     }
 
     /**

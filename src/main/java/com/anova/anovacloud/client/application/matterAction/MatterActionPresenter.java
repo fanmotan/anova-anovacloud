@@ -18,6 +18,7 @@ import com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionP
 import com.anova.anovacloud.client.place.NameTokens;
 import com.anova.anovacloud.client.rest.MatterActionService;
 import com.anova.anovacloud.client.util.AbstractAsyncCallback;
+import com.anova.anovacloud.shared.dto.CustomerDto;
 import com.anova.anovacloud.shared.dto.MatterActionDto;
 import com.gwtplatform.dispatch.rest.shared.RestDispatch;
 import com.gwtplatform.mvp.client.HasUiHandlers;
@@ -36,9 +37,10 @@ public class MatterActionPresenter extends Presenter<MatterActionPresenter.MyVie
     interface MyView extends View, HasUiHandlers<MatterActionUiHandlers> {
         void displayMatterActions(List<MatterActionDto> results);
 
-        void removeMatterAction(MatterActionDto matterActionDto);
+   //     void removeMatterAction(MatterActionDto matterActionDto);
 
         void addMatterAction(MatterActionDto matterActionDto);
+        void replaceMatterAction(MatterActionDto oldMatterAction, MatterActionDto newMatterAction);
     }
 
     @ProxyCodeSplit
@@ -50,6 +52,7 @@ public class MatterActionPresenter extends Presenter<MatterActionPresenter.MyVie
     private final EditMatterActionPresenter editMatterActionPresenter;
     private final MatterActionService matterActionService;
     private final PlaceManager placeManager;
+    private MatterActionDto editingMatterAction;
 
     @Inject
     MatterActionPresenter(EventBus eventBus,
@@ -78,9 +81,17 @@ public class MatterActionPresenter extends Presenter<MatterActionPresenter.MyVie
 
     @Override
     public void onCreate() {
+    	editingMatterAction = null;
         editMatterActionPresenter.createNew();
     }
-
+    
+    @Override
+    public void onEdit(MatterActionDto matterActionDto) {
+        editingMatterAction = matterActionDto;
+        editMatterActionPresenter.onEdit(matterActionDto);
+    }
+    
+/*
     @Override
     public void onDelete(final MatterActionDto matterActionDto) {
         dispatcher.execute(matterActionService.delete(matterActionDto.getId()), new AbstractAsyncCallback<Void>() {
@@ -90,11 +101,18 @@ public class MatterActionPresenter extends Presenter<MatterActionPresenter.MyVie
             }
         });
     }
-
+*/
     @ProxyEvent
     @Override
     public void onMatterActionAdded(MatterActionAddedEvent event) {
-        getView().addMatterAction(event.getMatterAction());
+    	if (editingMatterAction != null) {
+            getView().replaceMatterAction(editingMatterAction, event.getMatterAction());
+        } else {
+        	 getView().addMatterAction(event.getMatterAction());
+        }
+
+        editingMatterAction = event.getMatterAction();
+        
     }
 
     @Override

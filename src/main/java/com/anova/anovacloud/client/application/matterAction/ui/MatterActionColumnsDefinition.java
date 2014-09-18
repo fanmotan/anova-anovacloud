@@ -42,4 +42,5 @@ public interface MatterActionColumnsDefinition extends ColumnInitializer<MatterA
     @Column(cellType = TextCell.class, cellReturnType = String.class, headerName = "Action Remarks")
     public String getActionRemarks();
     
+    
 }

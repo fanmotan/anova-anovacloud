@@ -13,6 +13,7 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.view.client.ListDataProvider;
 import com.google.gwt.view.client.SingleSelectionModel;
+import com.anova.anovacloud.client.application.matterAction.renderer.MatterActionCell;
 import com.anova.anovacloud.client.application.matterAction.renderer.MatterActionCellFactory;
 import com.anova.anovacloud.client.resources.MobileDataListStyle;
 import com.anova.anovacloud.shared.dto.MatterActionDto;
@@ -30,9 +31,9 @@ public class MatterActionMobileView extends ViewWithUiHandlers<MatterActionUiHan
 
     @Inject
     MatterActionMobileView(Binder uiBinder,
-                     MatterActionCellFactory matterActionCellFactory,
+                     MatterActionCell matterActionCell,
                      MobileDataListStyle mobileDataListStyle) {
-        matterActionList = new CellList<>(matterActionCellFactory.create(setupRemoveAction()), mobileDataListStyle);
+        matterActionList = new CellList<>(matterActionCell, mobileDataListStyle);
 
         initWidget(uiBinder.createAndBindUi(this));
 
@@ -54,7 +55,7 @@ public class MatterActionMobileView extends ViewWithUiHandlers<MatterActionUiHan
     public void addMatterAction(MatterActionDto matterActionDto) {
         matterActionDataProvider.getList().add(matterActionDto);
     }
-
+/*
     @Override
     public void removeMatterAction(MatterActionDto matterActionDto) {
         matterActionDataProvider.getList().remove(matterActionDto);
@@ -70,5 +71,15 @@ public class MatterActionMobileView extends ViewWithUiHandlers<MatterActionUiHan
                 }
             }
         };
+    }
+    */
+    
+    @Override
+    public void replaceMatterAction(MatterActionDto oldMatterAction, MatterActionDto newMatterAction) {
+        List<MatterActionDto> matterActionDtos = matterActionDataProvider.getList();
+        int index = matterActionDtos.indexOf(oldMatterAction);
+
+        matterActionDtos.add(index, newMatterAction);
+        matterActionDtos.remove(index + 1);
     }
 }

@@ -13,7 +13,7 @@ import com.anova.anovacloud.shared.dto.MatterActionDto;
 public class MatterActionCell extends AbstractCell<MatterActionDto> {
     interface Renderer extends UiRenderer {
         void render(SafeHtmlBuilder sb, String name, Date dueDate, String actionDue, Date ptoMailDate, Date responseDate, Date takenDate,
-        			String atty, String actionRemarks);
+        			String atty, String actionRemarks, String actionStatus);
 
   
     }
@@ -32,7 +32,7 @@ public class MatterActionCell extends AbstractCell<MatterActionDto> {
     @Override
     public void render(Context context, MatterActionDto value, SafeHtmlBuilder safeHtmlBuilder) {
         uiRenderer.render(safeHtmlBuilder, value.getMatter().getCaseNum(), value.getDueDate(), value.getActionDue(), value.getPtoMailDate(), value.getResponseDate(), 
-        		value.getTakenDate(), value.getAtty(), value.getActionRemarks());
+        		value.getTakenDate(), value.getAtty(), value.getActionRemarks(), value.getActionStatus().getStatusName());
     }
     
  

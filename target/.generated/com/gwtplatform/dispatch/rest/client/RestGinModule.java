@@ -8,6 +8,8 @@ import com.gwtplatform.dispatch.rest.client.ActionMetadataProviderImpl;
 import com.gwtplatform.dispatch.rest.client.serialization.JacksonMapperProvider;
 import com.gwtplatform.dispatch.rest.client.serialization.JacksonMapperProviderImpl;
 
+import com.anova.anovacloud.client.rest.AttorneyRoleService;
+import com.anova.anovacloud.client.rest.AttorneyRoleServiceImpl;
 import com.anova.anovacloud.client.rest.AttorneyService;
 import com.anova.anovacloud.client.rest.AttorneyServiceImpl;
 import com.anova.anovacloud.client.rest.AttorneyStatusService;
@@ -20,6 +22,8 @@ import com.anova.anovacloud.client.rest.CustomerStatusService;
 import com.anova.anovacloud.client.rest.CustomerStatusServiceImpl;
 import com.anova.anovacloud.client.rest.MatterActionService;
 import com.anova.anovacloud.client.rest.MatterActionServiceImpl;
+import com.anova.anovacloud.client.rest.MatterActionStatusService;
+import com.anova.anovacloud.client.rest.MatterActionStatusServiceImpl;
 import com.anova.anovacloud.client.rest.MattersService;
 import com.anova.anovacloud.client.rest.MattersServiceImpl;
 import com.anova.anovacloud.client.rest.SessionService;
@@ -35,12 +39,14 @@ public class RestGinModule extends AbstractGinModule {
         bind(ActionMetadataProvider.class).to(ActionMetadataProviderImpl.class);
         bind(JacksonMapperProvider.class).to(JacksonMapperProviderImpl.class).in(Singleton.class);
 
+        bind(AttorneyRoleService.class).to(AttorneyRoleServiceImpl.class).in(Singleton.class);
         bind(AttorneyService.class).to(AttorneyServiceImpl.class).in(Singleton.class);
         bind(AttorneyStatusService.class).to(AttorneyStatusServiceImpl.class).in(Singleton.class);
         bind(CaseStatusService.class).to(CaseStatusServiceImpl.class).in(Singleton.class);
         bind(CustomerService.class).to(CustomerServiceImpl.class).in(Singleton.class);
         bind(CustomerStatusService.class).to(CustomerStatusServiceImpl.class).in(Singleton.class);
         bind(MatterActionService.class).to(MatterActionServiceImpl.class).in(Singleton.class);
+        bind(MatterActionStatusService.class).to(MatterActionStatusServiceImpl.class).in(Singleton.class);
         bind(MattersService.class).to(MattersServiceImpl.class).in(Singleton.class);
         bind(SessionService.class).to(SessionServiceImpl.class).in(Singleton.class);
         bind(UserRoleService.class).to(UserRoleServiceImpl.class).in(Singleton.class);

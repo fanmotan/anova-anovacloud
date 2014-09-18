@@ -8,6 +8,7 @@ public interface EditMatterActionUiHandlers extends UiHandlers {
     void createNew();
 
     void onSave(MatterActionDto matterActionDto);
+    void onEdit(MatterActionDto matterActionDto);
 
     void onCancel();
 }

@@ -126,10 +126,10 @@ public class DevBootStrapper {
 
 
     private void createMockData() {
-    	AttorneyRoleDto cltatty = new AttorneyRoleDto("client atty");
-    	AttorneyRoleDto mtratty = new AttorneyRoleDto("matter review atty");
-    	AttorneyRoleDto wrkatty = new AttorneyRoleDto("working atty");
-    	AttorneyRoleDto sptatty = new AttorneyRoleDto("supporting atty");
+    	AttorneyRoleDto cltatty = new AttorneyRoleDto("1", "client atty");
+    	AttorneyRoleDto mtratty = new AttorneyRoleDto("2", "matter review atty");
+    	AttorneyRoleDto wrkatty = new AttorneyRoleDto("3", "working atty");
+    	AttorneyRoleDto sptatty = new AttorneyRoleDto("4", "supporting atty");
 
     	cltatty = AttorneyRole.createDto(attorneyRoleDao.put(AttorneyRole.create(cltatty)));
     	mtratty = AttorneyRole.createDto(attorneyRoleDao.put(AttorneyRole.create(mtratty)));
@@ -163,13 +163,11 @@ public class DevBootStrapper {
     	
     	
     	
-    	MatterActionStatusDto mstatus1 = new MatterActionStatusDto("open");
-    	MatterActionStatusDto mstatus2 = new MatterActionStatusDto("in process");
-    	MatterActionStatusDto mstatus3 = new MatterActionStatusDto("completed");
+    	MatterActionStatusDto mstatus1 = new MatterActionStatusDto("1", "open");
+    	MatterActionStatusDto mstatus2 = new MatterActionStatusDto("2", "closed");
     	
     	mstatus1 = MatterActionStatus.createDto(matterActionStatusDao.put(MatterActionStatus.create(mstatus1)));
     	mstatus2 = MatterActionStatus.createDto(matterActionStatusDao.put(MatterActionStatus.create(mstatus2)));
-    	mstatus3 = MatterActionStatus.createDto(matterActionStatusDao.put(MatterActionStatus.create(mstatus3)));
     	
         long customerCount = customerDao.countAll();
 

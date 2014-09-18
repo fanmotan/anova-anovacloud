@@ -22,12 +22,6 @@ public class MatterAction extends BaseEntity {
     private Date ptoMailDate;
     private Date responseDate;
     private Date takenDate;
-    private String assignee1;
-    private String assignee1Role;
-    private String assignee2;
-    private String assignee2Role;
-    private String assignee3;
-    private String assignee3Role;
     private String actionRemarks;
     private String createBy;
     private Date createDate;
@@ -36,7 +30,21 @@ public class MatterAction extends BaseEntity {
 
     @Load
     private Ref<Matter> matter;
-
+    @Load
+    private Ref<Attorney> assignee1;
+    @Load
+    private Ref<Attorney> assignee2;
+    @Load
+    private Ref<Attorney> assignee3;
+    @Load
+    private Ref<AttorneyRole> assignee1Role;
+    @Load
+    private Ref<AttorneyRole> assignee2Role;
+    @Load
+    private Ref<AttorneyRole> assignee3Role;
+    @Load
+    private Ref<MatterActionStatus> actionStatus;
+    
     public MatterAction() {
     }
 
@@ -45,7 +53,12 @@ public class MatterAction extends BaseEntity {
     }
 
     public void setMatter(Matter matter) {
-        this.matter = Ref.create(matter);
+    	if(matter != null){
+    		this.matter = Ref.create(matter);
+    	}else {
+    		this.matter = null;
+    	}
+    	
     }
 
     
@@ -87,50 +100,92 @@ public class MatterAction extends BaseEntity {
         this.takenDate = takenDate;
     }
     
-    public String getAssignee1() {
-        return assignee1;
-    }
-
-    public void setAssignee1(String assignee1) {
-        this.assignee1 = assignee1;
-    }
-    public String getAssignee1Role() {
-        return assignee1Role;
-    }
-
-    public void setAssignee1Role(String assignee1Role) {
-        this.assignee1Role = assignee1Role;
-    }
-    public String getAssignee2() {
-        return assignee2;
-    }
-
-    public void setAssignee2(String assignee2) {
-        this.assignee2 = assignee2;
-    }
-    public String getAssignee2Role() {
-        return assignee2Role;
-    }
-
-    public void setAssignee2Role(String assignee2Role) {
-        this.assignee2Role = assignee2Role;
-    }
-    public String getAssignee3() {
-        return assignee3;
-    }
-
-    public void setAssignee3(String assignee3) {
-        this.assignee3 = assignee3;
-    }
-    public String getAssignee3Role() {
-        return assignee3Role;
-    }
-
-    public void setAssignee3Role(String assignee3Role) {
-        this.assignee3Role = assignee3Role;
-    }
     
-    public String getActionRemarks() {
+    public Attorney getAssignee1() {
+		return Deref.deref(assignee1);
+	}
+
+	public void setAssignee1(Attorney assignee1) {
+		if (assignee1 != null) {
+            this.assignee1 = Ref.create(assignee1);
+        } else {
+            this.assignee1 = null;
+        }
+	}
+
+	public Attorney getAssignee2() {
+		return Deref.deref(assignee2);
+	}
+
+	public void setAssignee2(Attorney assignee2) {
+		if (assignee2 != null) {
+            this.assignee2 = Ref.create(assignee2);
+        } else {
+            this.assignee2 = null;
+        }
+	}
+
+	public Attorney getAssignee3() {
+		return Deref.deref(assignee3);
+	}
+
+	public void setAssignee3(Attorney assignee3) {
+		if (assignee3 != null) {
+            this.assignee3 = Ref.create(assignee3);
+        } else {
+            this.assignee3 = null;
+        }
+	}
+
+	public AttorneyRole getAssignee1Role() {
+		return Deref.deref(assignee1Role);
+	}
+
+	public void setAssignee1Role(AttorneyRole assignee1Role) {
+		if (assignee1Role != null) {
+            this.assignee1Role = Ref.create(assignee1Role);
+        } else {
+            this.assignee1Role = null;
+        }
+	}
+
+	public AttorneyRole getAssignee2Role() {
+		return Deref.deref(assignee2Role);
+	}
+
+	public void setAssignee2Role(AttorneyRole assignee2Role) {
+		if (assignee2Role != null) {
+            this.assignee2Role = Ref.create(assignee2Role);
+        } else {
+            this.assignee2Role = null;
+        }
+	}
+
+	public AttorneyRole getAssignee3Role() {
+		return Deref.deref(assignee3Role);
+	}
+
+	public void setAssignee3Role(AttorneyRole assignee3Role) {
+		if (assignee3Role != null) {
+            this.assignee3Role = Ref.create(assignee3Role);
+        } else {
+            this.assignee3Role = null;
+        }
+	}
+
+	public MatterActionStatus getActionStatus() {
+		return Deref.deref(actionStatus);
+	}
+
+	public void setActionStatus(MatterActionStatus actionStatus) {
+		if (actionStatus != null) {
+            this.actionStatus = Ref.create(actionStatus);
+        } else {
+            this.actionStatus = null;
+        }
+	}
+
+	public String getActionRemarks() {
         return actionRemarks;
     }
 
@@ -195,18 +250,19 @@ public class MatterAction extends BaseEntity {
         actionDto.setPtoMailDate(action.getPtoMailDate());
         actionDto.setResponseDate(action.getResponseDate());
         actionDto.setTakenDate(action.getTakenDate());
-        actionDto.setAssignee1(action.getAssignee1());
-        actionDto.setAssignee1Role(action.getAssignee1Role());
-        actionDto.setAssignee2(action.getAssignee2());
-        actionDto.setAssignee2Role(action.getAssignee2Role());
-        actionDto.setAssignee3(action.getAssignee3());
-        actionDto.setAssignee3Role(action.getAssignee3Role());
+        actionDto.setAssignee1(Attorney.createDto(action.getAssignee1()));
+        actionDto.setAssignee1Role(AttorneyRole.createDto(action.getAssignee1Role()));
+        actionDto.setAssignee2(Attorney.createDto(action.getAssignee1()));
+        actionDto.setAssignee2Role(AttorneyRole.createDto(action.getAssignee2Role()));
+        actionDto.setAssignee3(Attorney.createDto(action.getAssignee1()));
+        actionDto.setAssignee3Role(AttorneyRole.createDto(action.getAssignee1Role()));
         actionDto.setActionRemarks(action.getActionRemarks());
         actionDto.setCreateBy(action.getCreateBy());
         actionDto.setCreateDate(action.getCreateDate());
         actionDto.setUpdateBy(action.getUpdateBy());
         actionDto.setUpdateDate(action.getUpdateDate());
-
+        actionDto.setActionStatus(MatterActionStatus.createDto(action.getActionStatus()));
+        
         return actionDto;
     }
 
@@ -223,18 +279,18 @@ public class MatterAction extends BaseEntity {
         action.setPtoMailDate(actionDto.getPtoMailDate());
         action.setResponseDate(actionDto.getResponseDate());
         action.setTakenDate(actionDto.getTakenDate());
-        action.setAssignee1(actionDto.getAssignee1());
-        action.setAssignee1Role(actionDto.getAssignee1Role());
-        action.setAssignee2(actionDto.getAssignee2());
-        action.setAssignee2Role(actionDto.getAssignee2Role());
-        action.setAssignee3(actionDto.getAssignee3());
-        action.setAssignee3Role(actionDto.getAssignee3Role());
+        action.setAssignee1(Attorney.create(actionDto.getAssignee1()));
+        action.setAssignee1Role(AttorneyRole.create(actionDto.getAssignee1Role()));
+        action.setAssignee2(Attorney.create(actionDto.getAssignee2()));
+        action.setAssignee2Role(AttorneyRole.create(actionDto.getAssignee2Role()));
+        action.setAssignee3(Attorney.create(actionDto.getAssignee3()));
+        action.setAssignee3Role(AttorneyRole.create(actionDto.getAssignee3Role()));
         action.setActionRemarks(actionDto.getActionRemarks());
         action.setCreateBy(actionDto.getCreateBy());
         action.setCreateDate(actionDto.getCreateDate());
         action.setUpdateBy(actionDto.getUpdateBy());
         action.setUpdateDate(actionDto.getUpdateDate());
-
+        action.setActionStatus(MatterActionStatus.create(actionDto.getActionStatus()));
         return action;
     }
 }

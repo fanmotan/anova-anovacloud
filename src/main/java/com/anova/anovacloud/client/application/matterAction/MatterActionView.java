@@ -8,6 +8,7 @@ import javax.inject.Inject;
 
 import com.google.gwt.cell.client.ActionCell;
 import com.google.gwt.cell.client.Cell;
+import com.google.gwt.cell.client.ActionCell.Delegate;
 import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -59,12 +60,21 @@ public class MatterActionView extends ViewWithUiHandlers<MatterActionUiHandlers>
     public void addMatterAction(MatterActionDto matterActionDto) {
         matterActionDataProvider.getList().add(matterActionDto);
     }
-
+/*
     @Override
     public void removeMatterAction(MatterActionDto matterActionDto) {
         matterActionDataProvider.getList().remove(matterActionDto);
     }
+*/
+    
+    @Override
+    public void replaceMatterAction(MatterActionDto oldMatterAction, MatterActionDto newMatterAction) {
+        List<MatterActionDto> matterActionDtos = matterActionDataProvider.getList();
+        int index = matterActionDtos.indexOf(oldMatterAction);
 
+        matterActionDtos.add(index, newMatterAction);
+        matterActionDtos.remove(index + 1);
+    }
     @UiHandler("create")
     void onCreateClicked(ClickEvent event) {
         getUiHandlers().onCreate();
@@ -79,6 +89,13 @@ public class MatterActionView extends ViewWithUiHandlers<MatterActionUiHandlers>
     }
 
     private void initActionColumns() {
+    	 Cell<MatterActionDto> editCell = new ActionCell<>("Edit", new Delegate<MatterActionDto>() {
+             @Override
+             public void execute(MatterActionDto matterActionDto) {
+                 getUiHandlers().onEdit(matterActionDto);
+             }
+         });
+    	/*
         Cell<MatterActionDto> deleteCell = new ActionCell<>("Delete", new ActionCell.Delegate<MatterActionDto>() {
             @Override
             public void execute(MatterActionDto matterActionDto) {
@@ -89,9 +106,11 @@ public class MatterActionView extends ViewWithUiHandlers<MatterActionUiHandlers>
                 }
             }
         });
+*/
 
-        IdentityColumn<MatterActionDto> deleteColumn = new IdentityColumn<>(deleteCell);
-        matterActionGrid.addColumn(deleteColumn, "Delete");
-        matterActionGrid.setColumnWidth(deleteColumn, 75, Style.Unit.PX);
+        IdentityColumn<MatterActionDto> editColumn = new IdentityColumn<>(editCell);
+        matterActionGrid.addColumn(editColumn, "Edit");
+        matterActionGrid.setColumnWidth(editColumn, 75, Style.Unit.PX);
+        
     }
 }

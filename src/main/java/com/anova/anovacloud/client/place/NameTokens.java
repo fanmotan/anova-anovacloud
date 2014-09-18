@@ -14,12 +14,14 @@ public class NameTokens {
     public static final String REPORT = "report";
     public static final String NEW_MATTER = "newMatter";
     public static final String MATTERACTION = "matterAction";
+    public static final String MATTERACTIONSTATUS = "matterActionStatus";
     public static final String DETAIL_MATTERACTION = "detailMatterAction";
     public static final String USER = "user";
     public static final String USERROLE = "userRole";
     public static final String DETAIL_USER = "detailUser";
     public static final String ATTORNEY = "attorney";
     public static final String DETAIL_ATTORNEY = "detailAttorney";
+    public static final String ATTORNEYROLE = "attorneyRole";
    
     public static String getOnLoginDefaultPage() {
         return REPORT;
@@ -69,7 +71,10 @@ public class NameTokens {
     public static String getAttorneyStatus() {
         return ATTORNEYSTATUS;
     }
-    
+    public static String getMatterActionStatus() {
+        return MATTERACTIONSTATUS;
+    }
+
 
     public static String getDetailUser() {
         return DETAIL_USER;
@@ -82,5 +87,10 @@ public class NameTokens {
     public static String getDetailAttorney() {
         return DETAIL_ATTORNEY;
     }
+    
+    public static String getAttorneyRole() {
+        return ATTORNEYROLE;
+    }
+
  
 }
