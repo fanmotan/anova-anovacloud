@@ -28,8 +28,6 @@ public class UserDetailView extends ViewWithUiHandlers<UserDetailUiHandlers>
     }
 
     @UiField
-    TextBox displayName;
-    @UiField
     TextBox firstName;
     @UiField
     TextBox lastName;
@@ -53,7 +51,6 @@ public class UserDetailView extends ViewWithUiHandlers<UserDetailUiHandlers>
         userRole = new ValueListBox<>(new UserRoleRenderer());
         driver.initialize(this);
 
-        displayName.getElement().setAttribute("placeholder", "Display Name");
         firstName.getElement().setAttribute("placeholder", "First Name");
         lastName.getElement().setAttribute("placeholder", "Last Name");
         username.getElement().setAttribute("placeholder", "Username");
@@ -68,7 +65,7 @@ public class UserDetailView extends ViewWithUiHandlers<UserDetailUiHandlers>
     	if (userDto.getUserRole() == null) {
             userDto.setUserRole(userRole.getValue());
         }
-        displayName.setFocus(true);
+        firstName.setFocus(true);
         driver.edit(userDto);
     }
     

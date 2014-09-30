@@ -1,7 +1,7 @@
-
-
 package com.anova.anovacloud.client.application.customer.ui;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -19,9 +19,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.web.bindery.event.shared.EventBus;
 import com.anova.anovacloud.client.application.customer.ui.EditCustomerPresenter.MyView;
 import com.anova.anovacloud.client.application.customerStatus.ui.CustomerStatusRenderer;
-import com.anova.anovacloud.client.application.event.DisplayMessageEvent;
-import com.anova.anovacloud.client.application.widget.message.Message;
-import com.anova.anovacloud.client.application.widget.message.MessageStyle;
+import com.anova.anovacloud.shared.dto.AttorneyStatusDto;
 import com.anova.anovacloud.shared.dto.CustomerDto;
 import com.anova.anovacloud.shared.dto.CustomerStatusDto;
 import com.gwtplatform.mvp.client.PopupViewWithUiHandlers;
@@ -77,6 +75,11 @@ public class EditCustomerView extends PopupViewWithUiHandlers<EditCustomerUiHand
     
     @Override
     public void setAllowedCustomerStatuss(List<CustomerStatusDto> customerStatusDtos) {
+    	Collections.sort(customerStatusDtos, new Comparator<CustomerStatusDto>() {
+		    public int compare(CustomerStatusDto c1, CustomerStatusDto c2) {
+		        return c1.getStatusValue().compareTo(c2.getStatusValue());
+		    }
+		});
         customerStatus.setValue(customerStatusDtos.isEmpty() ? null : customerStatusDtos.get(0));
         customerStatus.setAcceptableValues(customerStatusDtos);
         

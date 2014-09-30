@@ -22,8 +22,8 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
     @Template("Close")
     SafeHtml html2();
      
-    @Template("<div> <span id='{0}'></span> </div> <br> <table width='100%'> <tr> <td width='25%'> <div class='{1}'> <span id='{2}'></span> </div> </td> <td width='75%'> <div class='{3}'> <span id='{4}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{5}'> <span id='{6}'></span> </div> </td> <td width='75%'> <div class='{7}'> <span id='{8}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{9}'> <span id='{10}'></span> </div> </td> <td width='75%'> <div class='{11}'> <span id='{12}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{13}'> <span id='{14}'></span> </div> </td> <td width='75%'> <div class='{15}'> <span id='{16}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{17}'> <span id='{18}'></span> </div> </td> <td width='75%'> <div class='{19}'> <span id='{20}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{21}'> <span id='{22}'></span> </div> </td> <td width='75%'> <div class='{23}'> <span id='{24}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{25}'> <span id='{26}'></span> </div> </td> <td width='75%'> <div class='{27}'> <span id='{28}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{29}'> <span id='{30}'></span> </div> </td> <td width='75%'> <div class='{31}'> <span id='{32}'></span>  </div> </td> </tr> </table> <div class='{33}'> <span id='{34}'></span> <span id='{35}'></span> </div>")
-    SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16, String arg17, String arg18, String arg19, String arg20, String arg21, String arg22, String arg23, String arg24, String arg25, String arg26, String arg27, String arg28, String arg29, String arg30, String arg31, String arg32, String arg33, String arg34, String arg35);
+    @Template("<div> <span id='{0}'></span> </div> <br> <table width='100%'> <tr> <td width='25%'> <div class='{1}'> <span id='{2}'></span> </div> </td> <td width='75%'> <div class='{3}'> <span id='{4}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{5}'> <span id='{6}'></span> </div> </td> <td width='75%'> <div class='{7}'> <span id='{8}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{9}'> <span id='{10}'></span> </div> </td> <td width='75%'> <div class='{11}'> <span id='{12}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{13}'> <span id='{14}'></span> </div> </td> <td width='75%'> <div class='{15}'> <span id='{16}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{17}'> <span id='{18}'></span> </div> </td> <td width='75%'> <div class='{19}'> <span id='{20}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{21}'> <span id='{22}'></span> </div> </td> <td width='75%'> <div class='{23}'> <span id='{24}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{25}'> <span id='{26}'></span> </div> </td> <td width='75%'> <div class='{27}'> <span id='{28}'></span>  </div> </td> </tr> </table> <div class='{29}'> <span id='{30}'></span> <span id='{31}'></span> </div>")
+    SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16, String arg17, String arg18, String arg19, String arg20, String arg21, String arg22, String arg23, String arg24, String arg25, String arg26, String arg27, String arg28, String arg29, String arg30, String arg31);
      
   }
 
@@ -75,8 +75,6 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
       build_domId14();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId15();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId16();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
-      build_domId17();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
-      build_domId18();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId0Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId1Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId2Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
@@ -94,8 +92,6 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
       build_domId14Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId15Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId16Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
-      build_domId17Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
-      build_domId18Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
     }
 
     SafeHtml template_html1() {
@@ -105,7 +101,7 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
       return template.html2();
     }
     SafeHtml template_html3() {
-      return template.html3(get_domId0(), "" + get_style().formRow() + "", get_domId1(), "" + get_style().formRow() + "", get_domId2(), "" + get_style().formRow() + "", get_domId3(), "" + get_style().formRow() + "", get_domId4(), "" + get_style().formRow() + "", get_domId5(), "" + get_style().formRow() + "", get_domId6(), "" + get_style().formRow() + "", get_domId7(), "" + get_style().formRow() + "", get_domId8(), "" + get_style().formRow() + "", get_domId9(), "" + get_style().formRow() + "", get_domId10(), "" + get_style().formRow() + "", get_domId11(), "" + get_style().formRow() + "", get_domId12(), "" + get_style().formRow() + "", get_domId13(), "" + get_style().formRow() + "", get_domId14(), "" + get_style().formRow() + "", get_domId15(), "" + get_style().formRow() + "", get_domId16(), "" + get_style().formRow() + "", get_domId17(), get_domId18());
+      return template.html3(get_domId0(), "" + get_style().formRow() + "", get_domId1(), "" + get_style().formRow() + "", get_domId2(), "" + get_style().formRow() + "", get_domId3(), "" + get_style().formRow() + "", get_domId4(), "" + get_style().formRow() + "", get_domId5(), "" + get_style().formRow() + "", get_domId6(), "" + get_style().formRow() + "", get_domId7(), "" + get_style().formRow() + "", get_domId8(), "" + get_style().formRow() + "", get_domId9(), "" + get_style().formRow() + "", get_domId10(), "" + get_style().formRow() + "", get_domId11(), "" + get_style().formRow() + "", get_domId12(), "" + get_style().formRow() + "", get_domId13(), "" + get_style().formRow() + "", get_domId14(), "" + get_style().formRow() + "", get_domId15(), get_domId16());
     }
 
     /**
@@ -124,7 +120,7 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for style called 17 times. Type: GENERATED_CSS. Build precedence: 1.
+     * Getter for style called 15 times. Type: GENERATED_CSS. Build precedence: 1.
      */
     private com.anova.anovacloud.client.application.attorney.ui.EditAttorneyView_BinderImpl_GenCss_style style;
     private com.anova.anovacloud.client.application.attorney.ui.EditAttorneyView_BinderImpl_GenCss_style get_style() {
@@ -190,30 +186,26 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
       get_domId14Element().get();
       get_domId15Element().get();
       get_domId16Element().get();
-      get_domId17Element().get();
-      get_domId18Element().get();
 
       // Detach section.
       attachRecord20.detach();
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel3(), get_domId0Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel4(), get_domId1Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_displayName(), get_domId2Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_firstName(), get_domId2Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel5(), get_domId3Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_firstName(), get_domId4Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_lastName(), get_domId4Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel6(), get_domId5Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_lastName(), get_domId6Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_email(), get_domId6Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel7(), get_domId7Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_email(), get_domId8Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_mailAddress(), get_domId8Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel8(), get_domId9Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_mailAddress(), get_domId10Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_phone(), get_domId10Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel9(), get_domId11Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_phone(), get_domId12Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_fax(), get_domId12Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel10(), get_domId13Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_fax(), get_domId14Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel11(), get_domId15Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_attorneyStatus(), get_domId16Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_save(), get_domId17Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_close(), get_domId18Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_attorneyStatus(), get_domId14Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_save(), get_domId15Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_close(), get_domId16Element().get());
 
       return f_HTMLPanel2;
     }
@@ -292,7 +284,7 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel4 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel4.setText("Display Name:");
+      f_InlineLabel4.setText("First Name:");
 
 
       return f_InlineLabel4;
@@ -331,21 +323,21 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for displayName called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for firstName called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_displayName() {
-      return build_displayName();
+    private com.google.gwt.user.client.ui.TextBox get_firstName() {
+      return build_firstName();
     }
-    private com.google.gwt.user.client.ui.TextBox build_displayName() {
+    private com.google.gwt.user.client.ui.TextBox build_firstName() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox displayName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox firstName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      displayName.ensureDebugId("attorney-input");
+      firstName.ensureDebugId("attorney-input");
 
 
-      this.owner.displayName = displayName;
+      this.owner.firstName = firstName;
 
-      return displayName;
+      return firstName;
     }
 
     /**
@@ -390,7 +382,7 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel5 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel5.setText("First Name:");
+      f_InlineLabel5.setText("Last Name:");
 
 
       return f_InlineLabel5;
@@ -429,21 +421,21 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for firstName called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for lastName called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_firstName() {
-      return build_firstName();
+    private com.google.gwt.user.client.ui.TextBox get_lastName() {
+      return build_lastName();
     }
-    private com.google.gwt.user.client.ui.TextBox build_firstName() {
+    private com.google.gwt.user.client.ui.TextBox build_lastName() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox firstName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox lastName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      firstName.ensureDebugId("attorney-input");
+      lastName.ensureDebugId("attorney-input");
 
 
-      this.owner.firstName = firstName;
+      this.owner.lastName = lastName;
 
-      return firstName;
+      return lastName;
     }
 
     /**
@@ -488,7 +480,7 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel6 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel6.setText("Last Name:");
+      f_InlineLabel6.setText("Email:");
 
 
       return f_InlineLabel6;
@@ -527,21 +519,21 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for lastName called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for email called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_lastName() {
-      return build_lastName();
+    private com.google.gwt.user.client.ui.TextBox get_email() {
+      return build_email();
     }
-    private com.google.gwt.user.client.ui.TextBox build_lastName() {
+    private com.google.gwt.user.client.ui.TextBox build_email() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox lastName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox email = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      lastName.ensureDebugId("attorney-input");
+      email.ensureDebugId("attorney-input");
 
 
-      this.owner.lastName = lastName;
+      this.owner.email = email;
 
-      return lastName;
+      return email;
     }
 
     /**
@@ -586,7 +578,7 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel7 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel7.setText("Email:");
+      f_InlineLabel7.setText("Mailing Address:");
 
 
       return f_InlineLabel7;
@@ -625,21 +617,21 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for email called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for mailAddress called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_email() {
-      return build_email();
+    private com.google.gwt.user.client.ui.TextArea get_mailAddress() {
+      return build_mailAddress();
     }
-    private com.google.gwt.user.client.ui.TextBox build_email() {
+    private com.google.gwt.user.client.ui.TextArea build_mailAddress() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox email = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextArea mailAddress = (com.google.gwt.user.client.ui.TextArea) GWT.create(com.google.gwt.user.client.ui.TextArea.class);
       // Setup section.
-      email.ensureDebugId("attorney-input");
+      mailAddress.ensureDebugId("attorney-input");
 
 
-      this.owner.email = email;
+      this.owner.mailAddress = mailAddress;
 
-      return email;
+      return mailAddress;
     }
 
     /**
@@ -684,7 +676,7 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel8 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel8.setText("Mailing Address:");
+      f_InlineLabel8.setText("Phone:");
 
 
       return f_InlineLabel8;
@@ -723,21 +715,21 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for mailAddress called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for phone called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextArea get_mailAddress() {
-      return build_mailAddress();
+    private com.google.gwt.user.client.ui.TextBox get_phone() {
+      return build_phone();
     }
-    private com.google.gwt.user.client.ui.TextArea build_mailAddress() {
+    private com.google.gwt.user.client.ui.TextBox build_phone() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextArea mailAddress = (com.google.gwt.user.client.ui.TextArea) GWT.create(com.google.gwt.user.client.ui.TextArea.class);
+      final com.google.gwt.user.client.ui.TextBox phone = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      mailAddress.ensureDebugId("attorney-input");
+      phone.ensureDebugId("attorney-input");
 
 
-      this.owner.mailAddress = mailAddress;
+      this.owner.phone = phone;
 
-      return mailAddress;
+      return phone;
     }
 
     /**
@@ -782,7 +774,7 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel9 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel9.setText("Phone:");
+      f_InlineLabel9.setText("Fax:");
 
 
       return f_InlineLabel9;
@@ -821,21 +813,21 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for phone called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for fax called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_phone() {
-      return build_phone();
+    private com.google.gwt.user.client.ui.TextBox get_fax() {
+      return build_fax();
     }
-    private com.google.gwt.user.client.ui.TextBox build_phone() {
+    private com.google.gwt.user.client.ui.TextBox build_fax() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox phone = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox fax = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      phone.ensureDebugId("attorney-input");
+      fax.ensureDebugId("attorney-input");
 
 
-      this.owner.phone = phone;
+      this.owner.fax = fax;
 
-      return phone;
+      return fax;
     }
 
     /**
@@ -880,7 +872,7 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel10 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel10.setText("Fax:");
+      f_InlineLabel10.setText("Status:");
 
 
       return f_InlineLabel10;
@@ -919,21 +911,20 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for fax called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for attorneyStatus called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_fax() {
-      return build_fax();
+    private com.google.gwt.user.client.ui.ValueListBox get_attorneyStatus() {
+      return build_attorneyStatus();
     }
-    private com.google.gwt.user.client.ui.TextBox build_fax() {
+    private com.google.gwt.user.client.ui.ValueListBox build_attorneyStatus() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox fax = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.ValueListBox attorneyStatus = owner.attorneyStatus;
+      assert attorneyStatus != null : "UiField attorneyStatus with 'provided = true' was null";
       // Setup section.
-      fax.ensureDebugId("attorney-input");
+      attorneyStatus.ensureDebugId("attorney-input");
 
 
-      this.owner.fax = fax;
-
-      return fax;
+      return attorneyStatus;
     }
 
     /**
@@ -969,19 +960,21 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for f_InlineLabel11 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for save called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel11() {
-      return build_f_InlineLabel11();
+    private com.google.gwt.user.client.ui.Button get_save() {
+      return build_save();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel11() {
+    private com.google.gwt.user.client.ui.Button build_save() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel11 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.Button save = (com.google.gwt.user.client.ui.Button) GWT.create(com.google.gwt.user.client.ui.Button.class);
       // Setup section.
-      f_InlineLabel11.setText("Status:");
+      save.setHTML(template_html1().asString());
+      save.ensureDebugId("attorney-save");
+      save.addClickHandler(handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1);
 
 
-      return f_InlineLabel11;
+      return save;
     }
 
     /**
@@ -1017,105 +1010,6 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for attorneyStatus called 1 times. Type: DEFAULT. Build precedence: 3.
-     */
-    private com.google.gwt.user.client.ui.ValueListBox get_attorneyStatus() {
-      return build_attorneyStatus();
-    }
-    private com.google.gwt.user.client.ui.ValueListBox build_attorneyStatus() {
-      // Creation section.
-      final com.google.gwt.user.client.ui.ValueListBox attorneyStatus = owner.attorneyStatus;
-      assert attorneyStatus != null : "UiField attorneyStatus with 'provided = true' was null";
-      // Setup section.
-      attorneyStatus.ensureDebugId("attorney-input");
-
-
-      return attorneyStatus;
-    }
-
-    /**
-     * Getter for domId16Element called 2 times. Type: DEFAULT. Build precedence: 3.
-     */
-    private com.google.gwt.uibinder.client.LazyDomElement domId16Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId16Element() {
-      return domId16Element;
-    }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId16Element() {
-      // Creation section.
-      domId16Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId16());
-      // Setup section.
-
-
-      return domId16Element;
-    }
-
-    /**
-     * Getter for domId17 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 3.
-     */
-    private java.lang.String domId17;
-    private java.lang.String get_domId17() {
-      return domId17;
-    }
-    private java.lang.String build_domId17() {
-      // Creation section.
-      domId17 = com.google.gwt.dom.client.Document.get().createUniqueId();
-      // Setup section.
-
-
-      return domId17;
-    }
-
-    /**
-     * Getter for save called 1 times. Type: DEFAULT. Build precedence: 3.
-     */
-    private com.google.gwt.user.client.ui.Button get_save() {
-      return build_save();
-    }
-    private com.google.gwt.user.client.ui.Button build_save() {
-      // Creation section.
-      final com.google.gwt.user.client.ui.Button save = (com.google.gwt.user.client.ui.Button) GWT.create(com.google.gwt.user.client.ui.Button.class);
-      // Setup section.
-      save.setHTML(template_html1().asString());
-      save.ensureDebugId("attorney-save");
-      save.addClickHandler(handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1);
-
-
-      return save;
-    }
-
-    /**
-     * Getter for domId17Element called 2 times. Type: DEFAULT. Build precedence: 3.
-     */
-    private com.google.gwt.uibinder.client.LazyDomElement domId17Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId17Element() {
-      return domId17Element;
-    }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId17Element() {
-      // Creation section.
-      domId17Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId17());
-      // Setup section.
-
-
-      return domId17Element;
-    }
-
-    /**
-     * Getter for domId18 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 3.
-     */
-    private java.lang.String domId18;
-    private java.lang.String get_domId18() {
-      return domId18;
-    }
-    private java.lang.String build_domId18() {
-      // Creation section.
-      domId18 = com.google.gwt.dom.client.Document.get().createUniqueId();
-      // Setup section.
-
-
-      return domId18;
-    }
-
-    /**
      * Getter for close called 1 times. Type: DEFAULT. Build precedence: 3.
      */
     private com.google.gwt.user.client.ui.Button get_close() {
@@ -1134,19 +1028,19 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for domId18Element called 2 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for domId16Element called 2 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.uibinder.client.LazyDomElement domId18Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId18Element() {
-      return domId18Element;
+    private com.google.gwt.uibinder.client.LazyDomElement domId16Element;
+    private com.google.gwt.uibinder.client.LazyDomElement get_domId16Element() {
+      return domId16Element;
     }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId18Element() {
+    private com.google.gwt.uibinder.client.LazyDomElement build_domId16Element() {
       // Creation section.
-      domId18Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId18());
+      domId16Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId16());
       // Setup section.
 
 
-      return domId18Element;
+      return domId16Element;
     }
   }
 }

@@ -9,10 +9,6 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     
   }
   
-  public void memberInject_Key$type$com$anova$anovacloud$client$application$matterAction$ui$MatterActionColumnsDefinition$_annotation$$none$$(com.anova.anovacloud.client.application.matterAction.ui.MatterActionColumnsDefinition injectee) {
-    
-  }
-  
   public void memberInject_Key$type$com$anova$anovacloud$client$application$matterAction$ui$EditMatterActionView$Binder$_annotation$$none$$(com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionView.Binder injectee) {
     
   }
@@ -53,22 +49,6 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
   
   public com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionPresenter com$anova$anovacloud$client$application$matterAction$ui$EditMatterActionPresenter_com$anova$anovacloud$client$application$matterAction$ui$EditMatterActionPresenter_methodInjection(com.google.web.bindery.event.shared.EventBus _0, com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionPresenter.MyView _1, com.gwtplatform.dispatch.rest.shared.RestDispatch _2, com.anova.anovacloud.client.rest.MattersService _3, com.anova.anovacloud.client.rest.MatterActionService _4, com.anova.anovacloud.client.rest.MatterActionStatusService _5, com.anova.anovacloud.client.rest.AttorneyService _6, com.anova.anovacloud.client.rest.AttorneyRoleService _7, com.anova.anovacloud.client.resources.MatterActionMessages _8) {
     return new com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionPresenter(_0, _1, _2, _3, _4, _5, _6, _7, _8);
-  }
-  
-  
-  /**
-   * Binding for com.anova.anovacloud.client.application.matterAction.ui.MatterActionColumnsDefinition declared at:
-   *   Implicit GWT.create binding for com.anova.anovacloud.client.application.matterAction.ui.MatterActionColumnsDefinition
-   */
-  public com.anova.anovacloud.client.application.matterAction.ui.MatterActionColumnsDefinition get_Key$type$com$anova$anovacloud$client$application$matterAction$ui$MatterActionColumnsDefinition$_annotation$$none$$() {
-    Object created = GWT.create(com.anova.anovacloud.client.application.matterAction.ui.MatterActionColumnsDefinition.class);
-    assert created instanceof com.anova.anovacloud.client.application.matterAction.ui.MatterActionColumnsDefinition;
-    com.anova.anovacloud.client.application.matterAction.ui.MatterActionColumnsDefinition result = (com.anova.anovacloud.client.application.matterAction.ui.MatterActionColumnsDefinition) created;
-    
-    memberInject_Key$type$com$anova$anovacloud$client$application$matterAction$ui$MatterActionColumnsDefinition$_annotation$$none$$(result);
-    
-    return result;
-    
   }
   
   

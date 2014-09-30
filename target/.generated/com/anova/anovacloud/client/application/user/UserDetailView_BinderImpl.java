@@ -16,8 +16,8 @@ import com.google.gwt.user.client.ui.Widget;
 public class UserDetailView_BinderImpl implements UiBinder<com.google.gwt.user.client.ui.Widget, com.anova.anovacloud.client.application.user.UserDetailView>, com.anova.anovacloud.client.application.user.UserDetailView.Binder {
 
   interface Template extends SafeHtmlTemplates {
-    @Template("<span id='{0}'></span> <span id='{1}'></span> <span id='{2}'></span> <span id='{3}'></span> <span id='{4}'></span> <span id='{5}'></span>  <span id='{6}'></span>")
-    SafeHtml html1(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6);
+    @Template("<span id='{0}'></span> <span id='{1}'></span> <span id='{2}'></span> <span id='{3}'></span> <span id='{4}'></span>  <span id='{5}'></span>")
+    SafeHtml html1(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5);
      
   }
 
@@ -47,18 +47,16 @@ public class UserDetailView_BinderImpl implements UiBinder<com.google.gwt.user.c
       build_domId3();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 2
       build_domId4();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 2
       build_domId5();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 2
-      build_domId6();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 2
       build_domId0Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
       build_domId1Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
       build_domId2Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
       build_domId3Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
       build_domId4Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
       build_domId5Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
-      build_domId6Element();  // more than one getter call detected. Type: DEFAULT, precedence: 2
     }
 
     SafeHtml template_html1() {
-      return template.html1(get_domId0(), get_domId1(), get_domId2(), get_domId3(), get_domId4(), get_domId5(), get_domId6());
+      return template.html1(get_domId0(), get_domId1(), get_domId2(), get_domId3(), get_domId4(), get_domId5());
     }
 
     /**
@@ -77,7 +75,7 @@ public class UserDetailView_BinderImpl implements UiBinder<com.google.gwt.user.c
     }
 
     /**
-     * Getter for resource called 6 times. Type: IMPORTED. Build precedence: 1.
+     * Getter for resource called 5 times. Type: IMPORTED. Build precedence: 1.
      */
     private com.anova.anovacloud.client.resources.AppResources resource;
     private com.anova.anovacloud.client.resources.AppResources get_resource() {
@@ -128,17 +126,15 @@ public class UserDetailView_BinderImpl implements UiBinder<com.google.gwt.user.c
       get_domId3Element().get();
       get_domId4Element().get();
       get_domId5Element().get();
-      get_domId6Element().get();
 
       // Detach section.
       attachRecord15.detach();
-      f_HTMLPanel1.addAndReplaceElement(get_displayName(), get_domId0Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_firstName(), get_domId1Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_lastName(), get_domId2Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_username(), get_domId3Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_hashPassword(), get_domId4Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_userRole(), get_domId5Element().get());
-      f_HTMLPanel1.addAndReplaceElement(get_email(), get_domId6Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_firstName(), get_domId0Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_lastName(), get_domId1Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_username(), get_domId2Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_hashPassword(), get_domId3Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_userRole(), get_domId4Element().get());
+      f_HTMLPanel1.addAndReplaceElement(get_email(), get_domId5Element().get());
 
       return f_HTMLPanel1;
     }
@@ -160,21 +156,21 @@ public class UserDetailView_BinderImpl implements UiBinder<com.google.gwt.user.c
     }
 
     /**
-     * Getter for displayName called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for firstName called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_displayName() {
-      return build_displayName();
+    private com.google.gwt.user.client.ui.TextBox get_firstName() {
+      return build_firstName();
     }
-    private com.google.gwt.user.client.ui.TextBox build_displayName() {
+    private com.google.gwt.user.client.ui.TextBox build_firstName() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox displayName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox firstName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      displayName.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      firstName.setStyleName("" + get_resource().styles().mobileTextField() + "");
 
 
-      this.owner.displayName = displayName;
+      this.owner.firstName = firstName;
 
-      return displayName;
+      return firstName;
     }
 
     /**
@@ -210,21 +206,21 @@ public class UserDetailView_BinderImpl implements UiBinder<com.google.gwt.user.c
     }
 
     /**
-     * Getter for firstName called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for lastName called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_firstName() {
-      return build_firstName();
+    private com.google.gwt.user.client.ui.TextBox get_lastName() {
+      return build_lastName();
     }
-    private com.google.gwt.user.client.ui.TextBox build_firstName() {
+    private com.google.gwt.user.client.ui.TextBox build_lastName() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox firstName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox lastName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      firstName.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      lastName.setStyleName("" + get_resource().styles().mobileTextField() + "");
 
 
-      this.owner.firstName = firstName;
+      this.owner.lastName = lastName;
 
-      return firstName;
+      return lastName;
     }
 
     /**
@@ -260,21 +256,21 @@ public class UserDetailView_BinderImpl implements UiBinder<com.google.gwt.user.c
     }
 
     /**
-     * Getter for lastName called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for username called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_lastName() {
-      return build_lastName();
+    private com.google.gwt.user.client.ui.TextBox get_username() {
+      return build_username();
     }
-    private com.google.gwt.user.client.ui.TextBox build_lastName() {
+    private com.google.gwt.user.client.ui.TextBox build_username() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox lastName = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextBox username = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      lastName.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      username.setStyleName("" + get_resource().styles().mobileTextField() + "");
 
 
-      this.owner.lastName = lastName;
+      this.owner.username = username;
 
-      return lastName;
+      return username;
     }
 
     /**
@@ -310,21 +306,21 @@ public class UserDetailView_BinderImpl implements UiBinder<com.google.gwt.user.c
     }
 
     /**
-     * Getter for username called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for hashPassword called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.TextBox get_username() {
-      return build_username();
+    private com.google.gwt.user.client.ui.PasswordTextBox get_hashPassword() {
+      return build_hashPassword();
     }
-    private com.google.gwt.user.client.ui.TextBox build_username() {
+    private com.google.gwt.user.client.ui.PasswordTextBox build_hashPassword() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox username = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.PasswordTextBox hashPassword = (com.google.gwt.user.client.ui.PasswordTextBox) GWT.create(com.google.gwt.user.client.ui.PasswordTextBox.class);
       // Setup section.
-      username.setStyleName("" + get_resource().styles().mobileTextField() + "");
+      hashPassword.setStyleName("" + get_resource().styles().mobileTextField() + "");
 
 
-      this.owner.username = username;
+      this.owner.hashPassword = hashPassword;
 
-      return username;
+      return hashPassword;
     }
 
     /**
@@ -360,21 +356,19 @@ public class UserDetailView_BinderImpl implements UiBinder<com.google.gwt.user.c
     }
 
     /**
-     * Getter for hashPassword called 1 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for userRole called 1 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.user.client.ui.PasswordTextBox get_hashPassword() {
-      return build_hashPassword();
+    private com.google.gwt.user.client.ui.ValueListBox get_userRole() {
+      return build_userRole();
     }
-    private com.google.gwt.user.client.ui.PasswordTextBox build_hashPassword() {
+    private com.google.gwt.user.client.ui.ValueListBox build_userRole() {
       // Creation section.
-      final com.google.gwt.user.client.ui.PasswordTextBox hashPassword = (com.google.gwt.user.client.ui.PasswordTextBox) GWT.create(com.google.gwt.user.client.ui.PasswordTextBox.class);
+      final com.google.gwt.user.client.ui.ValueListBox userRole = owner.userRole;
+      assert userRole != null : "UiField userRole with 'provided = true' was null";
       // Setup section.
-      hashPassword.setStyleName("" + get_resource().styles().mobileTextField() + "");
 
 
-      this.owner.hashPassword = hashPassword;
-
-      return hashPassword;
+      return userRole;
     }
 
     /**
@@ -410,54 +404,6 @@ public class UserDetailView_BinderImpl implements UiBinder<com.google.gwt.user.c
     }
 
     /**
-     * Getter for userRole called 1 times. Type: DEFAULT. Build precedence: 2.
-     */
-    private com.google.gwt.user.client.ui.ValueListBox get_userRole() {
-      return build_userRole();
-    }
-    private com.google.gwt.user.client.ui.ValueListBox build_userRole() {
-      // Creation section.
-      final com.google.gwt.user.client.ui.ValueListBox userRole = owner.userRole;
-      assert userRole != null : "UiField userRole with 'provided = true' was null";
-      // Setup section.
-
-
-      return userRole;
-    }
-
-    /**
-     * Getter for domId5Element called 2 times. Type: DEFAULT. Build precedence: 2.
-     */
-    private com.google.gwt.uibinder.client.LazyDomElement domId5Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId5Element() {
-      return domId5Element;
-    }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId5Element() {
-      // Creation section.
-      domId5Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId5());
-      // Setup section.
-
-
-      return domId5Element;
-    }
-
-    /**
-     * Getter for domId6 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 2.
-     */
-    private java.lang.String domId6;
-    private java.lang.String get_domId6() {
-      return domId6;
-    }
-    private java.lang.String build_domId6() {
-      // Creation section.
-      domId6 = com.google.gwt.dom.client.Document.get().createUniqueId();
-      // Setup section.
-
-
-      return domId6;
-    }
-
-    /**
      * Getter for email called 1 times. Type: DEFAULT. Build precedence: 2.
      */
     private com.google.gwt.user.client.ui.TextBox get_email() {
@@ -476,19 +422,19 @@ public class UserDetailView_BinderImpl implements UiBinder<com.google.gwt.user.c
     }
 
     /**
-     * Getter for domId6Element called 2 times. Type: DEFAULT. Build precedence: 2.
+     * Getter for domId5Element called 2 times. Type: DEFAULT. Build precedence: 2.
      */
-    private com.google.gwt.uibinder.client.LazyDomElement domId6Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId6Element() {
-      return domId6Element;
+    private com.google.gwt.uibinder.client.LazyDomElement domId5Element;
+    private com.google.gwt.uibinder.client.LazyDomElement get_domId5Element() {
+      return domId5Element;
     }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId6Element() {
+    private com.google.gwt.uibinder.client.LazyDomElement build_domId5Element() {
       // Creation section.
-      domId6Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId6());
+      domId5Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId5());
       // Setup section.
 
 
-      return domId6Element;
+      return domId5Element;
     }
   }
 }

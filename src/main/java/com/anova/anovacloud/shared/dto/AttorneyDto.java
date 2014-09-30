@@ -17,15 +17,13 @@ public class AttorneyDto extends BaseEntity {
        
     }
 
-    public AttorneyDto(String displayName,
-                   String firstName,
+    public AttorneyDto(String firstName,
                    String lastName,
                    String mailAddress,
     			   String email,
     			   String phone,
     			   String fax,
     			   AttorneyStatusDto attorneyStatus) {
-    	this.displayName = displayName;
         this.firstName = firstName;
         this.lastName = lastName;
         this.mailAddress = mailAddress;
@@ -36,7 +34,8 @@ public class AttorneyDto extends BaseEntity {
     }
 
 	public String getDisplayName() {
-        return displayName;
+		this.displayName = this.lastName + ", "+ this.firstName;
+        return this.displayName;
     }
 
     public void setDisplayName(String displayName) {

@@ -9,7 +9,6 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
-import com.anova.anovacloud.shared.dto.MatterDto;
 import com.anova.anovacloud.shared.dto.UserDto;
 import com.anova.anovacloud.shared.dto.UserRoleDto;
 import com.gwtplatform.dispatch.rest.shared.RestAction;

@@ -1,13 +1,5 @@
-
-
 package com.anova.anovacloud.shared.dto;
 import java.util.Date;
-
-import com.anova.anovacloud.client.columninitializer.Column;
-import com.anova.anovacloud.server.dao.domain.Attorney;
-import com.anova.anovacloud.server.dao.domain.AttorneyRole;
-import com.google.gwt.cell.client.DateCell;
-import com.google.gwt.cell.client.TextCell;
 
 public class MatterActionDto extends BaseEntity {
     private Date dueDate;
@@ -23,20 +15,18 @@ public class MatterActionDto extends BaseEntity {
     private AttorneyRoleDto assignee3Role;
     private String atty;
     private String actionRemarks;
-    private String createBy;
-    private Date createDate;
-    private String updateBy;
-    private Date updateDate; 
     private MatterDto matter;
     private MatterActionStatusDto actionStatus;
+    private String status;
 
-    public MatterActionDto() {
+   
+	public MatterActionDto() {
     }
 
     public MatterActionDto(MatterDto matter, Date dueDate, String actionDue, Date ptoMailDate, Date responseDate,
     						Date takenDate, AttorneyDto assignee1, AttorneyRoleDto assignee1Role, AttorneyDto assignee2, 
     						AttorneyRoleDto assignee2Role, AttorneyDto assignee3, AttorneyRoleDto assignee3Role, String actionRemarks,
-    						String createBy, Date createDate, String updateBy, Date updateDate, MatterActionStatusDto actionStatus) {
+    						MatterActionStatusDto actionStatus) {
         this.matter = matter;
         this.dueDate = dueDate;
         this.actionDue = actionDue;
@@ -51,10 +41,6 @@ public class MatterActionDto extends BaseEntity {
         this.assignee3Role = assignee3Role;
         this.atty = this.assignee1+"/"+this.assignee1Role+";"+this.assignee2+"/"+this.assignee2Role+";"+this.assignee3+"/"+this.assignee3Role;
         this.actionRemarks = actionRemarks;
-        this.createBy = createBy;
-        this.createDate = createDate;
-        this.updateBy = updateBy;
-        this.updateDate = updateDate;
         this.actionStatus = actionStatus;
         
     }
@@ -171,49 +157,29 @@ public class MatterActionDto extends BaseEntity {
         this.actionRemarks = actionRemarks;
     }
     
-    public String getCreateBy() {
-        return createBy;
-    }
-
-    public void setCreateBy(String createBy) {
-        this.createBy = createBy;
-    }
-    
-    public Date getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
-    }
-    public String getUpdateBy() {
-        return updateBy;
-    }
-
-    public void setUpdateBy(String updateBy) {
-        this.updateBy = updateBy;
-    }
-    public Date getUpdateDate() {
-        return updateDate;
-    }
-
-    public void setUpdateDate(Date updateDate) {
-        this.updateDate = updateDate;
-    }
     
     public void setAtty(String atty) {
         this.atty = atty;
      }
     
-    public String getAtty() {
-       this.atty = this.assignee1+"/"+this.assignee1Role+";"+this.assignee2+"/"+this.assignee2Role+";"+this.assignee3+"/"+this.assignee3Role;
-       return this.atty;
+    public String getAtty() { 	
+      this.atty = this.assignee1.getDisplayName()+"/"+this.assignee1Role.getRoleName()+";"+this.assignee2.getDisplayName()+"/"+this.assignee2Role.getRoleName()+";"+this.assignee3.getDisplayName()+"/"+this.assignee3Role.getRoleName();
+      return this.atty;
     }
     
+    public String getStatus() {
+    	this.status = this.actionStatus.getStatusName();
+		return this.status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
     @Override
     public String toString() {
         if (matter != null) {
-            return matter.getCaseNum()+"-"+actionDue;
+            return matter.getCaseNum() + "-"+ this.actionDue;
         }
         return super.toString();
     }

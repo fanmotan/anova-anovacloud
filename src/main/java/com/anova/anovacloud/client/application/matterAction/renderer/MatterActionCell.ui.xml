@@ -7,20 +7,23 @@
     <ui:with field='takenDate' type='java.util.Date'/>
     <ui:with field='atty' type='java.lang.String'/>
     <ui:with field='actionRemarks' type='java.lang.String'/>
-     <ui:with field='actionStatus' type='java.lang.String'/>
+    <ui:with field='actionStatus' type='java.lang.String'/>
 
     <ui:style>
         .listItemWrapper {
             padding: 15px 10px;
+            font-size: 0.75em;
         }
 
         .floatLeft {
             float: left;
-            font-size: 1em;
+            font-size: 0.75em;
         }
 
         .floatRight {
             float: right;
+            color: #ababab;
+            font-size: 0.75em;
         }
 
         .subtitle {

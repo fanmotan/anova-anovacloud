@@ -6,7 +6,7 @@ public class CustomerStatusDtoBeanJsonSerializerImpl extends com.github.nmorel.g
   
   @Override
   protected java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerStatusDto, ?>> initSerializers() {
-    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerStatusDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerStatusDto, ?>>(2);
+    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerStatusDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerStatusDto, ?>>(3);
     
     map.put("statusName", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerStatusDto, java.lang.String>() {
       @Override
@@ -17,6 +17,18 @@ public class CustomerStatusDtoBeanJsonSerializerImpl extends com.github.nmorel.g
       @Override
       public java.lang.String getValue(com.anova.anovacloud.shared.dto.CustomerStatusDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
         return bean.getStatusName();
+      }
+    });
+    
+    map.put("statusValue", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.CustomerStatusDto, java.lang.String>() {
+      @Override
+      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
+        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
+      }
+      
+      @Override
+      public java.lang.String getValue(com.anova.anovacloud.shared.dto.CustomerStatusDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
+        return bean.getStatusValue();
       }
     });
     

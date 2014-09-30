@@ -1,7 +1,7 @@
-
 package com.anova.anovacloud.client.application.matterAction;
 
 import com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionPresenter;
+import com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionUiHandlers;
 import com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionView;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
@@ -15,5 +15,9 @@ public class MatterActionModule extends AbstractPresenterModule {
                 MatterActionDetailPresenter.MyProxy.class);
 
         bindSingletonPresenterWidget(EditMatterActionPresenter.class, EditMatterActionPresenter.MyView.class, EditMatterActionView.class);
+   
+        bind(MatterActionDetailUiHandlers.class).to(MatterActionDetailPresenter.class);
+        bind(MatterActionUiHandlers.class).to(MatterActionPresenter.class);
+        bind(EditMatterActionUiHandlers.class).to(EditMatterActionPresenter.class);
     }
 }

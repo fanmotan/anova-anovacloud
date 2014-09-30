@@ -6,7 +6,7 @@ public class MatterActionDtoBeanJsonSerializerImpl extends com.github.nmorel.gwt
   
   @Override
   protected java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterActionDto, ?>> initSerializers() {
-    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterActionDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterActionDto, ?>>(20);
+    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterActionDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterActionDto, ?>>(17);
     
     map.put("dueDate", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.util.Date>() {
       @Override
@@ -164,54 +164,6 @@ public class MatterActionDtoBeanJsonSerializerImpl extends com.github.nmorel.gwt
       }
     });
     
-    map.put("createBy", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
-        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
-      }
-      
-      @Override
-      public java.lang.String getValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getCreateBy();
-      }
-    });
-    
-    map.put("createDate", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.util.Date>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
-        return com.github.nmorel.gwtjackson.client.ser.BaseDateJsonSerializer.DateJsonSerializer.getInstance();
-      }
-      
-      @Override
-      public java.util.Date getValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getCreateDate();
-      }
-    });
-    
-    map.put("updateBy", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
-        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
-      }
-      
-      @Override
-      public java.lang.String getValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getUpdateBy();
-      }
-    });
-    
-    map.put("updateDate", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.util.Date>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
-        return com.github.nmorel.gwtjackson.client.ser.BaseDateJsonSerializer.DateJsonSerializer.getInstance();
-      }
-      
-      @Override
-      public java.util.Date getValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
-        return bean.getUpdateDate();
-      }
-    });
-    
     map.put("matter", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterActionDto, com.anova.anovacloud.shared.dto.MatterDto>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
@@ -233,6 +185,18 @@ public class MatterActionDtoBeanJsonSerializerImpl extends com.github.nmorel.gwt
       @Override
       public com.anova.anovacloud.shared.dto.MatterActionStatusDto getValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
         return bean.getActionStatus();
+      }
+    });
+    
+    map.put("status", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.lang.String>() {
+      @Override
+      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
+        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
+      }
+      
+      @Override
+      public java.lang.String getValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
+        return bean.getStatus();
       }
     });
     

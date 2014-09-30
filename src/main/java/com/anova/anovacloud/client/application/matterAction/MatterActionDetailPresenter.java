@@ -1,5 +1,3 @@
-
-
 package com.anova.anovacloud.client.application.matterAction;
 
 import java.util.Arrays;
@@ -7,6 +5,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import com.google.common.base.Strings;
 import com.google.web.bindery.event.shared.EventBus;
 import com.anova.anovacloud.client.application.ApplicationPresenter;
 import com.anova.anovacloud.client.application.event.ActionBarEvent;
@@ -40,6 +39,7 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
+import com.gwtplatform.mvp.shared.proxy.PlaceRequest;
 import com.gwtplatform.mvp.shared.proxy.PlaceRequest.Builder;
 
 public class MatterActionDetailPresenter extends Presenter<MyView, MyProxy>
@@ -49,8 +49,12 @@ public class MatterActionDetailPresenter extends Presenter<MyView, MyProxy>
         void edit(MatterActionDto matterActionDto);
         void setAllowedMatters(List<MatterDto> matterDtos);
         void setAllowedMatterActionStatuss(List<MatterActionStatusDto> actionStatusDtos);
-        void setAllowedAttorneys(List<AttorneyDto> attorneyDtos);
-        void setAllowedAttorneyRoles(List<AttorneyRoleDto> attorneyRoleDtos);
+        void setAllowedAttorney1s(List<AttorneyDto> attorneyDtos);
+        void setAllowedAttorney2s(List<AttorneyDto> attorneyDtos);
+        void setAllowedAttorney3s(List<AttorneyDto> attorneyDtos);
+        void setAllowedAttorney1Roles(List<AttorneyRoleDto> attorneyRoleDtos);
+        void setAllowedAttorney2Roles(List<AttorneyRoleDto> attorneyRoleDtos);
+        void setAllowedAttorney3Roles(List<AttorneyRoleDto> attorneyRoleDtos);
         void getMatterAction();
     }
 
@@ -67,6 +71,9 @@ public class MatterActionDetailPresenter extends Presenter<MyView, MyProxy>
     private final AttorneyRoleService attorneyRoleService;
     private final MatterActionMessages messages;
     private final PlaceManager placeManager;
+    
+    private MatterActionDto currentAction;
+    private Boolean createNew;
 
     @Inject
     MatterActionDetailPresenter(EventBus eventBus,
@@ -95,15 +102,42 @@ public class MatterActionDetailPresenter extends Presenter<MyView, MyProxy>
     }
 
     @Override
+    public void prepareFromRequest(PlaceRequest request) {
+        String param = request.getParameter("id", null);
+        createNew = Strings.isNullOrEmpty(param);
+
+        if (!createNew) {
+            Long id = Long.parseLong(param);
+            dispatcher.execute(matterActionService.get(id), new AbstractAsyncCallback<MatterActionDto>() {
+                @Override
+                public void onSuccess(MatterActionDto action) {
+                    currentAction = action;
+                    getView().edit(currentAction);
+                }
+            });
+        } else {
+            currentAction = new MatterActionDto();
+            getView().edit(currentAction);
+        }
+    }
+    
+    @Override
     public void onGoBack(GoBackEvent event) {
         placeManager.revealPlace(new Builder().nameToken(NameTokens.getMatterAction()).build());
     }
 
     @Override
     public void onActionEvent(ActionBarEvent event) {
-        if (event.getActionType() == ActionType.DONE && event.isTheSameToken(NameTokens.getDetailMatterAction())) {
-            getView().getMatterAction();
-        }
+    	 if (event.isTheSameToken(NameTokens.getDetailMatterAction())) {
+             switch (event.getActionType()) {
+                 case UPDATE:
+                     getView().getMatterAction();
+                     break;
+                 case DONE:
+                     getView().getMatterAction();
+                     break;
+             }
+    	 }
     }
 
     @Override
@@ -126,9 +160,15 @@ public class MatterActionDetailPresenter extends Presenter<MyView, MyProxy>
 
     @Override
     protected void onReveal() {
-        List<ActionType> actions = Arrays.asList(ActionType.DONE);
-        ChangeActionBarEvent.fire(this, actions, false);
-
+    	List<ActionType> actions;
+        if (createNew) {
+            actions = Arrays.asList(ActionType.DONE);
+            ChangeActionBarEvent.fire(this, actions, false);
+        } else {
+            actions = Arrays.asList(ActionType.DELETE, ActionType.UPDATE);
+            ChangeActionBarEvent.fire(this, actions, false);
+        }
+        
         dispatcher.execute(mattersService.getMatters(), new AbstractAsyncCallback<List<MatterDto>>() {
             @Override
             public void onSuccess(List<MatterDto> matters) {
@@ -144,15 +184,48 @@ public class MatterActionDetailPresenter extends Presenter<MyView, MyProxy>
         dispatcher.execute(attorneyService.getAttorneys(), new AbstractAsyncCallback<List<AttorneyDto>>() {
             @Override
             public void onSuccess(List<AttorneyDto> attorneys) {
-                onGetAttorneysSuccess(attorneys);
+                onGetAttorney1sSuccess(attorneys);
+               
+            }
+        });
+        dispatcher.execute(attorneyService.getAttorneys(), new AbstractAsyncCallback<List<AttorneyDto>>() {
+            @Override
+            public void onSuccess(List<AttorneyDto> attorneys) {
+                onGetAttorney2sSuccess(attorneys);
+               
+            }
+        });
+        dispatcher.execute(attorneyService.getAttorneys(), new AbstractAsyncCallback<List<AttorneyDto>>() {
+            @Override
+            public void onSuccess(List<AttorneyDto> attorneys) {
+                onGetAttorney3sSuccess(attorneys);
+               
+            }
+        });
+        
+        dispatcher.execute(attorneyRoleService.getAttorneyRoles(), new AbstractAsyncCallback<List<AttorneyRoleDto>>() {
+            @Override
+            public void onSuccess(List<AttorneyRoleDto> attorneyRoles) {
+                onGetAttorney1RolesSuccess(attorneyRoles);
+                
             }
         });
         dispatcher.execute(attorneyRoleService.getAttorneyRoles(), new AbstractAsyncCallback<List<AttorneyRoleDto>>() {
             @Override
             public void onSuccess(List<AttorneyRoleDto> attorneyRoles) {
-                onGetAttorneyRolesSuccess(attorneyRoles);
+                onGetAttorney2RolesSuccess(attorneyRoles);
+                
             }
         });
+        dispatcher.execute(attorneyRoleService.getAttorneyRoles(), new AbstractAsyncCallback<List<AttorneyRoleDto>>() {
+            @Override
+            public void onSuccess(List<AttorneyRoleDto> attorneyRoles) {
+                onGetAttorney3RolesSuccess(attorneyRoles);
+                
+            }
+        });
+        
+        getView().edit(new MatterActionDto());
     }
 
     private void onGetMattersSuccess(List<MatterDto> matterDtos) {
@@ -164,13 +237,27 @@ public class MatterActionDetailPresenter extends Presenter<MyView, MyProxy>
        
     }
     
-    private void onGetAttorneysSuccess(List<AttorneyDto> attorneyDtos) {
-        getView().setAllowedAttorneys(attorneyDtos);
+    private void onGetAttorney1sSuccess(List<AttorneyDto> attorneyDtos) {
+        getView().setAllowedAttorney1s(attorneyDtos);
+    }
+    private void onGetAttorney2sSuccess(List<AttorneyDto> attorneyDtos) {
+        getView().setAllowedAttorney2s(attorneyDtos);
+    }
+    private void onGetAttorney3sSuccess(List<AttorneyDto> attorneyDtos) {
+        getView().setAllowedAttorney3s(attorneyDtos);
     }
     
-    private void onGetAttorneyRolesSuccess(List<AttorneyRoleDto> attorneyRoleDtos) {
-        getView().setAllowedAttorneyRoles(attorneyRoleDtos);
-        getView().edit(new MatterActionDto());
-       
+    private void onGetAttorney1RolesSuccess(List<AttorneyRoleDto> attorneyRoleDtos) {
+        getView().setAllowedAttorney1Roles(attorneyRoleDtos);
+     
     }
+    private void onGetAttorney2RolesSuccess(List<AttorneyRoleDto> attorneyRoleDtos) {
+        getView().setAllowedAttorney2Roles(attorneyRoleDtos);
+     
+    }
+    private void onGetAttorney3RolesSuccess(List<AttorneyRoleDto> attorneyRoleDtos) {
+        getView().setAllowedAttorney3Roles(attorneyRoleDtos);
+     
+    }
+ 
 }

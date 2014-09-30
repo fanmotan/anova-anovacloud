@@ -10,7 +10,6 @@
     </ui:style>
 
     <g:HTMLPanel styleName="{style.panelWrapper}">
-        <g:TextBox ui:field="displayName" styleName="{resource.styles.mobileTextField}"/>
          <g:TextBox ui:field="firstName" styleName="{resource.styles.mobileTextField}"/>
           <g:TextBox ui:field="lastName" styleName="{resource.styles.mobileTextField}"/>
            <g:TextBox ui:field="email" styleName="{resource.styles.mobileTextField}"/>

@@ -201,7 +201,7 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
   public com.anova.anovacloud.client.application.matterAction.MatterActionView get_Key$type$com$anova$anovacloud$client$application$matterAction$MatterActionView$_annotation$$none$$() {
     
     if (singleton_Key$type$com$anova$anovacloud$client$application$matterAction$MatterActionView$_annotation$$none$$ == null) {
-    com.anova.anovacloud.client.application.matterAction.MatterActionView result = com$anova$anovacloud$client$application$matterAction$MatterActionView_com$anova$anovacloud$client$application$matterAction$MatterActionView_methodInjection(get_Key$type$com$anova$anovacloud$client$application$matterAction$MatterActionView$Binder$_annotation$$none$$(), injector.getFragment_com_anova_anovacloud_client_application_matterAction_ui().get_Key$type$com$anova$anovacloud$client$application$matterAction$ui$MatterActionColumnsDefinition$_annotation$$none$$());
+    com.anova.anovacloud.client.application.matterAction.MatterActionView result = com$anova$anovacloud$client$application$matterAction$MatterActionView_com$anova$anovacloud$client$application$matterAction$MatterActionView_methodInjection(get_Key$type$com$anova$anovacloud$client$application$matterAction$MatterActionView$Binder$_annotation$$none$$());
     memberInject_Key$type$com$anova$anovacloud$client$application$matterAction$MatterActionView$_annotation$$none$$(result);
     
         singleton_Key$type$com$anova$anovacloud$client$application$matterAction$MatterActionView$_annotation$$none$$ = result;
@@ -210,8 +210,8 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     
   }
   
-  public com.anova.anovacloud.client.application.matterAction.MatterActionView com$anova$anovacloud$client$application$matterAction$MatterActionView_com$anova$anovacloud$client$application$matterAction$MatterActionView_methodInjection(com.anova.anovacloud.client.application.matterAction.MatterActionView.Binder _0, com.anova.anovacloud.client.application.matterAction.ui.MatterActionColumnsDefinition _1) {
-    return new com.anova.anovacloud.client.application.matterAction.MatterActionView(_0, _1);
+  public com.anova.anovacloud.client.application.matterAction.MatterActionView com$anova$anovacloud$client$application$matterAction$MatterActionView_com$anova$anovacloud$client$application$matterAction$MatterActionView_methodInjection(com.anova.anovacloud.client.application.matterAction.MatterActionView.Binder _0) {
+    return new com.anova.anovacloud.client.application.matterAction.MatterActionView(_0);
   }
   
   

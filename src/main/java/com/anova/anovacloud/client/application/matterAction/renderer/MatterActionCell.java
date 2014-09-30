@@ -24,8 +24,7 @@ public class MatterActionCell extends AbstractCell<MatterActionDto> {
     @Inject
     MatterActionCell(Renderer uiRenderer) 
     {
-        super(BrowserEvents.CLICK);
-
+       // super(BrowserEvents.CLICK);
         this.uiRenderer = uiRenderer;
     }
 

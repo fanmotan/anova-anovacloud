@@ -1,7 +1,7 @@
-
-
 package com.anova.anovacloud.client.application.customer;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -10,7 +10,6 @@ import com.google.gwt.editor.client.Editor;
 import com.google.gwt.editor.client.SimpleBeanEditorDriver;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.ValueListBox;
@@ -73,6 +72,11 @@ public class CustomerDetailView extends ViewWithUiHandlers<CustomerDetailUiHandl
     
     @Override
     public void setAllowedCustomerStatuss(List<CustomerStatusDto> customerStatusDtos) {
+    	Collections.sort(customerStatusDtos, new Comparator<CustomerStatusDto>() {
+		    public int compare(CustomerStatusDto c1, CustomerStatusDto c2) {
+		        return c1.getStatusValue().compareTo(c2.getStatusValue());
+		    }
+		});
         customerStatus.setValue(customerStatusDtos.isEmpty() ? null : customerStatusDtos.get(0));
         customerStatus.setAcceptableValues(customerStatusDtos);
     }

@@ -22,8 +22,8 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     @Template("Close")
     SafeHtml html2();
      
-    @Template("<table> <tr><tb> <div> <span id='{0}'></span> <span id='{1}'></span> </div> </tb> <tb> <div> <span id='{2}'></span> <span id='{3}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{4}'></span> <span id='{5}'></span> </div> </tb> <tb> <div> <span id='{6}'></span> <span id='{7}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{8}'></span> <span id='{9}'></span> </div> </tb> <tb> <div> <span id='{10}'></span> <span id='{11}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{12}'></span> <span id='{13}'></span> </div> </tb> <tb> <div> <span id='{14}'></span> <span id='{15}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{16}'></span> <span id='{17}'></span> </div>  </tb> <tb> <div> <span id='{18}'></span> <span id='{19}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{20}'></span> <span id='{21}'></span> </div> </tb> <tb> <div> <span id='{22}'></span> <span id='{23}'></span> </div> </tb></tr> <tr><tb> <div> <span id='{24}'></span> <span id='{25}'></span> </div> </tb> </tr> <tr><tb> <div> <span id='{26}'></span> <span id='{27}'></span> </div> </tb> </tr> </table>  <div> <span id='{28}'></span> <span id='{29}'></span> </div>")
-    SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16, String arg17, String arg18, String arg19, String arg20, String arg21, String arg22, String arg23, String arg24, String arg25, String arg26, String arg27, String arg28, String arg29);
+    @Template("<div> <span id='{0}'></span> </div> <br> <table width='100%'> <tr> <td width='25%'> <div class='{1}'> <span id='{2}'></span> </div> </td> <td width='75%'> <div class='{3}'> <span id='{4}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{5}'> <span id='{6}'></span> </div> </td> <td width='75%'> <div class='{7}'> <span id='{8}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{9}'> <span id='{10}'></span> </div> </td> <td width='75%'> <div class='{11}'> <span id='{12}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{13}'> <span id='{14}'></span> </div> </td> <td width='75%'> <div class='{15}'> <span id='{16}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{17}'> <span id='{18}'></span> </div> </td> <td width='75%'> <div class='{19}'> <span id='{20}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{21}'> <span id='{22}'></span> </div> </td> <td width='75%'> <div class='{23}'> <span id='{24}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{25}'> <span id='{26}'></span> </div> </td> <td width='75%'> <div class='{27}'> <span id='{28}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{29}'> <span id='{30}'></span> </div> </td> <td width='75%'> <div class='{31}'> <span id='{32}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{33}'> <span id='{34}'></span> </div> </td> <td width='75%'> <div class='{35}'> <span id='{36}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{37}'> <span id='{38}'></span> </div> </td> <td width='75%'> <div class='{39}'> <span id='{40}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{41}'> <span id='{42}'></span> </div> </td> <td width='75%'> <div class='{43}'> <span id='{44}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{45}'> <span id='{46}'></span> </div> </td> <td width='75%'> <div class='{47}'> <span id='{48}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{49}'> <span id='{50}'></span> </div> </td> <td width='75%'> <div class='{51}'> <span id='{52}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{53}'> <span id='{54}'></span> </div> </td> <td width='75%'> <div class='{55}'> <span id='{56}'></span> </div> </td> </tr> </table>  <div class='{57}'> <span id='{58}'></span> <span id='{59}'></span> </div>")
+    SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16, String arg17, String arg18, String arg19, String arg20, String arg21, String arg22, String arg23, String arg24, String arg25, String arg26, String arg27, String arg28, String arg29, String arg30, String arg31, String arg32, String arg33, String arg34, String arg35, String arg36, String arg37, String arg38, String arg39, String arg40, String arg41, String arg42, String arg43, String arg44, String arg45, String arg46, String arg47, String arg48, String arg49, String arg50, String arg51, String arg52, String arg53, String arg54, String arg55, String arg56, String arg57, String arg58, String arg59);
      
   }
 
@@ -57,6 +57,7 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
 
     public Widgets(final com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionView owner) {
       this.owner = owner;
+      build_style();  // generated css resource must be always created. Type: GENERATED_CSS. Precedence: 1
       build_domId0();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId1();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId2();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
@@ -87,6 +88,7 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
       build_domId27();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId28();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId29();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
+      build_domId30();  // more than one getter call detected. Type: DOM_ID_HOLDER, precedence: 3
       build_domId0Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId1Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId2Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
@@ -117,6 +119,7 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
       build_domId27Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId28Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
       build_domId29Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
+      build_domId30Element();  // more than one getter call detected. Type: DEFAULT, precedence: 3
     }
 
     SafeHtml template_html1() {
@@ -126,11 +129,11 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
       return template.html2();
     }
     SafeHtml template_html3() {
-      return template.html3(get_domId0(), get_domId1(), get_domId2(), get_domId3(), get_domId4(), get_domId5(), get_domId6(), get_domId7(), get_domId8(), get_domId9(), get_domId10(), get_domId11(), get_domId12(), get_domId13(), get_domId14(), get_domId15(), get_domId16(), get_domId17(), get_domId18(), get_domId19(), get_domId20(), get_domId21(), get_domId22(), get_domId23(), get_domId24(), get_domId25(), get_domId26(), get_domId27(), get_domId28(), get_domId29());
+      return template.html3(get_domId0(), "" + get_style().formRow() + "", get_domId1(), "" + get_style().formRow() + "", get_domId2(), "" + get_style().formRow() + "", get_domId3(), "" + get_style().formRow() + "", get_domId4(), "" + get_style().formRow() + "", get_domId5(), "" + get_style().formRow() + "", get_domId6(), "" + get_style().formRow() + "", get_domId7(), "" + get_style().formRow() + "", get_domId8(), "" + get_style().formRow() + "", get_domId9(), "" + get_style().formRow() + "", get_domId10(), "" + get_style().formRow() + "", get_domId11(), "" + get_style().formRow() + "", get_domId12(), "" + get_style().formRow() + "", get_domId13(), "" + get_style().formRow() + "", get_domId14(), "" + get_style().formRow() + "", get_domId15(), "" + get_style().formRow() + "", get_domId16(), "" + get_style().formRow() + "", get_domId17(), "" + get_style().formRow() + "", get_domId18(), "" + get_style().formRow() + "", get_domId19(), "" + get_style().formRow() + "", get_domId20(), "" + get_style().formRow() + "", get_domId21(), "" + get_style().formRow() + "", get_domId22(), "" + get_style().formRow() + "", get_domId23(), "" + get_style().formRow() + "", get_domId24(), "" + get_style().formRow() + "", get_domId25(), "" + get_style().formRow() + "", get_domId26(), "" + get_style().formRow() + "", get_domId27(), "" + get_style().formRow() + "", get_domId28(), "" + get_style().formRow() + "", get_domId29(), get_domId30());
     }
 
     /**
-     * Getter for clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay called 0 times. Type: GENERATED_BUNDLE. Build precedence: 1.
+     * Getter for clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay called 1 times. Type: GENERATED_BUNDLE. Build precedence: 1.
      */
     private com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionView_BinderImpl_GenBundle get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay() {
       return build_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay();
@@ -142,6 +145,23 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
 
 
       return clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay;
+    }
+
+    /**
+     * Getter for style called 29 times. Type: GENERATED_CSS. Build precedence: 1.
+     */
+    private com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionView_BinderImpl_GenCss_style style;
+    private com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionView_BinderImpl_GenCss_style get_style() {
+      return style;
+    }
+    private com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionView_BinderImpl_GenCss_style build_style() {
+      // Creation section.
+      style = get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay().style();
+      // Setup section.
+      style.ensureInjected();
+
+
+      return style;
     }
 
     /**
@@ -173,6 +193,7 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
       // Creation section.
       final com.google.gwt.user.client.ui.HTMLPanel f_HTMLPanel2 = new com.google.gwt.user.client.ui.HTMLPanel(template_html3().asString());
       // Setup section.
+      f_HTMLPanel2.ensureDebugId("action-editor");
 
       // Attach section.
       UiBinderUtil.TempAttachment attachRecord22 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
@@ -206,39 +227,41 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
       get_domId27Element().get();
       get_domId28Element().get();
       get_domId29Element().get();
+      get_domId30Element().get();
 
       // Detach section.
       attachRecord22.detach();
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel3(), get_domId0Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_matter(), get_domId1Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel4(), get_domId2Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_dueDate(), get_domId3Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel5(), get_domId4Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_actionDue(), get_domId5Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel6(), get_domId6Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_ptoMailDate(), get_domId7Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel7(), get_domId8Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_responseDate(), get_domId9Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel8(), get_domId10Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_takenDate(), get_domId11Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel9(), get_domId12Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_assignee1(), get_domId13Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel10(), get_domId14Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_assignee1Role(), get_domId15Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel11(), get_domId16Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_assignee2(), get_domId17Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel12(), get_domId18Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_assignee2Role(), get_domId19Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel13(), get_domId20Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_assignee3(), get_domId21Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel14(), get_domId22Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_assignee3Role(), get_domId23Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel15(), get_domId24Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_actionRemarks(), get_domId25Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel16(), get_domId26Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_actionStatus(), get_domId27Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_save(), get_domId28Element().get());
-      f_HTMLPanel2.addAndReplaceElement(get_close(), get_domId29Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel4(), get_domId1Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_matter(), get_domId2Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel5(), get_domId3Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_dueDate(), get_domId4Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel6(), get_domId5Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_actionDue(), get_domId6Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel7(), get_domId7Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_ptoMailDate(), get_domId8Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel8(), get_domId9Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_responseDate(), get_domId10Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel9(), get_domId11Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_takenDate(), get_domId12Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel10(), get_domId13Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_assignee1(), get_domId14Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel11(), get_domId15Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_assignee1Role(), get_domId16Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel12(), get_domId17Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_assignee2(), get_domId18Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel13(), get_domId19Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_assignee2Role(), get_domId20Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel14(), get_domId21Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_assignee3(), get_domId22Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel15(), get_domId23Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_assignee3Role(), get_domId24Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel16(), get_domId25Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_actionRemarks(), get_domId26Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel17(), get_domId27Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_actionStatus(), get_domId28Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_save(), get_domId29Element().get());
+      f_HTMLPanel2.addAndReplaceElement(get_close(), get_domId30Element().get());
 
       return f_HTMLPanel2;
     }
@@ -269,7 +292,7 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
       // Creation section.
       final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel3 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      f_InlineLabel3.setText("Matter:");
+      f_InlineLabel3.setText("Please fill in or modify the following case action:");
 
 
       return f_InlineLabel3;
@@ -308,19 +331,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for matter called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel4 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.ValueListBox get_matter() {
-      return build_matter();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel4() {
+      return build_f_InlineLabel4();
     }
-    private com.google.gwt.user.client.ui.ValueListBox build_matter() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel4() {
       // Creation section.
-      final com.google.gwt.user.client.ui.ValueListBox matter = owner.matter;
-      assert matter != null : "UiField matter with 'provided = true' was null";
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel4 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
+      f_InlineLabel4.setText("Matter:");
 
 
-      return matter;
+      return f_InlineLabel4;
     }
 
     /**
@@ -356,19 +379,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for f_InlineLabel4 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for matter called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel4() {
-      return build_f_InlineLabel4();
+    private com.google.gwt.user.client.ui.ValueListBox get_matter() {
+      return build_matter();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel4() {
+    private com.google.gwt.user.client.ui.ValueListBox build_matter() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel4 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.ValueListBox matter = owner.matter;
+      assert matter != null : "UiField matter with 'provided = true' was null";
       // Setup section.
-      f_InlineLabel4.setText("Due Date:");
 
 
-      return f_InlineLabel4;
+      return matter;
     }
 
     /**
@@ -404,21 +427,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for dueDate called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel5 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.datepicker.client.DateBox get_dueDate() {
-      return build_dueDate();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel5() {
+      return build_f_InlineLabel5();
     }
-    private com.google.gwt.user.datepicker.client.DateBox build_dueDate() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel5() {
       // Creation section.
-      final com.google.gwt.user.datepicker.client.DateBox dueDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel5 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      dueDate.ensureDebugId("dueDateInput");
+      f_InlineLabel5.setText("Due Date:");
 
 
-      this.owner.dueDate = dueDate;
-
-      return dueDate;
+      return f_InlineLabel5;
     }
 
     /**
@@ -454,19 +475,21 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for f_InlineLabel5 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for dueDate called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel5() {
-      return build_f_InlineLabel5();
+    private com.google.gwt.user.datepicker.client.DateBox get_dueDate() {
+      return build_dueDate();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel5() {
+    private com.google.gwt.user.datepicker.client.DateBox build_dueDate() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel5 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.datepicker.client.DateBox dueDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
       // Setup section.
-      f_InlineLabel5.setText("Action Due:");
+      dueDate.ensureDebugId("dueDateInput");
 
 
-      return f_InlineLabel5;
+      this.owner.dueDate = dueDate;
+
+      return dueDate;
     }
 
     /**
@@ -502,21 +525,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for actionDue called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel6 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_actionDue() {
-      return build_actionDue();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel6() {
+      return build_f_InlineLabel6();
     }
-    private com.google.gwt.user.client.ui.TextBox build_actionDue() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel6() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox actionDue = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel6 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      actionDue.ensureDebugId("actionDueInput");
+      f_InlineLabel6.setText("Action Due:");
 
 
-      this.owner.actionDue = actionDue;
-
-      return actionDue;
+      return f_InlineLabel6;
     }
 
     /**
@@ -552,19 +573,21 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for f_InlineLabel6 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for actionDue called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel6() {
-      return build_f_InlineLabel6();
+    private com.google.gwt.user.client.ui.TextBox get_actionDue() {
+      return build_actionDue();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel6() {
+    private com.google.gwt.user.client.ui.TextBox build_actionDue() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel6 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.TextBox actionDue = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      f_InlineLabel6.setText("PTO Mail Date:");
+      actionDue.ensureDebugId("actionDueInput");
 
 
-      return f_InlineLabel6;
+      this.owner.actionDue = actionDue;
+
+      return actionDue;
     }
 
     /**
@@ -600,21 +623,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for ptoMailDate called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel7 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.datepicker.client.DateBox get_ptoMailDate() {
-      return build_ptoMailDate();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel7() {
+      return build_f_InlineLabel7();
     }
-    private com.google.gwt.user.datepicker.client.DateBox build_ptoMailDate() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel7() {
       // Creation section.
-      final com.google.gwt.user.datepicker.client.DateBox ptoMailDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel7 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      ptoMailDate.ensureDebugId("ptoMailDateInput");
+      f_InlineLabel7.setText("PTO Mail Date:");
 
 
-      this.owner.ptoMailDate = ptoMailDate;
-
-      return ptoMailDate;
+      return f_InlineLabel7;
     }
 
     /**
@@ -650,19 +671,21 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for f_InlineLabel7 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for ptoMailDate called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel7() {
-      return build_f_InlineLabel7();
+    private com.google.gwt.user.datepicker.client.DateBox get_ptoMailDate() {
+      return build_ptoMailDate();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel7() {
+    private com.google.gwt.user.datepicker.client.DateBox build_ptoMailDate() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel7 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.datepicker.client.DateBox ptoMailDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
       // Setup section.
-      f_InlineLabel7.setText("Respone Date:");
+      ptoMailDate.ensureDebugId("ptoMailDateInput");
 
 
-      return f_InlineLabel7;
+      this.owner.ptoMailDate = ptoMailDate;
+
+      return ptoMailDate;
     }
 
     /**
@@ -698,21 +721,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for responseDate called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel8 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.datepicker.client.DateBox get_responseDate() {
-      return build_responseDate();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel8() {
+      return build_f_InlineLabel8();
     }
-    private com.google.gwt.user.datepicker.client.DateBox build_responseDate() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel8() {
       // Creation section.
-      final com.google.gwt.user.datepicker.client.DateBox responseDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel8 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      responseDate.ensureDebugId("responseDateInput");
+      f_InlineLabel8.setText("Respone Date:");
 
 
-      this.owner.responseDate = responseDate;
-
-      return responseDate;
+      return f_InlineLabel8;
     }
 
     /**
@@ -748,19 +769,21 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for f_InlineLabel8 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for responseDate called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel8() {
-      return build_f_InlineLabel8();
+    private com.google.gwt.user.datepicker.client.DateBox get_responseDate() {
+      return build_responseDate();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel8() {
+    private com.google.gwt.user.datepicker.client.DateBox build_responseDate() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel8 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.datepicker.client.DateBox responseDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
       // Setup section.
-      f_InlineLabel8.setText("Date Taken:");
+      responseDate.ensureDebugId("responseDateInput");
 
 
-      return f_InlineLabel8;
+      this.owner.responseDate = responseDate;
+
+      return responseDate;
     }
 
     /**
@@ -796,21 +819,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for takenDate called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel9 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.datepicker.client.DateBox get_takenDate() {
-      return build_takenDate();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel9() {
+      return build_f_InlineLabel9();
     }
-    private com.google.gwt.user.datepicker.client.DateBox build_takenDate() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel9() {
       // Creation section.
-      final com.google.gwt.user.datepicker.client.DateBox takenDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel9 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      takenDate.ensureDebugId("takenDateInput");
+      f_InlineLabel9.setText("Date Taken:");
 
 
-      this.owner.takenDate = takenDate;
-
-      return takenDate;
+      return f_InlineLabel9;
     }
 
     /**
@@ -846,19 +867,21 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for f_InlineLabel9 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for takenDate called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel9() {
-      return build_f_InlineLabel9();
+    private com.google.gwt.user.datepicker.client.DateBox get_takenDate() {
+      return build_takenDate();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel9() {
+    private com.google.gwt.user.datepicker.client.DateBox build_takenDate() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel9 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.datepicker.client.DateBox takenDate = (com.google.gwt.user.datepicker.client.DateBox) GWT.create(com.google.gwt.user.datepicker.client.DateBox.class);
       // Setup section.
-      f_InlineLabel9.setText("Assignee1:");
+      takenDate.ensureDebugId("takenDateInput");
 
 
-      return f_InlineLabel9;
+      this.owner.takenDate = takenDate;
+
+      return takenDate;
     }
 
     /**
@@ -894,20 +917,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for assignee1 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel10 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.ValueListBox get_assignee1() {
-      return build_assignee1();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel10() {
+      return build_f_InlineLabel10();
     }
-    private com.google.gwt.user.client.ui.ValueListBox build_assignee1() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel10() {
       // Creation section.
-      final com.google.gwt.user.client.ui.ValueListBox assignee1 = owner.assignee1;
-      assert assignee1 != null : "UiField assignee1 with 'provided = true' was null";
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel10 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      assignee1.ensureDebugId("assignee1Input");
+      f_InlineLabel10.setText("Assignee1:");
 
 
-      return assignee1;
+      return f_InlineLabel10;
     }
 
     /**
@@ -943,19 +965,20 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for f_InlineLabel10 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for assignee1 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel10() {
-      return build_f_InlineLabel10();
+    private com.google.gwt.user.client.ui.ValueListBox get_assignee1() {
+      return build_assignee1();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel10() {
+    private com.google.gwt.user.client.ui.ValueListBox build_assignee1() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel10 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.ValueListBox assignee1 = owner.assignee1;
+      assert assignee1 != null : "UiField assignee1 with 'provided = true' was null";
       // Setup section.
-      f_InlineLabel10.setText("Assignee1 Role:");
+      assignee1.ensureDebugId("assignee1Input");
 
 
-      return f_InlineLabel10;
+      return assignee1;
     }
 
     /**
@@ -991,20 +1014,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for assignee1Role called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel11 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.ValueListBox get_assignee1Role() {
-      return build_assignee1Role();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel11() {
+      return build_f_InlineLabel11();
     }
-    private com.google.gwt.user.client.ui.ValueListBox build_assignee1Role() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel11() {
       // Creation section.
-      final com.google.gwt.user.client.ui.ValueListBox assignee1Role = owner.assignee1Role;
-      assert assignee1Role != null : "UiField assignee1Role with 'provided = true' was null";
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel11 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      assignee1Role.ensureDebugId("assignee1RoleInput");
+      f_InlineLabel11.setText("Assignee1 Role:");
 
 
-      return assignee1Role;
+      return f_InlineLabel11;
     }
 
     /**
@@ -1040,19 +1062,20 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for f_InlineLabel11 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for assignee1Role called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel11() {
-      return build_f_InlineLabel11();
+    private com.google.gwt.user.client.ui.ValueListBox get_assignee1Role() {
+      return build_assignee1Role();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel11() {
+    private com.google.gwt.user.client.ui.ValueListBox build_assignee1Role() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel11 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.ValueListBox assignee1Role = owner.assignee1Role;
+      assert assignee1Role != null : "UiField assignee1Role with 'provided = true' was null";
       // Setup section.
-      f_InlineLabel11.setText("Assignee2:");
+      assignee1Role.ensureDebugId("assignee1RoleInput");
 
 
-      return f_InlineLabel11;
+      return assignee1Role;
     }
 
     /**
@@ -1088,20 +1111,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for assignee2 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel12 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.ValueListBox get_assignee2() {
-      return build_assignee2();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel12() {
+      return build_f_InlineLabel12();
     }
-    private com.google.gwt.user.client.ui.ValueListBox build_assignee2() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel12() {
       // Creation section.
-      final com.google.gwt.user.client.ui.ValueListBox assignee2 = owner.assignee2;
-      assert assignee2 != null : "UiField assignee2 with 'provided = true' was null";
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel12 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      assignee2.ensureDebugId("assignee2Input");
+      f_InlineLabel12.setText("Assignee2:");
 
 
-      return assignee2;
+      return f_InlineLabel12;
     }
 
     /**
@@ -1137,19 +1159,20 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for f_InlineLabel12 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for assignee2 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel12() {
-      return build_f_InlineLabel12();
+    private com.google.gwt.user.client.ui.ValueListBox get_assignee2() {
+      return build_assignee2();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel12() {
+    private com.google.gwt.user.client.ui.ValueListBox build_assignee2() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel12 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.ValueListBox assignee2 = owner.assignee2;
+      assert assignee2 != null : "UiField assignee2 with 'provided = true' was null";
       // Setup section.
-      f_InlineLabel12.setText("Assignee2 Role:");
+      assignee2.ensureDebugId("assignee2Input");
 
 
-      return f_InlineLabel12;
+      return assignee2;
     }
 
     /**
@@ -1185,20 +1208,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for assignee2Role called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel13 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.ValueListBox get_assignee2Role() {
-      return build_assignee2Role();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel13() {
+      return build_f_InlineLabel13();
     }
-    private com.google.gwt.user.client.ui.ValueListBox build_assignee2Role() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel13() {
       // Creation section.
-      final com.google.gwt.user.client.ui.ValueListBox assignee2Role = owner.assignee2Role;
-      assert assignee2Role != null : "UiField assignee2Role with 'provided = true' was null";
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel13 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      assignee2Role.ensureDebugId("assignee2RoleInput");
+      f_InlineLabel13.setText("Assignee2 Role:");
 
 
-      return assignee2Role;
+      return f_InlineLabel13;
     }
 
     /**
@@ -1234,19 +1256,20 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for f_InlineLabel13 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for assignee2Role called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel13() {
-      return build_f_InlineLabel13();
+    private com.google.gwt.user.client.ui.ValueListBox get_assignee2Role() {
+      return build_assignee2Role();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel13() {
+    private com.google.gwt.user.client.ui.ValueListBox build_assignee2Role() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel13 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.ValueListBox assignee2Role = owner.assignee2Role;
+      assert assignee2Role != null : "UiField assignee2Role with 'provided = true' was null";
       // Setup section.
-      f_InlineLabel13.setText("Assignee3:");
+      assignee2Role.ensureDebugId("assignee2RoleInput");
 
 
-      return f_InlineLabel13;
+      return assignee2Role;
     }
 
     /**
@@ -1282,20 +1305,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for assignee3 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel14 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.ValueListBox get_assignee3() {
-      return build_assignee3();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel14() {
+      return build_f_InlineLabel14();
     }
-    private com.google.gwt.user.client.ui.ValueListBox build_assignee3() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel14() {
       // Creation section.
-      final com.google.gwt.user.client.ui.ValueListBox assignee3 = owner.assignee3;
-      assert assignee3 != null : "UiField assignee3 with 'provided = true' was null";
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel14 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      assignee3.ensureDebugId("assignee3Input");
+      f_InlineLabel14.setText("Assignee3:");
 
 
-      return assignee3;
+      return f_InlineLabel14;
     }
 
     /**
@@ -1331,19 +1353,20 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for f_InlineLabel14 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for assignee3 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel14() {
-      return build_f_InlineLabel14();
+    private com.google.gwt.user.client.ui.ValueListBox get_assignee3() {
+      return build_assignee3();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel14() {
+    private com.google.gwt.user.client.ui.ValueListBox build_assignee3() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel14 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.ValueListBox assignee3 = owner.assignee3;
+      assert assignee3 != null : "UiField assignee3 with 'provided = true' was null";
       // Setup section.
-      f_InlineLabel14.setText("Assignee3 Role:");
+      assignee3.ensureDebugId("assignee3Input");
 
 
-      return f_InlineLabel14;
+      return assignee3;
     }
 
     /**
@@ -1379,20 +1402,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for assignee3Role called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel15 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.ValueListBox get_assignee3Role() {
-      return build_assignee3Role();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel15() {
+      return build_f_InlineLabel15();
     }
-    private com.google.gwt.user.client.ui.ValueListBox build_assignee3Role() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel15() {
       // Creation section.
-      final com.google.gwt.user.client.ui.ValueListBox assignee3Role = owner.assignee3Role;
-      assert assignee3Role != null : "UiField assignee3Role with 'provided = true' was null";
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel15 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      assignee3Role.ensureDebugId("assignee3RoleInput");
+      f_InlineLabel15.setText("Assignee3 Role:");
 
 
-      return assignee3Role;
+      return f_InlineLabel15;
     }
 
     /**
@@ -1428,19 +1450,20 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for f_InlineLabel15 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for assignee3Role called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel15() {
-      return build_f_InlineLabel15();
+    private com.google.gwt.user.client.ui.ValueListBox get_assignee3Role() {
+      return build_assignee3Role();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel15() {
+    private com.google.gwt.user.client.ui.ValueListBox build_assignee3Role() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel15 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.ValueListBox assignee3Role = owner.assignee3Role;
+      assert assignee3Role != null : "UiField assignee3Role with 'provided = true' was null";
       // Setup section.
-      f_InlineLabel15.setText("Action Remarks:");
+      assignee3Role.ensureDebugId("assignee3RoleInput");
 
 
-      return f_InlineLabel15;
+      return assignee3Role;
     }
 
     /**
@@ -1476,21 +1499,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for actionRemarks called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel16 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_actionRemarks() {
-      return build_actionRemarks();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel16() {
+      return build_f_InlineLabel16();
     }
-    private com.google.gwt.user.client.ui.TextBox build_actionRemarks() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel16() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox actionRemarks = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel16 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      actionRemarks.ensureDebugId("actionRemarksInput");
+      f_InlineLabel16.setText("Action Remarks:");
 
 
-      this.owner.actionRemarks = actionRemarks;
-
-      return actionRemarks;
+      return f_InlineLabel16;
     }
 
     /**
@@ -1526,19 +1547,21 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for f_InlineLabel16 called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for actionRemarks called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel16() {
-      return build_f_InlineLabel16();
+    private com.google.gwt.user.client.ui.TextBox get_actionRemarks() {
+      return build_actionRemarks();
     }
-    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel16() {
+    private com.google.gwt.user.client.ui.TextBox build_actionRemarks() {
       // Creation section.
-      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel16 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
+      final com.google.gwt.user.client.ui.TextBox actionRemarks = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
       // Setup section.
-      f_InlineLabel16.setText("Action Status:");
+      actionRemarks.ensureDebugId("actionRemarksInput");
 
 
-      return f_InlineLabel16;
+      this.owner.actionRemarks = actionRemarks;
+
+      return actionRemarks;
     }
 
     /**
@@ -1574,20 +1597,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for actionStatus called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for f_InlineLabel17 called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.ValueListBox get_actionStatus() {
-      return build_actionStatus();
+    private com.google.gwt.user.client.ui.InlineLabel get_f_InlineLabel17() {
+      return build_f_InlineLabel17();
     }
-    private com.google.gwt.user.client.ui.ValueListBox build_actionStatus() {
+    private com.google.gwt.user.client.ui.InlineLabel build_f_InlineLabel17() {
       // Creation section.
-      final com.google.gwt.user.client.ui.ValueListBox actionStatus = owner.actionStatus;
-      assert actionStatus != null : "UiField actionStatus with 'provided = true' was null";
+      final com.google.gwt.user.client.ui.InlineLabel f_InlineLabel17 = (com.google.gwt.user.client.ui.InlineLabel) GWT.create(com.google.gwt.user.client.ui.InlineLabel.class);
       // Setup section.
-      actionStatus.ensureDebugId("actionRemarksInput");
+      f_InlineLabel17.setText("Action Status:");
 
 
-      return actionStatus;
+      return f_InlineLabel17;
     }
 
     /**
@@ -1623,21 +1645,20 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for save called 1 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for actionStatus called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.Button get_save() {
-      return build_save();
+    private com.google.gwt.user.client.ui.ValueListBox get_actionStatus() {
+      return build_actionStatus();
     }
-    private com.google.gwt.user.client.ui.Button build_save() {
+    private com.google.gwt.user.client.ui.ValueListBox build_actionStatus() {
       // Creation section.
-      final com.google.gwt.user.client.ui.Button save = (com.google.gwt.user.client.ui.Button) GWT.create(com.google.gwt.user.client.ui.Button.class);
+      final com.google.gwt.user.client.ui.ValueListBox actionStatus = owner.actionStatus;
+      assert actionStatus != null : "UiField actionStatus with 'provided = true' was null";
       // Setup section.
-      save.setHTML(template_html1().asString());
-      save.ensureDebugId("matterActionSave");
-      save.addClickHandler(handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1);
+      actionStatus.ensureDebugId("actionRemarksInput");
 
 
-      return save;
+      return actionStatus;
     }
 
     /**
@@ -1673,6 +1694,56 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
+     * Getter for save called 1 times. Type: DEFAULT. Build precedence: 3.
+     */
+    private com.google.gwt.user.client.ui.Button get_save() {
+      return build_save();
+    }
+    private com.google.gwt.user.client.ui.Button build_save() {
+      // Creation section.
+      final com.google.gwt.user.client.ui.Button save = (com.google.gwt.user.client.ui.Button) GWT.create(com.google.gwt.user.client.ui.Button.class);
+      // Setup section.
+      save.setHTML(template_html1().asString());
+      save.ensureDebugId("matterActionSave");
+      save.addClickHandler(handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1);
+
+
+      return save;
+    }
+
+    /**
+     * Getter for domId29Element called 2 times. Type: DEFAULT. Build precedence: 3.
+     */
+    private com.google.gwt.uibinder.client.LazyDomElement domId29Element;
+    private com.google.gwt.uibinder.client.LazyDomElement get_domId29Element() {
+      return domId29Element;
+    }
+    private com.google.gwt.uibinder.client.LazyDomElement build_domId29Element() {
+      // Creation section.
+      domId29Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId29());
+      // Setup section.
+
+
+      return domId29Element;
+    }
+
+    /**
+     * Getter for domId30 called 2 times. Type: DOM_ID_HOLDER. Build precedence: 3.
+     */
+    private java.lang.String domId30;
+    private java.lang.String get_domId30() {
+      return domId30;
+    }
+    private java.lang.String build_domId30() {
+      // Creation section.
+      domId30 = com.google.gwt.dom.client.Document.get().createUniqueId();
+      // Setup section.
+
+
+      return domId30;
+    }
+
+    /**
      * Getter for close called 1 times. Type: DEFAULT. Build precedence: 3.
      */
     private com.google.gwt.user.client.ui.Button get_close() {
@@ -1690,19 +1761,19 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for domId29Element called 2 times. Type: DEFAULT. Build precedence: 3.
+     * Getter for domId30Element called 2 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.uibinder.client.LazyDomElement domId29Element;
-    private com.google.gwt.uibinder.client.LazyDomElement get_domId29Element() {
-      return domId29Element;
+    private com.google.gwt.uibinder.client.LazyDomElement domId30Element;
+    private com.google.gwt.uibinder.client.LazyDomElement get_domId30Element() {
+      return domId30Element;
     }
-    private com.google.gwt.uibinder.client.LazyDomElement build_domId29Element() {
+    private com.google.gwt.uibinder.client.LazyDomElement build_domId30Element() {
       // Creation section.
-      domId29Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId29());
+      domId30Element = new com.google.gwt.uibinder.client.LazyDomElement<Element>(get_domId30());
       // Setup section.
 
 
-      return domId29Element;
+      return domId30Element;
     }
   }
 }

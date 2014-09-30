@@ -10,8 +10,6 @@ import org.jukito.TestSingleton;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.google.gwt.view.client.HasData;
-import com.google.gwt.view.client.Range;
 import com.google.inject.Inject;
 import com.google.inject.TypeLiteral;
 import com.anova.anovacloud.client.application.matters.MattersPresenter;

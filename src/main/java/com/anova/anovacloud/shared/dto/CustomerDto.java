@@ -1,5 +1,3 @@
-
-
 package com.anova.anovacloud.shared.dto;
 
 public class CustomerDto extends BaseEntity {

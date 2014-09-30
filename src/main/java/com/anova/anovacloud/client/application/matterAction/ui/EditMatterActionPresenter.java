@@ -1,5 +1,3 @@
-
-
 package com.anova.anovacloud.client.application.matterAction.ui;
 
 import java.util.List;
@@ -36,8 +34,13 @@ public class EditMatterActionPresenter extends PresenterWidget<MyView> implement
         void edit(MatterActionDto matterActionDto);
         void setAllowedMatters(List<MatterDto> matterDtos);
         void setAllowedMatterActionStatuss(List<MatterActionStatusDto> actionStatusDtos);
-        void setAllowedAttorneys(List<AttorneyDto> attorneyDtos);
-        void setAllowedAttorneyRoles(List<AttorneyRoleDto> attorneyRoleDtos);
+        void setAllowedAttorney1s(List<AttorneyDto> attorneyDtos);
+        void setAllowedAttorney2s(List<AttorneyDto> attorneyDtos);
+        void setAllowedAttorney3s(List<AttorneyDto> attorneyDtos);
+        void setAllowedAttorney1Roles(List<AttorneyRoleDto> attorneyRoleDtos);
+        void setAllowedAttorney2Roles(List<AttorneyRoleDto> attorneyRoleDtos);
+        void setAllowedAttorney3Roles(List<AttorneyRoleDto> attorneyRoleDtos);
+        
     }
 
     private final RestDispatch dispatcher;
@@ -75,13 +78,13 @@ public class EditMatterActionPresenter extends PresenterWidget<MyView> implement
 
     @Override
     public void createNew() {
+    	this.matterActionDto = new MatterActionDto();
         reveal();
     }
     
     @Override
-    public void onEdit(MatterActionDto matterActionDto) {
+    public void edit(MatterActionDto matterActionDto) {
         this.matterActionDto = matterActionDto;
-
         reveal();
     }
 
@@ -92,11 +95,12 @@ public class EditMatterActionPresenter extends PresenterWidget<MyView> implement
 
     @Override
     public void onSave(MatterActionDto matterActionDto) {
-        dispatcher.execute(matterActionService.saveOrCreate(matterActionDto), new ErrorHandlerAsyncCallback<MatterActionDto>(this) {
+        dispatcher.execute(matterActionService.saveOrCreate(matterActionDto), 
+        		new ErrorHandlerAsyncCallback<MatterActionDto>(this) {
             @Override
             public void onSuccess(MatterActionDto savedMatterAction) {
-                DisplayMessageEvent.fire(EditMatterActionPresenter.this, new Message(messages.matterActionSaved(),
-                        MessageStyle.SUCCESS));
+                DisplayMessageEvent.fire(EditMatterActionPresenter.this, 
+                		new Message(messages.matterActionSaved(), MessageStyle.SUCCESS));
                 MatterActionAddedEvent.fire(EditMatterActionPresenter.this, savedMatterAction);
                 getView().hide();
             }
@@ -104,6 +108,7 @@ public class EditMatterActionPresenter extends PresenterWidget<MyView> implement
     }
 
     private void reveal() {
+    	
         dispatcher.execute(mattersService.getMatters(), new AbstractAsyncCallback<List<MatterDto>>() {
             @Override
             public void onSuccess(List<MatterDto> matters) {
@@ -119,15 +124,47 @@ public class EditMatterActionPresenter extends PresenterWidget<MyView> implement
         dispatcher.execute(attorneyService.getAttorneys(), new AbstractAsyncCallback<List<AttorneyDto>>() {
             @Override
             public void onSuccess(List<AttorneyDto> attorneys) {
-                onGetAttorneysSuccess(attorneys);
+                onGetAttorney1sSuccess(attorneys);
+               
+            }
+        });
+        dispatcher.execute(attorneyService.getAttorneys(), new AbstractAsyncCallback<List<AttorneyDto>>() {
+            @Override
+            public void onSuccess(List<AttorneyDto> attorneys) {
+                onGetAttorney2sSuccess(attorneys);
+               
+            }
+        });
+        dispatcher.execute(attorneyService.getAttorneys(), new AbstractAsyncCallback<List<AttorneyDto>>() {
+            @Override
+            public void onSuccess(List<AttorneyDto> attorneys) {
+                onGetAttorney3sSuccess(attorneys);
+               
             }
         });
         dispatcher.execute(attorneyRoleService.getAttorneyRoles(), new AbstractAsyncCallback<List<AttorneyRoleDto>>() {
             @Override
             public void onSuccess(List<AttorneyRoleDto> attorneyRoles) {
-                onGetAttorneyRolesSuccess(attorneyRoles);
+                onGetAttorney1RolesSuccess(attorneyRoles);
+               
             }
         });
+        dispatcher.execute(attorneyRoleService.getAttorneyRoles(), new AbstractAsyncCallback<List<AttorneyRoleDto>>() {
+            @Override
+            public void onSuccess(List<AttorneyRoleDto> attorneyRoles) {
+                onGetAttorney2RolesSuccess(attorneyRoles);
+               
+            }
+        });
+        dispatcher.execute(attorneyRoleService.getAttorneyRoles(), new AbstractAsyncCallback<List<AttorneyRoleDto>>() {
+            @Override
+            public void onSuccess(List<AttorneyRoleDto> attorneyRoles) {
+                onGetAttorney3RolesSuccess(attorneyRoles);
+               
+            }
+        });
+        
+        
         
     }
 
@@ -140,13 +177,26 @@ public class EditMatterActionPresenter extends PresenterWidget<MyView> implement
        
     }
     
-    private void onGetAttorneysSuccess(List<AttorneyDto> attorneyDtos) {
-        getView().setAllowedAttorneys(attorneyDtos);
+    private void onGetAttorney1sSuccess(List<AttorneyDto> attorneyDtos) {
+        getView().setAllowedAttorney1s(attorneyDtos);
+    }
+    private void onGetAttorney2sSuccess(List<AttorneyDto> attorneyDtos) {
+        getView().setAllowedAttorney2s(attorneyDtos);
+    }
+    private void onGetAttorney3sSuccess(List<AttorneyDto> attorneyDtos) {
+        getView().setAllowedAttorney3s(attorneyDtos);
     }
     
-    private void onGetAttorneyRolesSuccess(List<AttorneyRoleDto> attorneyRoleDtos) {
-        getView().setAllowedAttorneyRoles(attorneyRoleDtos);
-        getView().edit(new MatterActionDto());
+    private void onGetAttorney1RolesSuccess(List<AttorneyRoleDto> attorneyRoleDtos) {
+        getView().setAllowedAttorney1Roles(attorneyRoleDtos);
+    }
+    private void onGetAttorney2RolesSuccess(List<AttorneyRoleDto> attorneyRoleDtos) {
+        getView().setAllowedAttorney2Roles(attorneyRoleDtos);
+    }
+    private void onGetAttorney3RolesSuccess(List<AttorneyRoleDto> attorneyRoleDtos) {
+        getView().setAllowedAttorney3Roles(attorneyRoleDtos);
+        getView().edit(matterActionDto);
         RevealRootPopupContentEvent.fire(this, this);
     }
+    
 }

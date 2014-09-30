@@ -13,18 +13,7 @@
         </div>
         <br />
         <table width="100%">
-        <tr>
-        	<td width="25%">
-            	<div class="{style.formRow}">
-                	<g:InlineLabel>Display Name:</g:InlineLabel>
-                </div>
-            </td>
-            <td width="75%">
-                <div class="{style.formRow}">
-                	<g:TextBox ui:field="displayName" debugId="attorney-input"/>
-            	</div>
-            </td>
-        </tr>
+        
         <tr>
         	<td width="25%">
             	<div class="{style.formRow}">

@@ -118,7 +118,7 @@ public class DevBootStrapper {
          readonlyuser = UserRole.createDto(userRoleDao.put(UserRole.create(readonlyuser)));
         
     	
-        UserDto userDto = new UserDto("admin",  "Fan", "Mo", "admin", passwordSecurity.hashPassword("pwd123"), "fmo@fanconsultingllc.com", admin);
+        UserDto userDto = new UserDto("Fan", "Mo", "admin", passwordSecurity.hashPassword("pwd123"), "fmo@fanconsultingllc.com", admin);
         userDto  = User.createDto(userDao.put(User.create(userDto)));
     }
     
@@ -130,11 +130,13 @@ public class DevBootStrapper {
     	AttorneyRoleDto mtratty = new AttorneyRoleDto("2", "matter review atty");
     	AttorneyRoleDto wrkatty = new AttorneyRoleDto("3", "working atty");
     	AttorneyRoleDto sptatty = new AttorneyRoleDto("4", "supporting atty");
+    	AttorneyRoleDto none = new AttorneyRoleDto("5", "none");
 
     	cltatty = AttorneyRole.createDto(attorneyRoleDao.put(AttorneyRole.create(cltatty)));
     	mtratty = AttorneyRole.createDto(attorneyRoleDao.put(AttorneyRole.create(mtratty)));
     	wrkatty = AttorneyRole.createDto(attorneyRoleDao.put(AttorneyRole.create(wrkatty)));
     	sptatty = AttorneyRole.createDto(attorneyRoleDao.put(AttorneyRole.create(sptatty)));
+    	none = AttorneyRole.createDto(attorneyRoleDao.put(AttorneyRole.create(none)));
         
        
     	CaseStatusDto cstatus1 = new CaseStatusDto("1", "new");
@@ -149,14 +151,14 @@ public class DevBootStrapper {
     	cstatus4 = CaseStatus.createDto(caseStatusDao.put(CaseStatus.create(cstatus4)));
     	cstatus5 = CaseStatus.createDto(caseStatusDao.put(CaseStatus.create(cstatus5)));
     	
-    	CustomerStatusDto csstatus1 = new CustomerStatusDto("active");
-    	CustomerStatusDto csstatus2 = new CustomerStatusDto("inactive");
+    	CustomerStatusDto csstatus1 = new CustomerStatusDto("1", "active");
+    	CustomerStatusDto csstatus2 = new CustomerStatusDto("2", "inactive");
     	
     	csstatus1 = CustomerStatus.createDto(customerStatusDao.put(CustomerStatus.create(csstatus1)));
     	csstatus2 = CustomerStatus.createDto(customerStatusDao.put(CustomerStatus.create(csstatus2)));
     	
-    	AttorneyStatusDto astatus1 = new AttorneyStatusDto("active");
-    	AttorneyStatusDto astatus2 = new AttorneyStatusDto("inactive");
+    	AttorneyStatusDto astatus1 = new AttorneyStatusDto("1", "active");
+    	AttorneyStatusDto astatus2 = new AttorneyStatusDto("2", "inactive");
     	
     	astatus1 = AttorneyStatus.createDto(attorneyStatusDao.put(AttorneyStatus.create(astatus1)));
     	astatus2 = AttorneyStatus.createDto(attorneyStatusDao.put(AttorneyStatus.create(astatus2)));

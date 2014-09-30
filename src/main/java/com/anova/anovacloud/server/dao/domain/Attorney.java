@@ -34,8 +34,7 @@ public class Attorney extends BaseEntity {
         phone ="";
         fax = "";
     }
-    public Attorney(String displayName, String firstName, String lastName,String mailAddress, String email, String phone, String fax, AttorneyStatus attorneyStatus) {
-        this.displayName = displayName;
+    public Attorney(String firstName, String lastName,String mailAddress, String email, String phone, String fax, AttorneyStatus attorneyStatus) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.mailAddress = mailAddress;
@@ -62,7 +61,8 @@ public class Attorney extends BaseEntity {
     }
 
     public String getDisplayName() {
-        return displayName;
+    	this.displayName = this.lastName +", "+this.firstName;
+        return this.displayName;
     }
 
     public void setDisplayName(String displayName) {

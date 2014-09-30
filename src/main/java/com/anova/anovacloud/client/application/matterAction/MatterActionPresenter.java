@@ -1,4 +1,3 @@
-
 package com.anova.anovacloud.client.application.matterAction;
 
 import java.util.Arrays;
@@ -18,7 +17,6 @@ import com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionP
 import com.anova.anovacloud.client.place.NameTokens;
 import com.anova.anovacloud.client.rest.MatterActionService;
 import com.anova.anovacloud.client.util.AbstractAsyncCallback;
-import com.anova.anovacloud.shared.dto.CustomerDto;
 import com.anova.anovacloud.shared.dto.MatterActionDto;
 import com.gwtplatform.dispatch.rest.shared.RestDispatch;
 import com.gwtplatform.mvp.client.HasUiHandlers;
@@ -29,6 +27,7 @@ import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.annotations.ProxyEvent;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
+import com.gwtplatform.mvp.shared.proxy.PlaceRequest;
 import com.gwtplatform.mvp.shared.proxy.PlaceRequest.Builder;
 
 public class MatterActionPresenter extends Presenter<MatterActionPresenter.MyView, MatterActionPresenter.MyProxy>
@@ -86,22 +85,21 @@ public class MatterActionPresenter extends Presenter<MatterActionPresenter.MyVie
     }
     
     @Override
-    public void onEdit(MatterActionDto matterActionDto) {
-        editingMatterAction = matterActionDto;
-        editMatterActionPresenter.onEdit(matterActionDto);
+    public void onDetail(MatterActionDto matterActionDto) {
+        PlaceRequest placeRequest = new Builder().nameToken(NameTokens.getDetailMatterAction())
+                                                 .with("id", String.valueOf(matterActionDto.getId()))
+                                                 .build();
+
+        placeManager.revealPlace(placeRequest);
     }
     
-/*
     @Override
-    public void onDelete(final MatterActionDto matterActionDto) {
-        dispatcher.execute(matterActionService.delete(matterActionDto.getId()), new AbstractAsyncCallback<Void>() {
-            @Override
-            public void onSuccess(Void nothing) {
-                getView().removeMatterAction(matterActionDto);
-            }
-        });
+    public void onEdit(MatterActionDto matterActionDto) {
+        editingMatterAction = matterActionDto;
+        editMatterActionPresenter.edit(matterActionDto);
     }
-*/
+    
+
     @ProxyEvent
     @Override
     public void onMatterActionAdded(MatterActionAddedEvent event) {

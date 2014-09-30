@@ -6,9 +6,7 @@ import com.gwtplatform.mvp.client.UiHandlers;
 
 public interface EditMatterActionUiHandlers extends UiHandlers {
     void createNew();
-
     void onSave(MatterActionDto matterActionDto);
-    void onEdit(MatterActionDto matterActionDto);
-
+    void edit(MatterActionDto matterActionDto);
     void onCancel();
 }

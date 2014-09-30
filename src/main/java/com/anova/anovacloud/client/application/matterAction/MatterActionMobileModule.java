@@ -1,5 +1,3 @@
-
-
 package com.anova.anovacloud.client.application.matterAction;
 
 import com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionPresenter;

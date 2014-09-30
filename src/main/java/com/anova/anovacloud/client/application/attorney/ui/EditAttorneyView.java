@@ -2,6 +2,8 @@
 
 package com.anova.anovacloud.client.application.attorney.ui;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -21,6 +23,7 @@ import com.anova.anovacloud.client.application.attorney.ui.EditAttorneyPresenter
 import com.anova.anovacloud.client.application.attorneyStatus.ui.AttorneyStatusRenderer;
 import com.anova.anovacloud.shared.dto.AttorneyDto;
 import com.anova.anovacloud.shared.dto.AttorneyStatusDto;
+import com.anova.anovacloud.shared.dto.MatterActionStatusDto;
 import com.gwtplatform.mvp.client.PopupViewWithUiHandlers;
 
 public class EditAttorneyView extends PopupViewWithUiHandlers<EditAttorneyUiHandlers> implements MyView,
@@ -31,8 +34,6 @@ public class EditAttorneyView extends PopupViewWithUiHandlers<EditAttorneyUiHand
     interface Driver extends SimpleBeanEditorDriver<AttorneyDto, EditAttorneyView> {
     }
 
-    @UiField
-    TextBox displayName;
     @UiField
     TextBox firstName;
     @UiField
@@ -71,6 +72,11 @@ public class EditAttorneyView extends PopupViewWithUiHandlers<EditAttorneyUiHand
     }
     @Override
     public void setAllowedAttorneyStatuss(List<AttorneyStatusDto> attorneyStatusDtos) {
+    	Collections.sort(attorneyStatusDtos, new Comparator<AttorneyStatusDto>() {
+		    public int compare(AttorneyStatusDto c1, AttorneyStatusDto c2) {
+		        return c1.getStatusValue().compareTo(c2.getStatusValue());
+		    }
+		});
         attorneyStatus.setValue(attorneyStatusDtos.isEmpty() ? null : attorneyStatusDtos.get(0));
         attorneyStatus.setAcceptableValues(attorneyStatusDtos);
         

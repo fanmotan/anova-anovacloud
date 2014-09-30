@@ -1,5 +1,3 @@
-
-
 package com.anova.anovacloud.client.application.customer.ui;
 
 import com.anova.anovacloud.shared.dto.CustomerDto;

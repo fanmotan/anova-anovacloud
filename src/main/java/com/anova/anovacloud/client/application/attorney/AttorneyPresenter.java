@@ -20,7 +20,6 @@ import com.anova.anovacloud.client.application.attorney.ui.EditAttorneyPresenter
 import com.anova.anovacloud.client.place.NameTokens;
 import com.anova.anovacloud.client.rest.AttorneyService;
 import com.anova.anovacloud.client.util.AbstractAsyncCallback;
-import com.anova.anovacloud.client.util.ErrorHandlerAsyncCallback;
 import com.anova.anovacloud.shared.dto.AttorneyDto;
 import com.gwtplatform.dispatch.rest.shared.RestDispatch;
 import com.gwtplatform.mvp.client.HasUiHandlers;

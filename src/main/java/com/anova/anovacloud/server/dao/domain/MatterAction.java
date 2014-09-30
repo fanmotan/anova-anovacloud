@@ -23,10 +23,6 @@ public class MatterAction extends BaseEntity {
     private Date responseDate;
     private Date takenDate;
     private String actionRemarks;
-    private String createBy;
-    private Date createDate;
-    private String updateBy;
-    private Date updateDate;
 
     @Load
     private Ref<Matter> matter;
@@ -192,37 +188,7 @@ public class MatterAction extends BaseEntity {
     public void setActionRemarks(String actionRemarks) {
         this.actionRemarks = actionRemarks;
     }
-    
-    public String getCreateBy() {
-        return createBy;
-    }
-
-    public void setCreateBy(String createBy) {
-        this.createBy = createBy;
-    }
-    
-    public Date getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
-    }
-    public String getUpdateBy() {
-        return updateBy;
-    }
-
-    public void setUpdateBy(String updateBy) {
-        this.updateBy = updateBy;
-    }
-    public Date getUpdateDate() {
-        return updateDate;
-    }
-
-    public void setUpdateDate(Date updateDate) {
-        this.updateDate = updateDate;
-    }
-    
+     
 
     public static List<MatterActionDto> createDto(List<MatterAction> actions) {
         if (actions == null) {
@@ -252,15 +218,11 @@ public class MatterAction extends BaseEntity {
         actionDto.setTakenDate(action.getTakenDate());
         actionDto.setAssignee1(Attorney.createDto(action.getAssignee1()));
         actionDto.setAssignee1Role(AttorneyRole.createDto(action.getAssignee1Role()));
-        actionDto.setAssignee2(Attorney.createDto(action.getAssignee1()));
+        actionDto.setAssignee2(Attorney.createDto(action.getAssignee2()));
         actionDto.setAssignee2Role(AttorneyRole.createDto(action.getAssignee2Role()));
-        actionDto.setAssignee3(Attorney.createDto(action.getAssignee1()));
-        actionDto.setAssignee3Role(AttorneyRole.createDto(action.getAssignee1Role()));
+        actionDto.setAssignee3(Attorney.createDto(action.getAssignee3()));
+        actionDto.setAssignee3Role(AttorneyRole.createDto(action.getAssignee3Role()));
         actionDto.setActionRemarks(action.getActionRemarks());
-        actionDto.setCreateBy(action.getCreateBy());
-        actionDto.setCreateDate(action.getCreateDate());
-        actionDto.setUpdateBy(action.getUpdateBy());
-        actionDto.setUpdateDate(action.getUpdateDate());
         actionDto.setActionStatus(MatterActionStatus.createDto(action.getActionStatus()));
         
         return actionDto;
@@ -286,10 +248,6 @@ public class MatterAction extends BaseEntity {
         action.setAssignee3(Attorney.create(actionDto.getAssignee3()));
         action.setAssignee3Role(AttorneyRole.create(actionDto.getAssignee3Role()));
         action.setActionRemarks(actionDto.getActionRemarks());
-        action.setCreateBy(actionDto.getCreateBy());
-        action.setCreateDate(actionDto.getCreateDate());
-        action.setUpdateBy(actionDto.getUpdateBy());
-        action.setUpdateDate(actionDto.getUpdateDate());
         action.setActionStatus(MatterActionStatus.create(actionDto.getActionStatus()));
         return action;
     }

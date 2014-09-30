@@ -7,7 +7,9 @@
     <ui:style>
         .tableWrapper {
             margin-top: 20px;
+            font-size: 0.75em;
         }
+       
     </ui:style>
 
     <g:HTMLPanel debugId="matterActionPanel">
@@ -22,7 +24,7 @@
         </div>
 
         <div class="{style.tableWrapper}">
-            <cell:CellTable ui:field="matterActionGrid" width="100%" debugId="matterActions"/>
+            <cell:CellTable  ui:field="matterActionGrid" width="100%" debugId="matterActions"/>
         </div>
     </g:HTMLPanel>
 </ui:UiBinder>

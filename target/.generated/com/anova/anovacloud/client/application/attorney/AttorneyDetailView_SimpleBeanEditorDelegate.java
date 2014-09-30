@@ -7,7 +7,6 @@ public class AttorneyDetailView_SimpleBeanEditorDelegate extends com.google.gwt.
   private com.anova.anovacloud.shared.dto.AttorneyDto object;
   @Override public com.anova.anovacloud.shared.dto.AttorneyDto getObject() {return object;}
   @Override protected void setObject(Object object) {this.object=(com.anova.anovacloud.shared.dto.AttorneyDto)object;}
-  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate displayNameDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate firstNameDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate lastNameDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate mailAddressDelegate;
@@ -16,10 +15,6 @@ public class AttorneyDetailView_SimpleBeanEditorDelegate extends com.google.gwt.
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate faxDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate attorneyStatusDelegate;
   @Override protected void initializeSubDelegates() {
-    if (editor.displayName.asEditor() != null) {
-      displayNameDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
-      addSubDelegate(displayNameDelegate, appendPath("displayName"), editor.displayName.asEditor());
-    }
     if (editor.firstName.asEditor() != null) {
       firstNameDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
       addSubDelegate(firstNameDelegate, appendPath("firstName"), editor.firstName.asEditor());
@@ -50,12 +45,6 @@ public class AttorneyDetailView_SimpleBeanEditorDelegate extends com.google.gwt.
     }
   }
   @Override public void accept(com.google.gwt.editor.client.EditorVisitor visitor) {
-    if (displayNameDelegate != null) 
-    {
-      com.anova.anovacloud.client.application.attorney.AttorneyDetailView_displayName_Context ctx = new com.anova.anovacloud.client.application.attorney.AttorneyDetailView_displayName_Context(getObject(), editor.displayName.asEditor(), appendPath("displayName"));
-      ctx.setEditorDelegate(displayNameDelegate);
-      ctx.traverse(visitor, displayNameDelegate);
-    }
     if (firstNameDelegate != null) 
     {
       com.anova.anovacloud.client.application.attorney.AttorneyDetailView_firstName_Context ctx = new com.anova.anovacloud.client.application.attorney.AttorneyDetailView_firstName_Context(getObject(), editor.firstName.asEditor(), appendPath("firstName"));

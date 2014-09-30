@@ -1,5 +1,3 @@
-
-
 package com.anova.anovacloud.client.application.customer;
 
 import com.anova.anovacloud.client.application.customer.ui.EditCustomerPresenter;

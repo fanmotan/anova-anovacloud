@@ -20,10 +20,10 @@ public class EditUserView_BinderImpl_GenBundle_default_InlineClientBundleGenerat
         return "style";
       }
       public String getText() {
-        return (".GFOXD4NDIL-com-anova-anovacloud-client-application-user-ui-EditUserView_BinderImpl_GenCss_style-formRow {\n  margin-bottom : " + ("5px")  + ";\n  margin-top : " + ("5px")  + ";\n}\n");
+        return (".GFOXD4NDJL-com-anova-anovacloud-client-application-user-ui-EditUserView_BinderImpl_GenCss_style-formRow {\n  margin-bottom : " + ("5px")  + ";\n  margin-top : " + ("5px")  + ";\n}\n");
       }
       public java.lang.String formRow() {
-        return "GFOXD4NDIL-com-anova-anovacloud-client-application-user-ui-EditUserView_BinderImpl_GenCss_style-formRow";
+        return "GFOXD4NDJL-com-anova-anovacloud-client-application-user-ui-EditUserView_BinderImpl_GenCss_style-formRow";
       }
     }
     ;

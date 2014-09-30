@@ -22,7 +22,6 @@ import com.anova.anovacloud.client.application.event.ChangeActionBarEvent.Action
 import com.anova.anovacloud.client.place.NameTokens;
 import com.anova.anovacloud.client.rest.MattersService;
 import com.anova.anovacloud.client.util.AbstractAsyncCallback;
-import com.anova.anovacloud.client.util.ErrorHandlerAsyncCallback;
 import com.anova.anovacloud.shared.dto.MatterDto;
 import com.gwtplatform.dispatch.rest.shared.RestDispatch;
 import com.gwtplatform.mvp.client.HasUiHandlers;

@@ -15,14 +15,12 @@ public class UserDto extends BaseEntity {
 		
     }
 
-    public UserDto(String displayName,
-                   String firstName,
+    public UserDto(String firstName,
                    String lastName,
                    String username,
                    String hashPassword,
     			   String email,
     			   UserRoleDto userRole) {
-    	this.displayName = displayName;
         this.username = username;
         this.hashPassword = hashPassword;
         this.firstName = firstName;
@@ -40,7 +38,8 @@ public class UserDto extends BaseEntity {
 	}
 
 	public String getDisplayName() {
-        return displayName;
+		this.displayName = this.lastName +", " + this.firstName;
+        return this.displayName;
     }
 
     public void setDisplayName(String displayName) {
@@ -92,7 +91,7 @@ public class UserDto extends BaseEntity {
     @Override
     public String toString() {
         String s = " { User ";
-        s += firstName + " "+lastName; 
+        s += displayName; 
         s += "}";
         return s;
     }

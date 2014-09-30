@@ -1,5 +1,3 @@
-
-
 package com.anova.anovacloud.client.application.customer.renderer;
 
 import com.google.gwt.cell.client.AbstractCell;

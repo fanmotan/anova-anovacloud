@@ -37,9 +37,8 @@ public class User extends BaseEntity {
        
     }
 	
-    public User(String displayName, String username, String hashPassword, String firstName, String lastName,
+    public User(String username, String hashPassword, String firstName, String lastName,
     			String email, UserRole userRole) {
-        this.displayName = displayName;
         this.username = username;    
         this.hashPassword = hashPassword;
         this.firstName = firstName;
@@ -48,8 +47,6 @@ public class User extends BaseEntity {
         this.setUserRole(userRole);
     }
     
-    
-   
     public UserRole getUserRole() {
 		return Deref.deref(userRole);
 	}
@@ -68,7 +65,8 @@ public class User extends BaseEntity {
     }
 
     public String getDisplayName() {
-        return displayName;
+    	this.displayName = this.lastName + ", "+this.firstName;
+        return this.displayName;
     }
 
     public void setDisplayName(String displayName) {

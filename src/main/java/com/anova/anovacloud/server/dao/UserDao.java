@@ -1,14 +1,6 @@
-
-
 package com.anova.anovacloud.server.dao;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
 import com.anova.anovacloud.server.dao.domain.User;
-import com.anova.anovacloud.server.dao.domain.UserRole;
-import com.anova.anovacloud.shared.dto.UserRoleDto;
 
 public class UserDao extends BaseDao<User> {
     public UserDao() {

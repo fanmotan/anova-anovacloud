@@ -5,13 +5,15 @@ package com.anova.anovacloud.shared.dto;
 
 public class CustomerStatusDto extends BaseEntity {
     private String statusName;
+    private String statusValue;
     
 	public CustomerStatusDto() {
        
     }
 
-    public CustomerStatusDto(String statusName) {
+    public CustomerStatusDto(String statusValue,  String statusName) {
         this.statusName = statusName;
+        this.statusValue = statusValue;
     }
    
     public String getStatusName() {
@@ -22,5 +24,12 @@ public class CustomerStatusDto extends BaseEntity {
 		this.statusName = statusName;
 	}
 
+	public String getStatusValue() {
+		return statusValue;
+	}
+
+	public void setStatusValue(String statusValue) {
+		this.statusValue = statusValue;
+	}
 	 
 }

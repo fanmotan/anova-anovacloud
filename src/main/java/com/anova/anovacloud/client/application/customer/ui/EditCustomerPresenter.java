@@ -1,5 +1,3 @@
-
-
 package com.anova.anovacloud.client.application.customer.ui;
 
 import java.util.List;
@@ -70,7 +68,6 @@ public class EditCustomerPresenter extends PresenterWidget<MyView> implements Ed
     @Override
     public void edit(CustomerDto customerDto) {
         this.customerDto = customerDto;
-
         reveal();
     }
 

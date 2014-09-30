@@ -1,4 +1,3 @@
-
 package com.anova.anovacloud.client.application.customer;
 
 import java.util.Arrays;
@@ -7,7 +6,6 @@ import java.util.List;
 import javax.inject.Inject;
 
 import com.google.common.base.Strings;
-import com.google.gwt.user.client.Window;
 import com.google.web.bindery.event.shared.EventBus;
 import com.anova.anovacloud.client.application.ApplicationPresenter;
 import com.anova.anovacloud.client.application.event.ActionBarEvent;

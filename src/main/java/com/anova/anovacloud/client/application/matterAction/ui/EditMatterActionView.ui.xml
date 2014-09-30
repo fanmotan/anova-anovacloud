@@ -1,97 +1,189 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui"
 		xmlns:d="urn:import:com.google.gwt.user.datepicker.client">
+		<ui:style>
+        .formRow {
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+    </ui:style> 
     <g:PopupPanel glassEnabled="true" autoHideEnabled="true" animationEnabled="true">
-        <g:HTMLPanel>
-        <table>
-        <tr><tb>
-            <div>
-                <g:InlineLabel>Matter:</g:InlineLabel>
-                <g:ValueListBox ui:field="matter"/>
+        <g:HTMLPanel debugId="action-editor">
+        <div>
+                	<g:InlineLabel>Please fill in or modify the following case action:</g:InlineLabel>
+        </div>
+        <br />
+        <table width="100%">
+        	<tr>
+        		<td width="25%">
+            		<div class="{style.formRow}">
+                		<g:InlineLabel>Matter:</g:InlineLabel>
+                    </div>
+            </td>
+             <td width="75%">
+                <div class="{style.formRow}">
+                	<g:ValueListBox ui:field="matter"/>
+            	</div>
+			</td>
+		</tr>
+         <tr>
+            <td width="25%">  
+				<div class="{style.formRow}">
+                	<g:InlineLabel>Due Date:</g:InlineLabel>
+                 </div>
+            </td>
+            <td width="75%">
+                <div class="{style.formRow}">	
+                	<d:DateBox ui:field="dueDate"  debugId="dueDateInput"/>
+            	</div>
+            </td>
+         </tr>
+         <tr>
+            <td width="25%">
+            	<div class="{style.formRow}">
+                	<g:InlineLabel>Action Due:</g:InlineLabel>
+                </div>
+            </td>
+            <td width="75%">
+                <div class="{style.formRow}">	
+                	<g:TextBox ui:field="actionDue" debugId="actionDueInput"/>
+            	</div>
+            </td>
+         </tr>
+         <tr>
+            <td width="25%">
+            	<div class="{style.formRow}">
+                	<g:InlineLabel>PTO Mail Date:</g:InlineLabel>
+                </div>
+            </td>
+            <td width="75%">
+                <div class="{style.formRow}">	
+                	<d:DateBox ui:field="ptoMailDate"  debugId="ptoMailDateInput"/>
             </div>
-</tb>
-<tb>
-			<div>
-                <g:InlineLabel>Due Date:</g:InlineLabel>
-                <d:DateBox ui:field="dueDate"  debugId="dueDateInput"/>
+            </td>
+         </tr>
+         <tr>
+            <td width="25%">
+            	<div class="{style.formRow}">
+                	<g:InlineLabel>Respone Date:</g:InlineLabel>
+                </div>
+            </td>
+            <td width="75%">
+            	<div class="{style.formRow}">
+                	<d:DateBox ui:field="responseDate"  debugId="responseDateInput"/>
+            	</div>
+              </td>
+         </tr>
+         <tr>
+            <td width="25%">
+            	<div class="{style.formRow}">
+                	<g:InlineLabel>Date Taken:</g:InlineLabel>
+                </div>
+            </td>
+            <td width="75%">
+            	<div class="{style.formRow}">	
+                	<d:DateBox ui:field="takenDate"  debugId="takenDateInput"/>
+            	</div>
+             </td>
+         </tr>
+         <tr>
+            <td width="25%">
+            	<div class="{style.formRow}">
+                	<g:InlineLabel>Assignee1:</g:InlineLabel>
+                </div>
+            </td>
+            <td width="75%">
+                <div class="{style.formRow}">	
+               	 	<g:ValueListBox ui:field="assignee1" debugId="assignee1Input"/>
             </div>
-            </tb></tr>
-             <tr><tb>
-            <div>
-                <g:InlineLabel>Action Due:</g:InlineLabel>
-                <g:TextBox ui:field="actionDue" debugId="actionDueInput"/>
-            </div>
-            </tb>
-<tb>
-			<div>
-                <g:InlineLabel>PTO Mail Date:</g:InlineLabel>
-                <d:DateBox ui:field="ptoMailDate"  debugId="ptoMailDateInput"/>
-            </div>
-            </tb></tr>
-             <tr><tb>
-            <div>
-                <g:InlineLabel>Respone Date:</g:InlineLabel>
-                <d:DateBox ui:field="responseDate"  debugId="responseDateInput"/>
-            </div>
-              </tb>
-<tb>
-             <div>
-                <g:InlineLabel>Date Taken:</g:InlineLabel>
-                <d:DateBox ui:field="takenDate"  debugId="takenDateInput"/>
-            </div>
-             </tb></tr>
-             <tr><tb>
-            <div>
-                <g:InlineLabel>Assignee1:</g:InlineLabel>
-                <g:ValueListBox ui:field="assignee1" debugId="assignee1Input"/>
-            </div>
-            </tb>
-<tb>
-            <div>
-                <g:InlineLabel>Assignee1 Role:</g:InlineLabel>
-                <g:ValueListBox ui:field="assignee1Role" debugId="assignee1RoleInput"/>
-            </div>
-             </tb></tr>
-             <tr><tb>
-            <div>
-                <g:InlineLabel>Assignee2:</g:InlineLabel>
-                <g:ValueListBox ui:field="assignee2" debugId="assignee2Input"/>
-            </div>
-            </tb>
-			<tb>
-            <div>
-                <g:InlineLabel>Assignee2 Role:</g:InlineLabel>
-                <g:ValueListBox ui:field="assignee2Role" debugId="assignee2RoleInput"/>
-            </div>
-             </tb></tr>
-             <tr><tb>
-            <div>
-                <g:InlineLabel>Assignee3:</g:InlineLabel>
-                <g:ValueListBox ui:field="assignee3" debugId="assignee3Input"/>
-            </div>
-            </tb>
-			<tb>
-            <div>
-                <g:InlineLabel>Assignee3 Role:</g:InlineLabel>
-                <g:ValueListBox ui:field="assignee3Role" debugId="assignee3RoleInput"/>
-            </div>
-            </tb></tr>
-             <tr><tb>
-            <div>
-                <g:InlineLabel>Action Remarks:</g:InlineLabel>
-                <g:TextBox ui:field="actionRemarks" debugId="actionRemarksInput"/>
-            </div>
-            </tb>
-			</tr>
-			 <tr><tb>
-            <div>
-                <g:InlineLabel>Action Status:</g:InlineLabel>
-                <g:ValueListBox ui:field="actionStatus" debugId="actionRemarksInput"/>
-            </div>
-            </tb>
-			</tr>
-			</table>
+            </td>
+         </tr>
+         <tr>
+            <td width="25%">
+            	<div class="{style.formRow}">
+               	 	<g:InlineLabel>Assignee1 Role:</g:InlineLabel>
+               	</div>
+            </td>
+            <td width="75%">
+            	<div class="{style.formRow}"> 
+                	<g:ValueListBox ui:field="assignee1Role" debugId="assignee1RoleInput"/>
+            	</div>
+             </td>
+         </tr>
+         <tr>
+            <td width="25%">
+            	<div class="{style.formRow}">
+                	<g:InlineLabel>Assignee2:</g:InlineLabel>
+             	</div>
+            </td>
+            <td width="75%">
+            	<div class="{style.formRow}">   
+                	<g:ValueListBox ui:field="assignee2" debugId="assignee2Input"/>
+            	</div>
+             </td>
+         </tr>
+         <tr>
+            <td width="25%">
+            	<div class="{style.formRow}">
+                	<g:InlineLabel>Assignee2 Role:</g:InlineLabel>
+                 </div>
+            </td>
+            <td width="75%">
+            	<div class="{style.formRow}">	
+                	<g:ValueListBox ui:field="assignee2Role" debugId="assignee2RoleInput"/>
+            	</div>
+             </td>
+         </tr>
+         <tr>
+            <td width="25%">
+            	<div class="{style.formRow}">
+                	<g:InlineLabel>Assignee3:</g:InlineLabel>
+                </div>
+            </td>
+            <td width="75%">
+                <div class="{style.formRow}">
+                	<g:ValueListBox ui:field="assignee3" debugId="assignee3Input"/>
+            	</div>
+            </td>
+         </tr>
+         <tr>
+            <td width="25%">
+            	<div class="{style.formRow}">
+                	<g:InlineLabel>Assignee3 Role:</g:InlineLabel>
+                </div>
+            </td>
+            <td width="75%">
+            	<div class="{style.formRow}">
+                	<g:ValueListBox ui:field="assignee3Role" debugId="assignee3RoleInput"/>
+            	</div>
+            </td>
+         </tr>
+         <tr>
+            <td width="25%">
+            	<div class="{style.formRow}">
+                	<g:InlineLabel>Action Remarks:</g:InlineLabel>
+                </div>
+            </td>
+            <td width="75%">
+            	<div class="{style.formRow}">
+                	<g:TextBox ui:field="actionRemarks" debugId="actionRemarksInput"/>
+            	</div>
+            </td>
+         </tr>
+         <tr>
+            <td width="25%">
+            	<div class="{style.formRow}">
+                	<g:InlineLabel>Action Status:</g:InlineLabel>
+                </div>
+            </td>
+            <td width="75%">
+                <div class="{style.formRow}">
+                	<g:ValueListBox ui:field="actionStatus" debugId="actionRemarksInput"/>
+            	</div>
+            </td>
+		</tr>
+	</table>
             
-            <div>
+            <div class="{style.formRow}">
                 <g:Button ui:field="save" debugId="matterActionSave">Save</g:Button>
                 <g:Button ui:field="close">Close</g:Button>
             </div>

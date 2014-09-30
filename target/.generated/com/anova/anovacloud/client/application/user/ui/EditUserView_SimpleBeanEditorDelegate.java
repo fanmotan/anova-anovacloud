@@ -7,7 +7,6 @@ public class EditUserView_SimpleBeanEditorDelegate extends com.google.gwt.editor
   private com.anova.anovacloud.shared.dto.UserDto object;
   @Override public com.anova.anovacloud.shared.dto.UserDto getObject() {return object;}
   @Override protected void setObject(Object object) {this.object=(com.anova.anovacloud.shared.dto.UserDto)object;}
-  com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate displayNameDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate firstNameDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate lastNameDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate usernameDelegate;
@@ -15,10 +14,6 @@ public class EditUserView_SimpleBeanEditorDelegate extends com.google.gwt.editor
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate emailDelegate;
   com.google.gwt.editor.client.impl.SimpleBeanEditorDelegate userRoleDelegate;
   @Override protected void initializeSubDelegates() {
-    if (editor.displayName.asEditor() != null) {
-      displayNameDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
-      addSubDelegate(displayNameDelegate, appendPath("displayName"), editor.displayName.asEditor());
-    }
     if (editor.firstName.asEditor() != null) {
       firstNameDelegate = new com.google.gwt.editor.ui.client.adapters.ValueBoxEditor_java_lang_String_SimpleBeanEditorDelegate();
       addSubDelegate(firstNameDelegate, appendPath("firstName"), editor.firstName.asEditor());
@@ -45,12 +40,6 @@ public class EditUserView_SimpleBeanEditorDelegate extends com.google.gwt.editor
     }
   }
   @Override public void accept(com.google.gwt.editor.client.EditorVisitor visitor) {
-    if (displayNameDelegate != null) 
-    {
-      com.anova.anovacloud.client.application.user.ui.EditUserView_displayName_Context ctx = new com.anova.anovacloud.client.application.user.ui.EditUserView_displayName_Context(getObject(), editor.displayName.asEditor(), appendPath("displayName"));
-      ctx.setEditorDelegate(displayNameDelegate);
-      ctx.traverse(visitor, displayNameDelegate);
-    }
     if (firstNameDelegate != null) 
     {
       com.anova.anovacloud.client.application.user.ui.EditUserView_firstName_Context ctx = new com.anova.anovacloud.client.application.user.ui.EditUserView_firstName_Context(getObject(), editor.firstName.asEditor(), appendPath("firstName"));

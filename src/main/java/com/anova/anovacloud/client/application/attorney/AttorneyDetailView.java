@@ -2,6 +2,8 @@
 
 package com.anova.anovacloud.client.application.attorney;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -27,8 +29,7 @@ public class AttorneyDetailView extends ViewWithUiHandlers<AttorneyDetailUiHandl
     interface Driver extends SimpleBeanEditorDriver<AttorneyDto, AttorneyDetailView> {
     }
 
-    @UiField
-    TextBox displayName;
+  
     @UiField
     TextBox firstName;
     @UiField
@@ -56,7 +57,6 @@ public class AttorneyDetailView extends ViewWithUiHandlers<AttorneyDetailUiHandl
         attorneyStatus = new ValueListBox<>(new AttorneyStatusRenderer());
         driver.initialize(this);
 
-        displayName.getElement().setAttribute("placeholder", "Display Name");
         firstName.getElement().setAttribute("placeholder", "First Name");
         lastName.getElement().setAttribute("placeholder", "Last Name");
         email.getElement().setAttribute("placeholder", "Attorney Email");
@@ -71,12 +71,17 @@ public class AttorneyDetailView extends ViewWithUiHandlers<AttorneyDetailUiHandl
     	if (attorneyDto.getAttorneyStatus() == null) {
             attorneyDto.setAttorneyStatus(attorneyStatus.getValue());
         }
-        displayName.setFocus(true);
+        firstName.setFocus(true);
         driver.edit(attorneyDto);
     }
     
     @Override
     public void setAllowedAttorneyStatuss(List<AttorneyStatusDto> attorneyStatusDtos) {
+    	Collections.sort(attorneyStatusDtos, new Comparator<AttorneyStatusDto>() {
+		    public int compare(AttorneyStatusDto c1, AttorneyStatusDto c2) {
+		        return c1.getStatusValue().compareTo(c2.getStatusValue());
+		    }
+		});
         attorneyStatus.setValue(attorneyStatusDtos.isEmpty() ? null : attorneyStatusDtos.get(0));
         attorneyStatus.setAcceptableValues(attorneyStatusDtos);
     }

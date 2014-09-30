@@ -212,8 +212,6 @@ public class MatterActionView_BinderImpl implements UiBinder<com.google.gwt.user
       create.addClickHandler(handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1);
 
 
-      this.owner.create = create;
-
       return create;
     }
 

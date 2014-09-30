@@ -33,8 +33,6 @@ public class EditUserView extends PopupViewWithUiHandlers<EditUserUiHandlers> im
     }
 
     @UiField
-    TextBox displayName;
-    @UiField
     TextBox firstName;
     @UiField
     TextBox lastName;

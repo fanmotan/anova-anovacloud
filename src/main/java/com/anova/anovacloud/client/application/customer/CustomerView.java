@@ -1,5 +1,3 @@
-
-
 package com.anova.anovacloud.client.application.customer;
 
 import java.util.Collections;

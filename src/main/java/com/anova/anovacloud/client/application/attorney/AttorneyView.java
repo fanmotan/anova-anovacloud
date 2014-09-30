@@ -11,7 +11,6 @@ import javax.inject.Inject;
 import com.google.gwt.cell.client.ActionCell;
 import com.google.gwt.cell.client.ActionCell.Delegate;
 import com.google.gwt.cell.client.Cell;
-import com.google.gwt.cell.client.NumberCell;
 import com.google.gwt.cell.client.TextCell;
 import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -21,14 +20,12 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.cellview.client.Column;
 import com.google.gwt.user.cellview.client.IdentityColumn;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.view.client.ListDataProvider;
 import com.google.gwt.view.client.NoSelectionModel;
 import com.anova.anovacloud.client.application.attorney.AttorneyPresenter.MyView;
 import com.anova.anovacloud.shared.dto.AttorneyDto;
 import com.anova.anovacloud.shared.dto.AttorneyStatusDto;
-import com.anova.anovacloud.shared.dto.CustomerDto;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
 public class AttorneyView extends ViewWithUiHandlers<AttorneyUiHandlers> implements MyView {

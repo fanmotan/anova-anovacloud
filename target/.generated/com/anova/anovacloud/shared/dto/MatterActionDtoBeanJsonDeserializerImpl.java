@@ -178,54 +178,6 @@ public class MatterActionDtoBeanJsonDeserializerImpl extends com.github.nmorel.g
       }
     });
     
-    map.put("createBy", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
-      }
-      
-      @Override
-      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
-        bean.setCreateBy(value);
-      }
-    });
-    
-    map.put("createDate", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.util.Date>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.BaseDateJsonDeserializer.DateJsonDeserializer.getInstance();
-      }
-      
-      @Override
-      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, java.util.Date value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
-        bean.setCreateDate(value);
-      }
-    });
-    
-    map.put("updateBy", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.lang.String>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
-      }
-      
-      @Override
-      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
-        bean.setUpdateBy(value);
-      }
-    });
-    
-    map.put("updateDate", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.util.Date>() {
-      @Override
-      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-        return com.github.nmorel.gwtjackson.client.deser.BaseDateJsonDeserializer.DateJsonDeserializer.getInstance();
-      }
-      
-      @Override
-      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, java.util.Date value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
-        bean.setUpdateDate(value);
-      }
-    });
-    
     map.put("matter", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, com.anova.anovacloud.shared.dto.MatterDto>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
@@ -247,6 +199,18 @@ public class MatterActionDtoBeanJsonDeserializerImpl extends com.github.nmorel.g
       @Override
       public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, com.anova.anovacloud.shared.dto.MatterActionStatusDto value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
         bean.setActionStatus(value);
+      }
+    });
+    
+    map.put("status", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.MatterActionDto, java.lang.String>() {
+      @Override
+      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
+        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
+      }
+      
+      @Override
+      public void setValue(com.anova.anovacloud.shared.dto.MatterActionDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
+        bean.setStatus(value);
       }
     });
     

@@ -34,6 +34,18 @@ public class CustomerStatusDtoBeanJsonDeserializerImpl extends com.github.nmorel
       }
     });
     
+    map.put("statusValue", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.CustomerStatusDto, java.lang.String>() {
+      @Override
+      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
+        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
+      }
+      
+      @Override
+      public void setValue(com.anova.anovacloud.shared.dto.CustomerStatusDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
+        bean.setStatusValue(value);
+      }
+    });
+    
     map.put("id", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.CustomerStatusDto, java.lang.Long>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {

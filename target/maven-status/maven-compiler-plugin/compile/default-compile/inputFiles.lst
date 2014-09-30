@@ -56,7 +56,6 @@ E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anova
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\user\UserDetailPresenter.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\ApplicationTabletModule.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\rest\MatterActionStatusResource.java
-E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\matterAction\ui\MatterActionColumnsDefinition.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\shared\dto\MatterDto.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\customer\renderer\CustomerCell.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\rest\UserRoleService.java
@@ -161,7 +160,6 @@ E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anova
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\rest\MattersService.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\resources\EditCustomerMessages.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\user\ui\EditUserView.java
-E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\matterAction\renderer\MatterActionCellFactory.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\application\matters\matter\MatterView.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\client\columninitializer\ColumnInitializer.java
 E:\gwtp-master-latest\GWTP-master\anova-anovacloud\src\main\java\com\anova\anovacloud\server\rest\UserResource.java

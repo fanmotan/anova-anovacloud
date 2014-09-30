@@ -1,5 +1,3 @@
-
-
 package com.anova.anovacloud.client.application.customer;
 
 import java.util.Arrays;
@@ -20,7 +18,6 @@ import com.anova.anovacloud.client.application.customer.ui.EditCustomerPresenter
 import com.anova.anovacloud.client.place.NameTokens;
 import com.anova.anovacloud.client.rest.CustomerService;
 import com.anova.anovacloud.client.util.AbstractAsyncCallback;
-import com.anova.anovacloud.client.util.ErrorHandlerAsyncCallback;
 import com.anova.anovacloud.shared.dto.CustomerDto;
 import com.gwtplatform.dispatch.rest.shared.RestDispatch;
 import com.gwtplatform.mvp.client.HasUiHandlers;

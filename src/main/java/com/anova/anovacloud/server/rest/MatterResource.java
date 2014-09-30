@@ -4,12 +4,10 @@ package com.anova.anovacloud.server.rest;
 import java.util.List;
 
 import javax.inject.Inject;
-import javax.ws.rs.DELETE;
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
@@ -20,7 +18,6 @@ import com.anova.anovacloud.server.dao.MatterPropertiesDao;
 import com.anova.anovacloud.server.dao.domain.Matter;
 import com.anova.anovacloud.shared.dto.MatterDto;
 import com.anova.anovacloud.shared.dto.MatterPropertiesDto;
-import com.anova.anovacloud.shared.rest.PathParameter;
 import com.anova.anovacloud.shared.rest.ResourcesPath;
 import com.anova.anovacloud.shared.rest.RestParameter;
 

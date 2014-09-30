@@ -6,6 +6,7 @@ import com.gwtplatform.mvp.client.UiHandlers;
 
 public interface MatterActionUiHandlers extends UiHandlers {
   //  void onDelete(MatterActionDto matterActionDto);
+	void onDetail(MatterActionDto matterActionDto);
 	void onEdit(MatterActionDto matterActionDto);
     void onCreate();
 }

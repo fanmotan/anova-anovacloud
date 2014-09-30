@@ -2,6 +2,8 @@
 
 package com.anova.anovacloud.client.application.matterAction;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -68,7 +70,7 @@ public class MatterActionDetailView extends ViewWithUiHandlers<MatterActionDetai
     public MatterActionDetailView(Binder uiBinder,
                             Driver driver) {
         this.driver = driver;
-
+        initWidget(uiBinder.createAndBindUi(this));
         matter = new ValueListBox<>(new MatterRenderer());
         assignee1 = new ValueListBox<>(new AttorneyRenderer());
         assignee2 = new ValueListBox<>(new AttorneyRenderer());
@@ -77,9 +79,7 @@ public class MatterActionDetailView extends ViewWithUiHandlers<MatterActionDetai
         assignee2Role = new ValueListBox<>(new AttorneyRoleRenderer());
         assignee3Role = new ValueListBox<>(new AttorneyRoleRenderer());
         actionStatus = new ValueListBox<>(new MatterActionStatusRenderer());
-        
-        initWidget(uiBinder.createAndBindUi(this));
-
+       
         driver.initialize(this);
 
         dueDate.getElement().setAttribute("placeholder", "dueDate");
@@ -92,10 +92,35 @@ public class MatterActionDetailView extends ViewWithUiHandlers<MatterActionDetai
 
     @Override
     public void edit(MatterActionDto matterActionDto) {
+    	
         if (matterActionDto.getMatter() == null) {
             matterActionDto.setMatter(matter.getValue());
         }
-
+        if (matterActionDto.getActionStatus() == null) {
+            matterActionDto.setActionStatus(actionStatus.getValue());
+        }
+        
+        if (matterActionDto.getAssignee1() == null) {
+            matterActionDto.setAssignee1(assignee1.getValue());
+        }
+        if (matterActionDto.getAssignee2() == null) {
+            matterActionDto.setAssignee2(assignee2.getValue());
+        }
+        if (matterActionDto.getAssignee3() == null) {
+            matterActionDto.setAssignee3(assignee3.getValue());
+        }
+        if (matterActionDto.getAssignee1Role() == null) {
+            matterActionDto.setAssignee1Role(assignee1Role.getValue());
+        }
+        if (matterActionDto.getAssignee2Role() == null) {
+            matterActionDto.setAssignee2Role(assignee2Role.getValue());
+        }
+        if (matterActionDto.getAssignee3Role() == null) {
+            matterActionDto.setAssignee3Role(assignee3Role.getValue());
+        }
+        
+       // matter.setFocus(true);
+        
         driver.edit(matterActionDto);
     }
 
@@ -112,17 +137,48 @@ public class MatterActionDetailView extends ViewWithUiHandlers<MatterActionDetai
     }
     
     @Override
-    public void setAllowedAttorneys(List<AttorneyDto> attorneyDtos) {
+    public void setAllowedAttorney1s(List<AttorneyDto> attorneyDtos) {
+    	Collections.sort(attorneyDtos, new Comparator<AttorneyDto>() {
+		    public int compare(AttorneyDto c1, AttorneyDto c2) {
+		        return c1.getDisplayName().compareTo(c2.getDisplayName());
+		    }
+		});
         assignee1.setValue(attorneyDtos.isEmpty() ? null : attorneyDtos.get(0));
         assignee1.setAcceptableValues(attorneyDtos);
+      
+    }
+    @Override
+    public void setAllowedAttorney2s(List<AttorneyDto> attorneyDtos) {
+    	Collections.sort(attorneyDtos, new Comparator<AttorneyDto>() {
+		    public int compare(AttorneyDto c1, AttorneyDto c2) {
+		        return c1.getDisplayName().compareTo(c2.getDisplayName());
+		    }
+		});
+       
         assignee2.setValue(attorneyDtos.isEmpty() ? null : attorneyDtos.get(0));
         assignee2.setAcceptableValues(attorneyDtos);
+        
+    }
+    @Override
+    public void setAllowedAttorney3s(List<AttorneyDto> attorneyDtos) {
+    	Collections.sort(attorneyDtos, new Comparator<AttorneyDto>() {
+		    public int compare(AttorneyDto c1, AttorneyDto c2) {
+		        return c1.getDisplayName().compareTo(c2.getDisplayName());
+		    }
+		});
+       
         assignee3.setValue(attorneyDtos.isEmpty() ? null : attorneyDtos.get(0));
         assignee3.setAcceptableValues(attorneyDtos);
     }
+   
     
     @Override
-    public void setAllowedAttorneyRoles(List<AttorneyRoleDto> attorneyRoleDtos) {
+    public void setAllowedAttorney1Roles(List<AttorneyRoleDto> attorneyRoleDtos) {
+    	Collections.sort(attorneyRoleDtos, new Comparator<AttorneyRoleDto>() {
+		    public int compare(AttorneyRoleDto c1, AttorneyRoleDto c2) {
+		        return c1.getRoleValue().compareTo(c2.getRoleValue());
+		    }
+		});
         assignee1Role.setValue(attorneyRoleDtos.isEmpty() ? null : attorneyRoleDtos.get(0));
         assignee1Role.setAcceptableValues(attorneyRoleDtos);
         assignee2Role.setValue(attorneyRoleDtos.isEmpty() ? null : attorneyRoleDtos.get(0));
@@ -130,7 +186,30 @@ public class MatterActionDetailView extends ViewWithUiHandlers<MatterActionDetai
         assignee3Role.setValue(attorneyRoleDtos.isEmpty() ? null : attorneyRoleDtos.get(0));
         assignee3Role.setAcceptableValues(attorneyRoleDtos);
     }
-
+    @Override
+    public void setAllowedAttorney2Roles(List<AttorneyRoleDto> attorneyRoleDtos) {
+    	Collections.sort(attorneyRoleDtos, new Comparator<AttorneyRoleDto>() {
+		    public int compare(AttorneyRoleDto c1, AttorneyRoleDto c2) {
+		        return c1.getRoleValue().compareTo(c2.getRoleValue());
+		    }
+		});
+       
+        assignee2Role.setValue(attorneyRoleDtos.isEmpty() ? null : attorneyRoleDtos.get(0));
+        assignee2Role.setAcceptableValues(attorneyRoleDtos);
+        
+    }
+    @Override
+    public void setAllowedAttorney3Roles(List<AttorneyRoleDto> attorneyRoleDtos) {
+    	Collections.sort(attorneyRoleDtos, new Comparator<AttorneyRoleDto>() {
+		    public int compare(AttorneyRoleDto c1, AttorneyRoleDto c2) {
+		        return c1.getRoleValue().compareTo(c2.getRoleValue());
+		    }
+		});
+       
+        assignee3Role.setValue(attorneyRoleDtos.isEmpty() ? null : attorneyRoleDtos.get(0));
+        assignee3Role.setAcceptableValues(attorneyRoleDtos);
+    }
+    
     @Override
     public void getMatterAction() {
         getUiHandlers().onSave(driver.flush());
