@@ -402,7 +402,6 @@ com\anova\anovacloud\client\application\customer\CustomerView$6.class
 com\anova\anovacloud\client\application\customer\CustomerDetailPresenter$3.class
 com\anova\anovacloud\client\application\attorney\ui\AttorneyRenderer.class
 com\anova\anovacloud\client\application\matters\MattersView$6.class
-com\anova\anovacloud\client\application\report\ReportView$8.class
 com\anova\anovacloud\client\application\matterAction\MatterActionView$7.class
 com\anova\anovacloud\client\application\user\UserPresenter$MyProxy.class
 com\anova\anovacloud\client\application\UnauthorizedPresenter.class

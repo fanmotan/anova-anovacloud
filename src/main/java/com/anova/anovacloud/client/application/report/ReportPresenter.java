@@ -1,4 +1,3 @@
-
 package com.anova.anovacloud.client.application.report;
 
 import java.util.ArrayList;
@@ -14,6 +13,7 @@ import com.anova.anovacloud.client.application.event.ChangeActionBarEvent.Action
 import com.anova.anovacloud.client.place.NameTokens;
 import com.anova.anovacloud.client.rest.MatterActionService;
 import com.anova.anovacloud.client.util.AbstractAsyncCallback;
+import com.anova.anovacloud.server.service.ReportService;
 import com.anova.anovacloud.shared.dto.ActionDueDto;
 import com.gwtplatform.dispatch.rest.shared.RestDispatch;
 import com.gwtplatform.mvp.client.Presenter;
@@ -33,18 +33,18 @@ public class ReportPresenter extends Presenter<ReportPresenter.MyView, ReportPre
     }
 
     private final RestDispatch dispatcher;
-    private final MatterActionService matterActionService;
+    private final MatterActionService actionService;
 
     @Inject
     ReportPresenter(EventBus eventBus,
                     MyView view,
                     MyProxy proxy,
-                    MatterActionService matterActionService,
+                    MatterActionService actionService,
                     RestDispatch dispatcher) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN_CONTENT);
 
         this.dispatcher = dispatcher;
-        this.matterActionService = matterActionService;
+        this.actionService = actionService;
     }
 
     @Override
@@ -52,7 +52,7 @@ public class ReportPresenter extends Presenter<ReportPresenter.MyView, ReportPre
         ActionBarVisibilityEvent.fire(this, true);
         ChangeActionBarEvent.fire(this, new ArrayList<ActionType>(), true);
 
-        dispatcher.execute(matterActionService.getDueThreeDaysActions(),
+        dispatcher.execute(actionService.getDueThreeDaysActions(),
         		new AbstractAsyncCallback<List<ActionDueDto>>() {
                     @Override
                     public void onSuccess(List<ActionDueDto> actionDues) {

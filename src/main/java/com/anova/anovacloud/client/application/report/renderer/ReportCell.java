@@ -10,7 +10,7 @@ import com.anova.anovacloud.shared.dto.ActionDueDto;
 
 public class ReportCell extends AbstractCell<ActionDueDto> {
     interface Renderer extends UiRenderer {
-        void render(SafeHtmlBuilder sb, String caseNumber, String clientRefNum, String title, String status, String dueDate, 
+        void render(SafeHtmlBuilder sb, String caseNumber, String title, String status, String dueDate, 
         		String actionDue, String atty, String actionRemarks );
     }
     
@@ -25,7 +25,7 @@ public class ReportCell extends AbstractCell<ActionDueDto> {
 
     @Override
     public void render(Context context, ActionDueDto value, SafeHtmlBuilder safeHtmlBuilder) {
-        uiRenderer.render(safeHtmlBuilder, value.getCaseNumber(), value.getClientRefNum(), value.getTitle(), value.getStatus(),
+        uiRenderer.render(safeHtmlBuilder, value.getCaseNumber(), value.getTitle(), value.getStatus(),
         		 value.getDueDate(), value.getActionDue(), value.getAtty(), value.getActionRemarks());
     }
 }

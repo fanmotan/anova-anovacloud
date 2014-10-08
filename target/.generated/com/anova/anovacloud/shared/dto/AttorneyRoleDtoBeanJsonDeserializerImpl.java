@@ -34,6 +34,18 @@ public class AttorneyRoleDtoBeanJsonDeserializerImpl extends com.github.nmorel.g
       }
     });
     
+    map.put("roleCode", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.AttorneyRoleDto, java.lang.String>() {
+      @Override
+      protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
+        return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
+      }
+      
+      @Override
+      public void setValue(com.anova.anovacloud.shared.dto.AttorneyRoleDto bean, java.lang.String value, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx) {
+        bean.setRoleCode(value);
+      }
+    });
+    
     map.put("roleValue", new com.github.nmorel.gwtjackson.client.deser.bean.BeanPropertyDeserializer<com.anova.anovacloud.shared.dto.AttorneyRoleDto, java.lang.String>() {
       @Override
       protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {

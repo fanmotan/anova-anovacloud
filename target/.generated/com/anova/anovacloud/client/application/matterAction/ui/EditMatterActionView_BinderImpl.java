@@ -22,7 +22,7 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     @Template("Close")
     SafeHtml html2();
      
-    @Template("<div> <span id='{0}'></span> </div> <br> <table width='100%'> <tr> <td width='25%'> <div class='{1}'> <span id='{2}'></span> </div> </td> <td width='75%'> <div class='{3}'> <span id='{4}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{5}'> <span id='{6}'></span> </div> </td> <td width='75%'> <div class='{7}'> <span id='{8}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{9}'> <span id='{10}'></span> </div> </td> <td width='75%'> <div class='{11}'> <span id='{12}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{13}'> <span id='{14}'></span> </div> </td> <td width='75%'> <div class='{15}'> <span id='{16}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{17}'> <span id='{18}'></span> </div> </td> <td width='75%'> <div class='{19}'> <span id='{20}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{21}'> <span id='{22}'></span> </div> </td> <td width='75%'> <div class='{23}'> <span id='{24}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{25}'> <span id='{26}'></span> </div> </td> <td width='75%'> <div class='{27}'> <span id='{28}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{29}'> <span id='{30}'></span> </div> </td> <td width='75%'> <div class='{31}'> <span id='{32}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{33}'> <span id='{34}'></span> </div> </td> <td width='75%'> <div class='{35}'> <span id='{36}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{37}'> <span id='{38}'></span> </div> </td> <td width='75%'> <div class='{39}'> <span id='{40}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{41}'> <span id='{42}'></span> </div> </td> <td width='75%'> <div class='{43}'> <span id='{44}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{45}'> <span id='{46}'></span> </div> </td> <td width='75%'> <div class='{47}'> <span id='{48}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{49}'> <span id='{50}'></span> </div> </td> <td width='75%'> <div class='{51}'> <span id='{52}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{53}'> <span id='{54}'></span> </div> </td> <td width='75%'> <div class='{55}'> <span id='{56}'></span> </div> </td> </tr> </table>  <div class='{57}'> <span id='{58}'></span> <span id='{59}'></span> </div>")
+    @Template("<div> <span id='{0}'></span> </div> <br> <table width='100%'> <tr> <td width='25%'> <div class='{1}'> <span id='{2}'></span> </div> </td> <td width='75%'> <div class='{3}'> <span id='{4}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{5}'> <span id='{6}'></span> </div> </td> <td width='75%'> <div class='{7}'> <span id='{8}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{9}'> <span id='{10}'></span> </div> </td> <td width='75%'> <div class='{11}'> <span id='{12}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{13}'> <span id='{14}'></span> </div> </td> <td width='75%'> <div class='{15}'> <span id='{16}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{17}'> <span id='{18}'></span> </div> </td> <td width='75%'> <div class='{19}'> <span id='{20}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{21}'> <span id='{22}'></span> </div> </td> <td width='75%'> <div class='{23}'> <span id='{24}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{25}'> <span id='{26}'></span> </div> </td> <td width='75%'> <div class='{27}'> <span id='{28}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{29}'> <span id='{30}'></span> </div> </td> <td width='75%'> <div class='{31}'> <span id='{32}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{33}'> <span id='{34}'></span> </div> </td> <td width='75%'> <div class='{35}'> <span id='{36}'></span> </div>  </td> </tr> <tr> <td width='25%'> <div class='{37}'> <span id='{38}'></span> </div> </td> <td width='75%'> <div class='{39}'> <span id='{40}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{41}'> <span id='{42}'></span> </div> </td> <td width='75%'> <div class='{43}'> <span id='{44}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{45}'> <span id='{46}'></span> </div> </td> <td width='75%'> <div class='{47}'> <span id='{48}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{49}'> <span id='{50}'></span> </div> </td> <td width='75%'> <div class='{51}'> <span id='{52}'></span> </div> </td> </tr> <tr> <td width='25%'> <div class='{53}'> <span id='{54}'></span> </div> </td> <td width='75%'> <div class='{55}'> <span id='{56}'></span> </div>  </td> </tr> </table>  <div class='{57}'> <span id='{58}'></span> <span id='{59}'></span> </div>")
     SafeHtml html3(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7, String arg8, String arg9, String arg10, String arg11, String arg12, String arg13, String arg14, String arg15, String arg16, String arg17, String arg18, String arg19, String arg20, String arg21, String arg22, String arg23, String arg24, String arg25, String arg26, String arg27, String arg28, String arg29, String arg30, String arg31, String arg32, String arg33, String arg34, String arg35, String arg36, String arg37, String arg38, String arg39, String arg40, String arg41, String arg42, String arg43, String arg44, String arg45, String arg46, String arg47, String arg48, String arg49, String arg50, String arg51, String arg52, String arg53, String arg54, String arg55, String arg56, String arg57, String arg58, String arg59);
      
   }
@@ -148,7 +148,7 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     }
 
     /**
-     * Getter for style called 29 times. Type: GENERATED_CSS. Build precedence: 1.
+     * Getter for style called 31 times. Type: GENERATED_CSS. Build precedence: 1.
      */
     private com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionView_BinderImpl_GenCss_style style;
     private com.anova.anovacloud.client.application.matterAction.ui.EditMatterActionView_BinderImpl_GenCss_style get_style() {
@@ -575,14 +575,15 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     /**
      * Getter for actionDue called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_actionDue() {
+    private com.google.gwt.user.client.ui.TextArea get_actionDue() {
       return build_actionDue();
     }
-    private com.google.gwt.user.client.ui.TextBox build_actionDue() {
+    private com.google.gwt.user.client.ui.TextArea build_actionDue() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox actionDue = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextArea actionDue = (com.google.gwt.user.client.ui.TextArea) GWT.create(com.google.gwt.user.client.ui.TextArea.class);
       // Setup section.
       actionDue.ensureDebugId("actionDueInput");
+      actionDue.setStyleName("" + get_style().textArea() + "");
 
 
       this.owner.actionDue = actionDue;
@@ -1549,14 +1550,15 @@ public class EditMatterActionView_BinderImpl implements UiBinder<com.google.gwt.
     /**
      * Getter for actionRemarks called 1 times. Type: DEFAULT. Build precedence: 3.
      */
-    private com.google.gwt.user.client.ui.TextBox get_actionRemarks() {
+    private com.google.gwt.user.client.ui.TextArea get_actionRemarks() {
       return build_actionRemarks();
     }
-    private com.google.gwt.user.client.ui.TextBox build_actionRemarks() {
+    private com.google.gwt.user.client.ui.TextArea build_actionRemarks() {
       // Creation section.
-      final com.google.gwt.user.client.ui.TextBox actionRemarks = (com.google.gwt.user.client.ui.TextBox) GWT.create(com.google.gwt.user.client.ui.TextBox.class);
+      final com.google.gwt.user.client.ui.TextArea actionRemarks = (com.google.gwt.user.client.ui.TextArea) GWT.create(com.google.gwt.user.client.ui.TextArea.class);
       // Setup section.
       actionRemarks.ensureDebugId("actionRemarksInput");
+      actionRemarks.setStyleName("" + get_style().textArea() + "");
 
 
       this.owner.actionRemarks = actionRemarks;

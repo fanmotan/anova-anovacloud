@@ -4,6 +4,10 @@
             margin-bottom: 5px;
             margin-top: 5px;
         }
+        .textArea {
+            height: 100%;
+        }
+        
     </ui:style>
     
     <g:PopupPanel glassEnabled="true" autoHideEnabled="true" animationEnabled="true">
@@ -58,7 +62,7 @@
             </td>
             <td width="75%">
                 <div class="{style.formRow}">
-                	<g:TextArea ui:field="mailAddress" debugId="attorney-input"/>
+                	<g:TextArea ui:field="mailAddress" styleName='{style.textArea}' debugId="attorney-input"/>
             	</div>
              </td>
         </tr>

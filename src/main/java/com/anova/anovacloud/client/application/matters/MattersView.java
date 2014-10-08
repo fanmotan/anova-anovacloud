@@ -35,7 +35,7 @@ public class MattersView extends ViewWithUiHandlers<MattersUiHandlers> implement
     interface Binder extends UiBinder<Widget, MattersView> {
     }
 
-    private static final int PAGE_SIZE = 10;
+    private static final int PAGE_SIZE = 5;
 
     @UiField(provided = true)
     CellTable<MatterDto> matterGrid;
@@ -48,7 +48,6 @@ public class MattersView extends ViewWithUiHandlers<MattersUiHandlers> implement
     @Inject
     MattersView(Binder uiBinder) {
         initMatterGrid();
-
         initWidget(uiBinder.createAndBindUi(this));
     }
 

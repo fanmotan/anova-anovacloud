@@ -5,11 +5,17 @@
     <ui:with field="resources" type="com.anova.anovacloud.client.resources.AppResources"/>
 
     <ui:style>
-        .tableWrapper {
+        .tablehead {
             margin-top: 20px;
-            font-size: 0.75em;
+            font-size: 0.5em;
         }
-       
+       .wordWrap
+		{ 
+		margin-top: 20px;
+        font-size: 9pt; 
+        width:100%;
+ 		word-wrap: break-word;
+		}
     </ui:style>
 
     <g:HTMLPanel debugId="matterActionPanel">
@@ -23,8 +29,8 @@
             <span style="display: block; clear: both;"/>
         </div>
 
-        <div class="{style.tableWrapper}">
-            <cell:CellTable  ui:field="matterActionGrid" width="100%" debugId="matterActions"/>
+        <div>
+            <cell:CellTable  ui:field="matterActionGrid" width="100%" styleName = "{style.wordWrap}" debugId="matterActions"/>
         </div>
     </g:HTMLPanel>
 </ui:UiBinder>

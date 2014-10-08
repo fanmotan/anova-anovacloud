@@ -20,10 +20,13 @@ public class AttorneyView_BinderImpl_GenBundle_default_InlineClientBundleGenerat
         return "style";
       }
       public String getText() {
-        return (".GFOXD4NDHK-com-anova-anovacloud-client-application-attorney-AttorneyView_BinderImpl_GenCss_style-tableWrapper {\n  margin-top : " + ("20px")  + ";\n}\n");
+        return (".GFOXD4NDHK-com-anova-anovacloud-client-application-attorney-AttorneyView_BinderImpl_GenCss_style-tableWrapper {\n  margin-top : " + ("20px")  + ";\n}\n.GFOXD4NDIK-com-anova-anovacloud-client-application-attorney-AttorneyView_BinderImpl_GenCss_style-wordWrap {\n  margin-top : " + ("20px")  + ";\n  font-size : " + ("9pt")  + ";\n  width : " + ("100%")  + ";\n  word-wrap : " + ("break-word")  + ";\n}\n");
       }
       public java.lang.String tableWrapper() {
         return "GFOXD4NDHK-com-anova-anovacloud-client-application-attorney-AttorneyView_BinderImpl_GenCss_style-tableWrapper";
+      }
+      public java.lang.String wordWrap() {
+        return "GFOXD4NDIK-com-anova-anovacloud-client-application-attorney-AttorneyView_BinderImpl_GenCss_style-wordWrap";
       }
     }
     ;

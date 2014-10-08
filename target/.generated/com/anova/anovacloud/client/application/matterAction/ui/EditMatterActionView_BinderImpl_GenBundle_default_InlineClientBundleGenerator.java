@@ -20,10 +20,13 @@ public class EditMatterActionView_BinderImpl_GenBundle_default_InlineClientBundl
         return "style";
       }
       public String getText() {
-        return (".GFOXD4NDEL-com-anova-anovacloud-client-application-matterAction-ui-EditMatterActionView_BinderImpl_GenCss_style-formRow {\n  margin-bottom : " + ("5px")  + ";\n  margin-top : " + ("5px")  + ";\n}\n");
+        return (".GFOXD4NDIL-com-anova-anovacloud-client-application-matterAction-ui-EditMatterActionView_BinderImpl_GenCss_style-formRow {\n  margin-bottom : " + ("5px")  + ";\n  margin-top : " + ("5px")  + ";\n}\n.GFOXD4NDJL-com-anova-anovacloud-client-application-matterAction-ui-EditMatterActionView_BinderImpl_GenCss_style-textArea {\n  height : " + ("100%")  + ";\n}\n");
       }
       public java.lang.String formRow() {
-        return "GFOXD4NDEL-com-anova-anovacloud-client-application-matterAction-ui-EditMatterActionView_BinderImpl_GenCss_style-formRow";
+        return "GFOXD4NDIL-com-anova-anovacloud-client-application-matterAction-ui-EditMatterActionView_BinderImpl_GenCss_style-formRow";
+      }
+      public java.lang.String textArea() {
+        return "GFOXD4NDJL-com-anova-anovacloud-client-application-matterAction-ui-EditMatterActionView_BinderImpl_GenCss_style-textArea";
       }
     }
     ;

@@ -11,10 +11,11 @@ import javax.inject.Inject;
 import com.google.gwt.editor.client.Editor;
 import com.google.gwt.editor.client.SimpleBeanEditorDriver;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.ui.TextBox;
+import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.ValueListBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.user.datepicker.client.DateBox;
@@ -42,7 +43,7 @@ public class EditMatterActionView extends PopupViewWithUiHandlers<EditMatterActi
     @UiField
     DateBox dueDate;
     @UiField
-    TextBox actionDue;
+    TextArea actionDue;
     @UiField
     DateBox ptoMailDate;
     @UiField
@@ -50,7 +51,7 @@ public class EditMatterActionView extends PopupViewWithUiHandlers<EditMatterActi
     @UiField
     DateBox takenDate;
     @UiField
-    TextBox actionRemarks;
+    TextArea actionRemarks;
     
     @UiField(provided = true)
     ValueListBox<MatterDto> matter;
@@ -89,6 +90,12 @@ public class EditMatterActionView extends PopupViewWithUiHandlers<EditMatterActi
         this.driver = driver;
 
         initWidget(uiBinder.createAndBindUi(this));
+        DateTimeFormat format = DateTimeFormat.getShortDateFormat();
+    	
+        dueDate.setFormat(new DateBox.DefaultFormat(format));
+        ptoMailDate.setFormat(new DateBox.DefaultFormat(format));
+        responseDate.setFormat(new DateBox.DefaultFormat(format));
+        takenDate.setFormat(new DateBox.DefaultFormat(format));
 
         driver.initialize(this);
     }

@@ -1,5 +1,7 @@
 package com.anova.anovacloud.client.application.matterAction.ui;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -99,14 +101,17 @@ public class EditMatterActionPresenter extends PresenterWidget<MyView> implement
         		new ErrorHandlerAsyncCallback<MatterActionDto>(this) {
             @Override
             public void onSuccess(MatterActionDto savedMatterAction) {
+            	
                 DisplayMessageEvent.fire(EditMatterActionPresenter.this, 
-                		new Message(messages.matterActionSaved(), MessageStyle.SUCCESS));
+                		new Message(messages.matterActionSaved(), MessageStyle.SUCCESS));  		
+				
                 MatterActionAddedEvent.fire(EditMatterActionPresenter.this, savedMatterAction);
                 getView().hide();
             }
         });
     }
-
+    
+ 
     private void reveal() {
     	
         dispatcher.execute(mattersService.getMatters(), new AbstractAsyncCallback<List<MatterDto>>() {

@@ -91,14 +91,15 @@ public class CustomerView_BinderImpl implements UiBinder<com.google.gwt.user.cli
     }
 
     /**
-     * Getter for style called 1 times. Type: GENERATED_CSS. Build precedence: 1.
+     * Getter for style called 2 times. Type: GENERATED_CSS. Build precedence: 1.
      */
+    private com.anova.anovacloud.client.application.customer.CustomerView_BinderImpl_GenCss_style style;
     private com.anova.anovacloud.client.application.customer.CustomerView_BinderImpl_GenCss_style get_style() {
-      return build_style();
+      return style;
     }
     private com.anova.anovacloud.client.application.customer.CustomerView_BinderImpl_GenCss_style build_style() {
       // Creation section.
-      final com.anova.anovacloud.client.application.customer.CustomerView_BinderImpl_GenCss_style style = get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay().style();
+      style = get_clientBundleFieldNameUnlikelyToCollideWithUserSpecifiedFieldOkay().style();
       // Setup section.
       style.ensureInjected();
 
@@ -259,6 +260,7 @@ public class CustomerView_BinderImpl implements UiBinder<com.google.gwt.user.cli
       assert customerGrid != null : "UiField customerGrid with 'provided = true' was null";
       // Setup section.
       customerGrid.ensureDebugId("customers");
+      customerGrid.setStyleName("" + get_style().wordWrap() + "");
       customerGrid.setWidth("100%");
 
 

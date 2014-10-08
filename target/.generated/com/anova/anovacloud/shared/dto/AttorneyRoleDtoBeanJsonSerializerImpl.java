@@ -6,7 +6,7 @@ public class AttorneyRoleDtoBeanJsonSerializerImpl extends com.github.nmorel.gwt
   
   @Override
   protected java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyRoleDto, ?>> initSerializers() {
-    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyRoleDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyRoleDto, ?>>(3);
+    java.util.Map<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyRoleDto, ?>> map = new java.util.LinkedHashMap<java.lang.String, com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyRoleDto, ?>>(4);
     
     map.put("roleName", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyRoleDto, java.lang.String>() {
       @Override
@@ -17,6 +17,18 @@ public class AttorneyRoleDtoBeanJsonSerializerImpl extends com.github.nmorel.gwt
       @Override
       public java.lang.String getValue(com.anova.anovacloud.shared.dto.AttorneyRoleDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
         return bean.getRoleName();
+      }
+    });
+    
+    map.put("roleCode", new com.github.nmorel.gwtjackson.client.ser.bean.BeanPropertySerializer<com.anova.anovacloud.shared.dto.AttorneyRoleDto, java.lang.String>() {
+      @Override
+      protected com.github.nmorel.gwtjackson.client.JsonSerializer<?> newSerializer() {
+        return com.github.nmorel.gwtjackson.client.ser.StringJsonSerializer.getInstance();
+      }
+      
+      @Override
+      public java.lang.String getValue(com.anova.anovacloud.shared.dto.AttorneyRoleDto bean, com.github.nmorel.gwtjackson.client.JsonSerializationContext ctx) {
+        return bean.getRoleCode();
       }
     });
     

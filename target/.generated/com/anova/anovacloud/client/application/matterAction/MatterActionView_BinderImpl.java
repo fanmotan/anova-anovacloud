@@ -16,8 +16,8 @@ import com.google.gwt.user.client.ui.Widget;
 public class MatterActionView_BinderImpl implements UiBinder<com.google.gwt.user.client.ui.Widget, com.anova.anovacloud.client.application.matterAction.MatterActionView>, com.anova.anovacloud.client.application.matterAction.MatterActionView.Binder {
 
   interface Template extends SafeHtmlTemplates {
-    @Template("<div class='{0}'> <h2> <span id='{1}'></span> </h2> <div> <span id='{2}'></span> </div> <span style='display: block; clear: both;'></span> </div> <div class='{3}'> <span id='{4}'></span> </div>")
-    SafeHtml html1(String arg0, String arg1, String arg2, String arg3, String arg4);
+    @Template("<div class='{0}'> <h2> <span id='{1}'></span> </h2> <div> <span id='{2}'></span> </div> <span style='display: block; clear: both;'></span> </div> <div> <span id='{3}'></span> </div>")
+    SafeHtml html1(String arg0, String arg1, String arg2, String arg3);
      
   }
 
@@ -56,7 +56,7 @@ public class MatterActionView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     SafeHtml template_html1() {
-      return template.html1("" + get_resources().styles().bigTitle() + "", get_domId0(), get_domId1(), "" + get_style().tableWrapper() + "", get_domId2());
+      return template.html1("" + get_resources().styles().bigTitle() + "", get_domId0(), get_domId1(), get_domId2());
     }
 
     /**
@@ -259,6 +259,7 @@ public class MatterActionView_BinderImpl implements UiBinder<com.google.gwt.user
       assert matterActionGrid != null : "UiField matterActionGrid with 'provided = true' was null";
       // Setup section.
       matterActionGrid.ensureDebugId("matterActions");
+      matterActionGrid.setStyleName("" + get_style().wordWrap() + "");
       matterActionGrid.setWidth("100%");
 
 

@@ -58,13 +58,6 @@ public class ReportView extends ViewImpl implements ReportPresenter.MyView {
                     }
                 };
 
-        Column<ActionDueDto, String> clientRefNumColumn =
-               new Column<ActionDueDto, String>(new TextCell()) {
-                    @Override
-                    public String getValue(ActionDueDto actionDue) {
-                        return actionDue.getClientRefNum();
-                    }
-               };
                         
         Column<ActionDueDto, String> titleColumn =
                new Column<ActionDueDto, String>(new TextCell()) {
@@ -112,7 +105,6 @@ public class ReportView extends ViewImpl implements ReportPresenter.MyView {
              };  
            
         reportGrid.addColumn(caseNumberColumn, "Case Number");
-        reportGrid.addColumn(clientRefNumColumn, "Client Ref Number");
         reportGrid.addColumn(titleColumn, "Title");
         reportGrid.addColumn(statusColumn, "Status");
         reportGrid.addColumn(dueDateColumn, "Due Date");

@@ -126,11 +126,11 @@ public class DevBootStrapper {
 
 
     private void createMockData() {
-    	AttorneyRoleDto cltatty = new AttorneyRoleDto("1", "client atty");
-    	AttorneyRoleDto mtratty = new AttorneyRoleDto("2", "matter review atty");
-    	AttorneyRoleDto wrkatty = new AttorneyRoleDto("3", "working atty");
-    	AttorneyRoleDto sptatty = new AttorneyRoleDto("4", "supporting atty");
-    	AttorneyRoleDto none = new AttorneyRoleDto("5", "none");
+    	AttorneyRoleDto cltatty = new AttorneyRoleDto("1", "clt", "client atty");
+    	AttorneyRoleDto mtratty = new AttorneyRoleDto("2", "mtr", "matter review atty");
+    	AttorneyRoleDto wrkatty = new AttorneyRoleDto("3", "wrk", "working atty");
+    	AttorneyRoleDto sptatty = new AttorneyRoleDto("4", "spt", "supporting atty");
+    	AttorneyRoleDto none = new AttorneyRoleDto("5", "n/a", "none");
 
     	cltatty = AttorneyRole.createDto(attorneyRoleDao.put(AttorneyRole.create(cltatty)));
     	mtratty = AttorneyRole.createDto(attorneyRoleDao.put(AttorneyRole.create(mtratty)));

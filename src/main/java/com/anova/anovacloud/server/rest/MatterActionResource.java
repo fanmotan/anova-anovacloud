@@ -65,12 +65,13 @@ public class MatterActionResource {
 
         return Response.ok().build();
     }
-    
+   
     @GET
     public Response getDueThreeDaysActions() {
         List<MatterAction> actions = matterActionDao.getAll();
         List<MatterActionDto> actionDtos = MatterAction.createDto(actions);
-        List<ActionDueDto> dueThreeDaysActions = reportService.getDueThreeDaysActions(actionDtos);
+        List<ActionDueDto> dueThreeDaysActions = reportService.getDueThreeDaysActionList(actionDtos);
         return Response.ok(dueThreeDaysActions).build();
     }
+    
 }

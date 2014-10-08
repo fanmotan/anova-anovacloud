@@ -13,14 +13,18 @@ import com.anova.anovacloud.shared.dto.AttorneyRoleDto;
 @Entity
 public class AttorneyRole extends BaseEntity {
     private String roleName;
+    private String roleCode;
+    private String roleValue;
  
 
 	public AttorneyRole() {
         this.roleName = "";
     }
 
-    public AttorneyRole(String roleName) {
+    public AttorneyRole(String roleValue, String roleCode, String roleName) {
         this.roleName = roleName;
+        this.roleValue = roleValue;
+        this.roleCode = roleCode;
     }
 
     public static List<AttorneyRoleDto> createDto(List<AttorneyRole> attorneyRoles) {
@@ -45,6 +49,8 @@ public class AttorneyRole extends BaseEntity {
       
         attorneyRoleDto.setId(attorneyRole.getId());
         attorneyRoleDto.setRoleName(attorneyRole.getRoleName());
+        attorneyRoleDto.setRoleValue(attorneyRole.getRoleValue());
+        attorneyRoleDto.setRoleCode(attorneyRole.getRoleCode());
 
         return attorneyRoleDto;
     }
@@ -70,9 +76,27 @@ public class AttorneyRole extends BaseEntity {
         AttorneyRole attorneyRole = new AttorneyRole();
         attorneyRole.setId(attorneyRoleDto.getId());
         attorneyRole.setRoleName(attorneyRoleDto.getRoleName());
+        attorneyRole.setRoleValue(attorneyRoleDto.getRoleValue());
+        attorneyRole.setRoleCode(attorneyRoleDto.getRoleCode());
 
         return attorneyRole;
     }
+
+	public String getRoleCode() {
+		return roleCode;
+	}
+
+	public void setRoleCode(String roleCode) {
+		this.roleCode = roleCode;
+	}
+
+	public String getRoleValue() {
+		return roleValue;
+	}
+
+	public void setRoleValue(String roleValue) {
+		this.roleValue = roleValue;
+	}
 
 	public String getRoleName() {
 		return roleName;

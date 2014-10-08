@@ -9,6 +9,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
+
 import com.anova.anovacloud.shared.dto.ActionDueDto;
 import com.anova.anovacloud.shared.dto.MatterActionDto;
 import com.gwtplatform.dispatch.rest.shared.RestAction;
@@ -20,7 +21,7 @@ import static com.anova.anovacloud.shared.rest.RestParameter.ID;
 @Path(MATTERACTION)
 public interface MatterActionService {
     @GET
-    RestAction<List<MatterActionDto>> getMatterActions();
+    RestAction<List<MatterActionDto>>getMatterActions();
 
     @GET
     @Path(PATH_ID)

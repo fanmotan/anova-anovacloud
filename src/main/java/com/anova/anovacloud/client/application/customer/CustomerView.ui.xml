@@ -9,7 +9,12 @@
             margin-top: 20px;
             font-size: 0.75em;
         }
-	
+		.wordWrap{ 
+			margin-top: 20px;
+        	font-size: 9pt; 
+        	width:100%;
+ 			word-wrap: break-word;
+		}
     </ui:style>
 
     <g:HTMLPanel debugId="customerPanel">
@@ -24,7 +29,7 @@
         </div>
 
         <div class="{style.tableWrapper}">
-            <cell:CellTable ui:field="customerGrid" width="100%"  debugId="customers"/>
+            <cell:CellTable ui:field="customerGrid" styleName="{style.wordWrap}" width="100%"  debugId="customers"/>
         </div>
     </g:HTMLPanel>
 </ui:UiBinder>

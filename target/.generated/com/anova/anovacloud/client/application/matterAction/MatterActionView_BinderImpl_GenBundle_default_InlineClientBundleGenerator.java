@@ -20,10 +20,13 @@ public class MatterActionView_BinderImpl_GenBundle_default_InlineClientBundleGen
         return "style";
       }
       public String getText() {
-        return (".GFOXD4NDDL-com-anova-anovacloud-client-application-matterAction-MatterActionView_BinderImpl_GenCss_style-tableWrapper {\n  margin-top : " + ("20px")  + ";\n  font-size : " + ("0.75em")  + ";\n}\n");
+        return (".GFOXD4NDGL-com-anova-anovacloud-client-application-matterAction-MatterActionView_BinderImpl_GenCss_style-tablehead {\n  margin-top : " + ("20px")  + ";\n  font-size : " + ("0.5em")  + ";\n}\n.GFOXD4NDHL-com-anova-anovacloud-client-application-matterAction-MatterActionView_BinderImpl_GenCss_style-wordWrap {\n  margin-top : " + ("20px")  + ";\n  font-size : " + ("9pt")  + ";\n  width : " + ("100%")  + ";\n  word-wrap : " + ("break-word")  + ";\n}\n");
       }
-      public java.lang.String tableWrapper() {
-        return "GFOXD4NDDL-com-anova-anovacloud-client-application-matterAction-MatterActionView_BinderImpl_GenCss_style-tableWrapper";
+      public java.lang.String tablehead() {
+        return "GFOXD4NDGL-com-anova-anovacloud-client-application-matterAction-MatterActionView_BinderImpl_GenCss_style-tablehead";
+      }
+      public java.lang.String wordWrap() {
+        return "GFOXD4NDHL-com-anova-anovacloud-client-application-matterAction-MatterActionView_BinderImpl_GenCss_style-wordWrap";
       }
     }
     ;

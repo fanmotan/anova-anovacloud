@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ActionDueDto implements Dto {
     private String caseNumber;
-    private String clientRefNum;
     private String title;
     private String status;
     private String dueDate;
@@ -17,7 +16,6 @@ public class ActionDueDto implements Dto {
     }
 
     public ActionDueDto(@JsonProperty("caseNumber") String caseNumber,
-                                 @JsonProperty("clientRefNum") String clientRefNum,
                                  @JsonProperty("title") String title,
                                  @JsonProperty("status") String status,
                                  @JsonProperty("dueDate") String dueDate,
@@ -25,7 +23,6 @@ public class ActionDueDto implements Dto {
                                  @JsonProperty("atty") String atty,
                                  @JsonProperty("actionRemarks") String actionRemarks) {
         this.caseNumber = caseNumber;
-        this.clientRefNum = clientRefNum;
         this.title = title;
         this.status = status;
         this.dueDate = dueDate;
@@ -38,10 +35,6 @@ public class ActionDueDto implements Dto {
         return caseNumber;
     }
 
-    public String getClientRefNum() {
-        return clientRefNum;
-    }
-    
     public String getTitle() {
         return title;
     }

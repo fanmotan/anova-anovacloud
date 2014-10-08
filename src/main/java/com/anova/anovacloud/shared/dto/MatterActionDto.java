@@ -162,8 +162,14 @@ public class MatterActionDto extends BaseEntity {
         this.atty = atty;
      }
     
-    public String getAtty() { 	
-      this.atty = this.assignee1.getDisplayName()+"/"+this.assignee1Role.getRoleName()+";"+this.assignee2.getDisplayName()+"/"+this.assignee2Role.getRoleName()+";"+this.assignee3.getDisplayName()+"/"+this.assignee3Role.getRoleName();
+    public String getAtty() { 
+    	String assignee1_shrtName = "";
+    	assignee1_shrtName = assignee1.getFirstName().substring(0,1) + assignee1.getLastName();
+    	String assignee2_shrtName = "";
+    	assignee2_shrtName = assignee2.getFirstName().substring(0,1) + assignee2.getLastName();
+    	String assignee3_shrtName = "";
+    	assignee3_shrtName = assignee3.getFirstName().substring(0,1) + assignee3.getLastName();
+      this.atty = assignee1_shrtName+"-"+this.assignee1Role.getRoleCode()+";\n"+assignee2_shrtName+"-"+this.assignee2Role.getRoleCode()+";\n"+assignee3_shrtName+"-"+this.assignee3Role.getRoleCode();
       return this.atty;
     }
     

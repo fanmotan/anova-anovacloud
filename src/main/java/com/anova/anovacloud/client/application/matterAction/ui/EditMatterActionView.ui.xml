@@ -5,6 +5,9 @@
             margin-bottom: 5px;
             margin-top: 5px;
         }
+         .textArea {
+            height: 100%;
+        }
     </ui:style> 
     <g:PopupPanel glassEnabled="true" autoHideEnabled="true" animationEnabled="true">
         <g:HTMLPanel debugId="action-editor">
@@ -45,7 +48,7 @@
             </td>
             <td width="75%">
                 <div class="{style.formRow}">	
-                	<g:TextBox ui:field="actionDue" debugId="actionDueInput"/>
+                	<g:TextArea ui:field="actionDue" styleName='{style.textArea}' debugId="actionDueInput"/>
             	</div>
             </td>
          </tr>
@@ -165,7 +168,7 @@
             </td>
             <td width="75%">
             	<div class="{style.formRow}">
-                	<g:TextBox ui:field="actionRemarks" debugId="actionRemarksInput"/>
+                	<g:TextArea ui:field="actionRemarks"  styleName='{style.textArea}' debugId="actionRemarksInput"/>
             	</div>
             </td>
          </tr>

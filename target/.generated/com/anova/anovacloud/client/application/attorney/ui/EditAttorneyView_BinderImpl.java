@@ -120,7 +120,7 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for style called 15 times. Type: GENERATED_CSS. Build precedence: 1.
+     * Getter for style called 16 times. Type: GENERATED_CSS. Build precedence: 1.
      */
     private com.anova.anovacloud.client.application.attorney.ui.EditAttorneyView_BinderImpl_GenCss_style style;
     private com.anova.anovacloud.client.application.attorney.ui.EditAttorneyView_BinderImpl_GenCss_style get_style() {
@@ -627,6 +627,7 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
       final com.google.gwt.user.client.ui.TextArea mailAddress = (com.google.gwt.user.client.ui.TextArea) GWT.create(com.google.gwt.user.client.ui.TextArea.class);
       // Setup section.
       mailAddress.ensureDebugId("attorney-input");
+      mailAddress.setStyleName("" + get_style().textArea() + "");
 
 
       this.owner.mailAddress = mailAddress;

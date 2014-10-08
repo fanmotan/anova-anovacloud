@@ -7,8 +7,15 @@
     <ui:style>
         .tableWrapper {
             margin-top: 20px;
-            font-size: 11pt;
+            font-size: 9pt;
         }
+         .wordWrap
+		{ 
+		margin-top: 20px;
+        font-size: 9pt; 
+        width:100%;
+ 		word-wrap: break-word;
+		}
     </ui:style>
 
     <g:HTMLPanel>
@@ -23,7 +30,7 @@
         </g:HTMLPanel>
 
         <div class="{style.tableWrapper}">
-            <cell:CellTable ui:field="matterGrid" width="100%" debugId="matters"/>
+            <cell:CellTable ui:field="matterGrid"  width="100%" debugId="matters"/>
         </div>
 
         <cell:SimplePager ui:field='pager'/>

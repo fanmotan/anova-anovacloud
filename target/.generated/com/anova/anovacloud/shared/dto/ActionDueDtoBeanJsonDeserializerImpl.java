@@ -13,12 +13,6 @@ public class ActionDueDtoBeanJsonDeserializerImpl extends com.github.nmorel.gwtj
           return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
         }
       };
-      private final com.github.nmorel.gwtjackson.client.deser.bean.HasDeserializerAndParameters<java.lang.String, com.github.nmorel.gwtjackson.client.JsonDeserializer<java.lang.String>> deserializer_clientRefNum = new com.github.nmorel.gwtjackson.client.deser.bean.HasDeserializerAndParameters<java.lang.String, com.github.nmorel.gwtjackson.client.JsonDeserializer<java.lang.String>>() {
-        @Override
-        protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
-          return com.github.nmorel.gwtjackson.client.deser.StringJsonDeserializer.getInstance();
-        }
-      };
       private final com.github.nmorel.gwtjackson.client.deser.bean.HasDeserializerAndParameters<java.lang.String, com.github.nmorel.gwtjackson.client.JsonDeserializer<java.lang.String>> deserializer_title = new com.github.nmorel.gwtjackson.client.deser.bean.HasDeserializerAndParameters<java.lang.String, com.github.nmorel.gwtjackson.client.JsonDeserializer<java.lang.String>>() {
         @Override
         protected com.github.nmorel.gwtjackson.client.JsonDeserializer<?> newDeserializer() {
@@ -59,7 +53,6 @@ public class ActionDueDtoBeanJsonDeserializerImpl extends com.github.nmorel.gwtj
       @Override
       public com.github.nmorel.gwtjackson.client.deser.bean.Instance<com.anova.anovacloud.shared.dto.ActionDueDto> newInstance( com.github.nmorel.gwtjackson.client.stream.JsonReader reader, com.github.nmorel.gwtjackson.client.JsonDeserializationContext ctx, java.util.Map<String, String> bufferedProperties ) {
         java.lang.String v_caseNumber = null;
-        java.lang.String v_clientRefNum = null;
         java.lang.String v_title = null;
         java.lang.String v_status = null;
         java.lang.String v_dueDate = null;
@@ -67,7 +60,7 @@ public class ActionDueDtoBeanJsonDeserializerImpl extends com.github.nmorel.gwtj
         java.lang.String v_atty = null;
         java.lang.String v_actionRemarks = null;
         
-        int nbParamToFind = 8;
+        int nbParamToFind = 7;
         
         if(null != bufferedProperties) {
           String value;
@@ -75,12 +68,6 @@ public class ActionDueDtoBeanJsonDeserializerImpl extends com.github.nmorel.gwtj
           value = bufferedProperties.remove("caseNumber");
           if(null != value) {
             v_caseNumber = deserializer_caseNumber.deserialize(ctx.newJsonReader(value), ctx);
-            nbParamToFind--;
-          }
-          
-          value = bufferedProperties.remove("clientRefNum");
-          if(null != value) {
-            v_clientRefNum = deserializer_clientRefNum.deserialize(ctx.newJsonReader(value), ctx);
             nbParamToFind--;
           }
           
@@ -130,11 +117,6 @@ public class ActionDueDtoBeanJsonDeserializerImpl extends com.github.nmorel.gwtj
             nbParamToFind--;
             continue;
           }
-          if("clientRefNum".equals(name)) {
-            v_clientRefNum = deserializer_clientRefNum.deserialize(reader, ctx);
-            nbParamToFind--;
-            continue;
-          }
           if("title".equals(name)) {
             v_title = deserializer_title.deserialize(reader, ctx);
             nbParamToFind--;
@@ -172,11 +154,11 @@ public class ActionDueDtoBeanJsonDeserializerImpl extends com.github.nmorel.gwtj
           bufferedProperties.put( name, reader.nextValue() );
         }
         
-        return new com.github.nmorel.gwtjackson.client.deser.bean.Instance<com.anova.anovacloud.shared.dto.ActionDueDto>( create(v_caseNumber, v_clientRefNum, v_title, v_status, v_dueDate, v_actionDue, v_atty, v_actionRemarks), bufferedProperties );
+        return new com.github.nmorel.gwtjackson.client.deser.bean.Instance<com.anova.anovacloud.shared.dto.ActionDueDto>( create(v_caseNumber, v_title, v_status, v_dueDate, v_actionDue, v_atty, v_actionRemarks), bufferedProperties );
       }
       
-      private com.anova.anovacloud.shared.dto.ActionDueDto create(java.lang.String caseNumber, java.lang.String clientRefNum, java.lang.String title, java.lang.String status, java.lang.String dueDate, java.lang.String actionDue, java.lang.String atty, java.lang.String actionRemarks) {
-        return new com.anova.anovacloud.shared.dto.ActionDueDto(caseNumber, clientRefNum, title, status, dueDate, actionDue, atty, actionRemarks);
+      private com.anova.anovacloud.shared.dto.ActionDueDto create(java.lang.String caseNumber, java.lang.String title, java.lang.String status, java.lang.String dueDate, java.lang.String actionDue, java.lang.String atty, java.lang.String actionRemarks) {
+        return new com.anova.anovacloud.shared.dto.ActionDueDto(caseNumber, title, status, dueDate, actionDue, atty, actionRemarks);
       }
     };
   }
