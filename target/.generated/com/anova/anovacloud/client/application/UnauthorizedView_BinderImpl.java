@@ -189,18 +189,63 @@ public class UnauthorizedView_BinderImpl implements UiBinder<com.google.gwt.user
     }
 
     /**
-     * Getter for REPORT called 0 times. Type: DEFAULT. Build precedence: 1.
+     * Getter for DUETODAY called 0 times. Type: DEFAULT. Build precedence: 1.
      */
-    private java.lang.String get_REPORT() {
-      return build_REPORT();
+    private java.lang.String get_DUETODAY() {
+      return build_DUETODAY();
     }
-    private java.lang.String build_REPORT() {
+    private java.lang.String build_DUETODAY() {
       // Creation section.
-      final java.lang.String REPORT = com.anova.anovacloud.client.place.NameTokens.REPORT;
+      final java.lang.String DUETODAY = com.anova.anovacloud.client.place.NameTokens.DUETODAY;
       // Setup section.
 
 
-      return REPORT;
+      return DUETODAY;
+    }
+
+    /**
+     * Getter for DUETHREEDAY called 0 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_DUETHREEDAY() {
+      return build_DUETHREEDAY();
+    }
+    private java.lang.String build_DUETHREEDAY() {
+      // Creation section.
+      final java.lang.String DUETHREEDAY = com.anova.anovacloud.client.place.NameTokens.DUETHREEDAY;
+      // Setup section.
+
+
+      return DUETHREEDAY;
+    }
+
+    /**
+     * Getter for DUEONEWEEK called 0 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_DUEONEWEEK() {
+      return build_DUEONEWEEK();
+    }
+    private java.lang.String build_DUEONEWEEK() {
+      // Creation section.
+      final java.lang.String DUEONEWEEK = com.anova.anovacloud.client.place.NameTokens.DUEONEWEEK;
+      // Setup section.
+
+
+      return DUEONEWEEK;
+    }
+
+    /**
+     * Getter for DUEONEMONTH called 0 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_DUEONEMONTH() {
+      return build_DUEONEMONTH();
+    }
+    private java.lang.String build_DUEONEMONTH() {
+      // Creation section.
+      final java.lang.String DUEONEMONTH = com.anova.anovacloud.client.place.NameTokens.DUEONEMONTH;
+      // Setup section.
+
+
+      return DUEONEMONTH;
     }
 
     /**

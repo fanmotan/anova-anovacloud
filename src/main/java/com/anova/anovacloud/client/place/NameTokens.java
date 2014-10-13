@@ -11,7 +11,10 @@ public class NameTokens {
     public static final String CASESTATUS = "caseStatus";
     public static final String DETAIL_CUSTOMER = "detailCustomer";
     public static final String MATTERS = "matters";
-    public static final String REPORT = "report";
+    public static final String DUETODAY = "dueToday";
+    public static final String DUETHREEDAY = "dueThreeDay";
+    public static final String DUEONEWEEK = "dueOneWeek";
+    public static final String DUEONEMONTH = "dueOneMonth";
     public static final String NEW_MATTER = "newMatter";
     public static final String MATTERACTION = "matterAction";
     public static final String MATTERACTIONSTATUS = "matterActionStatus";
@@ -24,7 +27,7 @@ public class NameTokens {
     public static final String ATTORNEYROLE = "attorneyRole";
    
     public static String getOnLoginDefaultPage() {
-        return REPORT;
+        return DUETODAY;
     }
 
     public static String getCustomer() {
@@ -47,8 +50,17 @@ public class NameTokens {
         return MATTERS;
     }
 
-    public static String getReport() {
-        return REPORT;
+    public static String getDueToday() {
+        return DUETODAY;
+    }
+    public static String getDueThreeDay() {
+        return DUETHREEDAY;
+    }
+    public static String getDueOneWeek() {
+        return DUEONEWEEK;
+    }
+    public static String getDueOneMonth() {
+        return DUEONEMONTH;
     }
     
     

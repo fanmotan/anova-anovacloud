@@ -100,16 +100,28 @@ public class com_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector
     invokee.automaticBind(_0);
   }
   
-  public void memberInject_Key$type$com$gwtplatform$mvp$client$RootPresenter$RootView$_annotation$$none$$(com.gwtplatform.mvp.client.RootPresenter.RootView injectee) {
-    
-  }
-  
   public void com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection______________________(com.gwtplatform.mvp.client.HandlerContainerImpl invokee, com.gwtplatform.mvp.client.AutobindDisable _0) {
     invokee.automaticBind(_0);
   }
   
+  public void com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection_______________________(com.gwtplatform.mvp.client.HandlerContainerImpl invokee, com.gwtplatform.mvp.client.AutobindDisable _0) {
+    invokee.automaticBind(_0);
+  }
+  
+  public void com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection________________________(com.gwtplatform.mvp.client.HandlerContainerImpl invokee, com.gwtplatform.mvp.client.AutobindDisable _0) {
+    invokee.automaticBind(_0);
+  }
+  
+  public void memberInject_Key$type$com$gwtplatform$mvp$client$RootPresenter$RootView$_annotation$$none$$(com.gwtplatform.mvp.client.RootPresenter.RootView injectee) {
+    
+  }
+  
+  public void com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection_________________________(com.gwtplatform.mvp.client.HandlerContainerImpl invokee, com.gwtplatform.mvp.client.AutobindDisable _0) {
+    invokee.automaticBind(_0);
+  }
+  
   public void memberInject_Key$type$com$gwtplatform$mvp$client$RootPresenter$_annotation$$none$$(com.gwtplatform.mvp.client.RootPresenter injectee) {
-    com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection______________________(injectee, get_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$());
+    com$gwtplatform$mvp$client$HandlerContainerImpl_automaticBind_methodInjection_________________________(injectee, get_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$());
     
   }
   

@@ -164,7 +164,7 @@ public class MatterActionDetailView_BinderImpl implements UiBinder<com.google.gw
       f_HTMLPanel1.setStyleName("" + get_style().panelWrapper() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord10 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord14 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
@@ -195,7 +195,7 @@ public class MatterActionDetailView_BinderImpl implements UiBinder<com.google.gw
       get_domId27Element().get();
 
       // Detach section.
-      attachRecord10.detach();
+      attachRecord14.detach();
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel2(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_matter(), get_domId1Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel3(), get_domId2Element().get());

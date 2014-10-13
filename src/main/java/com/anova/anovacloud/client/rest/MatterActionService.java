@@ -9,8 +9,6 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
-
-import com.anova.anovacloud.shared.dto.ActionDueDto;
 import com.anova.anovacloud.shared.dto.MatterActionDto;
 import com.gwtplatform.dispatch.rest.shared.RestAction;
 
@@ -35,6 +33,6 @@ public interface MatterActionService {
     RestAction<Void> delete(@PathParam(ID) Long id);
     
     @GET
-    RestAction<List<ActionDueDto>> getDueThreeDaysActions();
+    RestAction<List<MatterActionDto>> getDueThreeDaysActions();
    
 }

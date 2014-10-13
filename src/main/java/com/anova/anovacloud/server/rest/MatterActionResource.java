@@ -16,8 +16,6 @@ import javax.ws.rs.core.Response;
 
 import com.anova.anovacloud.server.dao.MatterActionDao;
 import com.anova.anovacloud.server.dao.domain.MatterAction;
-import com.anova.anovacloud.server.service.ReportService;
-import com.anova.anovacloud.shared.dto.ActionDueDto;
 import com.anova.anovacloud.shared.dto.MatterActionDto;
 import com.anova.anovacloud.shared.rest.PathParameter;
 import com.anova.anovacloud.shared.rest.ResourcesPath;
@@ -27,13 +25,11 @@ import com.anova.anovacloud.shared.rest.RestParameter;
 @Produces(MediaType.APPLICATION_JSON)
 public class MatterActionResource {
     private final MatterActionDao matterActionDao;
-    private final ReportService reportService;
 
 
     @Inject
-    MatterActionResource(MatterActionDao matterActionDao, ReportService reportService) {
+    MatterActionResource(MatterActionDao matterActionDao) {
         this.matterActionDao = matterActionDao;
-        this.reportService = reportService;
     }
 
     @GET
@@ -66,12 +62,4 @@ public class MatterActionResource {
         return Response.ok().build();
     }
    
-    @GET
-    public Response getDueThreeDaysActions() {
-        List<MatterAction> actions = matterActionDao.getAll();
-        List<MatterActionDto> actionDtos = MatterAction.createDto(actions);
-        List<ActionDueDto> dueThreeDaysActions = reportService.getDueThreeDaysActionList(actionDtos);
-        return Response.ok(dueThreeDaysActions).build();
-    }
-    
 }

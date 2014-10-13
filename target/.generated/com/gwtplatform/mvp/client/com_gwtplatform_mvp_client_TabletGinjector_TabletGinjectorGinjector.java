@@ -236,6 +236,70 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
   
   
   /**
+   * Injector fragment for com.anova.anovacloud.client.application.dueOneMonth
+   */
+  private com.anova.anovacloud.client.application.dueOneMonth.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$dueOneMonth = null;
+  /**
+   * Getter for injector fragment for com.anova.anovacloud.client.application.dueOneMonth
+   */
+  public com.anova.anovacloud.client.application.dueOneMonth.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_dueOneMonth() {
+    if (fieldFragment_com$anova$anovacloud$client$application$dueOneMonth == null) {
+        fieldFragment_com$anova$anovacloud$client$application$dueOneMonth = new com.anova.anovacloud.client.application.dueOneMonth.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment(this);
+    }
+    
+    return fieldFragment_com$anova$anovacloud$client$application$dueOneMonth;
+  }
+  
+  
+  /**
+   * Injector fragment for com.anova.anovacloud.client.application.dueOneWeek
+   */
+  private com.anova.anovacloud.client.application.dueOneWeek.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$dueOneWeek = null;
+  /**
+   * Getter for injector fragment for com.anova.anovacloud.client.application.dueOneWeek
+   */
+  public com.anova.anovacloud.client.application.dueOneWeek.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_dueOneWeek() {
+    if (fieldFragment_com$anova$anovacloud$client$application$dueOneWeek == null) {
+        fieldFragment_com$anova$anovacloud$client$application$dueOneWeek = new com.anova.anovacloud.client.application.dueOneWeek.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment(this);
+    }
+    
+    return fieldFragment_com$anova$anovacloud$client$application$dueOneWeek;
+  }
+  
+  
+  /**
+   * Injector fragment for com.anova.anovacloud.client.application.dueThreeDay
+   */
+  private com.anova.anovacloud.client.application.dueThreeDay.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$dueThreeDay = null;
+  /**
+   * Getter for injector fragment for com.anova.anovacloud.client.application.dueThreeDay
+   */
+  public com.anova.anovacloud.client.application.dueThreeDay.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_dueThreeDay() {
+    if (fieldFragment_com$anova$anovacloud$client$application$dueThreeDay == null) {
+        fieldFragment_com$anova$anovacloud$client$application$dueThreeDay = new com.anova.anovacloud.client.application.dueThreeDay.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment(this);
+    }
+    
+    return fieldFragment_com$anova$anovacloud$client$application$dueThreeDay;
+  }
+  
+  
+  /**
+   * Injector fragment for com.anova.anovacloud.client.application.dueToday
+   */
+  private com.anova.anovacloud.client.application.dueToday.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$dueToday = null;
+  /**
+   * Getter for injector fragment for com.anova.anovacloud.client.application.dueToday
+   */
+  public com.anova.anovacloud.client.application.dueToday.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_dueToday() {
+    if (fieldFragment_com$anova$anovacloud$client$application$dueToday == null) {
+        fieldFragment_com$anova$anovacloud$client$application$dueToday = new com.anova.anovacloud.client.application.dueToday.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment(this);
+    }
+    
+    return fieldFragment_com$anova$anovacloud$client$application$dueToday;
+  }
+  
+  
+  /**
    * Injector fragment for com.anova.anovacloud.client.application.login
    */
   private com.anova.anovacloud.client.application.login.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$login = null;
@@ -312,22 +376,6 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     }
     
     return fieldFragment_com$anova$anovacloud$client$application$matters$matter$navigation;
-  }
-  
-  
-  /**
-   * Injector fragment for com.anova.anovacloud.client.application.report
-   */
-  private com.anova.anovacloud.client.application.report.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment fieldFragment_com$anova$anovacloud$client$application$report = null;
-  /**
-   * Getter for injector fragment for com.anova.anovacloud.client.application.report
-   */
-  public com.anova.anovacloud.client.application.report.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment getFragment_com_anova_anovacloud_client_application_report() {
-    if (fieldFragment_com$anova$anovacloud$client$application$report == null) {
-        fieldFragment_com$anova$anovacloud$client$application$report = new com.anova.anovacloud.client.application.report.com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector_fragment(this);
-    }
-    
-    return fieldFragment_com$anova$anovacloud$client$application$report;
   }
   
   
@@ -598,10 +646,13 @@ public class com_gwtplatform_mvp_client_TabletGinjector_TabletGinjectorGinjector
     getFragment_com_anova_anovacloud_client_security().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_attorney().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_customer().initializeEagerSingletons();
+    getFragment_com_anova_anovacloud_client_application_dueOneMonth().initializeEagerSingletons();
+    getFragment_com_anova_anovacloud_client_application_dueOneWeek().initializeEagerSingletons();
+    getFragment_com_anova_anovacloud_client_application_dueThreeDay().initializeEagerSingletons();
+    getFragment_com_anova_anovacloud_client_application_dueToday().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_login().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_matterAction().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_matters().initializeEagerSingletons();
-    getFragment_com_anova_anovacloud_client_application_report().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_application_user().initializeEagerSingletons();
     getFragment_com_gwtplatform_dispatch_client_actionhandler().initializeEagerSingletons();
     getFragment_com_anova_anovacloud_client_gin().initializeEagerSingletons();

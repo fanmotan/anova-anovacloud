@@ -2,11 +2,11 @@ package com.anova.anovacloud.client.application.widget.header;
 
 public class HeaderView_BinderImpl_TemplateImpl implements com.anova.anovacloud.client.application.widget.header.HeaderView_BinderImpl.Template {
   
-  public com.google.gwt.safehtml.shared.SafeHtml html1(com.google.gwt.safehtml.shared.SafeUri arg0,com.google.gwt.safehtml.shared.SafeUri arg1,com.google.gwt.safehtml.shared.SafeUri arg2,com.google.gwt.safehtml.shared.SafeUri arg3,com.google.gwt.safehtml.shared.SafeUri arg4,com.google.gwt.safehtml.shared.SafeUri arg5) {
+  public com.google.gwt.safehtml.shared.SafeHtml html1(com.google.gwt.safehtml.shared.SafeUri arg0,com.google.gwt.safehtml.shared.SafeUri arg1,com.google.gwt.safehtml.shared.SafeUri arg2,com.google.gwt.safehtml.shared.SafeUri arg3,com.google.gwt.safehtml.shared.SafeUri arg4,com.google.gwt.safehtml.shared.SafeUri arg5,com.google.gwt.safehtml.shared.SafeUri arg6,com.google.gwt.safehtml.shared.SafeUri arg7,com.google.gwt.safehtml.shared.SafeUri arg8) {
     StringBuilder sb = new java.lang.StringBuilder();
     sb.append("<a href='");
     sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg0.asString()));
-    sb.append("'>Home</a> <a href='");
+    sb.append("'>Today Actions</a>  <a href='");
     sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg1.asString()));
     sb.append("'>Matters</a> <a href='");
     sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg2.asString()));
@@ -16,7 +16,13 @@ public class HeaderView_BinderImpl_TemplateImpl implements com.anova.anovacloud.
     sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg4.asString()));
     sb.append("'>Attorneys</a> <a href='");
     sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg5.asString()));
-    sb.append("'>Users</a>");
+    sb.append("'>Users</a> <a href='");
+    sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg6.asString()));
+    sb.append("'>Three-Day Actions</a> <a href='");
+    sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg7.asString()));
+    sb.append("'>One-Week Actions</a> <a href='");
+    sb.append(com.google.gwt.safehtml.shared.SafeHtmlUtils.htmlEscape(arg8.asString()));
+    sb.append("'>One-Month Actions</a>");
 return new com.google.gwt.safehtml.shared.OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.toString());
 }
 

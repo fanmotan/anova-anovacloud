@@ -168,7 +168,7 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
       f_HTMLPanel2.ensureDebugId("attorney-editor");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord20 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
+      UiBinderUtil.TempAttachment attachRecord23 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
@@ -188,7 +188,7 @@ public class EditAttorneyView_BinderImpl implements UiBinder<com.google.gwt.user
       get_domId16Element().get();
 
       // Detach section.
-      attachRecord20.detach();
+      attachRecord23.detach();
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel3(), get_domId0Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_f_InlineLabel4(), get_domId1Element().get());
       f_HTMLPanel2.addAndReplaceElement(get_firstName(), get_domId2Element().get());

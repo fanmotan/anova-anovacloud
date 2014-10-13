@@ -171,7 +171,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       // Setup section.
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord27 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord30 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
@@ -206,7 +206,7 @@ public class MatterPropertiesEditor_BinderImpl implements UiBinder<com.google.gw
       get_domId31Element().get();
 
       // Detach section.
-      attachRecord27.detach();
+      attachRecord30.detach();
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel2(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_caseTitle(), get_domId1Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel3(), get_domId2Element().get());

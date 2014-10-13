@@ -81,12 +81,15 @@
             </div>
 
             <g:HTMLPanel styleName="{style.floatLeft} {style.menuBarWrapper}" ui:field="menubar" debugId="menubar">     
-                <a href="#{REPORT}">Home</a>
+                <a href="#{DUETODAY}">Today Actions</a>  
                 <a href="#{MATTERS}">Matters</a>
                 <a href="#{MATTERACTION}">Matter Actions</a>
                 <a href="#{CUSTOMER}">Customers</a>
                 <a href="#{ATTORNEY}">Attorneys</a>
                 <a href="#{USER}">Users</a>
+                 <a href="#{DUETHREEDAY}">Three-Day Actions</a>
+                <a href="#{DUEONEWEEK}">One-Week Actions</a>
+                <a href="#{DUEONEMONTH}">One-Month Actions</a>
                 
             </g:HTMLPanel>
 

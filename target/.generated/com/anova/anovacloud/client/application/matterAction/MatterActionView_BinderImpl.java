@@ -119,13 +119,13 @@ public class MatterActionView_BinderImpl implements UiBinder<com.google.gwt.user
       f_HTMLPanel1.ensureDebugId("matterActionPanel");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord11 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord15 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
 
       // Detach section.
-      attachRecord11.detach();
+      attachRecord15.detach();
       f_HTMLPanel1.addAndReplaceElement(get_f_InlineLabel2(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_create(), get_domId1Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_matterActionGrid(), get_domId2Element().get());

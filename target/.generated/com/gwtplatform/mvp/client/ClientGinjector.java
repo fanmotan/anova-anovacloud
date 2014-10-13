@@ -37,13 +37,19 @@ public interface ClientGinjector extends Ginjector, MyGinjector {
   
   AsyncProvider<com.anova.anovacloud.client.application.customer.CustomerPresenter> getcomanovaanovacloudclientapplicationcustomerCustomerPresenter();
   
+  AsyncProvider<com.anova.anovacloud.client.application.dueOneMonth.DueOneMonthPresenter> getcomanovaanovacloudclientapplicationdueOneMonthDueOneMonthPresenter();
+  
+  AsyncProvider<com.anova.anovacloud.client.application.dueOneWeek.DueOneWeekPresenter> getcomanovaanovacloudclientapplicationdueOneWeekDueOneWeekPresenter();
+  
+  AsyncProvider<com.anova.anovacloud.client.application.dueThreeDay.DueThreeDayPresenter> getcomanovaanovacloudclientapplicationdueThreeDayDueThreeDayPresenter();
+  
+  AsyncProvider<com.anova.anovacloud.client.application.dueToday.ReportPresenter> getcomanovaanovacloudclientapplicationdueTodayReportPresenter();
+  
   AsyncProvider<com.anova.anovacloud.client.application.matterAction.MatterActionDetailPresenter> getcomanovaanovacloudclientapplicationmatterActionMatterActionDetailPresenter();
   
   AsyncProvider<com.anova.anovacloud.client.application.matterAction.MatterActionPresenter> getcomanovaanovacloudclientapplicationmatterActionMatterActionPresenter();
   
   AsyncProvider<com.anova.anovacloud.client.application.matters.MattersPresenter> getcomanovaanovacloudclientapplicationmattersMattersPresenter();
-  
-  AsyncProvider<com.anova.anovacloud.client.application.report.ReportPresenter> getcomanovaanovacloudclientapplicationreportReportPresenter();
   
   AsyncProvider<com.anova.anovacloud.client.application.user.UserDetailPresenter> getcomanovaanovacloudclientapplicationuserUserDetailPresenter();
   

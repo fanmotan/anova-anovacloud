@@ -51,6 +51,22 @@ public class com_gwtplatform_mvp_client_MobileGinjectorImpl implements com.gwtpl
     return fieldcom_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_customer().get_Key$type$com$google$gwt$inject$client$AsyncProvider$com$anova$anovacloud$client$application$customer$CustomerPresenter$$_annotation$$none$$();
   }
   
+  public com.google.gwt.inject.client.AsyncProvider<com.anova.anovacloud.client.application.dueOneMonth.DueOneMonthPresenter> getcomanovaanovacloudclientapplicationdueOneMonthDueOneMonthPresenter() {
+    return fieldcom_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_dueOneMonth().get_Key$type$com$google$gwt$inject$client$AsyncProvider$com$anova$anovacloud$client$application$dueOneMonth$DueOneMonthPresenter$$_annotation$$none$$();
+  }
+  
+  public com.google.gwt.inject.client.AsyncProvider<com.anova.anovacloud.client.application.dueOneWeek.DueOneWeekPresenter> getcomanovaanovacloudclientapplicationdueOneWeekDueOneWeekPresenter() {
+    return fieldcom_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_dueOneWeek().get_Key$type$com$google$gwt$inject$client$AsyncProvider$com$anova$anovacloud$client$application$dueOneWeek$DueOneWeekPresenter$$_annotation$$none$$();
+  }
+  
+  public com.google.gwt.inject.client.AsyncProvider<com.anova.anovacloud.client.application.dueThreeDay.DueThreeDayPresenter> getcomanovaanovacloudclientapplicationdueThreeDayDueThreeDayPresenter() {
+    return fieldcom_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_dueThreeDay().get_Key$type$com$google$gwt$inject$client$AsyncProvider$com$anova$anovacloud$client$application$dueThreeDay$DueThreeDayPresenter$$_annotation$$none$$();
+  }
+  
+  public com.google.gwt.inject.client.AsyncProvider<com.anova.anovacloud.client.application.dueToday.ReportPresenter> getcomanovaanovacloudclientapplicationdueTodayReportPresenter() {
+    return fieldcom_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_dueToday().get_Key$type$com$google$gwt$inject$client$AsyncProvider$com$anova$anovacloud$client$application$dueToday$ReportPresenter$$_annotation$$none$$();
+  }
+  
   public javax.inject.Provider<com.anova.anovacloud.client.application.login.LoginPresenter> getcomanovaanovacloudclientapplicationloginLoginPresenter() {
     return fieldcom_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_login().get_Key$type$com$google$inject$Provider$com$anova$anovacloud$client$application$login$LoginPresenter$$_annotation$$none$$();
   }
@@ -69,10 +85,6 @@ public class com_gwtplatform_mvp_client_MobileGinjectorImpl implements com.gwtpl
   
   public javax.inject.Provider<com.anova.anovacloud.client.application.matters.matter.RootMatterPresenter> getcomanovaanovacloudclientapplicationmattersmatterRootMatterPresenter() {
     return fieldcom_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_matters_matter().get_Key$type$com$google$inject$Provider$com$anova$anovacloud$client$application$matters$matter$RootMatterPresenter$$_annotation$$none$$();
-  }
-  
-  public com.google.gwt.inject.client.AsyncProvider<com.anova.anovacloud.client.application.report.ReportPresenter> getcomanovaanovacloudclientapplicationreportReportPresenter() {
-    return fieldcom_gwtplatform_mvp_client_MobileGinjector_MobileGinjectorGinjector.getFragment_com_anova_anovacloud_client_application_report().get_Key$type$com$google$gwt$inject$client$AsyncProvider$com$anova$anovacloud$client$application$report$ReportPresenter$$_annotation$$none$$();
   }
   
   public com.google.gwt.inject.client.AsyncProvider<com.anova.anovacloud.client.application.user.UserDetailPresenter> getcomanovaanovacloudclientapplicationuserUserDetailPresenter() {

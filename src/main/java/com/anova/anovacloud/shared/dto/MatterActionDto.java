@@ -39,10 +39,8 @@ public class MatterActionDto extends BaseEntity {
         this.assignee2Role = assignee2Role;
         this.assignee3 = assignee3;
         this.assignee3Role = assignee3Role;
-        this.atty = this.assignee1+"/"+this.assignee1Role+";"+this.assignee2+"/"+this.assignee2Role+";"+this.assignee3+"/"+this.assignee3Role;
         this.actionRemarks = actionRemarks;
         this.actionStatus = actionStatus;
-        
     }
 
     public MatterDto getMatter() {

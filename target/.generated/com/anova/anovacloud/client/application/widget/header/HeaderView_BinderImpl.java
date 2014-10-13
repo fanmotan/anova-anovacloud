@@ -16,8 +16,8 @@ import com.google.gwt.user.client.ui.Widget;
 public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.client.ui.Widget, com.anova.anovacloud.client.application.widget.header.HeaderView>, com.anova.anovacloud.client.application.widget.header.HeaderView.Binder {
 
   interface Template extends SafeHtmlTemplates {
-    @Template("<a href='{0}'>Home</a> <a href='{1}'>Matters</a> <a href='{2}'>Matter Actions</a> <a href='{3}'>Customers</a> <a href='{4}'>Attorneys</a> <a href='{5}'>Users</a>")
-    SafeHtml html1(SafeUri arg0, SafeUri arg1, SafeUri arg2, SafeUri arg3, SafeUri arg4, SafeUri arg5);
+    @Template("<a href='{0}'>Today Actions</a>  <a href='{1}'>Matters</a> <a href='{2}'>Matter Actions</a> <a href='{3}'>Customers</a> <a href='{4}'>Attorneys</a> <a href='{5}'>Users</a> <a href='{6}'>Three-Day Actions</a> <a href='{7}'>One-Week Actions</a> <a href='{8}'>One-Month Actions</a>")
+    SafeHtml html1(SafeUri arg0, SafeUri arg1, SafeUri arg2, SafeUri arg3, SafeUri arg4, SafeUri arg5, SafeUri arg6, SafeUri arg7, SafeUri arg8);
      
     @Template("<div class='{0}'> Hello <span id='{1}'></span> ! </div> <div class='{2}'> <span id='{3}'></span> </div> <div class='{4}'></div>")
     SafeHtml html2(String arg0, String arg1, String arg2, String arg3, String arg4);
@@ -67,7 +67,7 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     SafeHtml template_html1() {
-      return template.html1(UriUtils.fromString("#" + get_REPORT() + ""), UriUtils.fromString("#" + get_MATTERS() + ""), UriUtils.fromString("#" + get_MATTERACTION() + ""), UriUtils.fromString("#" + get_CUSTOMER() + ""), UriUtils.fromString("#" + get_ATTORNEY() + ""), UriUtils.fromString("#" + get_USER() + ""));
+      return template.html1(UriUtils.fromString("#" + get_DUETODAY() + ""), UriUtils.fromString("#" + get_MATTERS() + ""), UriUtils.fromString("#" + get_MATTERACTION() + ""), UriUtils.fromString("#" + get_CUSTOMER() + ""), UriUtils.fromString("#" + get_ATTORNEY() + ""), UriUtils.fromString("#" + get_USER() + ""), UriUtils.fromString("#" + get_DUETHREEDAY() + ""), UriUtils.fromString("#" + get_DUEONEWEEK() + ""), UriUtils.fromString("#" + get_DUEONEMONTH() + ""));
     }
     SafeHtml template_html2() {
       return template.html2("" + get_style().userInfo() + "", get_domId4(), "" + get_style().floatLeft() + "", get_domId5(), "" + get_style().clear() + "");
@@ -212,18 +212,63 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
     }
 
     /**
-     * Getter for REPORT called 1 times. Type: DEFAULT. Build precedence: 1.
+     * Getter for DUETODAY called 1 times. Type: DEFAULT. Build precedence: 1.
      */
-    private java.lang.String get_REPORT() {
-      return build_REPORT();
+    private java.lang.String get_DUETODAY() {
+      return build_DUETODAY();
     }
-    private java.lang.String build_REPORT() {
+    private java.lang.String build_DUETODAY() {
       // Creation section.
-      final java.lang.String REPORT = com.anova.anovacloud.client.place.NameTokens.REPORT;
+      final java.lang.String DUETODAY = com.anova.anovacloud.client.place.NameTokens.DUETODAY;
       // Setup section.
 
 
-      return REPORT;
+      return DUETODAY;
+    }
+
+    /**
+     * Getter for DUETHREEDAY called 1 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_DUETHREEDAY() {
+      return build_DUETHREEDAY();
+    }
+    private java.lang.String build_DUETHREEDAY() {
+      // Creation section.
+      final java.lang.String DUETHREEDAY = com.anova.anovacloud.client.place.NameTokens.DUETHREEDAY;
+      // Setup section.
+
+
+      return DUETHREEDAY;
+    }
+
+    /**
+     * Getter for DUEONEWEEK called 1 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_DUEONEWEEK() {
+      return build_DUEONEWEEK();
+    }
+    private java.lang.String build_DUEONEWEEK() {
+      // Creation section.
+      final java.lang.String DUEONEWEEK = com.anova.anovacloud.client.place.NameTokens.DUEONEWEEK;
+      // Setup section.
+
+
+      return DUEONEWEEK;
+    }
+
+    /**
+     * Getter for DUEONEMONTH called 1 times. Type: DEFAULT. Build precedence: 1.
+     */
+    private java.lang.String get_DUEONEMONTH() {
+      return build_DUEONEMONTH();
+    }
+    private java.lang.String build_DUEONEMONTH() {
+      // Creation section.
+      final java.lang.String DUEONEMONTH = com.anova.anovacloud.client.place.NameTokens.DUEONEMONTH;
+      // Setup section.
+
+
+      return DUEONEMONTH;
     }
 
     /**
@@ -421,14 +466,14 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       f_HTMLPanel1.setStyleName("" + get_style().header() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord18 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord21 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
       get_domId3Element().get();
 
       // Detach section.
-      attachRecord18.detach();
+      attachRecord21.detach();
       f_HTMLPanel1.addAndReplaceElement(get_f_Image2(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_f_Label3(), get_domId1Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_menubar(), get_domId2Element().get());
@@ -612,12 +657,12 @@ public class HeaderView_BinderImpl implements UiBinder<com.google.gwt.user.clien
       userOptions.setStyleName("" + get_style().floatRight() + " " + get_style().paddingTop() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord19 = UiBinderUtil.attachToDom(userOptions.getElement());
+      UiBinderUtil.TempAttachment attachRecord22 = UiBinderUtil.attachToDom(userOptions.getElement());
       get_domId4Element().get();
       get_domId5Element().get();
 
       // Detach section.
-      attachRecord19.detach();
+      attachRecord22.detach();
       userOptions.addAndReplaceElement(get_name(), get_domId4Element().get());
       userOptions.addAndReplaceElement(get_logout(), get_domId5Element().get());
 

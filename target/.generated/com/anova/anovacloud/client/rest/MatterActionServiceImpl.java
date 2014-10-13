@@ -38,7 +38,7 @@ public class MatterActionServiceImpl implements MatterActionService {
     }
 
     @Override
-    public RestAction<java.util.List<com.anova.anovacloud.shared.dto.ActionDueDto>> getDueThreeDaysActions() {
+    public RestAction<java.util.List<com.anova.anovacloud.shared.dto.MatterActionDto>> getDueThreeDaysActions() {
         return new MatterActionService_4_getDueThreeDaysActionsImpl(
                 defaultDateFormat);
     }
